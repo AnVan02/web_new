@@ -1,0 +1,376 @@
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1300;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: Montserrat;
+}
+
+.nav_container {
+    justify-content: center;
+}
+
+.nav_container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav_container ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav_container ul li a:hover {
+    color: #007bff;
+}
+
+/* ====== THANH TÌM KIẾM ======== */
+.search-box {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 12px;
+    display: flex;
+    align-items: center;
+    background: white;
+    max-width: 180px;
+}
+
+.search-box i {
+    color: #666;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search-box input::placeholder {
+    color: #888;
+}
+
+
+/* ======= CSS CHO SUBMENU ======= */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    z-index: 999;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.submenu li a:hover {
+    background: #f8f8f8;
+    color: #007bff;
+}
+
+/* Hiển thị submenu khi hover (desktop) */
+.nav_container ul li:hover>.submenu {
+    display: block;
+}
+
+/* Định dạng submenu cấp 2 */
+.has-submenu {
+    position: relative;
+}
+
+.has-submenu .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    white-space: nowrap;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    list-style: none;
+    display: none;
+    min-width: 200px;
+}
+
+/* Hiển thị submenu cấp 2 khi hover (desktop) */
+.has-submenu:hover>.submenu {
+    display: block;
+}
+
+/* Định dạng menu trên mobile */
+.hamburger_container {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hamburger_menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding-top: 60px;
+}
+
+.hamburger_menu.show {
+    display: block;
+}
+
+.hamburger_close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.hamburger_menu_content {
+    padding: 0 20px;
+}
+
+.hamburger_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger_menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hamburger_menu ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.hamburger_menu ul li a:hover {
+    background: #f8f8f8;
+    color: #007bff;
+}
+
+/* Submenu styling for mobile */
+.hamburger_menu .submenu {
+    display: none;
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger_menu .submenu.show {
+    display: block;
+}
+
+.hamburger_menu .has-submenu .submenu {
+    left: 0;
+    margin-left: 0;
+}
+
+.hamburger_menu .submenu li {
+    padding: 10px 10px 10px 20px;
+}
+
+
+.header-top {
+    background: #f8f8f8;
+    font-size: 14px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo_brand {
+    display: flex;
+}
+
+.logo_container img {
+    max-width: 120px;
+    height: auto;
+}
+
+.brand_text {
+    font-size: 13px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.contact_info {
+    font-size: 14px;
+    color: #333;
+    display: flex;
+}
+
+.contact_info i {
+    margin-right: 5px;
+    color: #007bff;
+}
+
+.contact_info span {
+    margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .nav_container {
+        display: none;
+    }
+
+    .hamburger_container {
+        display: block;
+    }
+
+    .hamburger_menu {
+        display: none;
+    }
+
+    .contact_info {
+        display: block;
+    }
+
+    .nav_container {
+        flex-direction: column;
+    }
+
+    .header_nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header_nav li {
+        width: 100%;
+    }
+
+    .submenu {
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .has-submenu .submenu {
+        left: 0;
+        margin-left: 0;
+    }
+
+    .header-top {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo_brand {
+        display: none;
+    }
+
+    .contact_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_info span {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    .contact_info span:last-child {
+        margin-bottom: 0;
+    }
+
+    .logo_brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .brand_text {
+        font-size: 12px;
+        margin-top: 5px;
+        font-family: Arial, sans-serif;
+    }
+
+    .logo_container img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav_container ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger_container {
+        display: block;
+    }
+
+    .contact_info {
+        display: block;
+    }
+}
+
+/* Fix desktop menu layout */
+@media (min-width: 769px) {
+    .nav_container ul {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_container ul li {
+        margin: 0 10px;
+    }
+
+    .nav_container ul li a {
+        font-size: 15px;
+        /* padding: 5px 10px; */
+        color: #000000;
+        /* Change text color to yellow */
+        text-decoration: none;
+        /* Remove underline */
+    }
+
+    .nav_container ul li a:hover {
+        color: #000000;
+        /* Keep yellow on hover */
+        text-decoration: none;
+        /* Ensure no underline on hover */
+    }
+
+    .container {
+        max-width: 1050px;
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: " > ";
+}
