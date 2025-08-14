@@ -1,0 +1,383 @@
+/* ==== header ==== */
+
+body {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.6;
+    /* background-color: #fff; */
+    color: #1C1D1D;
+}
+
+.banner {
+    width: 100%;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    /* Giữ đúng tỉ lệ ảnh */
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* ==== Title ==== */
+.product-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.product-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1C1D1D;
+}
+
+.product-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+.computer-section {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.view-all-link {
+    color: #6c757d;
+    text-decoration: none;
+    /* Bỏ gạch dưới */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Thanh tab*/
+/* Bọc thanh tab vào div cha */
+.category-tabs {
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    display: inline-flex;
+    padding: 5px;
+    gap: 5px;
+}
+
+/* Thêm lớp bao để căn giữa */
+.category-tabs-wrapper {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa ngang */
+    margin-bottom: 20px;
+}
+
+.category-tabs button {
+    border: none;
+    background: transparent;
+    padding: 9px 71px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.category-tabs button.active {
+    background-color: #b71c1c;
+    /* đỏ */
+    color: white;
+    font-weight: 500;
+}
+
+/* ===== Lưới sản phẩm ===== */
+.product-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ===== Thông tin sản phẩm ===== */
+.details {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.details h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin: 10px 0;
+}
+
+.key-specs {
+    font-size: 14px;
+    color: #000;
+    line-height: 1.4;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #c62828;
+    margin: 10px 0;
+}
+
+/* ===== Nút mua ngay ===== */
+.shop-button {
+    display: inline-block;
+    background: #C10000;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 7px 100px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .product-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* === phần tại sao chon ROSA === */
+.new-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.quality-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card-item {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.card-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+}
+
+.card-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.product-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.product-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1C1D1D;
+}
+
+.product-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.quality-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cột */
+    gap: 20px;
+    /* khoảng cách giữa các card */
+}
+
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.details {
+    padding: 15px;
+    text-align: center;
+}
+
+.details h3 {
+    color: red;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.key-specs {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin: 10px 0;
+}
+
+
+/* Phần giới thiệu tại sao chọn ROSA */
+.why-rosa-wrapper {
+    padding: 48px 16px;
+    font-family: 'Montserrat';
+    max-width: 1300px;
+    /* Giới hạn chiều rộng */
+    margin: 0 auto;
+    /* Căn giữa */
+}
+
+.why-rosa-grid {
+    max-width: 100%;
+    /* Cho phép full trong wrapper */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.why-rosa-title {
+    margin: 0 auto 28px;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #6b6b6b;
+    text-align: center;
+}
+
+.why-rosa-card {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 80px 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.why-rosa-icon {
+    color: #111;
+    margin-bottom: 12px;
+}
+
+.why-rosa-card-title {
+    margin: 4px 0 10px;
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 800;
+    color: #111;
+}
+
+.why-rosa-divider {
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    margin: 6px 0 12px;
+    border-radius: 1px;
+}
+
+.why-rosa-desc {
+    margin: 0;
+    color: #666;
+    font-size: 14.5px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+    .why-rosa-grid {
+        grid-template-columns: 1fr;
+    }
+}

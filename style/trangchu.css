@@ -1,0 +1,386 @@
+/* ===== Cấu hình chung ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.6;
+    /* background-color: #fff; */
+    color: #1C1D1D;
+}
+
+
+.ai_solution,
+.news-container,
+.container,
+.faq-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===== HEADER ======= */
+.banner {
+    width: 100%;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* ====== Title ===== */
+.product-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.product-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1C1D1D;
+}
+
+.product-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* ==== Tổng quan sản phẩm ==== */
+.ds-section {
+    font-family: 'Montserrat';
+    padding: 36px 16px;
+    background: #fff
+}
+
+
+.ds-title {
+    margin: 0 0 6px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: .6px;
+    font-weight: 800;
+    color: #3a3a3a
+}
+
+.ds-subtitle {
+    text-align: center;
+    margin: 0 0 26px;
+    color: #8a8a8a;
+    font-size: 15px
+}
+
+.ds-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* có thể dùng 4 nếu đủ không gian */
+    gap: 20px;
+    padding: 20px;
+}
+
+.ds-card {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ds-media {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.ds-media img {
+    width: 130%;
+    display: block;
+    border-radius: 12px;
+}
+
+.ds-link {
+    position: relative;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.ds-cta {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6a4c49;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Responsive */
+@media (max-width:780px) {
+    .ds-grid {
+        grid-template-columns: 1fr
+    }
+
+    .ds-media img {
+        height: 220px
+    }
+}
+
+/* ==== AI Solution ==== */
+.ai_solution {
+    display: flex;
+    gap: 20px;
+}
+
+.ai_solution .card {
+    flex: 1;
+    text-align: center;
+    border: none;
+    /* Bỏ khung */
+    box-shadow: none;
+    /* Bỏ đổ bóng nếu có */
+}
+
+.ai_solution .card img {
+    width: 405px;
+    /* Phóng to ảnh */
+    height: auto;
+    border: none;
+    /* Bỏ viền ảnh */
+}
+
+/* ===== Banner Python ===== */
+.carousel-inner .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    color: white;
+    width: 100%;
+}
+
+.button-style {
+    padding: 8px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* ===== Tin tức ===== */
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.news-card {
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* .news-content {
+    text-align: center;
+} */
+
+.news-tag {
+    font-size: 14px;
+    color: #A60606;
+    margin-bottom: 5px;
+}
+
+.news-title a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.news-title a:hover {
+    color: #007BFF;
+}
+
+.news-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0.5em 0;
+}
+
+/* ==== Câu hỏi thường gặp ==== */
+
+.faq-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.faq-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: #A60606;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-button.active,
+.faq-button:hover {
+    background-color: #A60606;
+    color: white;
+}
+
+.faq-content {
+    margin-top: 20px;
+}
+
+.faq-item {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.faq-item.active {
+    display: block;
+}
+
+.faq-question {
+    font-weight: 600;
+    color: #7F3131;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.faq-answer {
+    color: #000000;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-left: 10px;
+    display: none;
+}
+
+.faq-answer.show {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.website-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.website-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 300px;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .product-section h2 {
+        font-size: 30px;
+    }
+
+    .faq-buttons {
+        justify-content: flex-start;
+    }
+
+    .faq-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
