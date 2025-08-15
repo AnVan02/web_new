@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="../style/trangchu.css">
 
 <!-- Banner -->
+
 <div class="banner">
     <div class="row">
         <div class="hero-section">
@@ -14,123 +15,49 @@
     </div>
 </div>
 
-
+<!-- Title -->
 <section class="ds-section">
   <h2 class="ds-title">DÒNG SẢN PHẨM</h2>
   <p class="ds-subtitle">Đáp ứng đa dạng nhu cầu, mạnh mẽ, bền bỉ</p>
 
-  <div class="ds-grid">
-    <!-- Card 1 -->
+ <section class="ds-grid">
+  <!-- Card đơn giản -->
+  <article class="ds-card">
+    <div class="ds-media">
+      <a href="link-to-page.html" class="ds-link">
+        <img src="../image/1.png" alt="Office">
+        <span class="ds-cta">KHÁM PHÁ NGAY</span>
+      </a>
+    </div>
+  </article>
+
     <article class="ds-card">
-      <div class="ds-badge">
-        <strong>3 NĂM</strong>
-        <span>BẢO HÀNH</span>
-      </div>
+    <div class="ds-media">
+      <a href="link-to-page.html" class="ds-link">
+        <img src="../image/1.png" alt="Office">
+        <span class="ds-cta">KHÁM PHÁ NGAY</span>
+      </a>
+    </div>
+  </article>
 
-      <div class="ds-head">
-        <div>
-          <h3 class="ds-card-title">Office</h3>
-          <p class="ds-card-desc">Phục vụ đa nhu cầu<br>Giá cả phải chăng</p>
-        </div>
-      </div>
-
-      <div class="ds-media">
-        <img src="../image/Group 151.png" alt="Office">
-        <a href="#" class="ds-cta">KHÁM PHÁ NGAY</a>
-      </div>
-    </article>
-
-    <!-- Card 2 -->
     <article class="ds-card">
-      <div class="ds-badge">
-        <strong>3 NĂM</strong>
-        <span>BẢO HÀNH</span>
-      </div>
-
-      <div class="ds-head">
-        <div>
-          <h3 class="ds-card-title">Server</h3>
-          <p class="ds-card-desc">Máy chủ mạnh mẽ,<br>đáng tin cậy</p>
-        </div>
-      </div>
-
-      <div class="ds-media">
-        <img src="image/server.jpg" alt="Server">
-        <a href="#" class="ds-cta">KHÁM PHÁ NGAY</a>
-      </div>
-    </article>
-
-    <!-- Card 3 -->
+    <div class="ds-media">
+      <a href="link-to-page.html" class="ds-link">
+        <img src="../image/1.png" alt="Office">
+        <span class="ds-cta">KHÁM PHÁ NGAY</span>
+      </a>
+    </div>
+  </article>
     <article class="ds-card">
-      <div class="ds-badge">
-        <strong>3 NĂM</strong>
-        <span>BẢO HÀNH</span>
-      </div>
-
-      <div class="ds-head">
-        <div>
-          <h3 class="ds-card-title">Gaming</h3>
-          <p class="ds-card-desc">Cấu hình đỉnh cao,<br>card đồ hoạ mạnh mẽ</p>
-        </div>
-      </div>
-
-      <div class="ds-media">
-        <img src="image/gaming.jpg" alt="Gaming">
-        <a href="#" class="ds-cta">KHÁM PHÁ NGAY</a>
-      </div>
-    </article>
-
-    <!-- Card 4 -->
-    <article class="ds-card">
-      <div class="ds-badge">
-        <strong>3 NĂM</strong>
-        <span>BẢO HÀNH</span>
-      </div>
-
-      <div class="ds-head">
-        <div>
-          <h3 class="ds-card-title">Mini PC</h3>
-          <p class="ds-card-desc">Kiểu dáng gọn gàng,<br>hiện đại, hiệu suất cao</p>
-        </div>
-      </div>
-
-      <div class="ds-media">
-        <img src="image/minipc.jpg" alt="Mini PC">
-        <a href="#" class="ds-cta">KHÁM PHÁ NGAY</a>
-      </div>
-    </article>
-  </div>
+    <div class="ds-media">
+      <a href="link-to-page.html" class="ds-link">
+        <img src="../image/1.png" alt="Office">
+        <span class="ds-cta">KHÁM PHÁ NGAY</span>
+      </a>
+    </div>
+  </article>
 </section>
-
-<style>
-/* ======= ONLY affects elements with ds- prefix ======= */
-.ds-section{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;padding:36px 16px;background:#fff}
-.ds-title{margin:0 0 6px;text-align:center;font-size:22px;letter-spacing:.6px;font-weight:800;color:#3a3a3a}
-.ds-subtitle{text-align:center;margin:0 0 26px;color:#8a8a8a;font-size:15px}
-
-.ds-grid{max-width:980px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-
-.ds-card{position:relative;background:#fff;border:1px solid #e9e9e9;border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,.06);
-  padding:18px;display:flex;flex-direction:column;gap:12px}
-
-.ds-badge{position:absolute;top:16px;right:16px;text-align:right;user-select:none}
-.ds-badge strong{display:block;font-weight:800;color:#c6c6c6;font-size:16px;line-height:1}
-.ds-badge span{display:block;color:#cfcfcf;font-size:11px;letter-spacing:.8px;margin-top:2px}
-
-.ds-head{display:flex;justify-content:space-between;align-items:flex-start}
-.ds-card-title{margin:0 0 6px;font-size:18px;font-weight:800;color:#2a2a2a}
-.ds-card-desc{margin:0;color:#6e6e6e;font-size:14px;line-height:1.45}
-
-.ds-media{position:relative;border-radius:12px;overflow:hidden}
-.ds-media img{display:block;width:100%;height:230px;object-fit:cover}
-
-.ds-cta{position:absolute;right:14px;bottom:14px;background:#9b6b5c;color:#fff;text-decoration:none;font-size:12.5px;
-  padding:10px 16px;border-radius:22px;letter-spacing:.5px;font-weight:700;box-shadow:0 6px 14px rgba(155,107,92,.35)}
-.ds-cta:hover{filter:brightness(.96)}
-
-/* Responsive */
-@media (max-width:780px){.ds-grid{grid-template-columns:1fr}.ds-media img{height:220px}}
-</style>
+    
 <section class="product-section">
     <h2>GIẢI PHÁP AI</h2>
     <p>Giải pháp toàn diện cho công việc và cuộc sống</p>
@@ -138,18 +65,21 @@
 
 <div class="ai_solution">
     <div class="card">
-        <img src="../image/chatbot.png" alt="Chatbot AI">
-        <div href="#" class="title">Chatbot AI<br>Tư vấn 24/7</div>
+        <a href="https://example.com/cham-cong-ip-camera">
+            <img src="../image/botai.png" alt="Chatbot ai">
+        </a>
     </div>
 
     <div class="card">
-        <img src="../image/camera.png" alt="Chấm công IP Camera">
-        <div href="#" class="title">Chấm công<br>IP Camera</div>
+        <a href="https://example.com/cham-cong-ip-camera">
+            <img src="../image/chamcong.png" alt="Chấm công IP Camera">
+        </a>
     </div>
 
     <div class="card">
-        <img src="../image/nextcloud.png" alt="Lưu trữ nextcloud">
-        <div href="#" class="title">Lưu trữ<br>Nextcloud</div>
+        <a href="https://example.com/cham-cong-ip-camera">
+            <img src="../image/nextcloud.png" alt="Chương trình nextclaud">
+        </a>
     </div>
   
 </div>
@@ -212,7 +142,6 @@
             echo '</a>';
             echo '</div>';
             echo '<p class="news-meta">Ngày đăng: ' . htmlspecialchars(date('d/m/Y', strtotime($row['article_date'])), ENT_QUOTES, 'UTF-8');
-            echo '<p class="news-meta">Người viết: '.htmlspecialchars($row['article_author'], ENT_QUOTES, 'UTF-8');
             if (isset($row['article_author'])) {
                 echo ' - Tác giả: ' . htmlspecialchars($row['article_author'], ENT_QUOTES, 'UTF-8');
             }
@@ -355,4 +284,4 @@
 
 <script src="../script/trangchu.js"></script>
 
-<!-- <?php require "footer.php" ?>/ -->
+<?php require "footer.php" ?>
