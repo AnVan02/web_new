@@ -127,41 +127,135 @@ body {
 }
 
 /* Định dạng menu trên mobile */
+/* Add these CSS fixes to your header.css file */
+
+/* ==================== MOBILE MENU CSS ==================== */
+
+/* Hamburger Button */
 .hamburger_container {
     display: none;
     font-size: 24px;
     cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
+.hamburger_container:hover {
+    background-color: #f8f9fa;
+}
+
+.hamburger_container i {
+    color: #333;
+}
+
+/* ==================== MOBILE MENU CSS - UPDATED ==================== */
+
+/* Hamburger Button */
+.hamburger_container {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger_container:hover {
+    background-color: #f8f9fa;
+}
+
+.hamburger_container i {
+    color: #333;
+}
+
+/* Mobile Menu Overlay */
 .hamburger_menu {
     display: none;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: white;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    padding-top: 60px;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    transition: left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow-y: auto;
+    border-right: 1px solid #e9ecef;
 }
 
 .hamburger_menu.show {
     display: block;
+    left: 0;
 }
 
+/* Backdrop overlay */
+.hamburger_menu.show::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 280px;
+    width: calc(100vw - 280px);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+/* Close Button */
 .hamburger_close {
     position: absolute;
     top: 20px;
-    left: 20px;
-    font-size: 30px;
+    right: 20px;
+    font-size: 24px;
     cursor: pointer;
+    color: #666;
+    background: #f1f3f4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
 }
 
+.hamburger_close:hover {
+    background: #e8eaed;
+    color: #333;
+    transform: rotate(90deg);
+}
+
+/* Menu Header with Logo */
 .hamburger_menu_content {
-    padding: 0 20px;
+    padding: 70px 0 20px 0;
 }
 
+/* Logo in menu header */
+.menu_logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.menu_logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Remove old MENU text */
+.hamburger_menu_content::before {
+    display: none;
+}
+
+/* Menu Items */
 .hamburger_menu ul {
     list-style: none;
     padding: 0;
@@ -169,45 +263,249 @@ body {
 }
 
 .hamburger_menu ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
 }
 
-.hamburger_menu ul li a {
+.hamburger_menu ul li:last-child {
+    border-bottom: none;
+}
+
+/* Main Menu Links */
+.hamburger_menu ul li > a {
     color: #333;
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-.hamburger_menu ul li a:hover {
-    background: #f8f8f8;
+.hamburger_menu ul li > a:hover {
+    background: linear-gradient(90deg, #007bff08 0%, transparent 100%);
     color: #007bff;
+    padding-left: 25px;
 }
 
-/* Submenu styling for mobile */
+.hamburger_menu ul li > a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #007bff;
+    transition: width 0.3s ease;
+}
+
+.hamburger_menu ul li > a:hover::before {
+    width: 4px;
+}
+
+/* Submenu Toggle Icon - Default DOWN arrow */
+.submenu-toggle i {
+    transition: transform 0.3s ease;
+    font-size: 12px;
+    margin-left: 10px !important;
+    transform: rotate(0deg); /* Default down arrow */
+}
+
+/* When submenu is open, arrow stays DOWN (no rotation) */
+.submenu-toggle.active i {
+    transform: rotate(0deg); /* Keep arrow pointing down */
+}
+
+/* Alternative: If you want arrow to point UP when open, use this instead */
+/*
+.submenu-toggle.active i {
+    transform: rotate(180deg);
+}
+*/
+
+/* Submenu Styling */
 .hamburger_menu .submenu {
     display: none;
-    position: relative;
-    width: 100%;
-    box-shadow: none;
-    padding: 0;
+    background: #f8f9fa;
+    border-left: 3px solid #007bff;
     margin: 0;
+    padding: 0;
+    animation: slideDown 0.3s ease;
 }
 
 .hamburger_menu .submenu.show {
     display: block;
 }
 
-.hamburger_menu .has-submenu .submenu {
-    left: 0;
-    margin-left: 0;
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+/* First Level Submenu */
 .hamburger_menu .submenu li {
-    padding: 10px 10px 10px 20px;
+    border-bottom: 1px solid #e9ecef;
 }
 
+.hamburger_menu .submenu li:last-child {
+    border-bottom: none;
+}
 
+.hamburger_menu .submenu li > a {
+    padding: 12px 20px 12px 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    position: relative;
+}
+
+.hamburger_menu .submenu li > a:hover {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding-left: 45px;
+}
+
+.hamburger_menu .submenu li > a::before {
+    content: '→';
+    position: absolute;
+    left: 25px;
+    color: #007bff;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.hamburger_menu .submenu li > a:hover::before {
+    opacity: 1;
+    left: 28px;
+}
+
+/* Second Level Submenu */
+.hamburger_menu .submenu .submenu {
+    background: #ffffff;
+    border-left: 3px solid #28a745;
+    margin-left: 15px;
+}
+
+.hamburger_menu .submenu .submenu li > a {
+    padding: 10px 20px 10px 50px;
+    font-size: 13px;
+    color: #666;
+}
+
+.hamburger_menu .submenu .submenu li > a:hover {
+    background: #e8f5e8;
+    color: #28a745;
+    padding-left: 55px;
+}
+
+.hamburger_menu .submenu .submenu li > a::before {
+    content: '•';
+    left: 35px;
+    color: #28a745;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger_container {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav_container {
+        display: none !important;
+    }
+    
+    .search-box {
+        display: none !important;
+    }
+    
+    /* Header adjustments for mobile */
+    .header {
+        padding: 10px 0;
+    }
+    
+    .header .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hamburger_menu {
+        width: 100vw;
+        left: -100vw;
+    }
+    
+    .hamburger_menu.show::after {
+        display: none;
+    }
+}
+
+/* Smooth scrolling for menu */
+.hamburger_menu {
+    scroll-behavior: smooth;
+}
+
+.hamburger_menu::-webkit-scrollbar {
+    width: 4px;
+}
+
+.hamburger_menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.hamburger_menu::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.hamburger_menu::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
+
+/* Loading animation */
+.hamburger_menu.show {
+    animation: slideInLeft 0.3s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Focus styles for accessibility */
+.hamburger_container:focus,
+.hamburger_close:focus,
+.hamburger_menu a:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Active menu item */
+.hamburger_menu ul li.active > a {
+    background: linear-gradient(90deg, #007bff15 0%, transparent 100%);
+    color: #007bff;
+    font-weight: 600;
+}
+
+.hamburger_menu ul li.active > a::before {
+    width: 4px;
+}
 .header-top {
     background: #f8f8f8;
     font-size: 14px;

@@ -20,42 +20,49 @@
   <h2 class="ds-title">DÒNG SẢN PHẨM</h2>
   <p class="ds-subtitle">Đáp ứng đa dạng nhu cầu, mạnh mẽ, bền bỉ</p>
 
- <section class="ds-grid">
-  <!-- Card đơn giản -->
+<section class="ds-grid">
+  <!-- Card Office -->
   <article class="ds-card">
     <div class="ds-media">
-      <a href="link-to-page.html" class="ds-link">
-        <img src="../image/1.png" alt="Office">
+      <a href="office.php" class="ds-link">
+        <img src="../image/gaming.png" alt="Office">
         <span class="ds-cta">KHÁM PHÁ NGAY</span>
       </a>
     </div>
+  </article>
+  <!-- Card Server -->
+  <article class="ds-card">
+    <div class="ds-media">
+      <a href="server.php" class="ds-link">
+        <img src="../image/gaming.png" alt="Server">
+        <span class="ds-cta">KHÁM PHÁ NGAY</span>
+      </a>
+    </div>
+   
   </article>
 
-    <article class="ds-card">
+  <!-- Card Gaming -->
+  <article class="ds-card">
     <div class="ds-media">
-      <a href="link-to-page.html" class="ds-link">
-        <img src="../image/1.png" alt="Office">
+      <a href="gaming.php" class="ds-link">
+        <img src="../image/gaming.png" alt="Gaming">
         <span class="ds-cta">KHÁM PHÁ NGAY</span>
       </a>
     </div>
+   
   </article>
 
-    <article class="ds-card">
+  <!-- Card Mini PC -->
+  <article class="ds-card">
     <div class="ds-media">
-      <a href="link-to-page.html" class="ds-link">
-        <img src="../image/1.png" alt="Office">
+      <a href="minipc.php" class="ds-link">
+        <img src="../image/minipc.png" alt="Mini PC">
         <span class="ds-cta">KHÁM PHÁ NGAY</span>
       </a>
     </div>
+ 
   </article>
-    <article class="ds-card">
-    <div class="ds-media">
-      <a href="link-to-page.html" class="ds-link">
-        <img src="../image/1.png" alt="Office">
-        <span class="ds-cta">KHÁM PHÁ NGAY</span>
-      </a>
-    </div>
-  </article>
+</section>
 </section>
     
 <section class="product-section">

@@ -5,13 +5,28 @@
 <link rel="stylesheet" href="../style/sanpham.css">
 
 <!-- Banner -->
-<div class="banner">
-    <div class="row">
-        <div class="hero-section">
-            <img src="../image/banner_sp_1.png" alt="Banner" class="hero-image">
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Các dấu chấm -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../image/banner_sp_1.png" class="d-block w-100" alt="Banner 1">
+        </div>
+        <div class="carousel-item">
+            <img src="../image/Backtoschool.jpg" class="d-block w-100" alt="Banner 2">
+        </div>
+        <div class="carousel-item">
+            <img src="../image/banner_sp_3.png" class="d-block w-100" alt="Banner 3">
         </div>
     </div>
 </div>
+
 
 <!-- Title -->
 

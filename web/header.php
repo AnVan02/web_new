@@ -13,6 +13,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <link rel="icon" href="/assets/images/rosa-icon.png" type="rosacomputer">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="../style/header.css">
@@ -60,6 +65,7 @@
                 <input type="text" name="q" placeholder="Tìm kiếm">
             </form>
 
+
             <!-- 3 GẠCH TRÊN PHONE -->
             <div class="hamburger_container d-md-none">
                 <i class="fa fa-bars"></i>
@@ -67,41 +73,45 @@
         </div>
     </header>
 
-    <!-- Mobile Menu -->
+<!-- Mobile Menu -->
     <div class="hamburger_menu">
         <div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+        
+        <!-- Logo trong menu -->
+        <div class="menu_logo">
+            <img src="../image/rosa.png" alt="ROSA Logo">
+        </div>
+        
         <div class="hamburger_menu_content">
             <ul class="menu_top_nav">
                 <li><a href="">Sản phẩm</a></li>
                 <li class="has-submenu">
-                    <a href="javascript:void(0)" class="submenu-toggle">Giải pháp AI <i class="fas fa-chevron-down" style="margin-left: 15px"></i></a>
+                    <a href="javascript:void(0)" class="submenu-toggle">Giải pháp AI <i class="fas fa-chevron-down"></i></a>
                     <ul class="submenu">
                         <li class="has-submenu">
-                            <a href="javascript:void(0)" class="submenu-toggle">KHOÁ HỌC AI<i class="fas fa-chevron-down" style="margin-left: 15px"></i></a>
+                            <a href="javascript:void(0)" class="submenu-toggle">KHÓA HỌC AI <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu">
                                 <li><a href="/ROSA-SW.php">ỨNG DỤNG ROSA</a></li>
                                 <li><a href="/courses/python-course.php">PYTHON CƠ BẢN</a></li>
                                 <li><a href="/courses/yolo-course.php">THỊ GIÁC MÁY TÍNH</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                            </ul>
+                        </li>
                         <li class="has-submenu">
-                            <a href="javascript:void(0)" class="submenu-toggle">SMB<i class="fas fa-chevron-down" style="margin-left:15px"></i></a>
+                            <a href="javascript:void(0)" class="submenu-toggle">SMB <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu">
-                                <li><a href="/courses/Assitant.php">CHATBOX AI</a></li>
+                                <li><a href="/courses/Assitant.php">CHATBOT AI</a></li>
                                 <li><a href="/courses/AIchamcong.php">CHẤM CÔNG CAMERA AI</a></li>
-                                <li><a href="/courses/Nextcloud.php">NEXTCLOUND</a></li>
+                                <li><a href="/courses/Nextcloud.php">NEXTCLOUD</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-
+                <li><a href="">Chương trình</a></li>
                 <li><a href="/tintuc_test/template.php">Tin tức</a></li>
                 <li><a href="/baohanh.php">Bảo hành</a></li>
                 <li><a href="/check.php">Đơn hàng</a></li>
             </ul>
         </div>
     </div>
-
-</body>
+    </body>
 </html>

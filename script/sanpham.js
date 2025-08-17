@@ -9,3 +9,20 @@ function showCategory(category) {
 document.addEventListener("DOMContentLoaded", () => {
     showCategory('vanphong');
 });
+
+// banner
+const images = document.querySelectorAll('.hero-section .hero-image');
+let currentIndex = 0;
+
+function showNextImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+
+    // tạo delay ngẫu nhiên từ 1 đến 5 giây
+    const randomDelay = Math.floor(Math.random() * 2000) + 1000;
+    setTimeout(showNextImage, randomDelay);
+}
+
+// chạy lần đầu
+setTimeout(showNextImage, 1000);
