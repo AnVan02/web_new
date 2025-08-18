@@ -20,51 +20,40 @@
   <h2 class="ds-title">DÒNG SẢN PHẨM</h2>
   <p class="ds-subtitle">Đáp ứng đa dạng nhu cầu, mạnh mẽ, bền bỉ</p>
 
-<section class="ds-grid">
-  <!-- Card Office -->
-  <article class="ds-card">
-    <div class="ds-media">
-      <a href="office.php" class="ds-link">
-        <img src="../image/gaming.png" alt="Office">
-        <span class="ds-cta">KHÁM PHÁ NGAY</span>
-      </a>
-    </div>
-  </article>
-  <!-- Card Server -->
-  <article class="ds-card">
-    <div class="ds-media">
-      <a href="server.php" class="ds-link">
-        <img src="../image/gaming.png" alt="Server">
-        <span class="ds-cta">KHÁM PHÁ NGAY</span>
-      </a>
-    </div>
-   
-  </article>
+  <div class="ds-grid">
+    <!-- Office -->
+    <article class="ds-card">
+      <div class="ds-image-wrapper">
+        <img src="../AI.png" alt="Office PC" class="ds-image" />
+      </div>
+    </article>
 
-  <!-- Card Gaming -->
-  <article class="ds-card">
-    <div class="ds-media">
-      <a href="gaming.php" class="ds-link">
-        <img src="../image/gaming.png" alt="Gaming">
-        <span class="ds-cta">KHÁM PHÁ NGAY</span>
-      </a>
-    </div>
-   
-  </article>
+    <!-- AI -->
+    <article class="ds-card">
+      <div class="ds-image-wrapper">
+        <img src="../ai.png" alt="AI PC" class="ds-image" />
+      </div>
+    </article>
 
-  <!-- Card Mini PC -->
-  <article class="ds-card">
-    <div class="ds-media">
-      <a href="minipc.php" class="ds-link">
-        <img src="../image/minipc.png" alt="Mini PC">
-        <span class="ds-cta">KHÁM PHÁ NGAY</span>
-      </a>
-    </div>
- 
-  </article>
+    <!-- Gaming -->
+    <article class="ds-card">
+      <div class="ds-image-wrapper">
+        <img src="../gaming.png" alt="Gaming PC" class="ds-image" />
+      </div>
+    </article>
+
+    <!-- Mini PC -->
+    <article class="ds-card">
+      <div class="ds-image-wrapper">
+        <img src="../ai.png" alt="Mini PC" class="ds-image" />
+      </div>
+    </article>
+  </div>
 </section>
-</section>
-    
+
+
+
+
 <section class="product-section">
     <h2>GIẢI PHÁP AI</h2>
     <p>Giải pháp toàn diện cho công việc và cuộc sống</p>

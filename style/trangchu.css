@@ -79,91 +79,124 @@ body {
     color: #666;
 }
 
-/* ==== Tổng quan sản phẩm ==== */
+/* Styling chung */
 .ds-section {
-    font-family: 'Montserrat', sans-serif;
-    padding: 36px 16px;
-    background: #fff;
-}
-
-.ds-title {
-    margin: 0 0 6px;
-    text-align: center;
-    font-size: 22px;
-    letter-spacing: .6px;
-    font-weight: 800;
-    color: #3a3a3a;
-}
-
-.ds-subtitle {
-    text-align: center;
-    margin: 0 0 26px;
-    color: #8a8a8a;
-    font-size: 15px;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  text-align: center;
 }
 
 .ds-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .ds-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 320px; /* Chiều cao cố định cho mọi ô */
+  padding: 10px;
+  background: transparent;
   text-align: center;
-  padding: 15px;
+  box-sizing: border-box;
 }
 
-.ds-media {
-  position: relative;
-  height: 250px; /* tăng chiều cao khung ảnh (có thể chỉnh 250-300px tuỳ bạn) */
-  overflow: hidden;
+.ds-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
-.ds-media img {
+.ds-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #222;
+}
+
+.ds-desc {
+  font-size: 14px;
+  color: #555;
+  margin: 6px 0;
+  max-height: 40px; /* Giới hạn chiều cao mô tả */
+  overflow: hidden;
+}
+
+.ds-warranty {
+  font-size: 13px;
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+.ds-desc {
+  font-size: 14px;
+  color: #555;
+  margin: 6px 0;
+}
+
+.ds-warranty {
+  font-size: 13px;
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+.ds-desc {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+}
+
+.ds-warranty {
+  font-size: 13px;
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+  
+.ds-image-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  margin: 0;
+}
+
+.ds-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* để ảnh tự co phóng to mà không méo */
-  border-radius: 8px;
-}
-
-.ds-cta {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #6c4c43;
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 25px;
-  font-weight: bold;
+  object-fit: cover;
+  display: block;
+  margin: 0;
 }
 
 .ds-info {
-  margin-top: 12px;
+  padding: 8px 12px;
+  text-align: left;
+  margin: 0;
 }
 
 .ds-info h3 {
   font-size: 18px;
-  font-weight: bold;
-  margin: 5px 0;
+  margin: 0 0 4px;
 }
 
 .ds-info p {
   font-size: 14px;
-  color: #666;
-  margin: 5px 0;
+  color: #555;
+  margin: 0 0 6px;
 }
 
 .ds-warranty {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   color: #999;
-  display: block;
-  margin-top: 8px;
+  margin: 0;
 }
 
 /* ==== AI Solution ==== */
