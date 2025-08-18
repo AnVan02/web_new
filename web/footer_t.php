@@ -172,13 +172,13 @@
 
         <div id="chatbot-popup"
             style="display:none; position: fixed; bottom: 5px; right: 10px; 
-                    width: 90vw; max-width: 490px;
-                    height: 80vh; max-height: 650px;
+                    width: 90vw; max-width: 880px;
+                    height: 80vh; max-height: 600px;
                     border: 1px solid #ccc; background: #fff;
+                    z-index: 999999999 !important;
                     position: fixed !important;
                     box-shadow: 0 4px 16px rgba(0,0,0,0.2);
                     border-radius: 8px; overflow: hidden;">
-                    
             <!-- HEADER CỐ ĐỊNH -->
             <div style="background: #eee; padding: 5px; text-align: right; height: 45px; z-index: 999999999 !important;">
                 <button onclick="window.open('https://server1.rosachatbot.com/longbinh', '_blank')" style="margin-right: 10px; border: none;">⛶</button>
@@ -186,12 +186,11 @@
             </div>
             <!-- IFRAME CHIẾM PHẦN CÒN LẠI -->
             <div style="height:calc(100% - 45px); overflow:hidden; z-index: 999999999 !important;">
-                <iframe src="https://server1.rosachatbot.com/longbinh" 
+                <iframe src="https://server1.rosachatbot.com/longbinh"
                         scrolling="yes"
                         style="border:none; width:100%; height:100%; z-index: 999999999 !important;"></iframe>
             </div>
         </div>
-
         <!-- zalo, facebook -->
             <a href="https://zalo.me/909749126673606301" target="_blank">
                 <img width="48" height="48" src="https://img.icons8.com/color/48/zalo.png" alt="zalo"/>
@@ -201,6 +200,8 @@
                 <img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/>    
             </a>
         </div>
+    
+
 
     <!-- link css  -->
     <link rel="stylesheet" href="../style/footer.css">

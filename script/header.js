@@ -66,3 +66,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+// === header trên phone ==
+$(document).ready(function () {
+    $('.hamburger_container').on('click', function () {
+        $('.hamburger_menu').addClass('active');
+    });
+
+    $('.hamburger_close').on('click', function () {
+        $('.hamburger_menu').removeClass('active');
+    });
+});

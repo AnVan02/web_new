@@ -6,13 +6,11 @@
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    /* background-color: #fff; */
     color: #1C1D1D;
 }
-
 
 .ai_solution,
 .news-container,
@@ -23,17 +21,10 @@ body {
     padding: 20px;
 }
 
-/* ===== HEADER ======= */
+/* ===== HEADER & BANNER ======= */
 .banner {
     width: 100%;
 }
-
-.hero-section {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
 
 .hero-section {
     position: relative;
@@ -55,6 +46,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
+    padding: 0 20px;
 }
 
 .hero-text h2 {
@@ -87,112 +79,166 @@ body {
     color: #666;
 }
 
-/* ==== Tổng quan sản phẩm ==== */
-.ds-section {
-    font-family: 'Montserrat';
-    padding: 36px 16px;
-    background: #fff
+/* Áp dụng cho các phần tử cụ thể trong trường hợp có lớp cha */
+.container,
+.grid,
+.card,
+img.large,
+img.small {
+    /* background: none !important; */
+    background-color: transparent !important;
+
 }
 
-
-.ds-title {
-    margin: 0 0 6px;
-    text-align: center;
-    font-size: 22px;
-    letter-spacing: .6px;
-    font-weight: 800;
-    color: #3a3a3a
+.container img,
+.grid img,
+.card img {
+    /* background: none !important; */
+    background-color: transparent !important;
 }
 
-.ds-subtitle {
-    text-align: center;
-    margin: 0 0 26px;
-    color: #8a8a8a;
-    font-size: 15px
+.small {
+    display: block;
 }
 
-.ds-grid {
+.pList-logo-sec ul1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+
+}
+
+.pList-logo-sec li {
+    display: flex;
+    align-items: center;
+}
+
+.pList-logo-sec img {
+    width: 50px;
+    /* Điều chỉnh kích thước logo */
+    height: auto;
+    /* Giữ nguyên tỷ lệ */
+    transition: transform 0.3s ease-in-out;
+}
+
+.pList-logo-sec img:hover {
+    transform: scale(1.1);
+    /* Hiệu ứng phóng to khi hover */
+}
+
+span:before {
+    content: '';
+    top: 50%;
+    width: 39%;
+    height: 1px;
+    background: rgba(59, 58, 58, 0.2);
+}
+
+.ul1 {
+    display: flex;
+    /* layout khoang cách icon */
+    gap: 50px;
+    /* khoảng cách icon */
+    list-style: none;
+    /* Removes bullet points */
+    padding: 0;
+    justify-content: center;
+    /* Centers the icons horizontally */
+    vertical-align: inherit;
+}
+
+.li1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* có thể dùng 4 nếu đủ không gian */
     gap: 20px;
-    padding: 20px;
+    /*padding: 50px;*/
 }
 
-.ds-card {
-    border-radius: 12px;
+.card {
+    position: relative;
+    background: #d50000;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    position: relative;
 }
 
-.ds-media {
-    position: relative;
+.card img.large {
     width: 100%;
-    overflow: hidden;
-    border-radius: 12px;
+    border-radius: 10px;
+    filter: brightness(100%) blur(3px);
+    /* Làm tối và mờ nền */
 }
 
-.ds-media img {
-    width: 130%;
-    display: block;
-    border-radius: 12px;
-}
-
-.ds-link {
-    position: relative;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-}
-
-.ds-cta {
+.card img.small {
     position: absolute;
-    bottom: 16px;
+    /* bottom: 180px; */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #6a4c49;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 13px;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    width: 50%;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+    background: white;
+    padding: 1px;
 }
 
+.card h3 {
+    margin: 60px 0 10px;
+}
 
-/* Responsive */
-@media (max-width:780px) {
-    .ds-grid {
-        grid-template-columns: 1fr
-    }
-
-    .ds-media img {
-        height: 220px
-    }
+.btn {
+    display: block;
+    text-align: center;
+    padding: 20px 15px;
+    background: #D50000;
+    /* Đỏ đậm */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
 }
 
 /* ==== AI Solution ==== */
 .ai_solution {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .ai_solution .card {
     flex: 1;
+    min-width: 300px;
     text-align: center;
     border: none;
-    /* Bỏ khung */
     box-shadow: none;
-    /* Bỏ đổ bóng nếu có */
 }
 
 .ai_solution .card img {
-    width: 405px;
-    /* Phóng to ảnh */
+    width: 100%;
+    max-width: 405px;
     height: auto;
     border: none;
-    /* Bỏ viền ảnh */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.ai_solution .card img:hover {
+    transform: scale(1.02);
 }
 
 /* ===== Banner Python ===== */
@@ -205,6 +251,7 @@ body {
     z-index: 10;
     color: white;
     width: 100%;
+    padding: 0 20px;
 }
 
 .button-style {
@@ -218,35 +265,46 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-style:hover {
+    background-color: white;
+    color: #333;
 }
 
 /* ===== Tin tức ===== */
 .news-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
 }
 
 .news-card {
-    /* border: 1px solid #ddd; */
     border-radius: 10px;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .news-card img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-/* .news-content {
-    text-align: center;
-} */
+.news-content {
+    flex-grow: 1;
+}
 
 .news-tag {
     font-size: 14px;
@@ -259,6 +317,9 @@ body {
     color: #333;
     font-weight: 700;
     font-size: 18px;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .news-title a:hover {
@@ -271,8 +332,12 @@ body {
     margin: 0.5em 0;
 }
 
-/* ==== Câu hỏi thường gặp ==== */
+.desc {
+    color: #555;
+    line-height: 1.6;
+}
 
+/* ==== Câu hỏi thường gặp ==== */
 .faq-container {
     background-color: white;
     border-radius: 8px;
@@ -288,20 +353,22 @@ body {
 }
 
 .faq-button {
-    padding: 8px 16px;
+    padding: 10px 18px;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: #f0f0f0;
     color: #A60606;
-    font-size: 13px;
+    font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .faq-button.active,
 .faq-button:hover {
     background-color: #A60606;
     color: white;
+    transform: translateY(-1px);
 }
 
 .faq-content {
@@ -311,6 +378,8 @@ body {
 .faq-item {
     display: none;
     margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
 }
 
 .faq-item.active {
@@ -321,14 +390,23 @@ body {
     font-weight: 600;
     color: #7F3131;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f9f9f9;
+    padding-left: 10px;
 }
 
 .faq-answer {
     color: #000000;
     line-height: 1.6;
     font-size: 16px;
-    padding-left: 10px;
+    padding-left: 15px;
     display: none;
 }
 
@@ -358,29 +436,219 @@ body {
     text-decoration: underline;
 }
 
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet - Medium devices */
+@media (max-width: 1024px) {
+
+    .ai_solution,
+    .news-container,
+    .container,
+    .faq-container {
+        padding: 15px;
+    }
+
+    .hero-text h2 {
+        font-size: 42px;
+    }
+
+    .product-section h2 {
+        font-size: 36px;
+    }
+
+    .ai_solution .card {
+        min-width: 250px;
+    }
+}
+
+/* Mobile - Small devices */
 @media (max-width: 768px) {
+
+    .ai_solution,
+    .news-container,
+    .container,
+    .faq-container {
+        padding: 10px;
+    }
+
+    /* Hero Section Mobile */
     .hero-section {
         height: 300px;
     }
 
     .hero-text h2 {
-        font-size: 30px;
+        font-size: 28px;
+        margin-bottom: 10px;
     }
 
     .hero-text p {
         font-size: 14px;
     }
 
-    .product-section h2 {
-        font-size: 30px;
+    /* Product Section Mobile */
+    .product-section {
+        padding: 30px 15px;
     }
 
+    .product-section h2 {
+        font-size: 28px;
+    }
+
+    .product-section p {
+        font-size: 14px;
+    }
+
+    /* Grid Mobile */
+    .ds-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .ds-media img {
+        height: auto;
+    }
+
+    .ds-cta {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    /* AI Solution Mobile */
+    .ai_solution {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .ai_solution .card {
+        min-width: 100%;
+    }
+
+    /* News Mobile */
+    .news-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .news-card img {
+        height: 180px;
+    }
+
+    .news-title a {
+        font-size: 16px;
+    }
+
+    /* FAQ Mobile */
     .faq-buttons {
         justify-content: flex-start;
+        gap: 8px;
     }
 
     .faq-button {
         font-size: 12px;
-        padding: 6px 12px;
+        padding: 8px 14px;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    /* Button Mobile */
+    .button-style {
+        font-size: 14px;
+        padding: 6px 16px;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 480px) {
+
+    .ai_solution,
+    .news-container,
+    .container,
+    .faq-container {
+        padding: 8px;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 12px;
+    }
+
+    .product-section h2 {
+        font-size: 24px;
+    }
+
+    .ds-title {
+        font-size: 20px;
+    }
+
+    .ds-subtitle {
+        font-size: 14px;
+    }
+
+    .news-card img {
+        height: 150px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+    }
+
+    .faq-answer {
+        font-size: 13px;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 12px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+
+    .ds-cta,
+    .faq-button,
+    .button-style {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .faq-question {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+    .hero-image,
+    .news-card img,
+    .ai_solution .card img {
+        image-rendering: -webkit-optimize-contrast;
     }
 }

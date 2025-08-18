@@ -8,12 +8,13 @@
                 <div class="carousel-inner position-relative"> <!-- Thêm position-relative để chứa phần tuyệt đối -->
 
                     <div class="carousel-item active">
-                        <img src="../image/banner_chatbot.png" alt="Banner" class="hero-image">                    
+                        <img src="../new/bannwe-SW.png" class="img-fluid" alt="python" onclick="window.location.href='product.php#gaming'">
                     </div>
 
                     <div class="hero-text">
-                        <h2>CHẤM CÔNG CAMERA AI</h2>
-                        <p>ROSA - AI Ready là thương hiệu tiên phong giải pháp chấm công truyền thống bằng IP Camera AI, mang đến sự tiết kiệm, nhanh chóng, chính xác cho doanh nghiệp</p>
+                        <button class="button-style">ỨNG DỤNG</button>
+                        <h2>KHOÁ HỌC ROSA</h2>
+                        <p>Khai mở máy tính thành bệ phóng sự nghiệp của bạn</p>
                     </div>
 
                     <!-- Bạn có thể thêm nhiều carousel-item khác ở đây -->

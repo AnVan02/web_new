@@ -1,4 +1,22 @@
-// Xử lý click các nút category
+//=== banner ====
+const images = document.querySelectorAll('.hero-section .hero-image');
+let currentIndex = 0;
+
+function showNextImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+
+    // tạo delay ngẫu nhiên từ 1 đến 5 giây
+    const randomDelay = Math.floor(Math.random() * 2000) + 1000;
+    setTimeout(showNextImage, randomDelay);
+}
+
+// chạy lần đầu
+setTimeout(showNextImage, 1000);
+
+
+// === Xử lý click các nút category ===
 document.querySelectorAll('.faq-button').forEach(button => {
     button.addEventListener('click', () => {
         // Remove active class from all buttons
@@ -39,7 +57,7 @@ document.querySelectorAll('.faq-button').forEach(button => {
     });
 });
 
-// Xử lý click các câu hỏi để hiển thị/ẩn câu trả lời
+// ==== Xử lý click các câu hỏi để hiển thị/ẩn câu trả lời ===
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
         const answer = question.nextElementSibling;

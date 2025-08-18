@@ -20,46 +20,26 @@
   <h2 class="ds-title">DÒNG SẢN PHẨM</h2>
   <p class="ds-subtitle">Đáp ứng đa dạng nhu cầu, mạnh mẽ, bền bỉ</p>
 
- <section class="ds-grid">
-  <!-- Card đơn giản -->
-  <article class="ds-card">
-    <div class="ds-media">
-      <a href="link-to-page.html" class="ds-link">
-        <img src="../image/1.png" alt="Office">
-        <span class="ds-cta">KHÁM PHÁ NGAY</span>
-      </a>
-    </div>
-  </article>
+<div class="container">
+        <div class="grid">
+            <div class="card">
+               <a href="product.php#vanphong"><img src="../images/office.png" alt="Background" class="large" style="width:417px; bottom:258px; height:120px"></a>
+            </div>
 
-    <article class="ds-card">
-    <div class="ds-media">
-      <a href="link-to-page.html" class="ds-link">
-        <img src="../image/1.png" alt="Office">
-        <span class="ds-cta">KHÁM PHÁ NGAY</span>
-      </a>
-    </div>
-  </article>
+            <div class="card">
+                <a href="product.php#ai"><img src="images/AI_111.png" alt="Background" class="large"></a>
+            </div>
 
-    <article class="ds-card">
-    <div class="ds-media">
-      <a href="link-to-page.html" class="ds-link">
-        <img src="../image/1.png" alt="Office">
-        <span class="ds-cta">KHÁM PHÁ NGAY</span>
-      </a>
-    </div>
-  </article>
+            <div class="card">
+               <a href="product.php#gaming"><img src="images/Gaming.png" alt="Background" class="large" style="width:417px; bottom:258px; height:120px"></a>
+            </div>
 
-  
-    <article class="ds-card">
-    <div class="ds-media">
-      <a href="link-to-page.html" class="ds-link">
-        <img src="../image/1.png" alt="Office">
-        <span class="ds-cta">KHÁM PHÁ NGAY</span>
-      </a>
+            <div class="card">
+                <a href="product.php#mini"><img src="images/minipc.png" alt="Background" class="large" style="width:417px; bottom:258px; height:120px"></a>
+            </div>
+        </div>
     </div>
-  </article>
-</section>
-    
+
 <section class="product-section">
     <h2>GIẢI PHÁP AI</h2>
     <p>Giải pháp toàn diện cho công việc và cuộc sống</p>
