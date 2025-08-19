@@ -61,143 +61,70 @@ body {
 }
 
 /* ====== Title ===== */
-.product-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #fff;
-}
-
-.product-section h2 {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #1C1D1D;
-}
-
-.product-section p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Styling chung */
 .ds-section {
-  padding: 0;
-  margin: 0;
-  background-color: #fff;
   text-align: center;
+  padding: 50px 20px;
 }
+
+.ds-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ds-subtitle {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #555;
+}
+.ds-item {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.ds-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; /* bo góc nếu muốn */
+}
+
+.ds-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;  /* ép về hình vuông */
+    object-fit: cover;    /* cắt giữa ảnh, không méo */
+    border-radius: 10px;  /* bo góc nhẹ (nếu muốn) */
+}
+
 
 .ds-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  max-width: 800px;
+  grid-template-columns: repeat(2, 1fr); /* 2 cột */
+  gap: 30px; /* khoảng cách giữa các khối */
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.ds-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 320px; /* Chiều cao cố định cho mọi ô */
-  padding: 10px;
-  background: transparent;
-  text-align: center;
-  box-sizing: border-box;
+
+.ds-item:hover {
+  transform: translateY(-5px);
 }
 
-.ds-image {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.ds-card-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
-  color: #222;
-}
-
-.ds-desc {
-  font-size: 14px;
-  color: #555;
-  margin: 6px 0;
-  max-height: 40px; /* Giới hạn chiều cao mô tả */
-  overflow: hidden;
-}
-
-.ds-warranty {
-  font-size: 13px;
-  color: #d32f2f;
+.btn-discover {
+  position: absolute;
+  bottom: 15px; /* cách đáy ảnh */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6); /* nền mờ */
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 20px;
+  text-decoration: none;
   font-weight: 600;
+  transition: 0.3s;
 }
 
-.ds-desc {
-  font-size: 14px;
-  color: #555;
-  margin: 6px 0;
-}
-
-.ds-warranty {
-  font-size: 13px;
-  color: #d32f2f;
-  font-weight: 600;
-}
-
-.ds-desc {
-  font-size: 14px;
-  color: #555;
-  margin: 4px 0;
-}
-
-.ds-warranty {
-  font-size: 13px;
-  color: #d32f2f;
-  font-weight: 600;
-}
-
-  
-.ds-image-wrapper {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  margin: 0;
-}
-
-.ds-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  margin: 0;
-}
-
-.ds-info {
-  padding: 8px 12px;
-  text-align: left;
-  margin: 0;
-}
-
-.ds-info h3 {
-  font-size: 18px;
-  margin: 0 0 4px;
-}
-
-.ds-info p {
-  font-size: 14px;
-  color: #555;
-  margin: 0 0 6px;
-}
-
-.ds-warranty {
-  font-size: 13px;
-  font-weight: bold;
-  color: #999;
-  margin: 0;
-}
 
 /* ==== AI Solution ==== */
 .ai_solution {

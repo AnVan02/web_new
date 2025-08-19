@@ -20,38 +20,32 @@
   <h2 class="ds-title">DÒNG SẢN PHẨM</h2>
   <p class="ds-subtitle">Đáp ứng đa dạng nhu cầu, mạnh mẽ, bền bỉ</p>
 
-  <div class="ds-grid">
-    <!-- Office -->
-    <article class="ds-card">
-      <div class="ds-image-wrapper">
-        <img src="../AI.png" alt="Office PC" class="ds-image" />
-      </div>
-    </article>
-
-    <!-- AI -->
-    <article class="ds-card">
-      <div class="ds-image-wrapper">
-        <img src="../ai.png" alt="AI PC" class="ds-image" />
-      </div>
-    </article>
-
-    <!-- Gaming -->
-    <article class="ds-card">
-      <div class="ds-image-wrapper">
-        <img src="../gaming.png" alt="Gaming PC" class="ds-image" />
-      </div>
-    </article>
-
-    <!-- Mini PC -->
-    <article class="ds-card">
-      <div class="ds-image-wrapper">
-        <img src="../ai.png" alt="Mini PC" class="ds-image" />
-      </div>
-    </article>
+  <!-- Section: Dòng sản phẩm -->
+<div class="ds-grid">
+  <!-- Office -->
+  <div class="ds-item">
+    <img src="../office.png" alt="Office PC">
+    <a href="office.html" class="btn-discover">Khám phá ngay</a>
   </div>
-</section>
 
+  <!-- AI -->
+  <div class="ds-item">
+    <img src="../Group 197.png" alt="AI PC">
+    <a href="ai.html" class="btn-discover">Khám phá ngay</a>
+  </div>
 
+  <!-- Gaming -->
+  <div class="ds-item">
+    <img src="../gaming.png" alt="Gaming PC">
+    <a href="gaming.html" class="btn-discover">Khám phá ngay</a>
+  </div>
+
+  <!-- Mini PC -->
+  <div class="ds-item">
+    <img src="../mini.png" alt="Mini PC">
+    <a href="mini.html" class="btn-discover">Khám phá ngay</a>
+  </div>
+</div>
 
 
 <section class="product-section">
