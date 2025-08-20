@@ -1,6 +1,5 @@
-/* ==== Base Styles ==== */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-size: 16px;
     line-height: 1.6;
     color: #1C1D1D;
@@ -14,7 +13,7 @@ body {
     margin-bottom: 20px;
 }
 
-.hero-section {
+*/ */ .hero-section {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -35,6 +34,7 @@ body {
     font-size: 2rem;
     text-align: center;
 }
+
 
 /* ==== ảnh nên ==== */
 .why-section {
@@ -158,6 +158,7 @@ body {
 .details {
     padding: 15px;
     text-align: center;
+    background-color: #FFFFFF;
 }
 
 .details h3 {
@@ -208,6 +209,7 @@ body {
 .shop-button:hover {
     background: #a00000;
 }
+
 
 /* ==== Why Rosa Section ==== */
 .why-rosa-wrapper {

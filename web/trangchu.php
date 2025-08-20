@@ -2,64 +2,80 @@
 <link rel="stylesheet" href="../style/trangchu.css">
 
 <!-- Banner -->
+<!-- Banner -->
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
 
-<div class="banner">
-    <div class="row">
-        <div class="hero-section">
-            <img src="../image/banner.png" alt="Banner" class="hero-image">
-            <div class="hero-text">
-                <h2>MÁY TÍNH THƯƠNG HIỆU VIỆT NAM</h2>
-                <p>Tiên phong giải pháp AI và chuyển đổi số</p>
-            </div>
+  <!-- Các dấu chấm -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../image/banner_sp_1.png" class="d-block w-100" alt="Banner 1">
+        </div>
+        <div class="carousel-item">
+            <img src="../image/Backtoschool.jpg" class="d-block w-100" alt="Banner 2">
+        </div>
+        <div class="carousel-item">
+            <img src="../image/banner_sp_3.png" class="d-block w-100" alt="Banner 3">
         </div>
     </div>
 </div>
 
-<!-- Title -->
-<section class="ds-section">
+<!-- cấu trúc sản phẩm -->
+<section class="ai-section">
   <h2 class="ds-title">DÒNG SẢN PHẨM</h2>
   <p class="ds-subtitle">Đáp ứng đa dạng nhu cầu, mạnh mẽ, bền bỉ</p>
 
-<div class="container">
-        <div class="grid">
-            <div class="card">
-               <a href="product.php#vanphong"><img src="../images/office.png" alt="Background" class="large" style="width:417px; bottom:258px; height:120px"></a>
-            </div>
+  <!-- Section: Dòng sản phẩm -->
+<div class="ds-grid">
+  <!-- Office -->
+  <div class="ds-item">
+    <img src="../RSa_office.png" alt="Office PC">
+    <a href="http://localhost/web_new/web/sanpham.php#vanphong" class="btn-discover">Khám phá ngay</a>
+  </div>
 
-            <div class="card">
-                <a href="product.php#ai"><img src="images/AI_111.png" alt="Background" class="large"></a>
-            </div>
+  <!-- AI -->
+  <div class="ds-item">
+    <img src="../RSa_ai.png" alt="AI PC">
+    <a href="http://localhost/web_new/web/sanpham.php#ai" class="btn-discover">Khám phá ngay</a>
+  </div>
 
-            <div class="card">
-               <a href="product.php#gaming"><img src="images/Gaming.png" alt="Background" class="large" style="width:417px; bottom:258px; height:120px"></a>
-            </div>
+  <!-- Gaming -->
+  <div class="ds-item">
+    <img src="../RSa_gaming.png" alt="Gaming PC">
+    <a href="http://localhost/web_new/web/sanpham.php#gaming" class="btn-discover">Khám phá ngay</a>
+  </div>
 
-            <div class="card">
-                <a href="product.php#mini"><img src="images/minipc.png" alt="Background" class="large" style="width:417px; bottom:258px; height:120px"></a>
-            </div>
-        </div>
-    </div>
-
-<section class="product-section">
-    <h2>GIẢI PHÁP AI</h2>
-    <p>Giải pháp toàn diện cho công việc và cuộc sống</p>
+  <!-- Mini PC -->
+  <div class="ds-item">
+    <img src="../RSa_minipc.png" alt="Mini PC">
+    <a href="http://localhost/web_new/web/sanpham.php#mini" class="btn-discover">Khám phá ngay</a>
+  </div>
+</div>
+<section class="ai-section">
+    <h2 class="ds-title">GIẢI PHÁP AI</h2>
+    <p class="ds-subtitle">Giải pháp toàn diện cho công việc và cuộc sống</p>
 </section>
 
 <div class="ai_solution">
     <div class="card">
-        <a href="https://example.com/cham-cong-ip-camera">
+        <a href="https://rosacomputer.vn/courses/ChatbotAI.php">
             <img src="../image/botai.png" alt="Chatbot ai">
         </a>
     </div>
 
     <div class="card">
-        <a href="https://example.com/cham-cong-ip-camera">
+        <a href="https://rosacomputer.vn/courses/AIchamcong.php">
             <img src="../image/chamcong.png" alt="Chấm công IP Camera">
         </a>
     </div>
 
     <div class="card">
-        <a href="https://example.com/cham-cong-ip-camera">
+        <a href="https://rosacomputer.vn/courses/Nextcloud.php">
             <img src="../image/nextcloud.png" alt="Chương trình nextclaud">
         </a>
     </div>
@@ -85,9 +101,9 @@
     </div>
 </div>
 
-<section class="product-section">
-    <h2>TIN TỨC</h2>
-    <p>Cập nhật tin tức công nghệ và khuyến mãi</p>
+<section class="ai-section">
+    <h2 class="ds-title">TIN TỨC</h2>
+    <p class="ds-subtitle">Cập nhật tin tức công nghệ và khuyến mãi</p>
 </section>
 
 <div class="news-container">
@@ -115,6 +131,11 @@
         while ($row = $result->fetch_assoc()) {
             echo '<div class="news-card">';
             echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
+            echo '<p class="news-meta">Ngày đăng: ' . htmlspecialchars(date('d/m/Y', strtotime($row['article_date'])), ENT_QUOTES, 'UTF-8');
+            if (isset($row['article_author'])) {
+                echo ' - Tác giả: ' . htmlspecialchars($row['article_author'], ENT_QUOTES, 'UTF-8');
+            }
+            echo '</p>'; // <-- đóng p lại
             echo '<img src="/tintuc_test/admin/modules/blog/uploads/' . htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8') . '" alt="News Image">';
             echo '</a>';
             echo '<div class="news-content">';
@@ -123,27 +144,25 @@
             echo htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8');
             echo '</a>';
             echo '</div>';
-            echo '<p class="news-meta">Ngày đăng: ' . htmlspecialchars(date('d/m/Y', strtotime($row['article_date'])), ENT_QUOTES, 'UTF-8');
-            if (isset($row['article_author'])) {
-                echo ' - Tác giả: ' . htmlspecialchars($row['article_author'], ENT_QUOTES, 'UTF-8');
-            }
             echo '</p>';
-            echo '<p class="desc">' . strip_tags(substr($row['article_content'], 0, 200)) . '</p>';
+            echo '<p class="desc">' . strip_tags(mb_substr($row['article_content'], 0, 300, 'UTF-8')) . '</p>';
             echo '</div>';
             echo '</div>';
         }
     } else {
         echo '<p>Không có tin tức để hiển thị.</p>';
     }
+    
 
     $conn->close();
     ?>
 </div>
 
-<section class="product-section">
-    <h2>CÂU HỎI THƯỜNG GẶP</h2>
-    <p>Xem giải đáp nhanh thắc mắc phổ biến</p>
+<section class="ai-section">
+    <h2 class="ds-title">CÂU HỎI THƯỜNG GẶP</h2>
+    <p class="ds-subtitle">Xem giải đáp nhanh thắc mắc phổ biến</p>
 </section>
+
 
 <div class="faq-container">
     <div class="faq-buttons">
@@ -157,7 +176,6 @@
     <hr>
     
     <div class="faq-content">
-        
         <!-- Tư vấn -->
 
         <div class="faq-item active" data-category="tuvan">

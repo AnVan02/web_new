@@ -1,4 +1,5 @@
 <?php require "header.php" ?>
+
 <?php require "../data/common.php"; ?>
 
 <script src="../script/sanpham.js"></script>
@@ -28,6 +29,7 @@
 </div>
 
 
+
 <!-- Title -->
 
 <div class="computer-section">
@@ -38,15 +40,16 @@
     
 <div class="product-container-custom">
     <!-- Thanh chọn loại sản phẩm -->
-    <div class="category-tabs-wrapper">
-     <div class="category-tabs">
-          <button onclick="showCategory('vanphong')" class="active">Văn phòng</button>
-          <button onclick="showCategory('gaming')">Gaming</button>
-          <button onclick="showCategory('mini')">MiniPC</button>
-          <button onclick="showCategory('ai')">AI</button>
-     </div>
-     </div>
-
+   <div class="category-tabs-wrapper">
+        <div class="category-tabs">
+            <!-- <button id="btn-vanphong" onclick="showCategory('vanphong')" class="active">Văn phòng</button> -->
+            <button id="btn-vanphong" onclick="showCategory('vanphong')">Văn phòng</button>
+            <button id="btn-gaming" onclick="showCategory('gaming')">Gaming</button>
+            <button id="btn-mini" onclick="showCategory('mini')">MiniPC</button>
+            <button id="btn-ai" onclick="showCategory('ai')">AI</button>
+        </div>
+    </div>
+<div id="vanphong"><br>
     <!-- Văn phòng -->
     <div class="product-group vanphong">
         <?php 
@@ -71,6 +74,7 @@
     </div>
     
     <!-- Gaming -->
+    <div id="gaming"><br>
     <div class="product-group gaming">
         <?php 
         $gaming_list = [$rosa_gamer_x3d, $rosa_gamer_1, $rosa_gamer_2,$rosa_gamer_palit1,$rosa_gamer_palit2,$rosa_gamer_palit3];
@@ -93,6 +97,7 @@
         <?php } ?>
     </div>
 
+    <div id="mini">
     <!-- Mini PC -->
     <div class="product-group mini">
         <?php 

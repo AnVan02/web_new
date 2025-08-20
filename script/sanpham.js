@@ -1,3 +1,10 @@
+// phân tưng id cho từng phân tư sản phẩm 
+
+document.getElementById('btn-vanphong').addEventListener('click', function () {
+    alert("ok");
+});
+
+
 function showCategory(category) {
     document.querySelectorAll(".product-group").forEach(g => g.style.display = "none");
     document.querySelector("." + category).style.display = "grid";
@@ -26,3 +33,4 @@ function showNextImage() {
 
 // chạy lần đầu
 setTimeout(showNextImage, 1000);
+

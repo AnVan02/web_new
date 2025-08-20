@@ -172,8 +172,8 @@
 
         <div id="chatbot-popup"
             style="display:none; position: fixed; bottom: 5px; right: 10px; 
-                    width: 90vw; max-width: 490px;
-                    height: 80vh; max-height: 650px;
+                    width: 90vw; max-width: 590px;
+                    height: 80vh; max-height: 850px;
                     border: 1px solid #ccc; background: #fff;
                     position: fixed !important;
                     box-shadow: 0 4px 16px rgba(0,0,0,0.2);

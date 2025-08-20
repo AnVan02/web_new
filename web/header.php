@@ -1,70 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-<title>ROSA</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="rosacomputer">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="assets/styles/bootstrap4/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css"> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="icon" href="/assets/images/rosa-icon.png" type="rosacomputer">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="../style/header.css">
-<script src="../script/header.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="rosacomputer">
+  <meta name="google-site-verification" content="4USrUmb19Z0YVYJqkaUI3pgEwwi8Ma9yXo-9gqbx9Q0" />
+  
+  <title>ROSA</title>
+  <link rel="icon" href="/assets/images/rosa-icon.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 4.6.2 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+
+  <!-- Font Awesome (Chỉ chọn phiên bản cao nhất bạn cần dùng, ở đây dùng 6.5.1) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Font Awesome 4.7.0 (nếu bạn cần các icon cũ không có ở bản mới) -->
+  <link href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Owl Carousel 2.2.1 -->
+  <link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/animate.css">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Styles -->
+  <!--<link rel="stylesheet" href="../style/header.css">-->
+</head>
+
+<body>
+  <!-- Your content goes here -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap Bundle JS 4.6.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="../script/header.js"></script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MSGJRVX2NY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MSGJRVX2NY');
+</script>
+
+<!-- Event snippet for Lượt xem trang conversion page -->
+
+
 </head>
 <body>
     <!-- Main Header -->
     <header class="header">
         <div class="container d-flex align-items-center justify-content-between py-2">
             <div class="logo_container">
-                <a href="/"><img src="../image/rosa.png" alt="Logo"></a>
+                <a href="/"><img src="/assets/images/rosa.png" alt="Logo"></a>
             </div>
             <nav class="nav_container d-none d-md-block">
                 <ul class="d-flex">
-                    <li><a href="">Sản phầm </a></li>
+                    <li><a href="/product.php">Sản phầm </a></li>
                     <li><a href="#">Giải pháp AI <i class="fas fa-chevron-down"></i></a>
                         <ul class="submenu">
                             <li class="has-submenu">
                                 <a href="#">KHOÁ HỌC AI <i class="fas fa-chevron-right"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="">ỨNG DỤNG ROSA</a></li>
-                                    <li><a href="">PYTHON CƠ BẢN</a></li>
-                                    <li><a href="">THỊ GIÁC MÁY TÍNH</a></li>
+                                    <li><a href="/ROSA-SW.php">ỨNG DỤNG ROSA</a></li>
+                                    <li><a href="/courses/python-course.php">PYTHON CƠ BẢN</a></li>
+                                    <li><a href="/courses/yolo-course.php">THỊ GIÁC MÁY TÍNH</a></li>
                                 </ul>
                             </li>
                             <li class="has-submenu">
                                 <a href="#">SMB <i class="fas fa-chevron-right"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="">CHATBOT AI</a></li>
-                                    <li><a href="">CHẤM CÔNG CAMERA AI</a></li>
-                                    <li><a href="">NEXCLOUND</a></li>
+                                    <li><a href="/courses/ChatbotAI.php">CHATBOT AI</a></li>
+                                    <li><a href="/courses/AIchamcong.php">CHẤM CÔNG CAMERA AI</a></li>
+                                    <li><a href="/courses/Nextcloud.php">NEXCLOUND</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="">Chương trình</a></li>
-                    <li><a href="">Tin tức </a></li>
-                    <li><a href="">Bảo hành </a></li>
-                    <li><a href="">Đơn hàng</a></li>
+                    <li><a href="/courses/palit.php">Chương trình</a></li>
+                    <li><a href="/tintuc_test/template.php">Tin tức </a></li>
+                    <li><a href="/baohanh.php">Bảo hành </a></li>
+                    <li><a href="/check.php">Đơn hàng</a></li>
                 </ul>
-          
+            </nav>
             <!-- TÌM KIẾM  -->
             <form class="search-box d-none d-md-flex" action="search.php" method="get">
                 <i class="fas fa-search"></i>
-                <input type="text" name="q" placeholder="Tìm kiếm">
+                <input type="text" name="rosa" placeholder="Tìm kiếm">
             </form>
-        </nav>
-            <!-- 3 GẠCH TRÊN PHONE -->
+
+                       <!-- 3 GẠCH TRÊN PHONE -->
             <div class="hamburger_container d-md-none">
                 <i class="fa fa-bars"></i>
             </div>
@@ -77,12 +119,12 @@
         
         <!-- Logo trong menu -->
         <div class="menu_logo">
-            <img src="../image/rosa.png" alt="ROSA Logo">
+            <a href="/"><img src="/assets/images/rosa.png" alt="Logo"></a>
         </div>
         
         <div class="hamburger_menu_content">
             <ul class="menu_top_nav">
-                <li><a href="">Sản phẩm</a></li>
+                <li><a href="product.php">Sản phẩm</a></li>
                 <li class="has-submenu">
                     <a href="javascript:void(0)" class="submenu-toggle">Giải pháp AI <i class="fas fa-chevron-down"></i></a>
                     <ul class="submenu">
@@ -104,26 +146,25 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="">Chương trình</a></li>
+                <li><a href="/courses/palit.php">Chương trình</a></li>
                 <li><a href="/tintuc_test/template.php">Tin tức</a></li>
                 <li><a href="/baohanh.php">Bảo hành</a></li>
                 <li><a href="/check.php">Đơn hàng</a></li>
             </ul>
         </div>
     </div>
-    </body>
-</html>
-
-
-<style>
-    body {
+    <!--css-->
+    <style>
+        
+body {
     font-family: 'Montserrat';
     font-size: 16px;
     line-height: 1.6;
     /* background-color: #fff; */
-    color: #1C1D1D;
+    color: #FFFFFF;
 }
 
+/*  kho */
 .header {
     position: sticky;
     top: 0;
@@ -141,9 +182,13 @@
 }
 
 .nav_container ul {
+    /* display: flex; */
+    gap: 30px; /* khoảng cách đều giữa các mục */
     list-style: none;
     padding: 0;
+    margin: 0;
 }
+
 
 .nav_container ul li {
     position: relative;
@@ -158,12 +203,13 @@
 .search-box {
     border: 1px solid #ccc;
     border-radius: 25px;
-    padding: 5px 20px;
+    padding: 5px 15px;
     display: flex;
     align-items: center;
     background: white;
-    max-width: 250px;
+    max-width: 180px;  /* Giảm chiều ngang */
 }
+
 
 .search-box i {
     color: #666;
@@ -176,8 +222,9 @@
     outline: none;
     font-size: 14px;
     width: 100%;
-    font-family: 'Montserrat';
+    min-width: 100px;  /* đảm bảo chữ vẫn đủ chỗ */
 }
+
 
 .search-box input::placeholder {
     color: #888;
@@ -308,6 +355,8 @@
     left: 0;
 }
 
+
+
 /* Backdrop overlay */
 .hamburger_menu.show::after {
     content: '';
@@ -368,6 +417,7 @@
     object-fit: contain;
 }
 
+
 /* Remove old MENU text */
 .hamburger_menu_content::before {
     display: none;
@@ -390,7 +440,7 @@
 }
 
 /* Main Menu Links */
-.hamburger_menu ul li>a {
+.hamburger_menu ul li > a {
     color: #333;
     text-decoration: none;
     display: flex;
@@ -403,13 +453,13 @@
     position: relative;
 }
 
-.hamburger_menu ul li>a:hover {
+.hamburger_menu ul li > a:hover {
     background: linear-gradient(90deg, #007bff08 0%, transparent 100%);
     color: #007bff;
     padding-left: 25px;
 }
 
-.hamburger_menu ul li>a::before {
+.hamburger_menu ul li > a::before {
     content: '';
     position: absolute;
     left: 0;
@@ -420,7 +470,7 @@
     transition: width 0.3s ease;
 }
 
-.hamburger_menu ul li>a:hover::before {
+.hamburger_menu ul li > a:hover::before {
     width: 4px;
 }
 
@@ -429,14 +479,12 @@
     transition: transform 0.3s ease;
     font-size: 12px;
     margin-left: 10px !important;
-    transform: rotate(0deg);
-    /* Default down arrow */
+    transform: rotate(0deg); /* Default down arrow */
 }
 
 /* When submenu is open, arrow stays DOWN (no rotation) */
 .submenu-toggle.active i {
-    transform: rotate(0deg);
-    /* Keep arrow pointing down */
+    transform: rotate(0deg); /* Keep arrow pointing down */
 }
 
 /* Alternative: If you want arrow to point UP when open, use this instead */
@@ -465,7 +513,6 @@
         opacity: 0;
         transform: translateY(-10px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -481,7 +528,7 @@
     border-bottom: none;
 }
 
-.hamburger_menu .submenu li>a {
+.hamburger_menu .submenu li > a {
     padding: 12px 20px 12px 40px;
     font-size: 14px;
     font-weight: 400;
@@ -489,13 +536,13 @@
     position: relative;
 }
 
-.hamburger_menu .submenu li>a:hover {
+.hamburger_menu .submenu li > a:hover {
     background: #e3f2fd;
     color: #1976d2;
     padding-left: 45px;
 }
 
-.hamburger_menu .submenu li>a::before {
+.hamburger_menu .submenu li > a::before {
     content: '→';
     position: absolute;
     left: 25px;
@@ -504,7 +551,7 @@
     transition: all 0.3s ease;
 }
 
-.hamburger_menu .submenu li>a:hover::before {
+.hamburger_menu .submenu li > a:hover::before {
     opacity: 1;
     left: 28px;
 }
@@ -516,19 +563,19 @@
     margin-left: 15px;
 }
 
-.hamburger_menu .submenu .submenu li>a {
+.hamburger_menu .submenu .submenu li > a {
     padding: 10px 20px 10px 50px;
     font-size: 13px;
     color: #666;
 }
 
-.hamburger_menu .submenu .submenu li>a:hover {
+.hamburger_menu .submenu .submenu li > a:hover {
     background: #e8f5e8;
     color: #28a745;
     padding-left: 55px;
 }
 
-.hamburger_menu .submenu .submenu li>a::before {
+.hamburger_menu .submenu .submenu li > a::before {
     content: '•';
     left: 35px;
     color: #28a745;
@@ -542,19 +589,29 @@
         justify-content: center;
     }
 
+    /* bật chế dộ sáng hệ thông iphone */
+    @media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    }
+
+    
     .nav_container {
         display: none !important;
     }
-
+    
     .search-box {
         display: none !important;
     }
-
+    
     /* Header adjustments for mobile */
     .header {
         padding: 10px 0;
     }
-
+    
     .header .container {
         padding: 0 15px;
     }
@@ -565,7 +622,7 @@
         width: 100vw;
         left: -100vw;
     }
-
+    
     .hamburger_menu.show::after {
         display: none;
     }
@@ -603,7 +660,6 @@
         transform: translateX(-20px);
         opacity: 0;
     }
-
     to {
         transform: translateX(0);
         opacity: 1;
@@ -619,16 +675,15 @@
 }
 
 /* Active menu item */
-.hamburger_menu ul li.active>a {
+.hamburger_menu ul li.active > a {
     background: linear-gradient(90deg, #007bff15 0%, transparent 100%);
     color: #007bff;
     font-weight: 600;
 }
 
-.hamburger_menu ul li.active>a::before {
+.hamburger_menu ul li.active > a::before {
     width: 4px;
 }
-
 .header-top {
     background: #f8f8f8;
     font-size: 14px;
@@ -642,10 +697,16 @@
     display: flex;
 }
 
+.logo_container {
+    flex-shrink: 0; /* không cho logo bị ép lại */
+    margin-right: 40px; /* khoảng cách giữa logo và menu/search */
+}
+
 .logo_container img {
-    max-width: 120px;
+    max-width: 140px; /* có thể chỉnh kích thước logo */
     height: auto;
 }
+
 
 .brand_text {
     font-size: 13px;
@@ -803,4 +864,8 @@
 .breadcrumb-item+.breadcrumb-item::before {
     content: " > ";
 }
-</style>
+    </style>
+</body>
+</html>
+
+
