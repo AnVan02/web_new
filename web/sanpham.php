@@ -154,8 +154,8 @@
 
 <div class="banner" style="margin-bottom: 20px;">
     <div class="row">
-        <div class="hero-section" style="width: 50%; height: auto; margin: 0 auto;">
-            <img src="../image/Frame 1000005520 (1).png" alt="Banner" class="hero-image">
+        <div class=".hero-section" style="width: 30%; height: auto; margin: 0 auto;">
+            <img src="../image/Frame 1000005520 (1).png" alt="Banner" class="why-hero-image">
         </div>
     </div>
 </div>
@@ -168,6 +168,5 @@
         </div>
     </div>
 </div>
+</div
 
-
-<?php require "footer.php" ?>
