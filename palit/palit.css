@@ -183,39 +183,130 @@ nav a {
     max-height: 75px;
 }
 
+/* hedder tổng */
 
-.features {
-    background-color: #000;
-    color: #fff;
-    padding: 50px 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    text-align: left;
-}
-
-.feature-item {
+/* Desktop Banner */
+.hero .hero-content {
+    position: relative;
+    min-height: 420px;
+    background: url("../palit/nen.png") center center/cover no-repeat;
     display: flex;
-    align-items: flex-start;
-    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.feature-item img {
-    width: 32px;
-    height: 32px;
-    flex-shrink: 0;
+.hero-left {
+    flex: 1;
+    max-width: 540px;
+    color: #fff;
+    padding: 32px;
 }
 
-.feature-text h3 {
-    font-size: 18px;
-    margin: 0 0 5px;
-    font-weight: bold;
+.hero-left h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
 }
 
-.feature-text p {
-    font-size: 14px;
-    margin: 0;
-    color: #ccc;
+.sub-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.hero-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.btn-buy {
+    background: #76b900;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 32px;
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-wrap img {
+    height: 70px;
+}
+
+/* Mobile Banner */
+.hero-mobile {
+    display: none;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+}
+
+.hero-mobile h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.hero-mobile .sub-title {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.hero-mobile p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Footer Desktop */
+.footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer img {
+    height: 50px;
+    margin: 0 10px;
+}
+
+/* Footer Mobile */
+.footer-mobile {
+    display: none;
+    background: #000;
+    padding: 16px;
+    text-align: center;
+}
+
+.footer-mobile img {
+    height: 40px;
+    margin: 0 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .hero-mobile {
+        display: block;
+    }
+
+    .footer-mobile {
+        display: block;
+    }
 }
 
 /* ===== PRODUCT SECTION ===== */
@@ -252,7 +343,7 @@ nav a {
 }
 
 .product img {
-    width: 100%;
+    width: 115%;
     height: auto;
     margin-bottom: 25px;
     border-radius: 10px;
@@ -522,9 +613,9 @@ nav a {
 
 .main-content-image {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1300px;
     height: auto;
-    border-radius: 15px;
+    /* border-radius: 10px; */
     margin: 0 auto 60px;
     display: block;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
@@ -621,6 +712,47 @@ footer {
     height: 70px;
     object-fit: contain;
 }
+
+/* Dòng kẻ trên footer */
+.footer-line {
+    border: none;
+    border-top: 1px solid #444;
+    /* màu xám đậm */
+    margin: 0 auto 20px auto;
+    /* căn giữa + cách logo 20px */
+    width: 70%;
+    /* độ rộng 90% màn hình */
+}
+
+/* Footer */
+footer {
+    background: #000;
+    /* nền đen */
+    padding: 20px 0;
+}
+
+/* Các logo */
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    /* khoảng cách giữa logo */
+    font-weight: 700;
+}
+
+.footer-logos img {
+    object-fit: contain;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    .footer-logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 
 /* ===== RESPONSIVE ===== */
 

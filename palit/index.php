@@ -8,75 +8,14 @@
         <meta http-equiv="Expires" content="-1">
         <meta name="keywords" content="">
         <meta name="description" content="MSI - GeForce RTX PC 50 Series">
-        <meta name='viewport' content='width=device-width, initial-scale=1'/>
-        <script type='text/javascript'>
-            window.ladi_viewport = function(b) {
-                var a = document;
-                b = b ? b : 'innerWidth';
-                var c = window[b];
-                var d = c < 768;
-                if (typeof window.ladi_is_desktop == "undefined" || window.ladi_is_desktop == undefined) {
-                    window.ladi_is_desktop = !d;
-                }
-                var e = 1200;
-                var f = 420;
-                var g = '';
-                if (!d) {
-                    g = "width=" + e + ",user-scalable=no,initial-scale=1.0";
-                } else {
-                    var h = 1;
-                    var i = f;
-                    if (i != c) {
-                        h = c / i;
-                    }
-                    g = "width=" + i + ",user-scalable=no,initial-scale=" + h + ",minimum-scale=" + h + ",maximum-scale=" + h;
-                }
-                var j = a.getElementById("viewport");
-                if (!j) {
-                    j = a.createElement("meta");
-                    j.id = "viewport";
-                    j.name = "viewport";
-                    a.head.appendChild(j);
-                }
-                j.setAttribute("content", g);
-            }
-            ;
-            window.ladi_viewport();
-            window.ladi_fbq_data = [];
-            window.ladi_fbq = function() {
-                window.ladi_fbq_data.push(arguments);
-            }
-            ;
-            window.ladi_ttq_data = [];
-            window.ladi_ttq = function() {
-                window.ladi_ttq_data.push(arguments);
-            }
-            ;
-        </script>
-        <link rel="canonical" href="http://tinhocngoisao.com/pages/nvidia-geforce-rtx-50-series-msi-pc"/>
-        <meta property="og:url" content="http://tinhocngoisao.com/pages/nvidia-geforce-rtx-50-series-msi-pc"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:title" content="NVIDIA GeForce RTX 50 Series PC"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:image" content="https://static.ladipage.net/5d142f1f620fa47f5c176213/untitled-1-20250617085227-ylyem.jpg">
         <meta property="og:description" content="MSI - GeForce RTX PC 50 Series"/>
         <meta name="format-detection" content="telephone=no"/>
-        <link rel="icon" type="image/x-icon" href="https://static.ladipage.net/5d142f1f620fa47f5c176213/favicon-20220428015222.jpg"/>
-        <link rel="shortcut icon" href="https://static.ladipage.net/5d142f1f620fa47f5c176213/favicon-20220428015222.jpg"/>
-        <link rel="apple-touch-icon" href="https://static.ladipage.net/5d142f1f620fa47f5c176213/favicon-20220428015222.jpg"/>
-        <link rel="apple-touch-icon-precomposed" href="https://static.ladipage.net/5d142f1f620fa47f5c176213/favicon-20220428015222.jpg"/>
-        <meta name="msapplication-TileImage" content="https://static.ladipage.net/5d142f1f620fa47f5c176213/favicon-20220428015222.jpg"/>
-        <meta name="revisit-after" content="days"/>
-        <link rel="dns-prefetch">
-        <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link rel="preconnect" href="https://w.ladicdn.com/" crossorigin>
-        <link rel="preconnect" href="https://s.ladicdn.com/" crossorigin>
-        <link rel="preconnect" href="https://api1.ldpform.com/" crossorigin>
-        <link rel="preconnect" href="https://a.ladipage.com/" crossorigin>
-        <link rel="preconnect" href="https://api.sales.ldpform.net/" crossorigin>
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
-        <link rel="preload" href="https://w.ladicdn.com/v5/source/ladipagev3.min.js?v=1750134274231" as="script">
-        <style id="style_ladi" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+        <style type="text/css">
+
             a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,button,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,input,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,select,small,span,strike,strong,sub,summary,sup,table,tbody,td,textarea,tfoot,th,thead,time,tr,tt,u,ul,var,video {
                 margin: 0;
                 padding: 0;
@@ -105,6 +44,67 @@
             ol,ul {
                 list-style: none
             }
+            header {
+            background-color: #fff;
+            padding: 12px 0;
+            /* border-bottom: 1px solid #ddd; */
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            height: 48px;
+        }
+
+        nav {
+            display: flex;
+            gap: 16px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: red;
+            font-weight: bold;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 65px;
+        }
+
+        .logo span {
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+
 
             blockquote,q {
                 quotes: none
@@ -592,6 +592,7 @@
                 font-family: "Open Sans", sans-serif
             }
         </style>
+       
         <style id="style_element" type="text/css">
             #SECTION1 > .ladi-section-background,#SECTION3 > .ladi-section-background,#SECTION4 > .ladi-section-background,#SECTION7 > .ladi-section-background,#SECTION6 > .ladi-section-background,#SECTION5 > .ladi-section-background,#SECTION9 > .ladi-section-background,#SECTION8 > .ladi-section-background,#SECTION12 > .ladi-section-background,#SECTION11 > .ladi-section-background,#SECTION10 > .ladi-section-background {
                 background-color: rgb(1, 1, 1);
@@ -707,7 +708,7 @@
                 #IMAGE4 > .ladi-image > .ladi-image-background {
                     width: 1019.83px;
                     height: 1183px;
-                    background-image: url("https://w.ladicdn.com/s1350x1500/5d142f1f620fa47f5c176213/platform-20250617042019-biat7.png");
+                    background-image: url("../palit/banner21.png");
                 }
 
                 #SECTION7 {
@@ -929,10 +930,11 @@
                 }
 
                 #IMAGE4 > .ladi-image > .ladi-image-background {
-                    width: 400px;
-                    height: 463.999px;
-                    background-image: url("https://w.ladicdn.com/s750x800/5d142f1f620fa47f5c176213/platform-20250617042019-biat7.png");
+                    width: 1019.83px;
+                    height: 1183px;
+                    background-image: url("../palit/banner21.png");
                 }
+
 
                 #SECTION7 {
                     height: 247.79px;
@@ -1064,53 +1066,39 @@
             }
         </style>
         <style id="style_lazyload" type="text/css">
-            body.lazyload .ladi-overlay, body.lazyload .ladi-box, body.lazyload .ladi-button-background, body.lazyload .ladi-collection-item:before, body.lazyload .ladi-countdown-background, body.lazyload .ladi-form-item-background, body.lazyload .ladi-form-label-container .ladi-form-label-item.image, body.lazyload .ladi-frame-background, body.lazyload .ladi-gallery-view-item, body.lazyload .ladi-gallery-control-item, body.lazyload .ladi-headline, body.lazyload .ladi-image-background, body.lazyload .ladi-image-compare, body.lazyload .ladi-list-paragraph ul li:before, body.lazyload .ladi-section-background, body.lazyload .ladi-survey-option-background, body.lazyload .ladi-survey-option-image, body.lazyload .ladi-tabs-background, body.lazyload .ladi-video-background, body.lazyload .ladi-banner, body.lazyload .ladi-spin-lucky-screen, body.lazyload .ladi-spin-lucky-start {
-                background-image: none !important;
-            }
         </style>
     </head>
     <body class="lazyload">
+        <header>
+            <div class="container">
+            <div class="logo">
+                <img src="../palit/avatar.png" alt="ROSA Logo">
+                <span></span>
+            </div>
+            <nav>
+                <a href="https://rosacomputer.vn">SẢN PHẨM</a>
+                <a href="https://rosacomputer.vn/">AI SOLUTIONS</a>
+                <a href="https://rosacomputer.vn">BẢO HÀNH</a>
+                <a href="https://rosacomputer.vn">TIN TỨC</a>
+                <a href="https://rosacomputer.vn">GIỚI THIỆU</a>
+            </nav>
+            </div>
+        </header>
+        
         <div class="ladi-wraper">
             <div id="G1705979304921_head" data-global-id="65af2db6018a1b001141884e" data-store-id="5d142f1f620fa47f5c176213" class="ladi-section"></div>
             <div id="SECTION1" class='ladi-section'>
                 <div class='ladi-section-background'></div>
                 <div class="ladi-container">
-                    <a href="https://tinhocngoisao.com/collections/pc-star-msi" target="_blank" id="IMAGE2" class='ladi-element'>
+                    <a href="" target="_blank" id="IMAGE2" class='ladi-element'>
                         <div class='ladi-image'>
                             <div class="ladi-image-background"></div>
                         </div>
                     </a>
                 </div>
             </div>
-            <div id="SECTION3" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <div data-action="true" id="GROUP2" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div id="IMAGE3" class='ladi-element'>
-                                <div class='ladi-image'>
-                                    <div class="ladi-image-background"></div>
-                                </div>
-                            </div>
-                            <a href="https://tinhocngoisao.com/products/pc-star-karmish-a-plus-intel-core-i5-14600kf-b760-ddr5-32gb-ssd-1tb-rtx-5060ti-wifi" target="_blank" id="IMAGE13" class='ladi-element'>
-                                <div class='ladi-image ladi-transition'>
-                                    <div class="ladi-image-background"></div>
-                                </div>
-                            </a>
-                            <a href="https://tinhocngoisao.com/products/pc-star-karmish-ssr-amd-ryzen-7-9800x3d-x870-ddr5-64gb-ssd-1tb-rtx-5070-wifi" target="_blank" id="IMAGE14" class='ladi-element'>
-                                <div class='ladi-image ladi-transition'>
-                                    <div class="ladi-image-background"></div>
-                                </div>
-                            </a>
-                            <a href="https://tinhocngoisao.com/products/pc-star-karmish-s-intel-core-ultra-5-245kf-z890-ddr5-32gb-ssd-1tb-rtx-5060-wifi" target="_blank" id="IMAGE15" class='ladi-element'>
-                                <div class='ladi-image ladi-transition'>
-                                    <div class="ladi-image-background"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+            
             <div id="SECTION4" class='ladi-section'>
                 <div class='ladi-section-background'></div>
                 <div class="ladi-container">
@@ -1171,6 +1159,7 @@
                     </div>
                 </div>
             </div>
+            
             <div id="SECTION12" class='ladi-section'>
                 <div class='ladi-section-background'></div>
                 <div class="ladi-container">
@@ -1191,6 +1180,35 @@
                     </div>
                 </div>
             </div>
+            <div id="SECTION3" class='ladi-section'>
+                <div class='ladi-section-background'></div>
+                <div class="ladi-container">
+                    <div data-action="true" id="GROUP2" class='ladi-element'>
+                        <div class='ladi-group'>
+                            <div id="IMAGE3" class='ladi-element'>
+                                <div class='ladi-image'>
+                                    <div class="ladi-image-background"></div>
+                                </div>
+                            </div>
+                            <a href="https://rosacomputer.vn/sanpham/ROSA-GAMER-PALIT1.php" target="_blank" id="IMAGE13" class='ladi-element'>
+                                <div class='ladi-image ladi-transition'>
+                                    <div class="ladi-image-background"></div>
+                                </div>
+                            </a>
+                            <a href="https://rosacomputer.vn/sanpham/ROSA-GAMER-PALIT2.php" target="_blank" id="IMAGE14" class='ladi-element'>
+                                <div class='ladi-image ladi-transition'>
+                                    <div class="ladi-image-background"></div>
+                                </div>
+                            </a>
+                            <a href="https://rosacomputer.vn/sanpham/ROSA-GAMER-PALIT3.php" target="_blank" id="IMAGE15" class='ladi-element'>
+                                <div class='ladi-image ladi-transition'>
+                                    <div class="ladi-image-background"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="SECTION10" class='ladi-section'>
                 <div class='ladi-section-background'></div>
                 <div class="ladi-container">
@@ -1202,149 +1220,15 @@
                 </div>
             </div>
         </div>
+        
         <div id="backdrop-popup" class="backdrop-popup"></div>
         <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
         <div id="lightbox-screen" class="lightbox-screen"></div>
-        <script id="script_lazyload" type="text/javascript">
-            window.lazyload_run = function(dom, is_first, check_dom_rect) {
-                if (check_dom_rect && (document.body.clientWidth <= 0 || document.body.clientheight <= 0)) {
-                    return setTimeout(function() {
-                        window.lazyload_run(dom, is_first, check_dom_rect);
-                    }, 1);
-                }
-                var style_lazyload = document.getElementById('style_lazyload');
-                var list_element_lazyload = dom.querySelectorAll('body.lazyload .ladi-overlay, body.lazyload .ladi-box, body.lazyload .ladi-button-background, body.lazyload .ladi-collection-item, body.lazyload .ladi-countdown-background, body.lazyload .ladi-form-item-background, body.lazyload .ladi-form-label-container .ladi-form-label-item.image, body.lazyload .ladi-frame-background, body.lazyload .ladi-gallery-view-item, body.lazyload .ladi-gallery-control-item, body.lazyload .ladi-headline, body.lazyload .ladi-image-background, body.lazyload .ladi-image-compare, body.lazyload .ladi-list-paragraph ul li, body.lazyload .ladi-section-background, body.lazyload .ladi-survey-option-background, body.lazyload .ladi-survey-option-image, body.lazyload .ladi-tabs-background, body.lazyload .ladi-video-background, body.lazyload .ladi-banner, body.lazyload .ladi-spin-lucky-screen, body.lazyload .ladi-spin-lucky-start');
-                var docEventScroll = window;
-                for (var i = 0; i < list_element_lazyload.length; i++) {
-                    var rect = list_element_lazyload[i].getBoundingClientRect();
-                    if (rect.x == "undefined" || rect.x == undefined || rect.y == "undefined" || rect.y == undefined) {
-                        rect.x = rect.left;
-                        rect.y = rect.top;
-                    }
-                    var offset_top = rect.y + window.scrollY;
-                    if (offset_top >= window.scrollY + window.innerHeight || window.scrollY >= offset_top + list_element_lazyload[i].offsetHeight) {
-                        list_element_lazyload[i].classList.add('ladi-lazyload');
-                    }
-                }
-                if (typeof style_lazyload != "undefined" && style_lazyload != undefined) {
-                    style_lazyload.parentElement.removeChild(style_lazyload);
-                }
-                document.body.classList.remove("lazyload");
-                var currentScrollY = window.scrollY;
-                var stopLazyload = function(event) {
-                    if (event.type == "scroll" && window.scrollY == currentScrollY) {
-                        currentScrollY = -1;
-                        return;
-                    }
-                    docEventScroll.removeEventListener('scroll', stopLazyload);
-                    list_element_lazyload = document.getElementsByClassName('ladi-lazyload');
-                    while (list_element_lazyload.length > 0) {
-                        list_element_lazyload[0].classList.remove('ladi-lazyload');
-                    }
-                };
-                if (is_first) {
-                    var scrollEventPassive = null;
-                    try {
-                        var opts = Object.defineProperty({}, 'passive', {
-                            get: function() {
-                                scrollEventPassive = {
-                                    passive: true
-                                };
-                            }
-                        });
-                        window.addEventListener('testPassive', null, opts);
-                        window.removeEventListener('testPassive', null, opts);
-                    } catch (e) {}
-                    docEventScroll.addEventListener('scroll', stopLazyload, scrollEventPassive);
-                }
-                return dom;
-            }
-            ;
-            window.lazyload_run(document, true, true);
-        </script>
+   
         <!--[if lt IE 9]><script src="https://w.ladicdn.com/v5/source/html5shiv.min.js?v=1750134274231"></script><script src="https://w.ladicdn.com/v5/source/respond.min.js?v=1750134274231"></script><![endif]-->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" type="text/css">
         <script src="https://w.ladicdn.com/v5/source/ladipagev3.min.js?v=1750134274231" type="text/javascript"></script>
         <script id="script_event_data" type="application/json">
-            {
-                "IMAGE2": {
-                    "a": "image",
-                    "cs": [
-                        {
-                            "dr": "action",
-                            "a": "link",
-                            "dv": "_blank",
-                            "dw": "https://tinhocngoisao.com/collections/pc-star-msi"
-                        }
-                    ]
-                },
-                "IMAGE13": {
-                    "a": "image",
-                    "cs": [
-                        {
-                            "dr": "action",
-                            "a": "link",
-                            "dv": "_blank",
-                            "dw": "https://tinhocngoisao.com/products/pc-star-karmish-a-plus-intel-core-i5-14600kf-b760-ddr5-32gb-ssd-1tb-rtx-5060ti-wifi"
-                        }
-                    ]
-                },
-                "IMAGE14": {
-                    "a": "image",
-                    "cs": [
-                        {
-                            "dr": "action",
-                            "a": "link",
-                            "dv": "_blank",
-                            "dw": "https://tinhocngoisao.com/products/pc-star-karmish-ssr-amd-ryzen-7-9800x3d-x870-ddr5-64gb-ssd-1tb-rtx-5070-wifi"
-                        }
-                    ]
-                },
-                "IMAGE15": {
-                    "a": "image",
-                    "cs": [
-                        {
-                            "dr": "action",
-                            "a": "link",
-                            "dv": "_blank",
-                            "dw": "https://tinhocngoisao.com/products/pc-star-karmish-s-intel-core-ultra-5-245kf-z890-ddr5-32gb-ssd-1tb-rtx-5060-wifi"
-                        }
-                    ]
-                }
-            }</script>
-        <script id="script_ladipage_run" type="text/javascript">
-            (function() {
-                var run = function() {
-                    if (typeof window.LadiPageScript == "undefined" || typeof window.ladi == "undefined" || window.ladi == undefined) {
-                        setTimeout(run, 100);
-                        return;
-                    }
-                    window.LadiPageApp = window.LadiPageApp || new window.LadiPageAppV2();
-                    window.LadiPageScript.runtime.ladipage_id = '6850e6705800ab001289bc08';
-                    window.LadiPageScript.runtime.publish_platform = 'HARAVAN';
-                    window.LadiPageScript.runtime.version = '1750134274231';
-                    window.LadiPageScript.runtime.cdn_url = 'https://w.ladicdn.com/v5/source/';
-                    window.LadiPageScript.runtime.DOMAIN_SET_COOKIE = ["tinhocngoisao.com"];
-                    window.LadiPageScript.runtime.DOMAIN_FREE = ["preview.ldpdemo.com", "ldp.page"];
-                    window.LadiPageScript.runtime.bodyFontSize = 12;
-                    window.LadiPageScript.runtime.store_id = "5d142f1f620fa47f5c176213";
-                    window.LadiPageScript.runtime.store_ladiuid = "5d142f1f620fa47f5c176213";
-                    window.LadiPageScript.runtime.time_zone = 7;
-                    window.LadiPageScript.runtime.currency = "VND";
-                    window.LadiPageScript.runtime.convert_replace_str = true;
-                    window.LadiPageScript.runtime.desktop_width = 1200;
-                    window.LadiPageScript.runtime.mobile_width = 420;
-                    window.LadiPageScript.runtime.tracking_button_click = true;
-                    window.LadiPageScript.runtime.publish_time = 1750151371639;
-                    window.LadiPageScript.runtime.lang = "vi";
-                    window.LadiPageScript.run(true);
-                    window.LadiPageScript.runEventScroll();
-                };
-                run();
-            }
-            )();
         </script>
     </body>
 </html>
-<!--Publish time: Tue, 17 Jun 2025 09:09:31 GMT-->
-<!--LadiPage build time: Tue, 17 Jun 2025 04:24:34 GMT-->

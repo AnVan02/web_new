@@ -1,10 +1,22 @@
 <title>Nextcloud</title>
 <?php require "../web/header.php" ?>
-<div class="banner">
-    <div class="row">
-        <div class="hero-section">
-            <img src="../image/banner1.png" alt="Banner" class="hero-image">
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Các dấu chấm -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../image/banner1.png" class="d-block w-100" alt="Banner 1" onclick="window.location.href='https://rosacomputer.vn/.php'">
         </div>
+        <!-- <div class="carousel-item">
+            <img src="../image/Backtoschool.jpg" class="d-block w-100" alt="Banner 2">
+        </div>
+        <div class="carousel-item">
+            <img src="../image/banner_sp_3.png" class="d-block w-100" alt="Banner 3">
+        </div> -->
     </div>
 </div>
 
@@ -15,13 +27,14 @@
         <p class="description">
             Không chỉ là dịch vụ đám mây, Nextcloud bảo vệ dữ liệu bằng mã hoá tiên tiến, cho phép tự lưu trữ, tuỳ chỉnh linh hoạt và tiết kiệm chi phí. Hoạt động mượt trên mọi thiết bị, không phụ thuộc nhà cung cấp độc quyền.
         </p>
-        <div class="nextcloud-circles">
-            <div class="feature-image">
-                <img src="../image/nextclound1.png" alt="Nextcloud">
-            </div>
-        </div>
     </div>
 </section>
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="../image/minhhoa1.png" class="d-block w-100" alt="Banner 1">
+    </div>
+</div>  
+
 
 <!-- Tính năng nổi bật -->
 <section class="features-section">
@@ -30,11 +43,14 @@
         <p class="description">
             Nextcloud cung cấp giải pháp quản lý dữ liệu và công tác toàn diện với Hub để họp, chat, chia sẻ màn hình; Files để lưu trữ, chia sẻ, đồng bộ; Groupware để quản lý lịch, danh bạ email.
         </p>
-        <div class="feature-image">
-            <img src="../image/nextclound2.png" alt="Nextcloud Features">
-        </div>
     </div>
 </section>
+       
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="../image/minhhoa2.png" class="d-block w-100" alt="Banner 1">
+    </div>
+</div>
 
 <!-- Đối tượng -->
 <section class="target-section">
@@ -43,12 +59,13 @@
         <p class="description">
             NEXTCLOUD phù hợp nhiều đối tượng: cá nhân lưu trữ, chia sẻ an toàn; doanh nghiệp quản lý dự án, chia sẻ nội bộ và tích hợp văn phòng tiết kiệm chi phí; chính phủ lưu trữ thông tin nhạy cảm đạt chuẩn an ninh.
         </p>
-        <div class="target-image">
-            <img src="../image/nextclound3.png" alt="Nextcloud Target Users">
-        </div>
-       
     </div>
 </section>
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="../image/minhhoa3.png" class="d-block w-100" alt="Banner 1">
+    </div>
+</div>
 
 <!-- Cài đặt -->
 <section class="install-section">
@@ -155,7 +172,7 @@ section {
 }
 
 section:nth-of-type(odd) {
-    background: #f8f9fa; /* nền xám nhạt */
+    background: #FFF; /* nền xám nhạt */
 }
 
 section:nth-of-type(even) {
