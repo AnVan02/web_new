@@ -160,7 +160,7 @@
             </div>
         </div>
     </footer>
-
+    
     <!-- mạng xã hội, chatbot -->
     <div class="contact-fixed">
         <div class="chabot_main">
@@ -201,7 +201,6 @@
                 <img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/>    
             </a>
         </div>
-
     <!-- link css  -->
     <link rel="stylesheet" href="../style/footer.css">
     <script src="../script/footer.js"></script>

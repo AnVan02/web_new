@@ -9,7 +9,7 @@
 
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="../image/nengt.png" class="d-block w-100" alt="Banner 1" onclick="window.location.href='https://rosacomputer.vn/.php'">
+            <img src="../image/nengt.png" class="d-block w-100" alt="Banner 1" onclick="window.location.href='RS_computer.php'">
         </div>
         <!-- <div class="carousel-item">
             <img src="../image/Backtoschool.jpg" class="d-block w-100" alt="Banner 2">
@@ -22,18 +22,18 @@
 
 <div class="course-card-section">
     <div class="course-card">
-        <img class="course-card-bg" src="../new/moi1.png" alt="Thị giác máy tính">
-        <div class="course-card-content">
+        <img class="course-card-bg" src="../image/sumenh.png" alt="Thị giác máy tính">
+        <!-- <div class="course-card-content">
             <div class="course-card-title">Sứ mệnh </div>
             <div class="course-card-desc">Khóa học giúp bạn hiểu cách sử dụng môn học trong lập trình và ứng dụng thực tế trong AI.</div>
-        </div>
+        </div> -->
     </div>
     <div class="course-card ">
-        <img class="course-card-bg" src="../new/python1.png" alt="Học máy">
-        <div class="course-card-content">
+        <img class="course-card-bg" src="../image/tamnhin.png" alt="Học máy">
+        <!-- <div class="course-card-content">
             <div class="course-card-title">Tầm nhìn</div>
             <div class="course-card-desc">Tìm hiểu cách máy học từ dữ liệu. Hướng dẫn các thuật toán phổ biến như Linear Regression, Decision Trees, k-NN với ví dụ thực hành trực quan.</div>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -46,6 +46,20 @@
 
 
 <style>
+    /* Tùy chỉnh dấu chấm banner */
+.carousel-indicators [data-bs-target] {
+    width: 5px;              /* 👈 tăng kích thước */
+    height: 5px;             /* 👈 tăng kích thước */
+    border-radius: 50%;       /* tròn */
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 6px;            /* khoảng cách giữa các chấm */
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #ff6666; /* màu chấm active */
+}
+
     /* COURSE CARDS */
 .course-card-section {
     display: flex;

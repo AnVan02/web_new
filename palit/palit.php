@@ -43,22 +43,6 @@
   </div>
 </section>
 
-<!-- Banner Mobile -->
-<section class="hero-mobile">
-     <img src="../palit/nen.png" alt="GeForce RTX Logo">
-  <div class="mobiphone-hero-content">
-    <h2>GeForce RTX™ 50 Series</h2>
-    <div class="sub-title">Bứt phá hiệu năng, nâng tầm sáng tạo</div>
-    <p>
-      Trang bị kiến trúc NVIDIA Blackwell, GeForce RTX™ 50 Series mang đến hiệu năng AI vượt trội, nâng tầm trải nghiệm đồ họa và sáng tạo nội dung. 
-      Công nghệ DLSS 4 tăng tốc dựng hình với tốc độ vượt trội; trong khi NVIDIA Studio tối ưu quy trình sáng tạo giúp bạn làm được nhiều hơn và nhanh hơn.
-    </p>
-    <div class="logo-wrap">
-      <img src="../palit/logo2.png" alt="GeForce RTX Logo">
-      <img src="../palit/logo1.png" alt="Palit Logo">
-    </div>
-  </div>
-</section>
 
 <!-- nội dung trang  -->
     <div class="container blackwell-section" style="max-width: 1326px">
@@ -133,20 +117,16 @@
     <hr style="text-align:center; gap:40; weight:50px;">
     <footer>
         <div class="footer-logos">
-        <img src="../palit/Group 9.png" alt="ESRB" />
-        <img src="../palit/logo2.png" alt="GeForce RTX" />
-        <img src="../palit/logo1.png" alt="Palit Logo" />
+          <img src="../palit/Group 9.png" alt="ESRB" />
+          <img src="../palit/logo2.png" alt="GeForce RTX" />
+          <img src="../palit/logo1.png" alt="Palit Logo" />
         </div>
+          <div data-layer="©2025 NVIDIA Corporation. NVIDIA, logo NVIDIA, GeForce, GeForce RTX và G-SYNC là các nhân hiệu đã đăng ký và/hoặc nhân hiệu của NVIDIA Corporation tại Hoa Kỳ và các quốc gia khác. Tất cả các nhãn hiệu và bản quyền khác là tài sản của các chủ sở hữu tương ứng." class="text-2025-nvidia-corporation-nvidia-logo-nvidia-geforce-geforce-rtx-v-g-sync-l-cc-nhn-hiu-ng-k-vhoc-nhn-hiu-ca-nvidia-corporation-ti-hoa-k-v-cc-quc-gia-khc-tt-c-cc-nhn-hiu-v-bn-quyn-khc-l-ti-sn-ca-cc-ch-s-hu-tng-ng"><span class="f025nvidiacorporationnvidialogonvidiageforcegeforcertxvg-synclccnhnhiungkvhocnhnhiucanvidiacorporationtihoakvccqucgiakhcttcccnhnhiuvbnquynkhcltisncaccchshutngng_span">
+              ©2025 NVIDIA Corporation. NVIDIA, logo NVIDIA, GeForce, GeForce RTX và G-SYNC là các nhân hiệu đã đăng ký và/hoặc nhân hiệu của NVIDIA Corporation
+              tại Hoa Kỳ và các quốc gia khác. Tất cả các nhãn hiệu và bản quyền khác là tài sản của các chủ sở hữu tương ứng.</span></div>
+          </div>
     </footer>
 
     <!-- Footer Mobile -->
-    <footer class="footer-mobile">
-    <div class="footer-content">
-        <img src="../palit/Group 9.png" alt="ESRB" />
-        <img src="../palit/logo2.png" alt="GeForce RTX" />
-        <img src="../palit/logo1.png" alt="Palit Logo" />
-    </div>
-    </footer>
-
 </body>
 </html>

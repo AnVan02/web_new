@@ -146,6 +146,20 @@ body {
 }
 
 /* ===== HEADER & BANNER ======= */
+/* Tùy chỉnh dấu chấm banner */
+.carousel-indicators [data-bs-target] {
+    width: 5px;              /* 👈 tăng kích thước */
+    height: 5px;             /* 👈 tăng kích thước */
+    border-radius: 50%;       /* tròn */
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 6px;            /* khoảng cách giữa các chấm */
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #ff6666; /* màu chấm active */
+}
+
 
 .banner, .row, .hero-section {
     width: 100%;

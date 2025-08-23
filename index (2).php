@@ -1,1350 +1,461 @@
-<!DOCTYPE html>
-<html lang="vi">
-    <head>
-        <meta charset="UTF-8">
-        <title>NVIDIA GeForce RTX 50 Series PC</title>
-        <meta http-equiv="Cache-Control" content="no-cache">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="Expires" content="-1">
-        <meta name="keywords" content="">
-        <meta name="description" content="MSI - GeForce RTX PC 50 Series">
-        <meta name='viewport' content='width=device-width, initial-scale=1'/>
-        <script type='text/javascript'>
-            window.ladi_viewport = function(b) {
-                var a = document;
-                b = b ? b : 'innerWidth';
-                var c = window[b];
-                var d = c < 768;
-                if (typeof window.ladi_is_desktop == "undefined" || window.ladi_is_desktop == undefined) {
-                    window.ladi_is_desktop = !d;
-                }
-                var e = 1200;
-                var f = 420;
-                var g = '';
-                if (!d) {
-                    g = "width=" + e + ",user-scalable=no,initial-scale=1.0";
-                } else {
-                    var h = 1;
-                    var i = f;
-                    if (i != c) {
-                        h = c / i;
-                    }
-                    g = "width=" + i + ",user-scalable=no,initial-scale=" + h + ",minimum-scale=" + h + ",maximum-scale=" + h;
-                }
-                var j = a.getElementById("viewport");
-                if (!j) {
-                    j = a.createElement("meta");
-                    j.id = "viewport";
-                    j.name = "viewport";
-                    a.head.appendChild(j);
-                }
-                j.setAttribute("content", g);
-            }
-            ;
-            window.ladi_viewport();
-            window.ladi_fbq_data = [];
-            window.ladi_fbq = function() {
-                window.ladi_fbq_data.push(arguments);
-            }
-            ;
-            window.ladi_ttq_data = [];
-            window.ladi_ttq = function() {
-                window.ladi_ttq_data.push(arguments);
-            }
-            ;
-        </script>
-        <link rel="canonical" href="http://tinhocngoisao.com/pages/nvidia-geforce-rtx-50-series-msi-pc"/>
-        <meta property="og:url" content="http://tinhocngoisao.com/pages/nvidia-geforce-rtx-50-series-msi-pc"/>
-        <meta property="og:title" content="NVIDIA GeForce RTX 50 Series PC"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:image" content="https://static.ladipage.net/5d142f1f620fa47f5c176213/untitled-1-20250617085227-ylyem.jpg">
-        <meta property="og:description" content="MSI - GeForce RTX PC 50 Series"/>
-        <meta name="format-detection" content="telephone=no"/>
-        <link rel="icon" type="image/x-icon" href="https://static.ladipage.net/5d142f1f620fa47f5c176213/favicon-20220428015222.jpg"/>
-        <link rel="shortcut icon" href="https://static.ladipage.net/5d142f1f620fa47f5c176213/favicon-20220428015222.jpg"/>
-        <link rel="apple-touch-icon" href="https://static.ladipage.net/5d142f1f620fa47f5c176213/favicon-20220428015222.jpg"/>
-        <link rel="apple-touch-icon-precomposed" href="https://static.ladipage.net/5d142f1f620fa47f5c176213/favicon-20220428015222.jpg"/>
-        <meta name="msapplication-TileImage" content="https://static.ladipage.net/5d142f1f620fa47f5c176213/favicon-20220428015222.jpg"/>
-        <meta name="revisit-after" content="days"/>
-        <link rel="dns-prefetch">
-        <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-        <link rel="preconnect" href="https://w.ladicdn.com/" crossorigin>
-        <link rel="preconnect" href="https://s.ladicdn.com/" crossorigin>
-        <link rel="preconnect" href="https://api1.ldpform.com/" crossorigin>
-        <link rel="preconnect" href="https://a.ladipage.com/" crossorigin>
-        <link rel="preconnect" href="https://api.sales.ldpform.net/" crossorigin>
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
-        <link rel="preload" href="https://w.ladicdn.com/v5/source/ladipagev3.min.js?v=1750134274231" as="script">
-        <style id="style_ladi" type="text/css">
-            a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,button,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,input,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,select,small,span,strike,strong,sub,summary,sup,table,tbody,td,textarea,tfoot,th,thead,time,tr,tt,u,ul,var,video {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                outline: 0;
-                font-size: 100%;
-                font: inherit;
-                vertical-align: baseline;
-                box-sizing: border-box;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale
-            }
-
-            article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-                display: block
-            }
-
-            body {
-                line-height: 1
-            }
-
-            a {
-                text-decoration: none
-            }
-
-            ol,ul {
-                list-style: none
-            }
-
-            blockquote,q {
-                quotes: none
-            }
-
-            blockquote:after,blockquote:before,q:after,q:before {
-                content: '';
-                content: none
-            }
-
-            table {
-                border-collapse: collapse;
-                border-spacing: 0
-            }
-
-            .ladi-loading {
-                z-index: 900000000000;
-                position: fixed;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                background-color: rgba(0,0,0,.1)
-            }
-
-            .ladi-loading .loading {
-                width: 80px;
-                height: 80px;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                margin: auto;
-                overflow: hidden;
-                position: absolute
-            }
-
-            .ladi-loading .loading div {
-                position: absolute;
-                width: 6px;
-                height: 6px;
-                background: #fff;
-                border-radius: 50%;
-                animation: ladi-loading 1.2s linear infinite
-            }
-
-            .ladi-loading .loading div:nth-child(1) {
-                animation-delay: 0s;
-                top: 37px;
-                left: 66px
-            }
-
-            .ladi-loading .loading div:nth-child(2) {
-                animation-delay: -.1s;
-                top: 22px;
-                left: 62px
-            }
-
-            .ladi-loading .loading div:nth-child(3) {
-                animation-delay: -.2s;
-                top: 11px;
-                left: 52px
-            }
-
-            .ladi-loading .loading div:nth-child(4) {
-                animation-delay: -.3s;
-                top: 7px;
-                left: 37px
-            }
-
-            .ladi-loading .loading div:nth-child(5) {
-                animation-delay: -.4s;
-                top: 11px;
-                left: 22px
-            }
-
-            .ladi-loading .loading div:nth-child(6) {
-                animation-delay: -.5s;
-                top: 22px;
-                left: 11px
-            }
-
-            .ladi-loading .loading div:nth-child(7) {
-                animation-delay: -.6s;
-                top: 37px;
-                left: 7px
-            }
-
-            .ladi-loading .loading div:nth-child(8) {
-                animation-delay: -.7s;
-                top: 52px;
-                left: 11px
-            }
-
-            .ladi-loading .loading div:nth-child(9) {
-                animation-delay: -.8s;
-                top: 62px;
-                left: 22px
-            }
-
-            .ladi-loading .loading div:nth-child(10) {
-                animation-delay: -.9s;
-                top: 66px;
-                left: 37px
-            }
-
-            .ladi-loading .loading div:nth-child(11) {
-                animation-delay: -1s;
-                top: 62px;
-                left: 52px
-            }
-
-            .ladi-loading .loading div:nth-child(12) {
-                animation-delay: -1.1s;
-                top: 52px;
-                left: 62px
-            }
-
-            @keyframes ladi-loading {
-                0%,100%,20%,80% {
-                    transform: scale(1)
-                }
-
-                50% {
-                    transform: scale(1.5)
-                }
-            }
-
-            .ladipage-message {
-                position: fixed;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                z-index: 10000000000;
-                background: rgba(0,0,0,.3)
-            }
-
-            .ladipage-message .ladipage-message-box {
-                width: 400px;
-                max-width: calc(100% - 50px);
-                height: 160px;
-                border: 1px solid rgba(0,0,0,.3);
-                background-color: #fff;
-                position: fixed;
-                top: calc(50% - 155px);
-                left: 0;
-                right: 0;
-                margin: auto;
-                border-radius: 10px
-            }
-
-            .ladipage-message .ladipage-message-box span {
-                display: block;
-                background-color: rgba(6,21,40,.05);
-                color: #000;
-                padding: 12px 15px;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 16px;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px
-            }
-
-            .ladipage-message .ladipage-message-box .ladipage-message-text {
-                display: -webkit-box;
-                font-size: 14px;
-                padding: 0 20px;
-                margin-top: 16px;
-                line-height: 20px;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                word-break: break-word
-            }
-
-            .ladipage-message .ladipage-message-box .ladipage-message-close {
-                display: block;
-                position: absolute;
-                right: 15px;
-                bottom: 10px;
-                margin: 0 auto;
-                padding: 10px 0;
-                border: none;
-                width: 80px;
-                text-transform: uppercase;
-                text-align: center;
-                color: #000;
-                background-color: #e6e6e6;
-                border-radius: 5px;
-                text-decoration: none;
-                font-size: 14px;
-                line-height: 14px;
-                font-weight: 600;
-                cursor: pointer;
-                outline: 0
-            }
-
-            .lightbox-screen {
-                display: none;
-                position: fixed;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                margin: auto;
-                z-index: 9000000080;
-                background: rgba(0,0,0,.5)
-            }
-
-            .lightbox-screen .lightbox-close {
-                position: absolute;
-                z-index: 9000000090;
-                cursor: pointer
-            }
-
-            .lightbox-screen .lightbox-hidden {
-                display: none
-            }
-
-            .lightbox-screen .lightbox-close {
-                width: 16px;
-                height: 16px;
-                margin: 10px;
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23fff%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M23.4144%202.00015L2.00015%2023.4144L0.585938%2022.0002L22.0002%200.585938L23.4144%202.00015Z%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M2.00015%200.585938L23.4144%2022.0002L22.0002%2023.4144L0.585938%202.00015L2.00015%200.585938Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E")
-            }
-
-            body {
-                font-size: 12px;
-                -ms-text-size-adjust: none;
-                -moz-text-size-adjust: none;
-                -o-text-size-adjust: none;
-                -webkit-text-size-adjust: none;
-                background-color: #fff;
-            }
-
-            .overflow-hidden {
-                overflow: hidden;
-            }
-
-            .ladi-transition {
-                transition: all 150ms linear 0s;
-            }
-
-            .z-index-1 {
-                z-index: 1;
-            }
-
-            .opacity-0 {
-                opacity: 0;
-            }
-
-            .height-0 {
-                height: 0 !important;
-            }
-
-            .pointer-events-none {
-                pointer-events: none;
-            }
-
-            .transition-parent-collapse-height {
-                transition: height 150ms linear 0s;
-            }
-
-            .transition-parent-collapse-top {
-                transition: top 150ms linear 0s;
-            }
-
-            .transition-readmore {
-                transition: height 350ms linear 0s;
-            }
-
-            .transition-collapse {
-                transition: height 150ms linear 0s;
-            }
-
-            body.grab {
-                cursor: grab;
-            }
-
-            .ladi-wraper {
-                width: 100%;
-                min-height: 100%;
-                overflow: hidden;
-                touch-action: manipulation;
-            }
-
-            .ladi-container {
-                position: relative;
-                margin: 0 auto;
-                height: 100%;
-            }
-
-            .ladi-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                pointer-events: none;
-            }
-
-            .ladi-element {
-                position: absolute;
-            }
-
-            @media (hover: hover) {
-                .ladi-check-hover {
-                    opacity: 0;
-                }
-            }
-
-            .ladi-section {
-                margin: 0 auto;
-                position: relative;
-            }
-
-            .ladi-section[data-tab-id] {
-                display: none;
-            }
-
-            .ladi-section.selected[data-tab-id] {
-                display: block;
-            }
-
-            .ladi-section .ladi-section-background {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                pointer-events: none;
-                overflow: hidden;
-            }
-
-            .ladi-group {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-            }
-
-            .ladi-image {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-            }
-
-            .ladi-image .ladi-image-background {
-                background-repeat: no-repeat;
-                background-position: left top;
-                background-size: cover;
-                background-attachment: scroll;
-                background-origin: content-box;
-                position: absolute;
-                margin: 0 auto;
-                width: 100%;
-                height: 100%;
-                pointer-events: none;
-            }
-
-            a[data-action] {
-                user-select: none;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                cursor: pointer;
-            }
-
-            a:visited {
-                color: inherit;
-            }
-
-            a:link {
-                color: inherit;
-            }
-
-            [data-opacity="0"] {
-                opacity: 0;
-            }
-
-            [data-hidden="true"] {
-                display: none;
-            }
-
-            [data-action="true"] {
-                cursor: pointer;
-            }
-
-            .ladi-hidden {
-                display: none;
-            }
-
-            .ladi-animation-hidden {
-                visibility: hidden !important;
-                opacity: 0 !important;
-            }
-
-            .element-click-selected {
-                cursor: pointer;
-            }
-
-            .is-2nd-click {
-                cursor: pointer;
-            }
-
-            .ladi-button-shape.is-2nd-click, .ladi-accordion-shape.is-2nd-click {
-                z-index: 3;
-            }
-
-            .backdrop-popup {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 90000060;
-            }
-
-            .backdrop-dropbox {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 90000040;
-            }
-
-            .ladi-lazyload {
-                background-image: none !important;
-            }
-
-            .ladi-list-paragraph ul li.ladi-lazyload:before {
-                background-image: none !important;
-            }
-
-            @media (min-width: 768px) {
-            }
-
-            @media (max-width: 767px) {
-                .ladi-element.ladi-auto-scroll {
-                    overflow-x: auto;
-                    overflow-y: hidden;
-                    width: 100% !important;
-                    left: 0 !important;
-                    -webkit-overflow-scrolling: touch;
-                }
-
-                [data-hint]:not([data-timeout-id-copied]):before, [data-hint]:not([data-timeout-id-copied]):after {
-                    display: none !important;
-                }
-
-                .ladi-section.ladi-auto-scroll {
-                    overflow-x: auto;
-                    overflow-y: hidden;
-                    -webkit-overflow-scrolling: touch;
-                }
-            }
-        </style>
-        <style id="style_page" type="text/css">
-            body {
-                direction: ltr;
-            }
-
-            @media (min-width: 768px) {
-                .ladi-section .ladi-container {
-                    width: 1200px;
-                }
-            }
-
-            @media (max-width: 767px) {
-                .ladi-section .ladi-container {
-                    width: 420px;
-                }
-            }
-
-            body {
-                font-family: "Open Sans", sans-serif
-            }
-        </style>
-        <style id="style_element" type="text/css">
-            #SECTION1 > .ladi-section-background,#SECTION3 > .ladi-section-background,#SECTION4 > .ladi-section-background,#SECTION7 > .ladi-section-background,#SECTION6 > .ladi-section-background,#SECTION5 > .ladi-section-background,#SECTION9 > .ladi-section-background,#SECTION8 > .ladi-section-background,#SECTION12 > .ladi-section-background,#SECTION11 > .ladi-section-background,#SECTION10 > .ladi-section-background {
-                background-color: rgb(1, 1, 1);
-            }
-
-            #IMAGE2,#IMAGE3,#IMAGE8,#IMAGE10 {
-                top: 0px;
-            }
-
-            #IMAGE2 > .ladi-image > .ladi-image-background,#IMAGE3 > .ladi-image > .ladi-image-background,#IMAGE13 > .ladi-image > .ladi-image-background,#IMAGE14 > .ladi-image > .ladi-image-background,#IMAGE15 > .ladi-image > .ladi-image-background,#IMAGE4 > .ladi-image > .ladi-image-background,#IMAGE5,#IMAGE5 > .ladi-image > .ladi-image-background,#IMAGE6,#IMAGE6 > .ladi-image > .ladi-image-background,#IMAGE7 > .ladi-image > .ladi-image-background,#IMAGE8 > .ladi-image > .ladi-image-background,#IMAGE9,#IMAGE9 > .ladi-image > .ladi-image-background,#IMAGE10 > .ladi-image > .ladi-image-background,#IMAGE11 > .ladi-image > .ladi-image-background,#IMAGE12 > .ladi-image > .ladi-image-background {
-                top: 0px;
-                left: 0px;
-            }
-
-            #IMAGE13:hover > .ladi-image,#IMAGE14:hover > .ladi-image,#IMAGE15:hover > .ladi-image {
-                transform: scale(1.03);
-                opacity: 1;
-            }
-
-            #IMAGE15 {
-                left: 0px;
-            }
-
-            @media (min-width: 768px) {
-                #SECTION1 {
-                    height: 581.86px;
-                }
-
-                #IMAGE2 {
-                    width: 1310.35px;
-                    height: 581.86px;
-                    left: -110.348px;
-                }
-
-                #IMAGE2 > .ladi-image > .ladi-image-background {
-                    width: 1310.35px;
-                    height: 581.86px;
-                    background-image: url("https://w.ladicdn.com/s1650x900/5d142f1f620fa47f5c176213/1-20250617040126-pqp7e.png");
-                }
-
-                #SECTION3 {
-                    height: 524.8px;
-                }
-
-                #GROUP2 {
-                    width: 1078.86px;
-                    height: 459.672px;
-                    top: 22.153px;
-                    left: 60.57px;
-                }
-
-                #IMAGE3 {
-                    width: 1037.82px;
-                    height: 45.518px;
-                    left: 20.52px;
-                }
-
-                #IMAGE3 > .ladi-image > .ladi-image-background {
-                    width: 1037.82px;
-                    height: 464.518px;
-                    background-image: url("https://w.ladicdn.com/s1350x800/5d142f1f620fa47f5c176213/shop-20250617041939-wsi22.png");
-                }
-
-                #IMAGE13 {
-                    width: 318.861px;
-                    height: 405.589px;
-                    top: 54.083px;
-                    left: 363.518px;
-                }
-
-                #IMAGE13 > .ladi-image > .ladi-image-background {
-                    width: 318.861px;
-                    height: 405.589px;
-                    background-image: url("https://w.ladicdn.com/s650x750/5d142f1f620fa47f5c176213/partner-3-20250617083138-x1ni1.png");
-                }
-
-                #IMAGE14 {
-                    width: 296.484px;
-                    height: 405.589px;
-                    top: 54.083px;
-                    left: 782.379px;
-                }
-
-                #IMAGE14 > .ladi-image > .ladi-image-background {
-                    width: 296.484px;
-                    height: 405.589px;
-                    background-image: url("https://w.ladicdn.com/s600x750/5d142f1f620fa47f5c176213/partner-2-20250617083138-q1mhj.png");
-                }
-
-                #IMAGE15 {
-                    width: 263.518px;
-                    height: 405.588px;
-                    top: 54.083px;
-                }
-
-                #IMAGE15 > .ladi-image > .ladi-image-background {
-                    width: 263.518px;
-                    height: 405.588px;
-                    background-image: url("https://w.ladicdn.com/s600x750/5d142f1f620fa47f5c176213/partner-1-20250617083138-qzykb.png");
-                }
-
-                #SECTION4 {
-                    height: 1233.8px;
-                }
-
-                #IMAGE4 {
-                    width: 1019.83px;
-                    height: 1183px;
-                    top: 15.112px;
-                    left: 90.085px;
-                }
-
-                #IMAGE4 > .ladi-image > .ladi-image-background {
-                    width: 1019.83px;
-                    height: 1183px;
-                    background-image: url("https://w.ladicdn.com/s1350x1500/5d142f1f620fa47f5c176213/platform-20250617042019-biat7.png");
-                }
-
-                #SECTION7 {
-                    height: 683.371px;
-                }
-
-                #IMAGE5 {
-                    width: 1200px;
-                    height: 683.371px;
-                }
-
-                #IMAGE5 > .ladi-image > .ladi-image-background {
-                    width: 1200px;
-                    height: 683.371px;
-                    background-image: url("https://w.ladicdn.com/s1550x1000/5d142f1f620fa47f5c176213/rtx-games-20250617042052-m5cpl.png");
-                }
-
-                #SECTION6 {
-                    height: 515.556px;
-                }
-
-                #IMAGE6 {
-                    width: 1200px;
-                    height: 515.556px;
-                }
-
-                #IMAGE6 > .ladi-image > .ladi-image-background {
-                    width: 1200px;
-                    height: 515.556px;
-                    background-image: url("https://w.ladicdn.com/s1550x850/5d142f1f620fa47f5c176213/dlss-4-20250617042619-ojo6u.png");
-                }
-
-                #SECTION5 {
-                    height: 915.8px;
-                }
-
-                #IMAGE7 {
-                    width: 1092.3px;
-                    height: 892.399px;
-                    top: 0px;
-                    left: 53.85px;
-                }
-
-                #IMAGE7 > .ladi-image > .ladi-image-background {
-                    width: 1092.3px;
-                    height: 892.399px;
-                    background-image: url("https://w.ladicdn.com/s1400x1200/5d142f1f620fa47f5c176213/ray-tracing-20250617042701-b9cby.png");
-                }
-
-                #SECTION9 {
-                    height: 573.332px;
-                }
-
-                #IMAGE8 {
-                    width: 1334.72px;
-                    height: 573.332px;
-                    left: -134.718px;
-                }
-
-                #IMAGE8 > .ladi-image > .ladi-image-background {
-                    width: 1334.72px;
-                    height: 573.332px;
-                    background-image: url("https://w.ladicdn.com/s1650x900/5d142f1f620fa47f5c176213/reflex-20250617042738-tscbd.png");
-                }
-
-                #SECTION8 {
-                    height: 515.464px;
-                }
-
-                #IMAGE9 {
-                    width: 1200px;
-                    height: 515.464px;
-                }
-
-                #IMAGE9 > .ladi-image > .ladi-image-background {
-                    width: 1200px;
-                    height: 515.464px;
-                    background-image: url("https://w.ladicdn.com/s1550x850/5d142f1f620fa47f5c176213/rtx-ai-pcs-20250617042809-aogjb.png");
-                }
-
-                #SECTION12 {
-                    height: 852.8px;
-                }
-
-                #IMAGE10 {
-                    width: 1200px;
-                    height: 819.672px;
-                    left: 0px;
-                }
-
-                #IMAGE10 > .ladi-image > .ladi-image-background {
-                    width: 1200px;
-                    height: 819.672px;
-                    background-image: url("https://w.ladicdn.com/s1550x1150/5d142f1f620fa47f5c176213/creators-20250617042830-g7eaj.png");
-                }
-
-                #SECTION11 {
-                    height: 1082.8px;
-                }
-
-                #IMAGE11 {
-                    width: 817.187px;
-                    height: 1046px;
-                    top: 8px;
-                    left: 191.406px;
-                }
-
-                #IMAGE11 > .ladi-image > .ladi-image-background {
-                    width: 817.187px;
-                    height: 1046px;
-                    background-image: url("https://w.ladicdn.com/s1150x1350/5d142f1f620fa47f5c176213/additional-features-and-benefits-20250617042856-eslsy.png");
-                }
-
-                #SECTION10 {
-                    height: 317.8px;
-                }
-
-                #IMAGE12 {
-                    width: 1192.69px;
-                    height: 247.021px;
-                    top: 0px;
-                    left: 3.6545px;
-                }
-
-                #IMAGE12 > .ladi-image > .ladi-image-background {
-                    width: 1192.69px;
-                    height: 247.021px;
-                    background-image: url("https://w.ladicdn.com/s1500x550/5d142f1f620fa47f5c176213/footer-20250617043017-zekpc.png");
-                }
-            }
-
-            @media (max-width: 767px) {
-                #SECTION1 {
-                    height: 227.62px;
-                }
-
-                #IMAGE2 {
-                    width: 512.6px;
-                    height: 227.62px;
-                    left: -62.6001px;
-                }
-
-                #IMAGE2 > .ladi-image > .ladi-image-background {
-                    width: 512.6px;
-                    height: 227.62px;
-                    background-image: url("https://w.ladicdn.com/s850x550/5d142f1f620fa47f5c176213/1-20250617040126-pqp7e.png");
-                }
-
-                #SECTION3 {
-                    height: 196.672px;
-                }
-
-                #GROUP2 {
-                    width: 400px;
-                    height: 170.428px;
-                    top: 6px;
-                    left: 10px;
-                }
-
-                #IMAGE3 {
-                    width: 384.783px;
-                    height: 16.8763px;
-                    left: 7.60801px;
-                }
-
-                #IMAGE3 > .ladi-image > .ladi-image-background {
-                    width: 384.783px;
-                    height: 172.225px;
-                    background-image: url("https://w.ladicdn.com/s700x500/5d142f1f620fa47f5c176213/shop-20250617041939-wsi22.png");
-                }
-
-                #IMAGE13 {
-                    width: 118.221px;
-                    height: 150.376px;
-                    top: 20.0518px;
-                    left: 134.778px;
-                }
-
-                #IMAGE13 > .ladi-image > .ladi-image-background {
-                    width: 118.221px;
-                    height: 150.376px;
-                    background-image: url("https://w.ladicdn.com/s450x500/5d142f1f620fa47f5c176213/partner-3-20250617083138-x1ni1.png");
-                }
-
-                #IMAGE14 {
-                    width: 109.925px;
-                    height: 150.376px;
-                    top: 20.0518px;
-                    left: 290.075px;
-                }
-
-                #IMAGE14 > .ladi-image > .ladi-image-background {
-                    width: 109.925px;
-                    height: 150.376px;
-                    background-image: url("https://w.ladicdn.com/s450x500/5d142f1f620fa47f5c176213/partner-2-20250617083138-q1mhj.png");
-                }
-
-                #IMAGE15 {
-                    width: 97.7024px;
-                    height: 150.376px;
-                    top: 20.0518px;
-                }
-
-                #IMAGE15 > .ladi-image > .ladi-image-background {
-                    width: 97.7024px;
-                    height: 150.376px;
-                    background-image: url("https://w.ladicdn.com/s400x500/5d142f1f620fa47f5c176213/partner-1-20250617083138-qzykb.png");
-                }
-
-                #SECTION4 {
-                    height: 483.999px;
-                }
-
-                #IMAGE4 {
-                    width: 400px;
-                    height: 463.999px;
-                    top: 10px;
-                    left: 10px;
-                }
-
-                #IMAGE4 > .ladi-image > .ladi-image-background {
-                    width: 400px;
-                    height: 463.999px;
-                    background-image: url("https://w.ladicdn.com/s750x800/5d142f1f620fa47f5c176213/platform-20250617042019-biat7.png");
-                }
-
-                #SECTION7 {
-                    height: 247.79px;
-                }
-
-                #IMAGE5 {
-                    width: 420px;
-                    height: 239.18px;
-                }
-
-                #IMAGE5 > .ladi-image > .ladi-image-background {
-                    width: 420px;
-                    height: 239.18px;
-                    background-image: url("https://w.ladicdn.com/s750x550/5d142f1f620fa47f5c176213/rtx-games-20250617042052-m5cpl.png");
-                }
-
-                #SECTION6 {
-                    height: 180.445px;
-                }
-
-                #IMAGE6 {
-                    width: 420px;
-                    height: 180.445px;
-                }
-
-                #IMAGE6 > .ladi-image > .ladi-image-background {
-                    width: 420px;
-                    height: 180.445px;
-                    background-image: url("https://w.ladicdn.com/s750x500/5d142f1f620fa47f5c176213/dlss-4-20250617042619-ojo6u.png");
-                }
-
-                #SECTION5 {
-                    height: 346.796px;
-                }
-
-                #IMAGE7 {
-                    width: 400px;
-                    height: 326.796px;
-                    top: 10px;
-                    left: 10px;
-                }
-
-                #IMAGE7 > .ladi-image > .ladi-image-background {
-                    width: 400px;
-                    height: 326.796px;
-                    background-image: url("https://w.ladicdn.com/s750x650/5d142f1f620fa47f5c176213/ray-tracing-20250617042701-b9cby.png");
-                }
-
-                #SECTION9 {
-                    height: 203.821px;
-                }
-
-                #IMAGE8 {
-                    width: 474.496px;
-                    height: 203.821px;
-                    left: -54.4961px;
-                }
-
-                #IMAGE8 > .ladi-image > .ladi-image-background {
-                    width: 474.496px;
-                    height: 203.821px;
-                    background-image: url("https://w.ladicdn.com/s800x550/5d142f1f620fa47f5c176213/reflex-20250617042738-tscbd.png");
-                }
-
-                #SECTION8 {
-                    height: 180.412px;
-                }
-
-                #IMAGE9 {
-                    width: 420px;
-                    height: 180.412px;
-                }
-
-                #IMAGE9 > .ladi-image > .ladi-image-background {
-                    width: 420px;
-                    height: 180.412px;
-                    background-image: url("https://w.ladicdn.com/s750x500/5d142f1f620fa47f5c176213/rtx-ai-pcs-20250617042809-aogjb.png");
-                }
-
-                #SECTION12 {
-                    height: 309.224px;
-                }
-
-                #IMAGE10 {
-                    width: 452.704px;
-                    height: 309.224px;
-                    left: -16.6px;
-                }
-
-                #IMAGE10 > .ladi-image > .ladi-image-background {
-                    width: 452.704px;
-                    height: 309.224px;
-                    background-image: url("https://w.ladicdn.com/s800x650/5d142f1f620fa47f5c176213/creators-20250617042830-g7eaj.png");
-                }
-
-                #SECTION11 {
-                    height: 532px;
-                }
-
-                #IMAGE11 {
-                    width: 400px;
-                    height: 512px;
-                    top: 10px;
-                    left: 10px;
-                }
-
-                #IMAGE11 > .ladi-image > .ladi-image-background {
-                    width: 400px;
-                    height: 512px;
-                    background-image: url("https://w.ladicdn.com/s750x850/5d142f1f620fa47f5c176213/additional-features-and-benefits-20250617042856-eslsy.png");
-                }
-
-                #SECTION10 {
-                    height: 102.845px;
-                }
-
-                #IMAGE12 {
-                    width: 400px;
-                    height: 82.845px;
-                    top: 10px;
-                    left: 10px;
-                }
-
-                #IMAGE12 > .ladi-image > .ladi-image-background {
-                    width: 400px;
-                    height: 82.845px;
-                    background-image: url("https://w.ladicdn.com/s750x400/5d142f1f620fa47f5c176213/footer-20250617043017-zekpc.png");
-                }
-            }
-        </style>
-        <style id="style_lazyload" type="text/css">
-            body.lazyload .ladi-overlay, body.lazyload .ladi-box, body.lazyload .ladi-button-background, body.lazyload .ladi-collection-item:before, body.lazyload .ladi-countdown-background, body.lazyload .ladi-form-item-background, body.lazyload .ladi-form-label-container .ladi-form-label-item.image, body.lazyload .ladi-frame-background, body.lazyload .ladi-gallery-view-item, body.lazyload .ladi-gallery-control-item, body.lazyload .ladi-headline, body.lazyload .ladi-image-background, body.lazyload .ladi-image-compare, body.lazyload .ladi-list-paragraph ul li:before, body.lazyload .ladi-section-background, body.lazyload .ladi-survey-option-background, body.lazyload .ladi-survey-option-image, body.lazyload .ladi-tabs-background, body.lazyload .ladi-video-background, body.lazyload .ladi-banner, body.lazyload .ladi-spin-lucky-screen, body.lazyload .ladi-spin-lucky-start {
-                background-image: none !important;
-            }
-        </style>
-    </head>
-    <body class="lazyload">
-        <div class="ladi-wraper">
-            <div id="G1705979304921_head" data-global-id="65af2db6018a1b001141884e" data-store-id="5d142f1f620fa47f5c176213" class="ladi-section"></div>
-            <div id="SECTION1" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <a href="https://tinhocngoisao.com/collections/pc-star-msi" target="_blank" id="IMAGE2" class='ladi-element'>
-                        <div class='ladi-image'>
-                            <div class="ladi-image-background"></div>
-                        </div>
-                    </a>
-                </div>
+<?php
+
+// Hàm kiểm tra rate limiting để tránh spam
+function checkRateLimit($email, $phone = '') {
+    $cacheDir = sys_get_temp_dir() . '/email_cache/';
+    if (!is_dir($cacheDir)) {
+        mkdir($cacheDir, 0777, true);
+    }
+    
+    $emailHash = md5($email);
+    $phoneHash = !empty($phone) ? md5($phone) : '';
+    $cacheFile = $cacheDir . $emailHash . '.json';
+    $phoneCacheFile = !empty($phoneHash) ? $cacheDir . $phoneHash . '_phone.json' : '';
+    
+    $currentTime = time();
+    $timeLimit = 300; // 5 phút
+    $maxAttempts = 3; // Tối đa 3 email trong 5 phút
+    
+    // Kiểm tra theo email
+    $emailData = [];
+    if (file_exists($cacheFile)) {
+        $emailData = json_decode(file_get_contents($cacheFile), true);
+        
+        // Xóa các attempt cũ
+        $emailData['attempts'] = array_filter($emailData['attempts'], function($time) use ($currentTime, $timeLimit) {
+            return ($currentTime - $time) <= $timeLimit;
+        });
+        
+        if (count($emailData['attempts']) >= $maxAttempts) {
+            return false; // Đã vượt quá giới hạn
+        }
+    }
+    
+    // Kiểm tra theo số điện thoại (nếu có)
+    if (!empty($phoneCacheFile)) {
+        $phoneData = [];
+        if (file_exists($phoneCacheFile)) {
+            $phoneData = json_decode(file_get_contents($phoneCacheFile), true);
+            
+            // Xóa các attempt cũ
+            $phoneData['attempts'] = array_filter($phoneData['attempts'], function($time) use ($currentTime, $timeLimit) {
+                return ($currentTime - $time) <= $timeLimit;
+            });
+            
+            if (count($phoneData['attempts']) >= $maxAttempts) {
+                return false; // Đã vượt quá giới hạn
+            }
+        }
+    }
+    
+    // Ghi lại attempt mới
+    $emailData['attempts'][] = $currentTime;
+    file_put_contents($cacheFile, json_encode($emailData));
+    
+    if (!empty($phoneCacheFile)) {
+        $phoneData['attempts'][] = $currentTime;
+        file_put_contents($phoneCacheFile, json_encode($phoneData));
+    }
+    
+    return true;
+}
+
+// Hàm validate dữ liệu đầu vào nghiêm ngặt
+function validateOrderData($data) {
+    $errors = [];
+    
+    // Validate email
+    if (empty($data['email']) || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Email không hợp lệ';
+    }
+    
+    // Validate phone
+    if (empty($data['phone']) || !preg_match('/^[0-9+\-\s()]{10,15}$/', $data['phone'])) {
+        $errors[] = 'Số điện thoại không hợp lệ';
+    }
+    
+    // Validate name
+    if (empty($data['name']) || strlen($data['name']) < 2 || strlen($data['name']) > 100) {
+        $errors[] = 'Tên phải từ 2-100 ký tự';
+    }
+    
+    // Validate address
+    if (empty($data['address']) || strlen($data['address']) < 10 || strlen($data['address']) > 500) {
+        $errors[] = 'Địa chỉ phải từ 10-500 ký tự';
+    }
+    
+    // Kiểm tra spam patterns trong note
+    if (!empty($data['note'])) {
+        $spamPatterns = [
+            '/http[s]?:\/\/[^\s]+/i', // URLs
+            '/www\.[^\s]+/i', // WWW links
+            '/<script/i', // Script tags
+            '/onclick/i', // onclick events
+            '/javascript:/i', // Javascript protocol
+        ];
+        
+        foreach ($spamPatterns as $pattern) {
+            if (preg_match($pattern, $data['note'])) {
+                $errors[] = 'Ghi chú chứa nội dung không được phép';
+                break;
+            }
+        }
+    }
+    
+    return $errors;
+}
+
+// Hàm kiểm tra blacklist email/phone
+function isBlacklisted($email, $phone = '') {
+    $blacklistFile = __DIR__ . '/blacklist.json';
+    
+    if (!file_exists($blacklistFile)) {
+        return false;
+    }
+    
+    $blacklist = json_decode(file_get_contents($blacklistFile), true);
+    
+    // Kiểm tra email
+    if (in_array($email, $blacklist['emails'] ?? [])) {
+        return true;
+    }
+    
+    // Kiểm tra phone
+    if (!empty($phone) && in_array($phone, $blacklist['phones'] ?? [])) {
+        return true;
+    }
+    
+    // Kiểm tra domain email
+    $emailDomain = substr(strrchr($email, "@"), 1);
+    if (in_array($emailDomain, $blacklist['domains'] ?? [])) {
+        return true;
+    }
+    
+    return false;
+}
+
+// Hàm log hoạt động để monitoring
+function logEmailActivity($orderId, $email, $phone, $status) {
+    $logFile = __DIR__ . '/logs/email_activity.log';
+    $logDir = dirname($logFile);
+    
+    if (!is_dir($logDir)) {
+        mkdir($logDir, 0777, true);
+    }
+    
+    $logData = [
+        'timestamp' => date('Y-m-d H:i:s'),
+        'order_id' => $orderId,
+        'email' => $email,
+        'phone' => $phone,
+        'status' => $status,
+        'ip' => $_SERVER['REMOTE_ADDR'] ?? 'unknown'
+    ];
+    
+    file_put_contents($logFile, json_encode($logData) . "\n", FILE_APPEND | LOCK_EX);
+}
+
+// Hàm xử lý dữ liệu order dạng text có emoji và specs
+function processOrderData($order) {
+    // Loại bỏ HTML tags và script
+    $cleanOrder = strip_tags($order);
+    $cleanOrder = preg_replace('/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/mi', '', $cleanOrder);
+    
+    // Tách thành các dòng dựa trên pattern
+    $formattedOrder = parseProductSpecs($cleanOrder);
+    
+    return $formattedOrder;
+}
+
+// Parse thông tin sản phẩm từ text (giữ nguyên như cũ)
+function parseProductSpecs($orderText) {
+    $output = '';
+    
+    // Pattern để tách các thông tin spec
+    $patterns = [
+        'CPU:' => '🔧',
+        'MAIN:' => '🔧', 
+        'VGA:' => '🎮',
+        'RAM:' => '💾',
+        'SSD:' => '💿',
+        'CASE:' => '📦',
+        'PSU:' => '⚡',
+        'Hệ Điều Hành:' => '💻',
+        'Phụ Kiện:' => '🖱️',
+        'Tản Nhiệt:' => '❄️'
+    ];
+    
+    // Tách dựa trên các keyword spec
+    $specs = [];
+    $currentSpec = '';
+    
+    // Tìm tên sản phẩm (dòng đầu tiên thường là tên)
+    $lines = preg_split('/(?=CPU:|MAIN:|VGA:|RAM:|SSD:|CASE:|PSU:|Hệ Điều Hành:|Phụ Kiện:|Tản Nhiệt:)/', $orderText);
+    
+    $productName = trim($lines[0]);
+    if (!empty($productName)) {
+        // Loại bỏ emoji nếu có ở đầu
+        $productName = preg_replace('/^[^\w\s]+\s*/', '', $productName);
+        $output .= '<div style="background: #ff1d1d; color: white; padding: 15px; border-radius: 5px; margin-bottom: 15px; text-align: center;">';
+        $output .= '<h3 style="margin: 0;">🖥️ ' . htmlspecialchars(trim($productName)) . '</h3>';
+        $output .= '</div>';
+    }
+    
+    // Xử lý từng spec
+    foreach ($patterns as $keyword => $icon) {
+        if (preg_match('/' . preg_quote($keyword) . '\s*([^A-Z]*?)(?=[A-Z][A-Z]+:|$)/s', $orderText, $matches)) {
+            $specValue = trim($matches[1]);
+            if (!empty($specValue)) {
+                $output .= '<div style="background: #f8f9fa; padding: 12px; margin: 8px 0; border-left: 4px solid #ff1d1d; border-radius: 3px;">';
+                $output .= '<strong style="color: #ff1d1d;">' . $icon . ' ' . $keyword . '</strong> ';
+                $output .= htmlspecialchars($specValue);
+                $output .= '</div>';
+            }
+        }
+    }
+    
+    // Tìm thông tin số lượng và giá
+    if (preg_match('/Số lượng:\s*x\s*(\d+)/', $orderText, $matches)) {
+        $quantity = $matches[1];
+        $output .= '<div style="background: #e8f5e8; padding: 12px; margin: 15px 0; border-radius: 5px; text-align: center;">';
+        $output .= '<strong style="color: #28a745;">📊 Số lượng: ' . $quantity . ' sản phẩm</strong>';
+        $output .= '</div>';
+    }
+    
+    // Tìm giá tiền (pattern linh hoạt)
+    if (preg_match('/(\d{1,3}(?:\.\d{3})*(?:,\d+)?)\s*(?:đ|VND|vnđ)/i', $orderText, $matches)) {
+        $price = $matches[1];
+        $output .= '<div style="background: #ff1d1d; color: white; padding: 15px; border-radius: 5px; margin-top: 15px; text-align: center;">';
+        $output .= '<strong style="font-size: 18px;">💰 Tổng cộng: ' . $price . 'đ</strong>';
+        $output .= '</div>';
+    }
+    
+    return $output ?: formatSimpleOrder($orderText);
+}
+
+// Hàm backup: format đơn giản nếu parse phức tạp không work (giữ nguyên như cũ)
+function formatSimpleOrder($orderText) {
+    $lines = explode("\n", $orderText);
+    $output = '';
+    
+    foreach ($lines as $line) {
+        $line = trim($line);
+        if (!empty($line)) {
+            // Nếu là dòng có emoji ở đầu (tên sản phẩm)
+            if (preg_match('/^[^\w\s]/', $line)) {
+                $output .= '<div style="background: #ff1d1d; color: white; padding: 12px; border-radius: 5px; margin: 10px 0; text-align: center;">';
+                $output .= '<strong>' . htmlspecialchars($line) . '</strong>';
+                $output .= '</div>';
+            }
+            // Nếu chứa thông tin spec
+            elseif (preg_match('/(CPU|MAIN|VGA|RAM|SSD|CASE|PSU):/i', $line)) {
+                $output .= '<div style="background: #f8f9fa; padding: 10px; margin: 5px 0; border-left: 4px solid #ff1d1d;">';
+                $output .= '• ' . htmlspecialchars($line);
+                $output .= '</div>';
+            }
+            // Thông tin khác
+            else {
+                $output .= '<p style="margin: 5px 0;">' . htmlspecialchars($line) . '</p>';
+            }
+        }
+    }
+    
+    return $output;
+}
+
+// Hàm gửi email đã được cập nhật với chống spam
+function sendOrderEmail($orderId, $order, $order_date, $name, $phone, $shipping, $email, $address, $note) {
+    // 1. Validate dữ liệu đầu vào
+    $validationErrors = validateOrderData([
+        'email' => $email,
+        'phone' => $phone,
+        'name' => $name,
+        'address' => $address,
+        'note' => $note
+    ]);
+    
+    if (!empty($validationErrors)) {
+        logEmailActivity($orderId, $email, $phone, 'VALIDATION_FAILED: ' . implode(', ', $validationErrors));
+        return ['success' => false, 'error' => 'Dữ liệu không hợp lệ: ' . implode(', ', $validationErrors)];
+    }
+    
+    // 2. Kiểm tra blacklist
+    if (isBlacklisted($email, $phone)) {
+        logEmailActivity($orderId, $email, $phone, 'BLACKLISTED');
+        return ['success' => false, 'error' => 'Email hoặc số điện thoại đã bị chặn'];
+    }
+    
+    // 3. Kiểm tra rate limiting
+    if (!checkRateLimit($email, $phone)) {
+        logEmailActivity($orderId, $email, $phone, 'RATE_LIMITED');
+        return ['success' => false, 'error' => 'Đã gửi quá nhiều email. Vui lòng thử lại sau 5 phút'];
+    }
+    
+    $mail = new PHPMailer(true);
+    try {
+        // Làm sạch dữ liệu đầu vào
+        $name = htmlspecialchars($name, ENT_QUOTES, 'UTF-8');
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+        $address = htmlspecialchars($address, ENT_QUOTES, 'UTF-8');
+        $note = strip_tags(htmlspecialchars($note, ENT_QUOTES, 'UTF-8'));
+        
+        // Xử lý dữ liệu order
+        $processedOrder = processOrderData($order);
+
+        // Cấu hình SMTP
+        $mail->isSMTP();
+        $mail->Host = 'mail.rosacomputer.ai';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'noreply@rosacomputer.ai';
+        $mail->Password = 'Rosacomputer@1234';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port = 465;
+        $mail->CharSet = 'UTF-8';
+        $mail->Encoding = 'base64';
+
+        // Thêm headers chống spam
+        $mail->addCustomHeader('X-Priority', '3');
+        $mail->addCustomHeader('X-MSMail-Priority', 'Normal');
+        $mail->addCustomHeader('X-Mailer', 'PHP/' . phpversion());
+        $mail->addCustomHeader('List-Unsubscribe', '<mailto:unsubscribe@rosacomputer.ai>');
+        
+        $mail->setFrom('noreply@rosacomputer.ai', 'ROSA COMPUTER AI');
+        $mail->addAddress($email, $name);
+        $mail->addReplyTo('support@rosacomputer.ai', 'ROSA COMPUTER AI');
+        $mail->isHTML(true);
+        $mail->Subject = "Xác nhận đơn hàng #$orderId - ROSA Computer";
+
+        $mail->Body = '
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
+            
+            <div style="text-align: center; margin-bottom: 30px;">
+                <img src="https://rosacomputer.vn/assets/images/rosa.png" alt="ROSA Computer" style="max-width: 150px;">
+                <h2 style="color: #ff1d1d; margin: 20px 0;">Xin chào ' . $name . '</h2>
+                <p style="color: #4CAF50; font-weight: bold; font-size: 16px;">🎉 Đặt hàng thành công tại ROSA Computer!</p>
             </div>
-            <div id="SECTION3" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <div data-action="true" id="GROUP2" class='ladi-element'>
-                        <div class='ladi-group'>
-                            <div id="IMAGE3" class='ladi-element'>
-                                <div class='ladi-image'>
-                                    <div class="ladi-image-background"></div>
-                                </div>
-                            </div>
-                            <a href="https://tinhocngoisao.com/products/pc-star-karmish-a-plus-intel-core-i5-14600kf-b760-ddr5-32gb-ssd-1tb-rtx-5060ti-wifi" target="_blank" id="IMAGE13" class='ladi-element'>
-                                <div class='ladi-image ladi-transition'>
-                                    <div class="ladi-image-background"></div>
-                                </div>
-                            </a>
-                            <a href="https://tinhocngoisao.com/products/pc-star-karmish-ssr-amd-ryzen-7-9800x3d-x870-ddr5-64gb-ssd-1tb-rtx-5070-wifi" target="_blank" id="IMAGE14" class='ladi-element'>
-                                <div class='ladi-image ladi-transition'>
-                                    <div class="ladi-image-background"></div>
-                                </div>
-                            </a>
-                            <a href="https://tinhocngoisao.com/products/pc-star-karmish-s-intel-core-ultra-5-245kf-z890-ddr5-32gb-ssd-1tb-rtx-5060-wifi" target="_blank" id="IMAGE15" class='ladi-element'>
-                                <div class='ladi-image ladi-transition'>
-                                    <div class="ladi-image-background"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
+            <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #ff1d1d; margin-top: 0; border-bottom: 2px solid #ff1d1d; padding-bottom: 5px;">📋 THÔNG TIN ĐƠN HÀNG</h3>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="padding: 8px 0; font-weight: bold;">Mã đơn hàng:</td>
+                        <td style="padding: 8px 0; color: #ff4540; font-weight: bold;">#' . $orderId . '</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px 0; font-weight: bold;">Ngày đặt hàng:</td>
+                        <td style="padding: 8px 0; color: #ff4540;">' . $order_date . '</td>
+                    </tr>
+                </table>
             </div>
-            <div id="SECTION4" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <div id="IMAGE4" class='ladi-element'>
-                        <div class='ladi-image'>
-                            <div class="ladi-image-background"></div>
-                        </div>
-                    </div>
-                </div>
+
+            <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <h3 style="color: #ff1d1d; margin-top: 0; border-bottom: 2px solid #ff1d1d; padding-bottom: 5px;">👤 THÔNG TIN KHÁCH HÀNG</h3>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="padding: 5px 0; font-weight: bold; width: 30%;">Họ tên:</td>
+                        <td style="padding: 5px 0;">' . $name . '</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px 0; font-weight: bold;">Điện thoại:</td>
+                        <td style="padding: 5px 0;">' . $phone . '</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px 0; font-weight: bold;">Email:</td>
+                        <td style="padding: 5px 0;">' . $email . '</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px 0; font-weight: bold;">Địa chỉ:</td>
+                        <td style="padding: 5px 0;">' . $address . '</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 5px 0; font-weight: bold;">Thanh toán:</td>
+                        <td style="padding: 5px 0;">' . $shipping . '</td>
+                    </tr>
+                </table>
             </div>
-            <div id="SECTION7" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <div id="IMAGE5" class='ladi-element'>
-                        <div class='ladi-image'>
-                            <div class="ladi-image-background"></div>
-                        </div>
-                    </div>
-                </div>
+
+            <div style="background: #ffffff; border: 2px solid #ff1d1d; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+                <h3 style="color: #ff1d1d; margin-top: 0; text-align: center; border-bottom: 2px solid #ff1d1d; padding-bottom: 10px;">🛒 CHI TIẾT ĐƠN HÀNG</h3>
+                ' . $processedOrder . '
             </div>
-            <div id="SECTION6" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <div id="IMAGE6" class='ladi-element'>
-                        <div class='ladi-image'>
-                            <div class="ladi-image-background"></div>
-                        </div>
-                    </div>
-                </div>
+
+            <div style="background: linear-gradient(135deg, #ff1d1d, #ff4540); color: white; padding: 25px; border-radius: 8px; text-align: center; margin: 30px 0;">
+                <h3 style="margin: 0 0 10px 0; font-size: 20px;">🚀 Thông báo quan trọng!</h3>
+                <p style="margin: 0; font-size: 16px;">Nhân viên ROSA sẽ liên hệ xác nhận đơn hàng trong <strong>24h</strong></p>
+                <p style="margin: 5px 0 0 0; font-size: 14px;">Cảm ơn quý khách đã tin tưởng ROSA Computer! 🙏</p>
             </div>
-            <div id="SECTION5" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <div id="IMAGE7" class='ladi-element'>
-                        <div class='ladi-image'>
-                            <div class="ladi-image-background"></div>
-                        </div>
-                    </div>
-                </div>
+
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #e9ecef;">
+                <h4 style="color: #ff1d1d; margin-top: 0;">📞 Liên hệ hỗ trợ 24/7</h4>
+                <p style="margin: 10px 0; line-height: 1.8;">
+                    <strong>📧 Email:</strong> <a href="mailto:support@rosacomputer.ai" style="color: #ff1d1d;">support@rosacomputer.ai</a><br>
+                    <strong>📱 Hotline:</strong> <a href="tel:02839293770" style="color: #ff1d1d;">(028) 39293770</a> - <a href="tel:02839293765" style="color: #ff1d1d;">(028) 39293765</a><br>
+                    <strong>🌐 Website:</strong> <a href="https://rosacomputer.vn" style="color: #ff1d1d;">rosacomputer.vn</a>
+                </p>
+                <p style="font-size: 12px; color: #6c757d; margin-top: 20px;">
+                    Nếu không muốn nhận email từ chúng tôi, <a href="mailto:unsubscribe@rosacomputer.ai" style="color: #ff1d1d;">click để hủy đăng ký</a>
+                </p>
             </div>
-            <div id="SECTION9" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <div id="IMAGE8" class='ladi-element'>
-                        <div class='ladi-image'>
-                            <div class="ladi-image-background"></div>
-                        </div>
-                    </div>
-                </div>
+
+            <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e9ecef;">
+                <p style="color: #6c757d; font-size: 13px; margin: 0;">
+                    © 2024 ROSA Computer AI. Tất cả quyền được bảo lưu.<br>
+                    Email này được gửi tự động, vui lòng không reply.
+                </p>
             </div>
-            <div id="SECTION8" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <div id="IMAGE9" class='ladi-element'>
-                        <div class='ladi-image'>
-                            <div class="ladi-image-background"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="SECTION12" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <div id="IMAGE10" class='ladi-element'>
-                        <div class='ladi-image'>
-                            <div class="ladi-image-background"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="SECTION11" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <div id="IMAGE11" class='ladi-element'>
-                        <div class='ladi-image'>
-                            <div class="ladi-image-background"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="SECTION10" class='ladi-section'>
-                <div class='ladi-section-background'></div>
-                <div class="ladi-container">
-                    <div id="IMAGE12" class='ladi-element'>
-                        <div class='ladi-image'>
-                            <div class="ladi-image-background"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="backdrop-popup" class="backdrop-popup"></div>
-        <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
-        <div id="lightbox-screen" class="lightbox-screen"></div>
-        <script id="script_lazyload" type="text/javascript">
-            window.lazyload_run = function(dom, is_first, check_dom_rect) {
-                if (check_dom_rect && (document.body.clientWidth <= 0 || document.body.clientheight <= 0)) {
-                    return setTimeout(function() {
-                        window.lazyload_run(dom, is_first, check_dom_rect);
-                    }, 1);
-                }
-                var style_lazyload = document.getElementById('style_lazyload');
-                var list_element_lazyload = dom.querySelectorAll('body.lazyload .ladi-overlay, body.lazyload .ladi-box, body.lazyload .ladi-button-background, body.lazyload .ladi-collection-item, body.lazyload .ladi-countdown-background, body.lazyload .ladi-form-item-background, body.lazyload .ladi-form-label-container .ladi-form-label-item.image, body.lazyload .ladi-frame-background, body.lazyload .ladi-gallery-view-item, body.lazyload .ladi-gallery-control-item, body.lazyload .ladi-headline, body.lazyload .ladi-image-background, body.lazyload .ladi-image-compare, body.lazyload .ladi-list-paragraph ul li, body.lazyload .ladi-section-background, body.lazyload .ladi-survey-option-background, body.lazyload .ladi-survey-option-image, body.lazyload .ladi-tabs-background, body.lazyload .ladi-video-background, body.lazyload .ladi-banner, body.lazyload .ladi-spin-lucky-screen, body.lazyload .ladi-spin-lucky-start');
-                var docEventScroll = window;
-                for (var i = 0; i < list_element_lazyload.length; i++) {
-                    var rect = list_element_lazyload[i].getBoundingClientRect();
-                    if (rect.x == "undefined" || rect.x == undefined || rect.y == "undefined" || rect.y == undefined) {
-                        rect.x = rect.left;
-                        rect.y = rect.top;
-                    }
-                    var offset_top = rect.y + window.scrollY;
-                    if (offset_top >= window.scrollY + window.innerHeight || window.scrollY >= offset_top + list_element_lazyload[i].offsetHeight) {
-                        list_element_lazyload[i].classList.add('ladi-lazyload');
-                    }
-                }
-                if (typeof style_lazyload != "undefined" && style_lazyload != undefined) {
-                    style_lazyload.parentElement.removeChild(style_lazyload);
-                }
-                document.body.classList.remove("lazyload");
-                var currentScrollY = window.scrollY;
-                var stopLazyload = function(event) {
-                    if (event.type == "scroll" && window.scrollY == currentScrollY) {
-                        currentScrollY = -1;
-                        return;
-                    }
-                    docEventScroll.removeEventListener('scroll', stopLazyload);
-                    list_element_lazyload = document.getElementsByClassName('ladi-lazyload');
-                    while (list_element_lazyload.length > 0) {
-                        list_element_lazyload[0].classList.remove('ladi-lazyload');
-                    }
-                };
-                if (is_first) {
-                    var scrollEventPassive = null;
-                    try {
-                        var opts = Object.defineProperty({}, 'passive', {
-                            get: function() {
-                                scrollEventPassive = {
-                                    passive: true
-                                };
-                            }
-                        });
-                        window.addEventListener('testPassive', null, opts);
-                        window.removeEventListener('testPassive', null, opts);
-                    } catch (e) {}
-                    docEventScroll.addEventListener('scroll', stopLazyload, scrollEventPassive);
-                }
-                return dom;
-            }
-            ;
-            window.lazyload_run(document, true, true);
-        </script>
-        <!--[if lt IE 9]><script src="https://w.ladicdn.com/v5/source/html5shiv.min.js?v=1750134274231"></script><script src="https://w.ladicdn.com/v5/source/respond.min.js?v=1750134274231"></script><![endif]-->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" type="text/css">
-        <script src="https://w.ladicdn.com/v5/source/ladipagev3.min.js?v=1750134274231" type="text/javascript"></script>
-        <script id="script_event_data" type="application/json">
-            {
-                "IMAGE2": {
-                    "a": "image",
-                    "cs": [
-                        {
-                            "dr": "action",
-                            "a": "link",
-                            "dv": "_blank",
-                            "dw": "https://tinhocngoisao.com/collections/pc-star-msi"
-                        }
-                    ]
-                },
-                "IMAGE13": {
-                    "a": "image",
-                    "cs": [
-                        {
-                            "dr": "action",
-                            "a": "link",
-                            "dv": "_blank",
-                            "dw": "https://tinhocngoisao.com/products/pc-star-karmish-a-plus-intel-core-i5-14600kf-b760-ddr5-32gb-ssd-1tb-rtx-5060ti-wifi"
-                        }
-                    ]
-                },
-                "IMAGE14": {
-                    "a": "image",
-                    "cs": [
-                        {
-                            "dr": "action",
-                            "a": "link",
-                            "dv": "_blank",
-                            "dw": "https://tinhocngoisao.com/products/pc-star-karmish-ssr-amd-ryzen-7-9800x3d-x870-ddr5-64gb-ssd-1tb-rtx-5070-wifi"
-                        }
-                    ]
-                },
-                "IMAGE15": {
-                    "a": "image",
-                    "cs": [
-                        {
-                            "dr": "action",
-                            "a": "link",
-                            "dv": "_blank",
-                            "dw": "https://tinhocngoisao.com/products/pc-star-karmish-s-intel-core-ultra-5-245kf-z890-ddr5-32gb-ssd-1tb-rtx-5060-wifi"
-                        }
-                    ]
-                }
-            }</script>
-        <script id="script_ladipage_run" type="text/javascript">
-            (function() {
-                var run = function() {
-                    if (typeof window.LadiPageScript == "undefined" || typeof window.ladi == "undefined" || window.ladi == undefined) {
-                        setTimeout(run, 100);
-                        return;
-                    }
-                    window.LadiPageApp = window.LadiPageApp || new window.LadiPageAppV2();
-                    window.LadiPageScript.runtime.ladipage_id = '6850e6705800ab001289bc08';
-                    window.LadiPageScript.runtime.publish_platform = 'HARAVAN';
-                    window.LadiPageScript.runtime.version = '1750134274231';
-                    window.LadiPageScript.runtime.cdn_url = 'https://w.ladicdn.com/v5/source/';
-                    window.LadiPageScript.runtime.DOMAIN_SET_COOKIE = ["tinhocngoisao.com"];
-                    window.LadiPageScript.runtime.DOMAIN_FREE = ["preview.ldpdemo.com", "ldp.page"];
-                    window.LadiPageScript.runtime.bodyFontSize = 12;
-                    window.LadiPageScript.runtime.store_id = "5d142f1f620fa47f5c176213";
-                    window.LadiPageScript.runtime.store_ladiuid = "5d142f1f620fa47f5c176213";
-                    window.LadiPageScript.runtime.time_zone = 7;
-                    window.LadiPageScript.runtime.currency = "VND";
-                    window.LadiPageScript.runtime.convert_replace_str = true;
-                    window.LadiPageScript.runtime.desktop_width = 1200;
-                    window.LadiPageScript.runtime.mobile_width = 420;
-                    window.LadiPageScript.runtime.tracking_button_click = true;
-                    window.LadiPageScript.runtime.publish_time = 1750151371639;
-                    window.LadiPageScript.runtime.lang = "vi";
-                    window.LadiPageScript.run(true);
-                    window.LadiPageScript.runEventScroll();
-                };
-                run();
-            }
-            )();
-        </script>
-    </body>
-</html>
-<!--Publish time: Tue, 17 Jun 2025 09:09:31 GMT-->
-<!--LadiPage build time: Tue, 17 Jun 2025 04:24:34 GMT-->
+
+        </body>
+        </html>';
+        
+        $result = $mail->send();
+        
+        if ($result) {
+            logEmailActivity($orderId, $email, $phone, 'SUCCESS');
+            sendAdminNotification($orderId, $processedOrder, $order_date, $name, $phone, $shipping, $email, $address, $note);
+            return ['success' => true, 'message' => 'Email đã được gửi thành công'];
+        } else {
+            logEmailActivity($orderId, $email, $phone, 'FAILED');
+            return ['success' => false, 'error' => 'Không thể gửi email'];
+        }
+        
+    } catch (Exception $e) {
+        logEmailActivity($orderId, $email, $phone, 'ERROR: ' . $e->getMessage());
+        error_log("Lỗi gửi email: " . $e->getMessage());
+        return ['success' => false, 'error' => 'Lỗi hệ thống: ' . $e->getMessage()];
+    }
+}
+
+// Hàm tạo file blacklist mẫu
+function createSampleBlacklist() {
+    $blacklistFile = __DIR__ . '/blacklist.json';
+    
+    if (!file_exists($blacklistFile)) {
+        $sampleBlacklist = [
+            'emails' => [
+                'spam@example.com',
+                'test@tempmail.com'
+            ],
+            'phones' => [
+                '0000000000',
+                '1111111111'
+            ],
+            'domains' => [
+                '10minutemail.com',
+                'tempmail.com',
+                'guerrillamail.com'
+            ]
+        ];
+        
+        file_put_contents($blacklistFile, json_encode($sampleBlacklist, JSON_PRETTY_PRINT));
+    }
+}
+
+// Khởi tạo blacklist khi chạy script
+createSampleBlacklist();
+
+?>
