@@ -15,6 +15,7 @@
         <meta name="format-detection" content="telephone=no"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
         <style type="text/css">
+
             a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,button,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,input,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,select,small,span,strike,strong,sub,summary,sup,table,tbody,td,textarea,tfoot,th,thead,time,tr,tt,u,ul,var,video {
                 margin: 0;
                 padding: 0;
@@ -43,6 +44,67 @@
             ol,ul {
                 list-style: none
             }
+            header {
+            background-color: #fff;
+            padding: 12px 0;
+            /* border-bottom: 1px solid #ddd; */
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            height: 48px;
+        }
+
+        nav {
+            display: flex;
+            gap: 16px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: red;
+            font-weight: bold;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 65px;
+        }
+
+        .logo span {
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+
+
 
             blockquote,q {
                 quotes: none
@@ -530,6 +592,7 @@
                 font-family: "Open Sans", sans-serif
             }
         </style>
+       
         <style id="style_element" type="text/css">
             #SECTION1 > .ladi-section-background,#SECTION3 > .ladi-section-background,#SECTION4 > .ladi-section-background,#SECTION7 > .ladi-section-background,#SECTION6 > .ladi-section-background,#SECTION5 > .ladi-section-background,#SECTION9 > .ladi-section-background,#SECTION8 > .ladi-section-background,#SECTION12 > .ladi-section-background,#SECTION11 > .ladi-section-background,#SECTION10 > .ladi-section-background {
                 background-color: rgb(1, 1, 1);
@@ -645,7 +708,7 @@
                 #IMAGE4 > .ladi-image > .ladi-image-background {
                     width: 1019.83px;
                     height: 1183px;
-                    background-image: url("https://w.ladicdn.com/s1350x1500/5d142f1f620fa47f5c176213/platform-20250617042019-biat7.png");
+                    background-image: url("../palit/banner21.png");
                 }
 
                 #SECTION7 {
@@ -867,10 +930,11 @@
                 }
 
                 #IMAGE4 > .ladi-image > .ladi-image-background {
-                    width: 400px;
-                    height: 463.999px;
-                    background-image: url("https://w.ladicdn.com/s750x800/5d142f1f620fa47f5c176213/platform-20250617042019-biat7.png");
+                    width: 1019.83px;
+                    height: 1183px;
+                    background-image: url("../palit/banner21.png");
                 }
+
 
                 #SECTION7 {
                     height: 247.79px;
@@ -1005,6 +1069,22 @@
         </style>
     </head>
     <body class="lazyload">
+        <header>
+            <div class="container">
+            <div class="logo">
+                <img src="../palit/avatar.png" alt="ROSA Logo">
+                <span></span>
+            </div>
+            <nav>
+                <a href="https://rosacomputer.vn">SẢN PHẨM</a>
+                <a href="https://rosacomputer.vn/">AI SOLUTIONS</a>
+                <a href="https://rosacomputer.vn">BẢO HÀNH</a>
+                <a href="https://rosacomputer.vn">TIN TỨC</a>
+                <a href="https://rosacomputer.vn">GIỚI THIỆU</a>
+            </nav>
+            </div>
+        </header>
+        
         <div class="ladi-wraper">
             <div id="G1705979304921_head" data-global-id="65af2db6018a1b001141884e" data-store-id="5d142f1f620fa47f5c176213" class="ladi-section"></div>
             <div id="SECTION1" class='ladi-section'>
@@ -1017,6 +1097,7 @@
                     </a>
                 </div>
             </div>
+            
             
             <div id="SECTION4" class='ladi-section'>
                 <div class='ladi-section-background'></div>
@@ -1143,63 +1224,7 @@
         <div id="backdrop-popup" class="backdrop-popup"></div>
         <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
         <div id="lightbox-screen" class="lightbox-screen"></div>
-        <script id="script_lazyload" type="text/javascript">
-            window.lazyload_run = function(dom, is_first, check_dom_rect) {
-                if (check_dom_rect && (document.body.clientWidth <= 0 || document.body.clientheight <= 0)) {
-                    return setTimeout(function() {
-                        window.lazyload_run(dom, is_first, check_dom_rect);
-                    }, 1);
-                }
-                var style_lazyload = document.getElementById('style_lazyload');
-                var list_element_lazyload = dom.querySelectorAll('body.lazyload .ladi-overlay, body.lazyload .ladi-box, body.lazyload .ladi-button-background, body.lazyload .ladi-collection-item, body.lazyload .ladi-countdown-background, body.lazyload .ladi-form-item-background, body.lazyload .ladi-form-label-container .ladi-form-label-item.image, body.lazyload .ladi-frame-background, body.lazyload .ladi-gallery-view-item, body.lazyload .ladi-gallery-control-item, body.lazyload .ladi-headline, body.lazyload .ladi-image-background, body.lazyload .ladi-image-compare, body.lazyload .ladi-list-paragraph ul li, body.lazyload .ladi-section-background, body.lazyload .ladi-survey-option-background, body.lazyload .ladi-survey-option-image, body.lazyload .ladi-tabs-background, body.lazyload .ladi-video-background, body.lazyload .ladi-banner, body.lazyload .ladi-spin-lucky-screen, body.lazyload .ladi-spin-lucky-start');
-                var docEventScroll = window;
-                for (var i = 0; i < list_element_lazyload.length; i++) {
-                    var rect = list_element_lazyload[i].getBoundingClientRect();
-                    if (rect.x == "undefined" || rect.x == undefined || rect.y == "undefined" || rect.y == undefined) {
-                        rect.x = rect.left;
-                        rect.y = rect.top;
-                    }
-                    var offset_top = rect.y + window.scrollY;
-                    if (offset_top >= window.scrollY + window.innerHeight || window.scrollY >= offset_top + list_element_lazyload[i].offsetHeight) {
-                        list_element_lazyload[i].classList.add('ladi-lazyload');
-                    }
-                }
-                if (typeof style_lazyload != "undefined" && style_lazyload != undefined) {
-                    style_lazyload.parentElement.removeChild(style_lazyload);
-                }
-                document.body.classList.remove("lazyload");
-                var currentScrollY = window.scrollY;
-                var stopLazyload = function(event) {
-                    if (event.type == "scroll" && window.scrollY == currentScrollY) {
-                        currentScrollY = -1;
-                        return;
-                    }
-                    docEventScroll.removeEventListener('scroll', stopLazyload);
-                    list_element_lazyload = document.getElementsByClassName('ladi-lazyload');
-                    while (list_element_lazyload.length > 0) {
-                        list_element_lazyload[0].classList.remove('ladi-lazyload');
-                    }
-                };
-                if (is_first) {
-                    var scrollEventPassive = null;
-                    try {
-                        var opts = Object.defineProperty({}, 'passive', {
-                            get: function() {
-                                scrollEventPassive = {
-                                    passive: true
-                                };
-                            }
-                        });
-                        window.addEventListener('testPassive', null, opts);
-                        window.removeEventListener('testPassive', null, opts);
-                    } catch (e) {}
-                    docEventScroll.addEventListener('scroll', stopLazyload, scrollEventPassive);
-                }
-                return dom;
-            }
-            ;
-            window.lazyload_run(document, true, true);
-        </script>
+   
         <!--[if lt IE 9]><script src="https://w.ladicdn.com/v5/source/html5shiv.min.js?v=1750134274231"></script><script src="https://w.ladicdn.com/v5/source/respond.min.js?v=1750134274231"></script><![endif]-->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" type="text/css">
         <script src="https://w.ladicdn.com/v5/source/ladipagev3.min.js?v=1750134274231" type="text/javascript"></script>
