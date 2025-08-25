@@ -258,7 +258,6 @@ nav a {
   height: auto;
 }
 
-/* Mobile responsive */
 @media (max-width: 768px) {
   .rtx-container {
     flex-direction: column;
@@ -268,12 +267,31 @@ nav a {
   .rtx-image {
     order: -1; /* Đưa ảnh lên trên */
     text-align: center;
-    max-width: 90%;   /* không tràn màn hình */
-    max-height: 400px;
+    width: 100%;
+    max-width: 100%;  /* cho phép full ngang */
   }
-  
-  
+
+  .rtx-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
+
+  
+@media (min-width: 1024px) {
+  .rtx-image {
+    flex: 1.8;         /* cho ảnh rộng hơn */
+    text-align: right;
+  }
+
+  .rtx-image img {
+    width: 100%;
+    max-width: 900px;  /* chỉnh con số này để ảnh to/nhỏ theo ý bạn */
+    height: auto;
+  }
+}
+
 
 /* Mobile Banner */
 .hero-mobile {
