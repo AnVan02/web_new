@@ -14,18 +14,18 @@
 
         <!-- Popup Form -->
         <div class="rosa-overlay" id="rosaOverlay"></div>
-        <div id="rosaPopupForm" style="display: none; position: fixed; top: 31%; left: 50%; transform: translate(-50%, -50%);
-            background: white; padding: 20px; box-shadow: 5px 5px 15px rgba(253, 23, 23, 0.3); border-radius: 10px; width: 30%; border: 2px solid red;">
-            <span id="rosaClosePopup" style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 20px; color: red;">✖</span>
-            <h4><i class="fas fa-user-check" style="color:red; margin-right: 5px;"></i> THÔNG TIN KHÁCH HÀNG</h4>
-            <label for="name">Tên của bạn: <span style="color: red;">*</span></label>
-            <input type="text" id="rosaNameInput" required style="width: 100%; padding: 5px; margin: 5px 0; border: 1px solid #ff0000; border-radius: 5px;">
-            <label for="phone">Số điện thoại: <span style="color: red;">*</span></label>
-            <input type="tel" id="rosaPhoneInput" required style="width: 100%; padding: 5px; margin: 5px 0; border: 1px solid #ff0000; border-radius: 5px;">
-            <button id="rosaSubmitForm" style="background: red; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Gửi</button>
-            <button id="rosaClosePopupBtn" style="background: gray; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Đóng</button>
+            <div id="rosaPopupForm" style="display: none; position: fixed; top: 31%; left: 50%; transform: translate(-50%, -50%);
+                background: white; padding: 20px; box-shadow: 5px 5px 15px rgba(253, 23, 23, 0.3); border-radius: 10px; width: 30%; border: 2px solid red;">
+                <span id="rosaClosePopup" style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-size: 20px; color: red;">✖</span>
+                <h4><i class="fas fa-user-check" style="color:red; margin-right: 5px;"></i> THÔNG TIN KHÁCH HÀNG</h4>
+                <label for="name">Tên của bạn: <span style="color: red;">*</span></label>
+                <input type="text" id="rosaNameInput" required style="width: 100%; padding: 5px; margin: 5px 0; border: 1px solid #ff0000; border-radius: 5px;">
+                <label for="phone">Số điện thoại: <span style="color: red;">*</span></label>
+                <input type="tel" id="rosaPhoneInput" required style="width: 100%; padding: 5px; margin: 5px 0; border: 1px solid #ff0000; border-radius: 5px;">
+                <button id="rosaSubmitForm" style="background: red; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Gửi</button>
+                <button id="rosaClosePopupBtn" style="background: gray; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Đóng</button>
+            </div>
         </div>
-    </div>
 
     <div class="rosa-footer-support">
         <h3 style="color:red;font-weight: bold;">Thông tin hỗ trợ</h3>

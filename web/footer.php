@@ -156,8 +156,9 @@
 
         <div class="footer-bottom">
             <div class="wrapper">
-                <p>© 2024 | Bản quyền thuộc về CÔNG TY TNHH ĐIỆN TỬ VÀ TIN HỌC TOÀN VIỆT <a href="https://rosacomputer.vn/">ROSA AI Computer</a> </p>
+                <p>© 2024 | Bản quyền thuộc về CÔNG TY TNHH ĐIỆN TỬ VÀ TIN HỌC TOÀN VIỆT <a href="https://rosacomputer.vn/">ROSA AI Computer</a></p>
             </div>
+            <
         </div>
     </footer>
     

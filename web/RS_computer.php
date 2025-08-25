@@ -1,4 +1,4 @@
-<?php require "header.php" ?>
+<?php require "../header.php" ?>
     <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
          <!-- Các dấu chấm -->
         <div class="carousel-indicators">
@@ -63,6 +63,9 @@ body {
     color: #333;
     background: #f5f5f5;
 }
+
+
+
 /* Tùy chỉnh dấu chấm banner */
 .carousel-indicators [data-bs-target] {
     width: 5px;              /* 👈 tăng kích thước */

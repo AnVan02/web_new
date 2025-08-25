@@ -27,7 +27,6 @@
             ROSA - AI Ready là thương hiệu tiên phong giải pháp chấm công truyền thống bằng IP Camera AI, 
             mang đến sự tiết kiệm, nhanh chóng, chính xác cho doanh nghiệp        
         </p>
-       
     </div>
 </section>
      <div class="nextcloud-circles">
@@ -104,125 +103,115 @@
                         <img src="../image/Chatbot AI ROSA.png" alt="Nextcloud Features">
                     </div>
                 </div>
-
+            </div>
+          </section><br>
+        
             <!-- Bảng giá  -->
 
-                <div class="pricing-container">
-                <!-- Bên trái -->
-                <div class="pricing-left">
-                    <h2>BẢNG GIÁ</h2>
-                    <p class="total-text">Tổng cộng chi phí:</p>
-                    <p class="price" id="totalPrice">400.000</p>
-                    <ul class="features">
-                        <li>- Thiết kế sẵn website riêng cho Chatbot</li>
-                        <li>- Quản lý cơ sở tri thức trực truyến (Nextcloud)</li>
-                        <li>- Tra cứu lịch sử trò chuyện</li>
-                        <li>- Dung lượng: 3 MB</li>
-                        <li>- Số câu trả lời: 3000 tin/tháng</li>
-                    </ul>
+              <div class="pricing-container">
+        <!-- Bên trái -->
+        <div class="pricing-left">
+            <h2>BẢNG GIÁ</h2>
+            <p class="total-text">Tổng cộng chi phí:</p>
+            <p class="price" id="totalPrice">400.000</p>
+            <ul class="features">
+                <li>- Thiết kế sẵn website riêng cho Chatbot</li>
+                <li>- Quản lý cơ sở tri thức trực truyến (Nextcloud)</li>
+                <li>- Tra cứu lịch sử trò chuyện</li>
+                <li>- Dung lượng: 3 MB</li>
+                <li>- Số câu trả lời: 3000 tin/tháng</li>
+            </ul>
+        </div>
+        
+        <!-- Bên phải -->
+        <div class="pricing-right">
+            <h3>Tính năng tuỳ chọn:</h3>
+            <p class="note">(Các tuỳ chọn mới sẽ tự động thêm vào tổng cộng chi phí)</p>
+            
+            <!-- Tích hợp live chat -->
+            <div class="option-item">
+                <input type="checkbox" name="livechat" class="addon" value="100000">
+                <div class="option-content">
+                    <div class="option-title">Tích hợp live chat (Nextcloud Talk)</div>
+                    <div class="option-price">+100.000/tháng</div>
                 </div>
-
-                <!-- Bên phải -->
-                <div class="pricing-right">
-                    <h3>Tính năng tuỳ chọn:</h3>
-                    <p class="note">(Các tuỳ chọn mới sẽ tự động thêm vào tổng cộng chi phí)</p>
-
-                    <label>
-                    <input type="radio" class="addon" value="100000">
-                        Tích hợp chatbot vào website có sẵn
-                        <span class="price-addon">
-                            +200.000/tháng
-                        </span>
-                    </label>
-
-
-                    <label>
-                        <input type="radio" class="addon" value="100000">
-                        Tích hợp live chat (Nextclound Talk)
-                        <span class="price-addon">
-                            +100.000/tháng
-                        </span>
-                    </label>
-
-                    <label>
-                        <input type="radio" class="sddon" value="100000">
-                        Tích hợp chatbot lên Facebook
-                        <span class="price-addon">
-                            +100.000/tháng
-                        </span>
-                    </label>
-                    <label>
-                        <input type="radio" class="sddon" value="100000">
-                        Tích hợp chatbot lên Zalo OA
-                        <span class="price-addon">
-                            +100.000/tháng
-                        </span>
-                    </label>
-
-
-                    <!-- <label>
-                    <input type="radio" class="addon" data-type="account">
-                    Tăng tài khoản trực
+            </div>
+            
+            <!-- Tăng tài khoản trực -->
+            <div class="option-item disabled-option">
+                <input type="checkbox" name="accounts" class="addon" disabled>
+                <div class="option-content">
+                    <div class="option-title">Tăng tài khoản trực</div>
                     <select disabled>
-                        <option value="0">Mặc định</option>
-                        <option value="100000">+1 tài khoản (+100.000/tháng)</option>
-                        <option value="200000">+2 tài khoản (+200.000/tháng)</option>
+                        <option>Mặc định</option>
                     </select>
-                    </label>
-
-                    <label>
-                    <input type="radio" class="addon" data-type="storage">
-                    Tăng dung lượng
-                    <input type="number" placeholder="Nhập MB" disabled>
-                    </label>
-
-                    <label>
-                    <input type="radio" class="addon" data-type="messages">
-                    Tăng số lượng câu trả lời
-                    <select disabled>
-                        <option value="0">Mặc định</option>
-                        <option value="100000">+1000 tin nhắn (100.000/tháng)</option>
-                        <option value="200000">+2000 tin nhắn (200.000/tháng)</option>
+                </div>
+            </div>
+            
+            <!-- Tăng dung lượng -->
+            <div class="option-item disabled-option">
+                <input type="checkbox" name="storage" class="addon" disabled>
+                <div class="option-content">
+                    <div class="option-title">Tăng dung lượng</div>
+                    <input type="text" placeholder="Nhập dung lượng bạn cần" disabled>
+                </div>
+            </div>
+            
+            <!-- Tăng số lượng câu trả lời -->
+            <div class="option-item">
+                <input type="checkbox" name="messages" class="addon" value="100000">
+                <div class="option-content">
+                    <div class="option-title">Tăng số lượng câu trả lời</div>
+                    <select id="messageSelect">
+                        <option value="100000">1000 tin nhắn (100.000/tháng)</option>
+                        <option value="200000">2000 tin nhắn (200.000/tháng)</option>
+                        <option value="500000">5000 tin nhắn (500.000/tháng)</option>
                     </select>
-                    </label> -->
                 </div>
+            </div>
+            
+            <!-- Tích hợp Zalo OA -->
+            <div class="option-item disabled-option">
+                <input type="radio" name="zalo" class="addon" disabled>
+                <div class="option-content">
+                    <div class="option-title">Tích hợp chatbot lên Zalo OA</div>
+                    <div class="option-default">Chưa khả dụng</div>
                 </div>
-                
-     
-               <!-- Nút gọi form -->
+            </div>
+        </div>
+    </div>
+
+                <!-- Nút gọi form -->
                 <div class="btn-group">
-                <a href="javascript:void(0)" class="btn-learn" id="openForm">Đặt hàng ngay</a>
-                </div>
+                    <a href="javascript:void(0)" class="btn-learn" id="openForm">TRIỂN KHAI NGAY</a>
+                </div><br>
 
+                </div>
                 <!-- Popup form -->
-                <div id="popupForm" class="popup">
+               <div id="popupForm" class="popup">
                     <div class="popup-content">
                         <span class="close-btn" id="closeForm">&times;</span>
-                        <h2>ĐĂNG KÝ TRIỂN KHAI</h2>
-                        <form>
-                            <input type="text" placeholder="Họ và tên" required>
-                            <input type="tel" placeholder="Số điện thoại" required>
-                            <input type="email" placeholder="Địa chỉ email" required>
+                        <h2>Nhập thông tin triển khai</h2>
+                        <form id="contactForm">
+                            <input type="text" name="fullname" placeholder="Họ và tên" required>
+                            <input type="tel" name="phone" placeholder="Số điện thoại" required>
+                            <input type="email" name="email" placeholder="Địa chỉ email" required>
                             <button type="submit" class="btn-submit">HOÀN TẤT</button>
                         </form>
                     </div>
                 </div>
 
-            <div id="popupform" class="popup">
-                <div id="popup-cotent">
-                    <span class="close-btn" id="closeForm"></span>
-                    <h2>Đăng ký ngay</h2>
-                    <form>
-                        
-                    </form>
+                <div id="rosa-overlay" class="rosaOverlay">
+                    <div id="rosaPopupForm" style="display:none; position:fo"></div>
                 </div>
 
-            </div>
-             <div class="pricing-container" style="border:1px solid #205AB1;border-radius:20px">
+            <div class="pricing-container" style="border:1px solid #205AB1;border-radius:20px">
                 <!-- Bên trái -->
                 <div class="pricing-left"style="font-weight:600;color:#d32f2f;margin-bottom:8px;font-size:1.08rem;">
-                    <span><img class="arrow-icon" src="../image/Frame 1000005532.png" ></span>
-                    <h2 img class="arrow-icon" src="../image/Frame 1000005532.png" >Nhật ký cập nhật</h2>
+                <h2 class="title-with-icon">
+                    <img class="arrow-icon" src="../image/Frame 1000005532.png" alt="icon">
+                    Nhật ký cập nhật
+                </h2>
                         <img src="../image/nhatky.png" alt="Nhật ký" style="width:350px; height:230px;">
                 </div>
                 
@@ -240,68 +229,106 @@
                         <li>Giảm lỗi hiểu sai</li>
                         <li>Dashboard quản trị tối ưu</li> 
                     </ul>
-                </div>
-                </div>
+                 </div>
             <script>
-                const basePrice = 400000;
-                const totalPriceEl = document.getElementById("totalPrice");
-                const addons = document.querySelectorAll(".addon");
-
-                function updatePrice() {
-                let total = basePrice;
-                addons.forEach(addon => {
-                    if (addon.checked) {
-                    if (addon.value) {
-                        total += parseInt(addon.value);
-                    }
-                    // xử lý select box
-                    const next = addon.parentElement.querySelector("select, input[type='number']");
-                    if (next && !next.disabled) {
-                        if (next.tagName === "SELECT") {
-                        total += parseInt(next.value);
+             // Tính toán tổng chi phí
+                function updateTotalPrice() {
+                    let basePrice = 400000;
+                    let totalPrice = basePrice;
+                    
+                    const checkedAddons = document.querySelectorAll('.addon:checked:not([disabled])');
+                    checkedAddons.forEach(addon => {
+                        if (addon.value) {
+                            totalPrice += parseInt(addon.value);
                         }
-                        if (next.type === "number" && next.value) {
-                        total += parseInt(next.value) * 1000; // ví dụ: 1MB = 1000đ
-                        }
-                    }
-                    }
-                });
-                totalPriceEl.textContent = total.toLocaleString();
+                    });
+                    
+                    document.getElementById('totalPrice').textContent = totalPrice.toLocaleString('vi-VN');
                 }
-
-                addons.forEach(addon => {
-                addon.addEventListener("change", e => {
-                    const next = addon.parentElement.querySelector("select, input[type='number']");
-                    if (next) next.disabled = !addon.checked;
-                    updatePrice();
-                });
-                });
-
-                document.querySelectorAll("select, input[type='number']").forEach(el => {
-                el.addEventListener("input", updatePrice);
-                });
-
-                updatePrice();
-
-                const popup = document.getElementById("popupForm");
-                    const openBtn = document.getElementById("openForm");
-                    const closeBtn = document.getElementById("closeForm");
-
-                    openBtn.addEventListener("click", () => {
-                    popup.style.display = "flex";
+                
+                // Thêm event listener cho tất cả checkbox
+                document.querySelectorAll('.addon').forEach(addon => {
+                    addon.addEventListener('change', function() {
+                        // Nếu là checkbox cho messages, cập nhật giá trị từ dropdown
+                        if (this.name === 'messages' && this.checked) {
+                            const selectValue = document.getElementById('messageSelect').value;
+                            this.value = selectValue;
+                        }
+                        updateTotalPrice();
                     });
-
-                    closeBtn.addEventListener("click", () => {
-                    popup.style.display = "none";
-                    });
-
-                    window.addEventListener("click", (e) => {
-                    if (e.target === popup) {
-                        popup.style.display = "none";
+                });
+                
+                // Thêm event listener cho dropdown messages
+                document.getElementById('messageSelect').addEventListener('change', function() {
+                    const messageCheckbox = document.querySelector('input[name="messages"]');
+                    if (messageCheckbox.checked) {
+                        messageCheckbox.value = this.value;
+                        updateTotalPrice();
                     }
+                });
+                document.getElementById('messageSelect').addeventListener('change',function(){
+                    const messageCheckbox = document.querySelector('input[name="messages"');
+                    if (messageCheckbox.checked) {
+                        messageCheckbox.vlue = this.value;
+                        updateTotalPrice();
+                    }
+                })
+                
+                // nhấn triên khai nhanh đẻ chuyên mail
+                document.getElementById('popupOverlay').addEventListener('click', function (e) {
+                    if (e.target === this) {
+                        closePopup();
+                    }
+                });
+                // 
+                document.getElementById('contactForm'). addEventListener('submit', function(e){
+                    e.preventDefault();
+
+                    // get from data 
+                const name = document.getElementById('customerName').value;
+                const phone=  document.getElementById('customerPhone').value;
+                const email= document.getElementById('customerEmail').value;
+
+                 // Get selected options
+                const selectedOptions = [];
+                const checkedRadios = document.querySelectorAll('.addon:checked');
+                
+                checkedRadios.forEach(radio => {
+                    if (radio.value && radio.value !== "0") {
+                        const optionName = radio.name;
+                        const optionText = radio.parentElement.textContent.trim();
+                        selectedOptions.push(`${getOptionTitle(optionName)}: ${optionText}`);
+                    }
+                });
+                    
+                })
+                
+                // Mở/đóng popup
+                const openForm = document.getElementById("openForm");
+                const closeForm = document.getElementById("closeForm");
+                const popupForm = document.getElementById("popupForm");
+
+                openForm.onclick = () => popupForm.style.display = "flex";
+                closeForm.onclick = () => popupForm.style.display = "none";
+                window.onclick = (e) => { if(e.target == popupForm) popupForm.style.display = "none"; }
+
+                // Gửi form bằng EmailJS
+                document.getElementById("contactForm").addEventListener("submit", function(e) {
+                    e.preventDefault(); // không reload trang
+
+                    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+                    .then(() => {
+                        alert("✅ Đã gửi thông tin thành công!");
+                        popupForm.style.display = "none";
+                        this.reset();
+                    }, (error) => {
+                        alert("❌ Lỗi khi gửi: " + JSON.stringify(error));
                     });
+                });
+
 
             </script>
+        
 
 
     <style>
@@ -321,68 +348,68 @@
         font-size: 1.5rem;
     }
     .popup {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
-  justify-content: center;
-  align-items: center;
-}
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0; top: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.5);
+        justify-content: center;
+        align-items: center;
+    }
 
-/* Hộp nội dung */
-.popup-content {
-    background: #fff;
-    padding: 80px 38px;
-    border-radius: 29px;
-    width: 564px;
-    max-width: 119%;
-    position: relative;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
+    /* Hộp nội dung */
+    .popup-content {
+        background: #fff;
+        padding: 80px 38px;
+        border-radius: 29px;
+        width: 564px;
+        max-width: 119%;
+        position: relative;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
 
-.popup-content h2 {
-  margin-bottom: 20px;
-}
+    .popup-content h2 {
+        margin-bottom: 20px;
+    }
 
-.popup-content form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
+    .popup-content form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
-.popup-content input {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  outline: none;
-  font-size: 14px;
-}
+    .popup-content input {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+        font-size: 14px;
+    }
 
-.btn-submit {
-  padding: 12px;
-  background: #c00;
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-}
+    .btn-submit {
+        padding: 12px;
+        background: #c00;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
 
-.btn-submit:hover {
-  background: #a00;
-}
+    .btn-submit:hover {
+        background: #a00;
+    }
 
-/* Nút đóng */
-.close-btn {
-  position: absolute;
-  top: 10px; right: 15px;
-  font-size: 22px;
-  cursor: pointer;
-}
+    /* Nút đóng */
+    .close-btn {
+        position: absolute;
+        top: 10px; right: 15px;
+        font-size: 22px;
+        cursor: pointer;
+    }
 
     /* banner nên */
     .target-section .container {
@@ -609,6 +636,10 @@
         transform: scale(0.95);
     }
 
+    btn-learn:active {
+        transform:scale (0.95);
+    }
+    
     .install-section .btn-learn {
         display: inline-block;
         padding: 12px 28px;
@@ -625,190 +656,231 @@
     }
 
     /* bảng giá */
-    .pricing-container {
+   .pricing-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         display: flex;
-        max-width: 1000px;
-        margin: 40px auto;
-        padding: 20px;
+        min-height: 400px;
     }
-
+    
     .pricing-left {
         flex: 1;
-        padding-right: 40px;
-        border-right: 1px solid #ddd;
+        padding: 30px;
+        background: #f8f9fa;
     }
-
+    
     .pricing-left h2 {
-        font-size: 28px;
-        font-weight: 700;
-        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
     }
-
+    
     .total-text {
-        font-size: 16px;
-        margin-bottom: 8px;
+        font-size: 17px;
+        color: #666;
+        margin-bottom: 5px;
     }
-
+    
     .price {
-        font-size: 42px;
-        font-weight: 700;
-        color: #1a56db;
+        font-size: 48px;
+        font-weight: bold;
+        color: #4a90e2;
         margin-bottom: 20px;
     }
-
+    
     .features {
         list-style: none;
-        padding: 0;
-        margin: 0;
-        color: #555;
+        line-height: 1.6;
     }
-
+    
     .features li {
-        margin-bottom: 6px;
-        font-size: 14px;
+        color: #333;
+        margin-bottom: 5px;
+        font-size: 17px;
     }
-
+    
     .pricing-right {
         flex: 1;
-        padding-left: 40px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        padding: 30px;
+        background: white;
     }
-
+    
     .pricing-right h3 {
-        font-size: 20px;
-        font-weight: 600;
-        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
     }
-
+    
     .note {
-        font-size: 14px;
-        color: #777;
-        margin: -10px 0 10px;
+        font-size: 17px;
+        color: #000;
+        margin-bottom: 20px;
+        line-height: 1.4;
     }
-
-    .pricing-right label {
-        /* display: flex; */
-        align-items: center;
+    
+    .option-item {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: flex-start;
         gap: 10px;
-        font-size: 16px;
-        cursor: pointer;
+    }
+    
+    .option-item input[type="checkbox"] {
+        margin-top: 3px;
+    }
+    
+    .option-content {
+        flex: 1;
+    }
+    
+    .option-title {
+        font-size: 17px;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    
+    .option-price {
+        font-size: 17px;
+        color: #4a90e2;
+        font-weight: bold;
+    }
+    
+    .option-default {
+        font-size: 17px;
+        color: #000;
+    }
+    
+    select {
+        width: 320spx;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 15px;
+        color: #666;
+        background-color: #f8f9fa;
+    }
+    
+    input[type="text"] {
+        width: 200px;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 17px;
+    }
+    
+    .disabled-option {
+        opacity: 0.6;
+    }
+    
+    .disabled-option input[type="checkbox"] {
+        opacity: 0.3;
     }
 
-    .price-addon {
-        color: #1a56db;
-        font-weight: 600;
-        margin-left: 5px;
+
+@media (max-width: 768px) {
+    /* Điều chỉnh section target (ảnh nền với text chồng lên) */
+    .target-text {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        max-width: 100%;
+        padding: 20px 15px;
+        background: rgba(255,255,255,0.9);
+        color: #333;
     }
-
-    select, input[type="number"] {
-        padding: 5px 10px;
-        border-radius: 6px;
-        border: 1px solid #ccc;
+    
+    .target-text h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
     }
-
-
-
-
-    @media (max-width: 768px) {
-        /* Điều chỉnh section target (ảnh nền với text chồng lên) */
-        .target-text {
-            position: relative;
-            top: auto;
-            left: auto;
-            transform: none;
-            max-width: 100%;
-            padding: 20px 15px;
-            background: rgba(255,255,255,0.9);
-            color: #333;
-        }
-        
-        .target-text h2 {
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-        
-        .target-text p {
-            font-size: 14px;
-        }
-        
-        /* Điều chỉnh padding các section */
-        section {
-            padding: 25px 0;
-        }
-        
-        /* Tiêu đề nhỏ hơn */
-        section h2 {
-            font-size: 22px;
-            margin-bottom: 15px;
-            padding: 0 15px;
-        }
-        
-        /* Mô tả nhỏ hơn */
-        .description {
-            font-size: 14px;
-            padding: 0 15px;
-            margin-bottom: 15px;
-        }
-        
-        /* Các bước install */
-        .install-step {
-            padding: 15px 0;
-            margin-bottom: 25px;
-        }
-        
-        .step-content,
-        .install-step.reverse .step-content {
-            flex-direction: column;
-            gap: 15px;
-        }
-        
-        .step-text h3 {
-            font-size: 18px;
-            text-align: center;
-        }
-        
-        .step-text p {
-            font-size: 14px;
-            text-align: center;
-        }
-        
-        /* Nút tìm hiểu */
-        .btn-group {
-            margin-top: 15px;
-        }
-        
-        .btn-learn {
-            padding: 10px 20px;
-            font-size: 14px;
-        }
-        
+    
+    .target-text p {
+        font-size: 17px;
     }
-
-    @media (max-width: 480px) {
-        /* Điều chỉnh cho màn hình rất nhỏ */
-        .target-text {
-            padding: 15px 10px;
-        }
-        
-        .target-text h2 {
-            font-size: 20px;
-        }
-        
-        section h2 {
-            font-size: 20px;
-        }
-        
-        .step-text h3 {
-            font-size: 17px;
-        }
-        
-        /* Giảm padding container */
-        .container {
-            padding: 0 10px;
-        }
+    
+    /* Điều chỉnh padding các section */
+    section {
+        padding: 25px 0;
     }
+    
+    /* Tiêu đề nhỏ hơn */
+    section h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+    
+    /* Mô tả nhỏ hơn */
+    .description {
+        font-size: 17px;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+    
+    /* Các bước install */
+    .install-step {
+        padding: 15px 0;
+        margin-bottom: 25px;
+    }
+    
+    .step-content,
+    .install-step.reverse .step-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .step-text h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .step-text p {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    /* Nút tìm hiểu */
+    .btn-group {
+        margin-top: 15px;
+    }
+    
+    .btn-learn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    /* Điều chỉnh cho màn hình rất nhỏ */
+    .target-text {
+        padding: 15px 10px;
+    }
+    
+    .target-text h2 {
+        font-size: 20px;
+    }
+    
+    section h2 {
+        font-size: 20px;
+    }
+    
+    .step-text h3 {
+        font-size: 17px;
+    }
+    
+    /* Giảm padding container */
+    .container {
+        padding: 0 10px;
+    }
+}
 
     </style>
 

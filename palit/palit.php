@@ -25,23 +25,28 @@
   </header>
   <!-- code hiện thị trên deptop -->
  <!-- Banner Desktop -->
-<section class="hero">
-  <div class="container hero-content">
-    <div class="hero-left">
-      <h2>GeForce RTX™ 50 Series</h2>
-      <div class="sub-title">Bứt phá hiệu năng, nâng tầm sáng tạo</div>
+<section class="rtx-section">
+  <div class="rtx-container">
+    <div class="rtx-text">
+      <h2>GeForce RTX 50 Series</h2>
+      <p>Người Thay Đổi Cuộc Chơi</p>
       <p>
-        Trang bị kiến trúc NVIDIA Blackwell, GeForce RTX™ 50 Series mang đến hiệu năng AI vượt trội, nâng tầm trải nghiệm đồ họa và sáng tạo nội dung. 
-        Công nghệ DLSS 4 tăng tốc dựng hình với tốc độ vượt trội, trong khi NVIDIA Studio tối ưu quy trình sáng tạo giúp bạn làm được nhiều hơn, nhanh hơn.
+        GPU GeForce RTX™ 50 Series, dựa trên kiến trúc NVIDIA Blackwell, mang lại hiệu năng vượt trội và công nghệ AI tiên tiến.
+        Trải nghiệm chơi game, sáng tạo nội dung và hiệu suất làm việc ở một tầm cao mới.
       </p>
-      <a href="https://rosacomputer.vn/product.php#gaming" class="btn-buy">MUA NGAY</a>
-      <div class="logo-wrap">
-        <img src="../palit/logo2.png" alt="GeForce RTX Logo">
-        <img src="../palit/logo1.png" alt="Palit Logo">
-      </div>
+      <a href="#" class="btn-buy">Mua Ngay</a>
+       <div class="logo-wrap">
+          <img src="../palit/logo1.png" alt="Palit Logo">
+          <img src="../palit/logo2.png" alt="GeForce RTX Logo">
+        </div>
+
+    </div>
+    <div class="rtx-image">
+      <img src="../palit/tele.png" alt="GeForce RTX 5080">
     </div>
   </div>
 </section>
+
 
 
 <!-- nội dung trang  -->
@@ -114,18 +119,22 @@
     </div>
 
   <!-- Partner Logos Footer -->
-    <hr style="text-align:center; gap:40; weight:50px;">
-    <footer>
-        <div class="footer-logos">
-          <img src="../palit/Group 9.png" alt="ESRB" />
-          <img src="../palit/logo2.png" alt="GeForce RTX" />
-          <img src="../palit/logo1.png" alt="Palit Logo" />
-        </div>
-          <div data-layer="©2025 NVIDIA Corporation. NVIDIA, logo NVIDIA, GeForce, GeForce RTX và G-SYNC là các nhân hiệu đã đăng ký và/hoặc nhân hiệu của NVIDIA Corporation tại Hoa Kỳ và các quốc gia khác. Tất cả các nhãn hiệu và bản quyền khác là tài sản của các chủ sở hữu tương ứng." class="text-2025-nvidia-corporation-nvidia-logo-nvidia-geforce-geforce-rtx-v-g-sync-l-cc-nhn-hiu-ng-k-vhoc-nhn-hiu-ca-nvidia-corporation-ti-hoa-k-v-cc-quc-gia-khc-tt-c-cc-nhn-hiu-v-bn-quyn-khc-l-ti-sn-ca-cc-ch-s-hu-tng-ng"><span class="f025nvidiacorporationnvidialogonvidiageforcegeforcertxvg-synclccnhnhiungkvhocnhnhiucanvidiacorporationtihoakvccqucgiakhcttcccnhnhiuvbnquynkhcltisncaccchshutngng_span">
-              ©2025 NVIDIA Corporation. NVIDIA, logo NVIDIA, GeForce, GeForce RTX và G-SYNC là các nhân hiệu đã đăng ký và/hoặc nhân hiệu của NVIDIA Corporation
-              tại Hoa Kỳ và các quốc gia khác. Tất cả các nhãn hiệu và bản quyền khác là tài sản của các chủ sở hữu tương ứng.</span></div>
-          </div>
-    </footer>
+<hr style="width:50%; margin:20px auto; border:1px solid #444;">
+
+<footer>
+  <div class="footer-logos">
+    <img src="../palit/Group 9.png" alt="ESRB" />
+    <img src="../palit/logo2.png" alt="GeForce RTX" />
+    <img src="../palit/logo1.png" alt="Palit Logo" />
+  </div>
+  <p>
+    ©2025 NVIDIA Corporation. NVIDIA, logo NVIDIA, GeForce, GeForce RTX và G-SYNC là các nhãn hiệu đã đăng ký 
+    và/hoặc nhãn hiệu của NVIDIA Corporation tại </p>
+  <p>
+     Hoa Kỳ và các quốc gia khác. 
+    Tất cả các nhãn hiệu và bản quyền khác là tài sản của các chủ sở hữu tương ứng.
+  </p>
+</footer>
 
     <!-- Footer Mobile -->
 </body>

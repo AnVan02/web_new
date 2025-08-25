@@ -150,6 +150,7 @@
                     <tbody>
                     </tbody>
                 `;
+    
         
                 if (data.success) {
                     const row = `
@@ -159,6 +160,7 @@
                             <td data-label="Điện thoại">${data.data.customer_phone}</td>
                             <td data-label="Ngày đặt hàng">${data.data.order_date}</td>
                             <td data-label="Trạng thái">${data.data.status}</td>
+                            
                         </tr>
                     `;
                     table.style.display = "block"; /* Use block for mobile */

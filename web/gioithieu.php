@@ -1,4 +1,4 @@
-<?php require "header.php" ?>
+<?php require "../header.php" ?>
 
 <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
 
@@ -9,8 +9,12 @@
 
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="../image/nengt.png" class="d-block w-100" alt="Banner 1" onclick="window.location.href='RS_computer.php'">
+            <img src="../image/nengt.png" 
+                class="d-block w-100" 
+                alt="Banner 1" 
+                onclick="window.location.href='../web/RS_computer.php'">
         </div>
+
         <!-- <div class="carousel-item">
             <img src="../image/Backtoschool.jpg" class="d-block w-100" alt="Banner 2">
         </div>
@@ -46,6 +50,8 @@
 
 
 <style>
+
+
     /* Tùy chỉnh dấu chấm banner */
 .carousel-indicators [data-bs-target] {
     width: 5px;              /* 👈 tăng kích thước */
@@ -58,6 +64,11 @@
 
 .carousel-indicators .active {
     background-color: #ff6666; /* màu chấm active */
+}
+
+
+.carousel-item.active img {
+    cursor: pointer;
 }
 
     /* COURSE CARDS */
