@@ -1,404 +1,893 @@
-<title>Chatbot AI</title>
-<?php require "../web/header.php" ?>
-<div class="banner">
-    <div class="row">
-        <div class="hero-section">
-            <img src="../image/banner_camera.png" alt="Banner" class="hero-image">
-        </div>
-    </div>
-</div>
+<?php
+    require "../web/header.php";
+?>
 
-<!-- Section: Tại sao chọn -->
-<section class="why-choose-section">
-    <div class="container">
-        <h2>Tiên phong chấm công qua IP Camera</h2>
-        <p class="description">
-            ROSA - AI Ready là thương hiệu tiên phong giải pháp chấm công truyền thống bằng IP Camera AI, 
-            mang đến sự tiết kiệm, nhanh chóng, chính xác cho doanh nghiệp        
-        </p>
-        <div class="nextcloud-circles">
-            <div class="feature-image">
-                <img src="../image/banner_sp_2.png" alt="Nextcloud">
+
+    <!-- Banner Carousel -->
+    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x400/4a90e2/ffffff?text=ROSA+AI+Banner" class="d-block w-100" alt="Banner 1">
             </div>
         </div>
     </div>
-</section>
 
-<!-- Tính năng nổi bật -->
-<section class="features-section">
-     <h2>Tính năng nổi bật</h2>
-    <div class="container">
+    <!-- Section: Tương tác thông minh -->
+    <section class="why-choose-section">
+        <div class="container">
+            <h2>TƯƠNG TÁC THÔNG MINH</h2>
+            <p class="description">
+                ROSA - AI Ready là thương hiệu tiên phong giải pháp chấm công truyền thống bằng IP Camera AI, 
+                mang đến sự tiết kiệm, nhanh chóng, chính xác cho doanh nghiệp        
+            </p>
+        </div>
+    </section>
+
+    <div class="nextcloud-circles">
         <div class="feature-image">
-            <img src="../image/nen_ai2.png" alt="Nextcloud Features">
+            <img src="https://via.placeholder.com/800x400/e9ecef/333333?text=ROSA+AI+Features" alt="Nextcloud">
         </div>
     </div>
-</section>
 
-<!-- Đối tượng -->
-<section class="target-section">
-    <div class="container">
-        <div class="target-image">
-            <img src="../image/nen_ai3.png" alt="Nextcloud Target Users">
-            <div class="target-text">
-                <h2>LỢI ÍCH VƯỢT TRỘI</h2>
-                <p>
-                    Tiết kiệm thời gian, tăng năng suất mọi loại báo thao tác thủ công và tìm kiếm suốt dữ. 
-                    Giao diện tùy chỉnh thân thiện, không cần đào tạo. Thông tin truy xuất tức thì 
-                    giúp lãnh đạo quyết định nhanh, an toàn và minh bạch.
-                </p>
+    <!-- Tính năng nổi bật -->
+    <section class="features-section">
+        <h2>Tính năng nổi bật</h2>
+        <div class="container">
+            <div class="feature-image">
+                <img src="https://via.placeholder.com/1000x500/f8f9fa/333333?text=Outstanding+Features" alt="Nextcloud Features">
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Đối tượng -->
+    <section class="target-section">
+        <div class="container">
+            <div class="target-image">
+                <img src="https://via.placeholder.com/1200x600/4a90e2/ffffff?text=Target+Users+Background" alt="Target Users">
+                <div class="target-text">
+                    <h2>LỢI ÍCH VƯỢT TRỘI</h2>
+                    <p>
+                        Tiết kiệm thời gian, tăng năng suất mọi loại báo cáo thao tác thủ công và tìm kiếm dữ liệu. 
+                        Giao diện tùy chỉnh thân thiện, không cần đào tạo. Thông tin truy xuất tức thì 
+                        giúp lãnh đạo quyết định nhanh, an toàn và minh bạch.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ROSA AI SMB -->
-<section class="install-section">
-     <div class="container">
-          <div class="install-steps">
-               <!-- Step 1 -->
-               <div class="install-step">
+    <!-- Install Section -->
+    <section class="install-section">
+        <div class="container">
+            <div class="install-steps">
+                <!-- Step 1 -->
+                <div class="install-step">
                     <div class="step-content">
-                         <div class="step-text">
-                         <h3>Đa dạng đối tượng </h3>
-                         <p>Phù hợp với doanh nghiệp vừa và nhỏ muốn tối ưu vận hành, công ty công nghệ và startup cần hệ sinh thái chuyên nghiệp, tổ chức giáo dục yêu cầu bảo mật chính xác, cùng các doanh nghiệp lo ngại rủi ro lưu trữ không đồng bộ.</p>
-                         </div>
-                         <div class="step-image">
-                         <img src="../image/chat_ai1.png" alt="Step 1">
-                         </div>
+                        <div class="step-text">
+                            <h3>Đa dạng đối tượng</h3>
+                            <p>Phù hợp với doanh nghiệp vừa và nhỏ muốn tối ưu vận hành, công ty công nghệ và startup cần hệ sinh thái chuyên nghiệp, tổ chức giáo dục yêu cầu bảo mật chính xác, cùng các doanh nghiệp lo ngại rủi ro lưu trữ không đồng bộ.</p>
+                        </div>
+                        <div class="step-image">
+                            <img src="https://via.placeholder.com/400x300/e9ecef/333333?text=Step+1" alt="Step 1">
+                        </div>
                     </div>
-               </div>
+                </div>
 
-               <!-- Step 2 -->
-               <div class="install-step reverse">
+                <!-- Step 2 -->
+                <div class="install-step reverse">
                     <div class="step-content">
-                         <div class="step-text">
-                         <h3>Giải pháp toàn diện</h3>
-                         <p>Doanh nghiệp nhận gói phần mềm toàn diện  gồm Nextcloud Enterprise, chatbot AI, phần mềm chấm công và trợ lý ảo AI khi mua ROSA AI SMB. Tất cả được triển khai bởi đội ngũ chuyên nghiệp với bảo trì và nâng cấp định kỳ. </p>
-                         </div>
-                         <div class="step-image">
-                         <img src="../image/chat_ai2.png" alt="Step 2">
-                         </div>
+                        <div class="step-text">
+                            <h3>Giải pháp toàn diện</h3>
+                            <p>Doanh nghiệp nhận gói phần mềm toàn diện gồm Nextcloud Enterprise, chatbot AI, phần mềm chấm công và trợ lý ảo AI khi mua ROSA AI SMB. Tất cả được triển khai bởi đội ngũ chuyên nghiệp với bảo trì và nâng cấp định kỳ.</p>
+                        </div>
+                        <div class="step-image">
+                            <img src="https://via.placeholder.com/400x300/e9ecef/333333?text=Step+2" alt="Step 2">
+                        </div>
                     </div>
-               </div>
-               <div class="btn-group">
-                    <a href="#" class="btn-learn">TÌM HIỂU NGAY</a>
-               </div>
-     </section>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Chatbot AI ROSA -->
+    <section class="features-section">
+        <h2>Chatbot AI ROSA</h2>
+        <p class="description">Giải pháp toàn diện cho doanh nghiệp phát triển</p>
+        <div class="container">
+            <div class="feature-image">
+                <img src="https://via.placeholder.com/1000x400/4a90e2/ffffff?text=Chatbot+AI+ROSA" alt="Chatbot Features">
+            </div>
+        </div>
+    </section>
 <style>
-* {
+  .pricing-container {
+    display: flex;
+    gap: 40px;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+  }
+
+  .pricing-left, .pricing-right {
+    flex: 1;
+    border-right: 1px solid #ccc;
+    padding-right: 40px;
+  }
+
+  .pricing-right {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .pricing-left h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .pricing-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  .pricing-left li {
+    line-height: 1.8;
+  }
+
+  .total-text {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .price {
+    font-size: 40px;
+    font-weight: bold;
+    color: #007bff;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  }
 
-body {
-    font-family: 'Montserrat';
-    line-height: 1.6;
-    color: #333;
-    background: #f5f5f5;
-}
+  .save-text {
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 5px;
+  }
 
-/* banner nên */
-.target-section .container {
-    max-width: 100%;
-    padding: 0;
-}
+  .duration-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
 
-.target-image {
-    width: 100%;
-}
+  .duration-tabs button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+  }
 
-.target-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+  .duration-tabs button.active {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
 
-/* ===== HEADER & BANNER ======= */
+  .pricing-right h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 
-.banner, .row, .hero-section {
-    width: 100%;
-    height: auto;
-    overflow: visible;
-}
-.hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+  .pricing-right p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+  .option-item {
+    margin-bottom: 20px;
+  }
 
-.target-image {
+  .option-item label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .option-item input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
     position: relative;
-    display: inline-block;
-    width: 100%;
-}
+  }
 
-.target-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+  .option-item input[type="radio"]:checked {
+    border-color: #007bff;
+  }
 
-.target-text {
+  .option-item input[type="radio"]:checked::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #007bff;
+    border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    color: #000; /* chỉnh màu chữ theo ý muốn */
-    max-width: 70%;
-}
+  }
 
-.target-text h2 {
-    font-size: 28px;
+  .addon-text {
+    color: #007bff;
     font-weight: bold;
-    margin-bottom: 15px;
-}
+  }
 
-.target-text p {
-    font-size: 16px;
-    line-height: 1.6;
-}
+  .option-title {
+    font-weight: bold;
+  }
 
-
-/* Common Section Styles */
-section {
-    padding: 40px 0; /* Giảm padding để bớt khoảng trắng */
-    background: #f8f9fa;
-}
-
-section h2 {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 25px; /* giảm khoảng cách dưới tiêu đề */
-    letter-spacing: 1px;
-}
-
-.description {
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #666;
-    max-width: 1000px;
-    margin: 0 auto 20px auto; /* thêm margin dưới để tách vừa phải */
-    padding: 0 20px;
-}
-
-/* Why Choose Section */
-.why-choose-section {
-    background: #f8f9fa;
-}
-
-.nextcloud-circles {
-    text-align: center;
-    margin: 20px 0 30px 0; /* giảm khoảng cách */
-}
-
-.feature-image,
-.target-image {
-    text-align: center;
-    margin: 20px 0 30px 0; /* giảm margin */
-}
-
-.feature-image img,
-.target-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Install Section */
-.install-section {
-    background: #f8f9fa;
-}
-
-.install-steps {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.install-step {
-    margin-bottom: 40px;
-    padding: 20px 0;
-    position: relative;
-}
-
-.step-content {
+  .option-content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
-}
+    width: 100%;
+  }
 
-.install-step.reverse .step-content {
-    flex-direction: row-reverse;
-}
-
-.step-text {
-    flex: 1;
-}
-
-.step-text h3 {
-    font-size: 20px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.step-text p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: #666;
-}
-
-.step-image {
-    flex: 1;
-    text-align: center;
-}
-
-.step-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-}
-
-/* === tim hiêu ngay === */
-.install-section .btn-group {
-    display: flex;
-    justify-content: center; /* căn giữa ngang */
-    margin-top: 20px;
-}
-
-
-
-.install-section .btn-learn {
-    display: inline-block;
-    padding: 12px 28px;
-    margin: 5px;
-    border-radius: 25px;
-    font-size: 16px;
+  .addon-price {
+    color: #007bff;
     font-weight: bold;
-    text-decoration: none;
-    background-color: #fff;
-    color: #d10000;
-    border: 2px solid #d10000;
-    transition: 0.3s;
-}
+  }
 
-.install-section .btn-learn:hover {
-    background-color: #d10000;
-    color: #fff;
-}
-
-
-@media (max-width: 768px) {
-    /* Điều chỉnh section target (ảnh nền với text chồng lên) */
-    .target-text {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        max-width: 100%;
-        padding: 20px 15px;
-        background: rgba(255,255,255,0.9);
-        color: #333;
-    }
-    
-    .target-text h2 {
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
-    
-    .target-text p {
-        font-size: 14px;
-    }
-    
-    /* Điều chỉnh padding các section */
-    section {
-        padding: 25px 0;
-    }
-    
-    /* Tiêu đề nhỏ hơn */
-    section h2 {
-        font-size: 22px;
-        margin-bottom: 15px;
-        padding: 0 15px;
-    }
-    
-    /* Mô tả nhỏ hơn */
-    .description {
-        font-size: 14px;
-        padding: 0 15px;
-        margin-bottom: 15px;
-    }
-    
-    /* Các bước install */
-    .install-step {
-        padding: 15px 0;
-        margin-bottom: 25px;
-    }
-    
-    .step-content,
-    .install-step.reverse .step-content {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .step-text h3 {
-        font-size: 18px;
-        text-align: center;
-    }
-    
-    .step-text p {
-        font-size: 14px;
-        text-align: center;
-    }
-    
-    /* Nút tìm hiểu */
-    .btn-group {
-        margin-top: 15px;
-    }
-    
-    .btn-learn {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-    
-}
-
-@media (max-width: 480px) {
-    /* Điều chỉnh cho màn hình rất nhỏ */
-    .target-text {
-        padding: 15px 10px;
-    }
-    
-    .target-text h2 {
-        font-size: 20px;
-    }
-    
-    section h2 {
-        font-size: 20px;
-    }
-    
-    .step-text h3 {
-        font-size: 17px;
-    }
-    
-    /* Giảm padding container */
-    .container {
-        padding: 0 10px;
-    }
-}
+  .option-item select, .option-item input[type="text"] {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
 
 </style>
 
-<?php require "../web/footer.php" ?>
+<div class="pricing-container">
+  <div class="pricing-left">
+    <div class="duration-tabs">
+      <button class="duration-btn active" data-month="1" data-discount="0">1 tháng</button>
+      <button class="duration-btn" data-month="6" data-discount="0.1">6 tháng</button>
+      <button class="duration-btn" data-month="12" data-discount="0.2">1 năm</button>
+      <button class="duration-btn" data-month="13" data-discount="0.25">13 tháng</button>
+    </div>
+
+    <h3>Tính năng sẵn có</h3>
+    <ul>
+      <li>- Thiết kế sẵn website riêng cho Chatbot</li>
+      <li>- Quản lý cơ sở tri thức trực tuyến (Nextcloud)</li>
+      <li>- Tra cứu lịch sử trò chuyện</li>
+      <li>- Dung lượng: 3 MB</li>
+      <li>- Số câu trả lời: 3000 tin/tháng</li>
+    </ul>
+
+    <p class="total-text">Tổng cộng chi phí:</p>
+    <p class="price" id="totalPrice">400.000</p>
+    <p class="save-text" id="saveText"></p>
+  </div>
+
+  <div class="pricing-right">
+    <h3>Tính năng tùy chọn:</h3>
+    <p>(Các tùy chọn mới sẽ tự động thêm vào tổng cộng chi phí)</p>
+
+    <div class="option-item">
+      <label>
+        <input type="radio" name="addon-livechat" class="addon" value="100000">
+        Tích hợp live chat (Nextcloud Talk)
+        <span class="addon-price">+100.000đ/tháng</span>
+      </label>
+    </div>
+
+    <div class="option-item">
+      <div class="option-content">
+        <span class="option-title">Tăng tài khoản trực</span>
+      </div>
+      <select class="addon" id="account-select">
+        <option value="0">Mặc định</option>
+        <option value="50000">Tăng thêm 1 tài khoản (+50.000đ/tháng)</option>
+        <option value="100000">Tăng thêm 2 tài khoản (+100.000đ/tháng)</option>
+      </select>
+    </div>
+
+    <div class="option-item">
+      <div class="option-content">
+        <span class="option-title">Tăng dung lượng</span>
+      </div>
+      <input type="text" class="addon" id="capacity-input" placeholder="Nhập dung lượng bạn cần">
+      <small>+20.000đ/MB</small>
+    </div>
+
+    <div class="option-item">
+      <div class="option-content">
+        <span class="option-title">Tăng số lượng câu trả lời</span>
+      </div>
+      <select class="addon" id="message-select">
+        <option value="0">3000 tin nhắn (Mặc định)</option>
+        <option value="100000">1000 tin nhắn (+100.000đ/tháng)</option>
+        <option value="200000">2000 tin nhắn (+200.000đ/tháng)</option>
+        <option value="500000">5000 tin nhắn (+500.000đ/tháng)</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<script>
+  const basePrice = 400000;
+  const totalPriceElement = document.getElementById("totalPrice");
+  const saveText = document.getElementById("saveText");
+  const durationBtns = document.querySelectorAll(".duration-btn");
+  const liveChatRadio = document.querySelector('input[name="addon-livechat"]');
+  const accountSelect = document.getElementById('account-select');
+  const capacityInput = document.getElementById('capacity-input');
+  const messageSelect = document.getElementById('message-select');
+
+  let selectedMonths = 1;
+  let selectedDiscount = 0;
+
+  function calculatePrice() {
+    let upgradePrice = 0;
+    
+    // Tích hợp live chat
+    if (liveChatRadio.checked) {
+      upgradePrice += parseInt(liveChatRadio.value);
+    }
+    
+    // Tăng tài khoản trực
+    upgradePrice += parseInt(accountSelect.value);
+
+    // Tăng dung lượng
+    const capacityValue = parseInt(capacityInput.value) || 0;
+    upgradePrice += capacityValue * 20000;
+
+    // Tăng số lượng câu trả lời
+    upgradePrice += parseInt(messageSelect.value);
+
+    let giaGoc = basePrice + upgradePrice;
+    let total = giaGoc * selectedMonths;
+    let discountAmount = total * selectedDiscount;
+    total = total - discountAmount;
+
+    totalPriceElement.textContent = total.toLocaleString("vi-VN");
+    saveText.textContent = selectedDiscount > 0 ?
+      `Tiết kiệm được ${(selectedDiscount * 100).toFixed(0)}%` : "";
+  }
+
+  // Event Listeners for all addons
+  liveChatRadio.addEventListener("change", calculatePrice);
+  accountSelect.addEventListener("change", calculatePrice);
+  capacityInput.addEventListener("input", calculatePrice);
+  messageSelect.addEventListener("change", calculatePrice);
+
+  durationBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      durationBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      selectedMonths = parseInt(btn.dataset.month);
+      selectedDiscount = parseFloat(btn.dataset.discount);
+      calculatePrice();
+    });
+  });
+
+  // Initial calculation
+  calculatePrice();
+</script>
+
+
+    <!-- Nút đặt hàng ngay -->
+    <div class="text-center">
+        <button class="btn-order" onclick="openPopup()">TRIỂN KHAI NGAY</button>
+    </div>
+
+    <!-- Popup form -->
+    <div id="popupOverlay" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Nhập thông tin triển khai</h2>
+            <form id="contactForm">
+                <input type="text" id="customerName" name="fullname" placeholder="Họ và tên" required>
+                <input type="tel" id="customerPhone" name="phone" placeholder="Số điện thoại" required>
+                <input type="email" id="customerEmail" name="email" placeholder="Địa chỉ email" required>
+                <input type="cty" id="customercty" name="cty" placeholder="Tên công ty" required>
+                <button type="submit" class="btn-submit">HOÀN TẤT</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Changelog Section -->
+    <div class="pricing-container" style="border:2px solid #4a90e2; margin-top: 40px;">
+        <!-- Bên trái -->
+        <div class="pricing-left">
+            <h2 class="title-with-icon">
+                <span imag =""style=""></span>
+                Nhật ký cập nhật
+            </h2>
+        </div>
+        
+        <!-- Bên phải -->
+        <div class="pricing-right">
+            <h2>Changelog v2 - chatbot CSKH</h2>
+            <div class="addon">Tính năng mới</div>
+            <ul class="addon">
+                <li>Ghi nhớ ngữ cảnh nhiều lượt</li>
+                <li>Gợi ý sản phẩm/dịch vụ thông minh</li>
+                <li>Tự động đa ngôn ngữ</li>
+                <li>Chuyển tiếp mượt sang nhân viên</li>
+            </ul>
+            <div class="addon">Cải tiến</div>
+            <ul class="addon">
+                <li>Phản hồi nhanh hơn 30%</li>
+                <li>Giảm lỗi hiểu sai</li>
+                <li>Dashboard quản trị tối ưu</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    
+
+      <style>
+   
+    
+    .h2, h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* Popup Styles - CẢI TIẾN */
+    .popup {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0; 
+        top: 0;
+        width: 100%; 
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .popup.show {
+        display: flex;
+    }
+
+    .popup-content {
+        background: #fff;
+        padding: 40px 30px;
+        border-radius: 20px;
+        width: 500px;
+        max-width: 90%;
+        position: relative;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        animation: popupShow 0.3s ease;
+    }
+    
+    @keyframes popupShow {
+        from { transform: scale(0.7); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
+    .popup-content h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .popup-content form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .popup-content input {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+        font-size: 14px;
+    }
+
+    .btn-submit {
+        padding: 12px;
+        background: #c00;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .btn-submit:hover {
+        background: #a00;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 15px; 
+        right: 20px;
+        font-size: 28px;
+        cursor: pointer;
+        color: #666;
+        transition: color 0.3s;
+    }
+    
+    .close-btn:hover {
+        color: #333;
+    }
+
+    /* Banner và Carousel */
+    .carousel-indicators [data-bs-target] {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 0 6px;
+        border: none;
+    }
+
+    .carousel-indicators .active {
+        background-color: #ff6666;
+    }
+
+    /* Common Section Styles */
+    section {
+        padding: 60px 0;
+        background: #FFF;
+    }
+
+    section h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+    }
+
+    .description {
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.8;
+        color: #666;
+        max-width: 1000px;
+        margin: 0 auto 30px auto;
+        padding: 0 20px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Target Section */
+    .target-section .target-image {
+        position: relative;
+        width: 100%;
+    }
+
+    .target-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .target-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #000;
+        max-width: 70%;
+    }
+
+    .target-text h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .target-text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Install Steps */
+    .install-steps {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .install-step {
+        margin-bottom: 60px;
+        padding: 30px 0;
+    }
+
+    .step-content {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .install-step.reverse .step-content {
+        flex-direction: row-reverse;
+    }
+
+    .step-text {
+        flex: 1;
+    }
+
+    .step-text h3 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .step-text p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #666;
+    }
+
+    .step-image {
+        flex: 1;
+        text-align: center;
+    }
+
+    .step-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    /* Feature Image */
+    .feature-image {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .feature-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Pricing Container */
+    .pricing-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        min-height: 500px;
+    }
+    
+    .pricing-left {
+        flex: 1;
+        padding: 40px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+    
+    .pricing-left h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: left;
+    }
+    
+    .total-text {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+    
+    .price {
+        font-size: 48px;
+        font-weight: bold;
+        color: #4a90e2;
+        margin-bottom: 30px;
+    }
+    
+    .features {
+        list-style: none;
+        line-height: 1.8;
+    }
+    
+    .features li {
+        color: #333;
+        margin-bottom: 8px;
+        font-size: 16px;
+        padding-left: 5px;
+    }
+    
+    .pricing-right {
+        flex: 1.2;
+        padding: 40px;
+        background: white;
+    }
+    
+    .pricing-right h3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #333;
+    }
+    
+    .note {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 25px;
+        font-style: italic;
+    }
+    
+    .option-item {
+        margin-bottom: 20px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        border-left: 4px solid #4a90e2;
+    }
+    
+    .option-item.disabled-option {
+        opacity: 0.5;
+        background: #f1f1f1;
+        border-left-color: #ccc;
+    }
+    
+    .option-content {
+        margin-left: 25px;
+    }
+    
+    .option-title {
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    
+    .option-price {
+        font-size: 14px;
+        color: #4a90e2;
+        font-weight: bold;
+    }
+    
+    .radio-group {
+        margin-top: 10px;
+    }
+    
+    .radio-group label {
+        display: block;
+        margin: 8px 0;
+        font-size: 14px;
+        color: #555;
+    }
+
+    /* Order Button */
+    .btn-order {
+        display: block;
+        /* width: 200px; */
+        margin: 30px auto;
+        padding: 15px 30px;
+        background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-order:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        color: white;
+        text-decoration: none;
+    }
+
+    .btn-order:active {
+        transform: translateY(0);
+    }
+
+    /* Title with Icon */
+    .title-with-icon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .arrow-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Changelog styles */
+    .pricing-container .addon {
+        color: #d32f2f;
+        font-weight: 600;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .pricing-container ul.addon {
+        list-style: none;
+        padding: 0;
+    }
+
+    .pricing-container ul.addon li {
+        color: #333;
+        margin-bottom: 8px;
+        font-size: 14px;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .pricing-container ul.addon li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #4a90e2;
+        font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .pricing-container {
+            flex-direction: column;
+            margin: 20px;
+        }
+        
+        .step-content,
+        .install-step.reverse .step-content {
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        section h2 {
+            font-size: 28px;
+        }
+        
+        .target-text {
+            position: relative;
+            top: auto;
+            left: auto;
+            transform: none;
+            max-width: 100%;
+            padding: 20px;
+            background: rgba(255,255,255,0.9);
+        }
+        
+        .popup-content {
+            width: 95%;
+            padding: 30px 20px;
+        }
+    }
+    </style>

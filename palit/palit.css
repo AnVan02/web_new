@@ -209,19 +209,21 @@ nav a {
 
 /* Desktop Banner */
 .rtx-section {
-  background: #000;
-  padding: 40px;
+  background: #000 url("../palit/Rectangle 3.png") no-repeat center center;
+  background-size: cover;
   color: #fff;
+  padding: 60px 80px;
+  font-family: Arial, sans-serif;
 }
+
 
 .rtx-container {
   display: flex;
-  align-items: center;      /* Căn giữa theo chiều dọc */
+  align-items: center;
   justify-content: space-between;
-  gap: 20px;                /* Khoảng cách giữa chữ và ảnh */
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .rtx-text {
@@ -229,23 +231,38 @@ nav a {
 }
 
 .rtx-text h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .rtx-text p {
+  font-size: 16px;
   margin-bottom: 15px;
   line-height: 1.6;
 }
 
 .btn-buy {
   display: inline-block;
-  background: #76b900;
+  padding: 12px 24px;
+  background: #76b900; /* xanh NVIDIA */
   color: #000;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.logo-wrap img {
+  height: 40px;
+  object-fit: contain;
 }
 
 .rtx-image {
@@ -258,39 +275,39 @@ nav a {
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .rtx-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .rtx-image {
-    order: -1; /* Đưa ảnh lên trên */
-    text-align: center;
-    width: 100%;
-    max-width: 100%;  /* cho phép full ngang */
-  }
-
-  .rtx-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-}
 
   
-@media (min-width: 1024px) {
-  .rtx-image {
-    flex: 1.8;         /* cho ảnh rộng hơn */
-    text-align: right;
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
   }
 
-  .rtx-image img {
-    width: 100%;
-    max-width: 900px;  /* chỉnh con số này để ảnh to/nhỏ theo ý bạn */
+  .hero-image {
+    order: -1; /* ép ảnh lên trên text */
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero-image img {
+    max-width: 95%;
     height: auto;
   }
+
+  .hero-text {
+    text-align: left;   /* chữ căn trái */
+    padding: 0 15px;    /* chừa khoảng cách hai bên cho dễ đọc */
+  }
+
+  .hero-text h2 {
+    font-size: 22px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 }
+
 
 
 /* Mobile Banner */
@@ -341,24 +358,6 @@ nav a {
     margin: 0 8px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        display: none;
-    }
-
-    .footer {
-        display: none;
-    }
-
-    .hero-mobile {
-        display: block;
-    }
-
-    .footer-mobile {
-        display: block;
-    }
-}
 
 /* ===== PRODUCT SECTION ===== */
 .product-section {
@@ -876,6 +875,57 @@ footer {
         max-width: 90vw;
         height: auto;
     }
+    /* Bố cục desktop */
+.rtx-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .rtx-container {
+    flex-direction: column; /* Đặt ảnh trên, chữ dưới */
+    text-align: center;     /* Căn giữa chữ */
+  }
+
+  .rtx-text {
+    margin-top: 20px;
+  }
+
+  .rtx-text h2 {
+    font-size: 22px;
+  }
+
+  .rtx-text p {
+    font-size: 14px;
+  }
+
+  .rtx-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .logo-wrap {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .btn-buy {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #00cc44;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+}
+
 
     .btn {
         padding: 10px 20px;
