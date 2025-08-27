@@ -1,6 +1,4 @@
-<?php
-    require "../header.php";
-?>
+
 <title>Chatbot AI</title>
 <?php require "../header.php" ?>
 <div class="banner">
@@ -42,9 +40,8 @@
 <section class="target-section">
     <div class="container">
         <div class="target-image">
-            <div class="feature-image">
-                <img src="../image/nen_ai3.png" alt="chatai">
-            </div> 
+            <img src="../image/nen_ai3.png" alt="Nextcloud Target Users">
+            <div class="target-text">
                 <h2>LỢI ÍCH VƯỢT TRỘI</h2>
                 <p>
                     Tiết kiệm thời gian, tăng năng suất mọi loại báo thao tác thủ công và tìm kiếm suốt dữ. 
@@ -59,210 +56,202 @@
 
 <!-- ROSA AI SMB -->
 <section class="install-section">
-    <div class="container" >
-        <div class="install-steps">
-            <!-- Step 1 -->
-            <div class="install-step">
-                <div class="step-content">
-                        <div class="step-text">
-                        <h3>Đa dạng đối tượng </h3>
-                        <p>Phù hợp với doanh nghiệp vừa và nhỏ muốn tối ưu vận hành, công ty công nghệ và startup cần hệ sinh thái chuyên nghiệp, tổ chức giáo dục yêu cầu bảo mật chính xác, cùng các doanh nghiệp lo ngại rủi ro lưu trữ không đồng bộ.</p>
-                        </div>
-                        <div class="step-image">
-                        <img src="../image/chat_ai1.png" alt="Step 1">
-                        </div>
-                </div>
-            </div>
+     <div class="container">
+          <div class="install-steps">
+               <!-- Step 1 -->
+               <div class="install-step">
+                    <div class="step-content">
+                         <div class="step-text">
+                         <h3>Đa dạng đối tượng </h3>
+                         <p>Phù hợp với doanh nghiệp vừa và nhỏ muốn tối ưu vận hành, công ty công nghệ và startup cần hệ sinh thái chuyên nghiệp, tổ chức giáo dục yêu cầu bảo mật chính xác, cùng các doanh nghiệp lo ngại rủi ro lưu trữ không đồng bộ.</p>
+                         </div>
+                         <div class="step-image">
+                         <img src="../image/chat_ai1.png" alt="Step 1">
+                         </div>
+                    </div>
+               </div>
 
-            <!-- Step 2 -->
-            <div class="install-step reverse">
-                <div class="step-content">
-                        <div class="step-text">
-                            <h3>Giải pháp toàn diện</h3>
-                            <p>Doanh nghiệp nhận gói phần mềm toàn diện  gồm Nextcloud Enterprise, chatbot AI, phần mềm chấm công và trợ lý ảo AI khi mua ROSA AI SMB. Tất cả được triển khai bởi đội ngũ chuyên nghiệp với bảo trì và nâng cấp định kỳ. </p>
-                        </div>
-                        <div class="step-image">
-                            <img src="../image/chat_ai2.png" alt="Step 2">
-                        </div>
-                </div>
-            </div>
-            <div class="btn-group">
-                <a href="https://server1.rosachatbot.com/Rosa" class="btn-learn">Thử ngay</a>
-            </div>
+               <!-- Step 2 -->
+               <div class="install-step reverse">
+                    <div class="step-content">
+                         <div class="step-text">
+                         <h3>Giải pháp toàn diện</h3>
+                         <p>Doanh nghiệp nhận gói phần mềm toàn diện  gồm Nextcloud Enterprise, chatbot AI, phần mềm chấm công và trợ lý ảo AI khi mua ROSA AI SMB. Tất cả được triển khai bởi đội ngũ chuyên nghiệp với bảo trì và nâng cấp định kỳ. </p>
+                         </div>
+                         <div class="step-image">
+                         <img src="../image/chat_ai2.png" alt="Step 2">
+                         </div>
+                    </div>
+               </div>
      </section>
-    <div class="step-image">
-        <img src="../image/nen_ai4.png" alt="chatai">
-    </div> 
 <style>
-    .pricing-container {
-        display: flex;
-        gap: 40px;
-        font-family:'Montserrat';
-        margin: 30px;
-    }
+  .pricing-container {
+    display: flex;
+    gap: 40px;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+  }
 
-    .pricing-left, .pricing-right {
-        flex: 1;
-        border-right: 1px solid #ccc;
-        padding-right: 40px;
-    }
+  .pricing-left, .pricing-right {
+    flex: 1;
+    border-right: 1px solid #ccc;
+    padding-right: 40px;
+  }
 
-    .pricing-right {
-        border-right: none;
-        padding-right: 0;
-    }
+  .pricing-right {
+    border-right: none;
+    padding-right: 0;
+  }
 
-    .pricing-left h3 {
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
+  .pricing-left h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 
-    .pricing-left ul {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 20px 0;
-    }
+  .pricing-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
 
-    .pricing-left li {
-        line-height: 1.8;
-    }
+  .pricing-left li {
+    line-height: 1.8;
+  }
 
-    .total-text {
-        font-weight: bold;
-        font-size: 18px;
-        margin-bottom: 5px;
-    }
+  .total-text {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
 
-    .price {
-        font-size: 40px;
-        font-weight: bold;
-        color: #007bff;
-        margin: 0;
-    }
+  .price {
+    font-size: 40px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0;
+  }
 
-    .save-text {
-        color: #28a745;
-        font-size: 14px;
-        margin-top: 5px;
-        display: flex;
-        justify-content: space-between; /* đẩy 2 bên */
-        align-items: center; /* căn giữa theo chiều dọc */
+  .save-text {
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between; /* đẩy 2 bên */
+    align-items: center; /* căn giữa theo chiều dọc */
 
-    }
+  }
 
-    .duration-tabs {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 20px;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
+  .duration-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 
-    .duration-tabs button {
-        padding: 8px 22px;
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        background: #f0f0f0;
-        cursor: pointer;
-        font-size: 14px;
-    }
+  .duration-tabs button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+  }
 
-    .duration-tabs button.active {
-        background: #007bff;
-        color: #fff;
-        border-color: #007bff;
-    }
+  .duration-tabs button.active {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
 
-    .pricing-right h3 {
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
+  .pricing-right h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 
-    .pricing-right p {
-        font-size: 14px;
-        color: #666;
-        margin-bottom: 20px;
-    }
+  .pricing-right p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
 
-    .option-item {
-        margin-bottom: 20px;
-    }
+  .option-item {
+    margin-bottom: 20px;
+  }
 
-    .option-item label {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-    
+  .option-item label {
+    /* display: flex; */
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
 
-    .option-item input[type="radio"] {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        width: 16px;
-        height: 16px;
-        border: 2px solid #ccc;
-        border-radius: 50%;
-        position: relative;
-    }
+  .option-item input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+  }
 
-    .option-item input[type="radio"]:checked {
-        border-color: #007bff;
-    }
+  .option-item input[type="radio"]:checked {
+    border-color: #007bff;
+  }
 
-    .option-item input[type="radio"]:checked::before {
-        content: '';
-        width: 8px;
-        height: 8px;
-        background-color: #007bff;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  .option-item input[type="radio"]:checked::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-    .addon-text {
-        color: #007bff;
-        font-weight: bold;
-    }
+  .addon-text {
+    color: #007bff;
+    font-weight: bold;
+  }
 
-    .option-title {
-        font-weight: bold;
-    }
+  .option-title {
+    font-weight: bold;
+  }
 
-    .option-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
+  .option-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 
-    .addon-price {
-        color: #007bff;
-        font-weight: bold;
-    }
+  .addon-price {
+    color: #007bff;
+    font-weight: bold;
+  }
 
-    .option-item select, .option-item input[type="text"] {
-        display: block;
-        margin-top: 10px;
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 14px;
-    }
+  .option-item select, .option-item input[type="text"] {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
     .price-row {
-        display: flex;
-        justify-content: space-between; /* đẩy 2 bên */
-        align-items: center; /* căn giữa theo chiều dọc */
+    display: flex;
+    justify-content: space-between; /* đẩy 2 bên */
+    align-items: center; /* căn giữa theo chiều dọc */
     }
 
-    </style>
-
+</style>
 <div class="pricing-left">
     <div class="duration-tabs">
         <button class="duration-btn" data-month="12" data-discount="0.25">1 năm</button>
@@ -271,7 +260,6 @@
         <button class="duration-btn active" data-month="1" data-discount="0">1 tháng</button>
     </div>
 <div>
-
 
 <div class="pricing-container">
   <div class="pricing-left">
@@ -459,13 +447,14 @@ durationBtns.forEach((btn) => {
     calculatePrice();
   });
 });
+
 // Initial calculation
 calculatePrice();
 </script>
 
 
 
-    <!-- Nút liên hệ zalo -->
+    <!-- Nút đặt hàng ngay -->
     <div class="text-center">
         <button class="btn-order" onclick="window.location='https://zalo.me/909749126673606301'">Liên hệ ngay</button>
     </div>
@@ -484,7 +473,7 @@ calculatePrice();
             </form>
         </div>
     </div>
-    
+
    <!-- Custom Alert Container -->
 <div id="customAlert" class="custom-alert-container"></div>
 
@@ -502,7 +491,7 @@ calculatePrice();
     </div>
     
     <!-- Bên phải -->
-    <div class="pricing-right" style="border:none" >
+    <div class="pricing-right" >
         <h2>Changelog v2 - Chatbot CSKH</h2>
         <div class="addon">Tính năng mới</div>
         <ul class="addon">
@@ -522,8 +511,10 @@ calculatePrice();
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    
 
-<style>
+      <style>
+   
     
     .h2, h2 {
         font-size: 1.5rem;
@@ -754,7 +745,7 @@ calculatePrice();
 
     /* Pricing Container */
     .pricing-container {
-        max-width: 1300px;
+        max-width: 1200px;
         margin: 40px auto;
         background: white;
         border-radius: 20px;
@@ -767,7 +758,7 @@ calculatePrice();
     .pricing-left {
         flex: 1;
         padding: 40px;
-        background: #FFF;
+        /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
     }
     
     .pricing-left h2 {
@@ -785,7 +776,7 @@ calculatePrice();
     }
     
     .price {
-        font-size: 25px;
+        font-size: 35px;
         font-weight: bold;
         color: #4a90e2;
         margin-bottom: 30px;
@@ -910,7 +901,7 @@ calculatePrice();
 
     /* Changelog styles */
     .pricing-container .addon {
-        color: #d32f2f;
+        color: #000;
         font-weight: 600;
         margin-bottom: 15px;
         font-size: 18px;
@@ -970,3 +961,7 @@ calculatePrice();
         }
     }
     </style>
+
+    <?php
+    require "../footer.php";
+?>

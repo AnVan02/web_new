@@ -26,7 +26,7 @@
 </div>
 
 <!-- cấu trúc sản phẩm -->
-<section class="ai-section">
+<section class="ai-section" style="margin-top: 40px;">
   <h2 class="ds-title">DÒNG SẢN PHẨM</h2>
   <p class="ds-subtitle">Đáp ứng đa dạng nhu cầu, mạnh mẽ, bền bỉ</p>
 
@@ -56,7 +56,94 @@
     <a href="http://localhost/web_new/web/sanpham.php#mini" class="btn-discover">Khám phá ngay</a>
   </div>
 </div>
-<section class="ai-section">
+
+<!-- ==== logo ====  -->
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Logo Partners Section -->
+<section class="logo-section">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>ĐỐI TÁC THƯƠNG HIỆU</h3>
+            <p class="ds-subtitle">Tự Hào Đồng Hành Cùng Các Khách Hàng Chiến Lược Trên Toàn Cầu.</p>
+
+        </div>
+        <div class="logo-container">
+            <div id="owl-brands-slider" class="owl-carousel owl-theme">
+                <div class="item">
+                    <a class="text-center">
+                        <img src="../image/logo/AMD.png" alt="AMD">
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-center">
+                        <img src="../image/logo/INTEL.png" alt="INTEL ">
+                    </a>
+                </div>
+               
+                <div class="item">
+                    <a class="text-center">
+                        <img src="../image/logo/ASUS.png" alt="ASUS">
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-center">
+                        <img src="../image/logo/KINGSTON.png" alt="KINGSTON">
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-center">
+                        <img src="../image/logo/LEXAR.png" alt="LEXAR">
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-center">
+                        <img src="../image/logo/ASROCK.png" alt="ASROCK">
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-center">
+                        <img src="../image/logo/AOC.png" alt="AOC">
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-center">
+                        <img src="../image/logo/PALIT.png" alt="PALIT">
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-center">
+                        <img src="../image/logo/GSKILL.png" alt="GSKILL">
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="text-center">
+                        <img src="../image/logo/POWERCOLOR.png" alt="POWERCOLOR">
+                    </a>
+                </div>
+                
+                <div class="item">
+                    <a class="text-center">
+                        <img src="../image/logo/NVIDIA.png" alt="NVIDIA">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a class="text-center">
+                        <img src="../image/logo/MICROSOFT.png" alt="MICROSOFT">
+                    </a>
+                </div>
+           
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==== Giai pháp AI ==== -->
+
+<section class="ai-section" style="margin-top: 40px;">
     <h2 class="ds-title">GIẢI PHÁP AI</h2>
     <p class="ds-subtitle">Giải pháp toàn diện cho công việc và cuộc sống</p>
 </section>
@@ -101,7 +188,7 @@
     </div>
 </div>
 
-<section class="ai-section">
+<section class="ai-section" style="margin-top: 40px;">
     <h2 class="ds-title">TIN TỨC</h2>
     <p class="ds-subtitle">Cập nhật tin tức công nghệ và khuyến mãi</p>
 </section>
@@ -135,7 +222,7 @@
             if (isset($row['article_author'])) {
                 echo ' - Tác giả: ' . htmlspecialchars($row['article_author'], ENT_QUOTES, 'UTF-8');
             }
-            echo '</p>'; // <-- đóng p lại
+            echo '</p>'; // <-- đóng lại
             echo '<img src="/tintuc_test/admin/modules/blog/uploads/' . htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8') . '" alt="News Image">';
             echo '</a>';
             echo '<div class="news-content">';
@@ -152,13 +239,126 @@
     } else {
         echo '<p>Không có tin tức để hiển thị.</p>';
     }
-    
 
     $conn->close();
     ?>
 </div>
+<!-- Tin công nghệ -->
+<section class="ai-section" style="margin-top: 40px;">
+    <h2 class="ds-title">TIN THUỘC CÔNG NGHỆ</h2>
+    <p class="ds-subtitle">Cập nhật tin tức công nghệ và khuyến mãi</p>
+</section>
 
-<section class="ai-section">
+<!-- Tin công nghệ -->
+<section class="ai-section" style="margin-top: 40px;">
+    <h2 class="ds-title">Tiêu điểm <strong>Công nghệ</strong></h2>
+</section>
+
+<?php 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "database";
+
+// Kết nối
+$conn = new mysqli($servername, $username, $password, $dbname);
+$conn->set_charset("utf8");
+
+if ($conn->connect_error) {
+    die("Kết nối thất bại: " . $conn->connect_error);
+}
+?>
+Tabs
+<div class="tabs">
+  <button class="tab-btn active" onclick="showTab('rosa', this)">Giải pháp hội họp thông minh</button>
+  <button class="tab-btn" onclick="showTab('mayborosa', this)">Giải pháp giáo dục thông minh</button>
+  <button class="tab-btn" onclick="showTab('congnghe', this)">Giải pháp công nghệ</button>
+</div>
+
+<!-- Tab 1 -->
+<div id="rosa" class="tab-content">
+  <?php
+  $sql = "SELECT * FROM article WHERE article_tag = 'rosa' ORDER BY article_date DESC LIMIT 3";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+      echo '<div class="news-grid">';
+      while ($row = $result->fetch_assoc()) {
+          echo '<div class="news-card">';
+          echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
+          echo '<img src="/tintuc_test/admin/modules/blog/uploads/' . htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8') . '" alt="">';
+          echo '<h3>' . htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8') . '</h3>';
+          echo '</a>';
+          echo '<p>' . strip_tags(mb_substr($row['article_content'], 0, 250, 'UTF-8')) . '...</p>';
+          echo '</div>';
+      }
+      echo '</div>';
+  } else {
+      echo "<p>Không có bài viết trong tab này.</p>";
+  }
+  ?>
+</div>
+
+
+<!-- Tab 2 -->
+<div id="mayborosa" class="tab-content" style="display:none;">
+  <?php
+    $sql = "SELECT * FROM article WHERE article_tag = 'mayborosa' ORDER BY article_date DESC LIMIT 3";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        echo '<div class="news-grid">';
+        while ($row = $result->fetch_assoc()) {
+            echo '<div class="news-card">';
+            echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
+            echo '<img src="/tintuc_test/admin/modules/blog/uploads/' . htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8') . '" alt="">';
+            echo '<h3>' . htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8') . '</h3>';
+            echo '</a>';
+            echo '<p>' . strip_tags(mb_substr($row['article_content'], 0, 250, 'UTF-8')) . '...</p>';
+            echo '</div>';
+        }
+        echo '</div>';
+    } else {
+        echo "<p>Không có bài viết trong tab này.</p>";
+    }
+  ?>
+</div>
+
+<!-- tab 3 -->
+<div id="congnghe" class="tab-content" style="display: none;">
+    <?php
+        $sql = "SELECT * FROM article where article_tag = 'congnghe' ORDER BY article_date DESC LiMIT 3";
+        $result = $conn-> query ($sql);
+        if ($result -> num_rows > 0) {
+            while ($row = $result -> fetch_assoc()) {
+                echo '<div class="news-card">';
+                echo '<a href="/tintuc/'.htmlspecialchars($row ['article_link'], ENT_QUOTES, 'UTF-8').'">';
+                echo '<img src="/tintuc_test/admin/modules/blog/uploads/' . htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8') . '" alt="">';
+                echo '<h3>' . htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8') . '</h3>';
+                echo '</a>';
+                echo '<p>'.strip_tags(mb_substr($row['aricle_content'],0,250,'UTF-8')).'..</p>';
+                echo '</div>';
+            }
+            echo '</div>';
+
+        }else{
+            echo "<p>Không có bài viết trong tab nay. </p>";
+
+        }
+    ?>
+</div>
+
+<!-- JS -->
+<script>
+function showTab(tabId, el) {
+    document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    document.getElementById(tabId).style.display = 'block';
+    el.classList.add('active');
+}
+</script>
+
+
+
+<section class="ai-section" style="margin-top: 40px;">
     <h2 class="ds-title">CÂU HỎI THƯỜNG GẶP</h2>
     <p class="ds-subtitle">Xem giải đáp nhanh thắc mắc phổ biến</p>
 </section>
@@ -283,6 +483,38 @@
     </div>
 </div>
 
+<!-- ==== loggoo ==== -->
+<!-- jQuery và Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Initialize Owl Carousel -->
+<script>
+$(document).ready(function(){
+    // Khởi tạo Owl Carousel cho logo brands
+    $("#owl-brands-slider").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 4
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
+});
+</script>
+
 <script src="../script/trangchu.js"></script>
 
-<?php require "footer.php" ?>
+<?php require "../footer.php" ?>

@@ -3,7 +3,10 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'send_order') {
     header('Content-Type: application/json');
     
-
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
+    
     // Uncomment dòng dưới nếu đã cài PHPMailer qua Composer
     // require 'vendor/autoload.php';
     
@@ -99,96 +102,107 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 require "../header.php";
 ?>
 
-
-    <!-- Banner Carousel -->
-    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-        </div>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://via.placeholder.com/1200x400/4a90e2/ffffff?text=ROSA+AI+Banner" class="d-block w-100" alt="Banner 1">
-            </div>
-        </div>
+<!-- Banner Carousel -->
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
     </div>
 
-    <!-- Section: Tương tác thông minh -->
-    <section class="why-choose-section">
-        <div class="container">
-            <h2>TƯƠNG TÁC THÔNG MINH</h2>
-            <p class="description">
-                ROSA - AI Ready là thương hiệu tiên phong giải pháp chấm công truyền thống bằng IP Camera AI, 
-                mang đến sự tiết kiệm, nhanh chóng, chính xác cho doanh nghiệp        
-            </p>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://via.placeholder.com/1200x400/4a90e2/ffffff?text=ROSA+AI+Banner" class="d-block w-100" alt="Banner 1">
         </div>
-    </section>
+    </div>
+</div>
 
-    <div class="nextcloud-circles">
+<!-- Section: Tương tác thông minh -->
+<section class="why-choose-section">
+    <div class="container">
+        <h2>TƯƠNG TÁC THÔNG MINH</h2>
+        <p class="description">
+            ROSA - AI Ready là thương hiệu tiên phong giải pháp chấm công truyền thống bằng IP Camera AI, 
+            mang đến sự tiết kiệm, nhanh chóng, chính xác cho doanh nghiệp        
+        </p>
+    </div>
+</section>
+
+<div class="nextcloud-circles">
+    <div class="feature-image">
+        <img src="https://via.placeholder.com/800x400/e9ecef/333333?text=ROSA+AI+Features" alt="Nextcloud">
+    </div>
+</div>
+
+<!-- Tính năng nổi bật -->
+<section class="features-section">
+    <h2>Tính năng nổi bật</h2>
+    <div class="container">
         <div class="feature-image">
-            <img src="https://via.placeholder.com/800x400/e9ecef/333333?text=ROSA+AI+Features" alt="Nextcloud">
+            <img src="https://via.placeholder.com/1000x500/f8f9fa/333333?text=Outstanding+Features" alt="Nextcloud Features">
         </div>
     </div>
+</section>
 
-    <!-- Tính năng nổi bật -->
-    <section class="features-section">
-        <h2>Tính năng nổi bật</h2>
-        <div class="container">
-            <div class="feature-image">
-                <img src="https://via.placeholder.com/1000x500/f8f9fa/333333?text=Outstanding+Features" alt="Nextcloud Features">
+<!-- Đối tượng -->
+<section class="target-section">
+    <div class="container">
+        <div class="target-image">
+            <img src="https://via.placeholder.com/1200x600/4a90e2/ffffff?text=Target+Users+Background" alt="Target Users">
+            <div class="target-text">
+                <h2>LỢI ÍCH VƯỢT TRỘI</h2>
+                <p>
+                    Tiết kiệm thời gian, tăng năng suất mọi loại báo cáo thao tác thủ công và tìm kiếm dữ liệu. 
+                    Giao diện tùy chỉnh thân thiện, không cần đào tạo. Thông tin truy xuất tức thì 
+                    giúp lãnh đạo quyết định nhanh, an toàn và minh bạch.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Đối tượng -->
-    <section class="target-section">
-        <div class="container">
-            <div class="target-image">
-                <img src="https://via.placeholder.com/1200x600/4a90e2/ffffff?text=Target+Users+Background" alt="Target Users">
-                <div class="target-text">
-                    <h2>LỢI ÍCH VƯỢT TRỘI</h2>
-                    <p>
-                        Tiết kiệm thời gian, tăng năng suất mọi loại báo cáo thao tác thủ công và tìm kiếm dữ liệu. 
-                        Giao diện tùy chỉnh thân thiện, không cần đào tạo. Thông tin truy xuất tức thì 
-                        giúp lãnh đạo quyết định nhanh, an toàn và minh bạch.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Install Section -->
-    <section class="install-section">
-        <div class="container">
-            <div class="install-steps">
-                <!-- Step 1 -->
-                <div class="install-step">
-                    <div class="step-content">
-                        <div class="step-text">
-                            <h3>Đa dạng đối tượng</h3>
-                            <p>Phù hợp với doanh nghiệp vừa và nhỏ muốn tối ưu vận hành, công ty công nghệ và startup cần hệ sinh thái chuyên nghiệp, tổ chức giáo dục yêu cầu bảo mật chính xác, cùng các doanh nghiệp lo ngại rủi ro lưu trữ không đồng bộ.</p>
-                        </div>
-                        <div class="step-image">
-                            <img src="https://via.placeholder.com/400x300/e9ecef/333333?text=Step+1" alt="Step 1">
-                        </div>
+<!-- Install Section -->
+<section class="install-section">
+    <div class="container">
+        <div class="install-steps">
+            <!-- Step 1 -->
+            <div class="install-step">
+                <div class="step-content">
+                    <div class="step-text">
+                        <h3>Đa dạng đối tượng</h3>
+                        <p>Phù hợp với doanh nghiệp vừa và nhỏ muốn tối ưu vận hành, công ty công nghệ và startup cần hệ sinh thái chuyên nghiệp, tổ chức giáo dục yêu cầu bảo mật chính xác, cùng các doanh nghiệp lo ngại rủi ro lưu trữ không đồng bộ.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="https://via.placeholder.com/400x300/e9ecef/333333?text=Step+1" alt="Step 1">
                     </div>
                 </div>
+            </div>
 
-                <!-- Step 2 -->
-                <div class="install-step reverse">
-                    <div class="step-content">
-                        <div class="step-text">
-                            <h3>Giải pháp toàn diện</h3>
-                            <p>Doanh nghiệp nhận gói phần mềm toàn diện gồm Nextcloud Enterprise, chatbot AI, phần mềm chấm công và trợ lý ảo AI khi mua ROSA AI SMB. Tất cả được triển khai bởi đội ngũ chuyên nghiệp với bảo trì và nâng cấp định kỳ.</p>
-                        </div>
-                        <div class="step-image">
-                            <img src="https://via.placeholder.com/400x300/e9ecef/333333?text=Step+2" alt="Step 2">
-                        </div>
+            <!-- Step 2 -->
+            <div class="install-step reverse">
+                <div class="step-content">
+                    <div class="step-text">
+                        <h3>Giải pháp toàn diện</h3>
+                        <p>Doanh nghiệp nhận gói phần mềm toàn diện gồm Nextcloud Enterprise, chatbot AI, phần mềm chấm công và trợ lý ảo AI khi mua ROSA AI SMB. Tất cả được triển khai bởi đội ngũ chuyên nghiệp với bảo trì và nâng cấp định kỳ.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="https://via.placeholder.com/400x300/e9ecef/333333?text=Step+2" alt="Step 2">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Chatbot AI ROSA -->
+<section class="features-section">
+    <h2>Chatbot AI ROSA</h2>
+    <p class="description">Giải pháp toàn diện cho doanh nghiệp phát triển</p>
+    <div class="container">
+        <div class="feature-image">
+            <img src="https://via.placeholder.com/1000x400/4a90e2/ffffff?text=Chatbot+AI+ROSA" alt="Chatbot Features">
+        </div>
+    </div>
+</section>
+
 <!-- Bảng giá -->
 <div class="pricing-container">
     <!-- Bên trái -->
@@ -203,9 +217,7 @@ require "../header.php";
             <li>- Dung lượng: 3 MB</li>
             <li>- Số câu trả lời: 3000 tin/tháng</li>
         </ul>
-
     </div>
-
     
     <!-- Bên phải -->
     <div class="pricing-right">
@@ -214,19 +226,19 @@ require "../header.php";
         
         <!-- Tích hợp live chat -->
         <div class="option-item">
-            <input type="radio" name="livechat" class="addon" value="200000">
+            <input type="radio" name="livechat" class="addon" value="100000">
             <div class="option-content">
-                <div class="option-title">Tích hợp chatbot vào website có sẵn</div>
-                <div class="option-price">+200,000đ/tháng</div>
+                <div class="option-title">Tích hợp live chat (Nextcloud Talk)</div>
+                <div class="option-price">+100,000đ/tháng</div>
             </div>
         </div>
 
         <!-- Tích hợp live chat nâng cao -->
         <div class="option-item">
-            <input type="radio" name="nextcloud_talk" class="addon" value="100000">
+            <input type="radio" name="nextcloud_talk" class="addon" value="200000">
             <div class="option-content">
-                <div class="option-title">Tích hợp live chat (Nextcloud Talk)</div>
-                <div class="option-price">+100,000đ/tháng</div>
+                <div class="option-title">Tích hợp live chat nâng cao (Nextcloud Talk Pro)</div>
+                <div class="option-price">+200,000đ/tháng</div>
             </div>
         </div>
 
@@ -296,11 +308,8 @@ require "../header.php";
     <!-- Bên trái -->
     <div class="pricing-left">
         <h2 class="title-with-icon">
-             Nhật ký cập nhật
+            📝 Nhật ký cập nhật
         </h2>
-        <div class="step-image">
-            <img src="../image/nhatky.png" alt="Step 2">
-        </div>
     </div>
     
     <!-- Bên phải -->
@@ -593,7 +602,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 });
 </script>
 
-
 <style>
 /* Reset và Base Styles */
 * {
@@ -625,10 +633,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
 .popup-content {
     background: #fff;
-    padding: 84px 44px;
+    padding: 40px 30px;
     border-radius: 20px;
-    width: 700px;
-    max-width: 148%;
+    width: 500px;
+    max-width: 95%;
     position: relative;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -1109,7 +1117,7 @@ section h2 {
 .pricing-left {
     flex: 1;
     padding: 40px;
-    background: linear-gradient(135deg, #FFF 0%, #FFF 100%);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     position: relative;
 }
 
@@ -1532,3 +1540,6 @@ section h2 {
 }
 </style>
 
+<?php
+require "../footer.php";
+?>

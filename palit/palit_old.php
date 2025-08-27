@@ -40,7 +40,7 @@
         </div>
       </div>
        <div class="hero-image" style="position:relative; z-index:1; display:flex; gap:40px; align-items:center; justify-content:center; margin-top:24px;">
-        <img src="../palit/nen.png" alt="PC Image" />
+        <img src="../palit/Rectangle 24.png" alt="PC Image" />
       </div>
     </div>
   </section>

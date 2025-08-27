@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -25,27 +26,25 @@
   </header>
   <!-- code hiện thị trên deptop -->
  <!-- Banner Desktop -->
-<section class="rtx-section">
-  <div class="rtx-container">
-    <div class="rtx-text">
-      <h2>GeForce RTX 50 Series</h2>
-      <p>Người Thay Đổi Cuộc Chơi</p>
-      <p>
-        GPU GeForce RTX™ 50 Series, dựa trên kiến trúc NVIDIA Blackwell, mang lại hiệu năng vượt trội và công nghệ AI tiên tiến.
-        Trải nghiệm chơi game, sáng tạo nội dung và hiệu suất làm việc ở một tầm cao mới.
-      </p>
-      <a href="#" class="btn-buy">Mua Ngay</a>
-       <div class="logo-wrap">
-          <img src="../palit/logo1.png" alt="Palit Logo">
-          <img src="../palit/logo2.png" alt="GeForce RTX Logo">
-        </div>
-
+  <section class="hero">
+    <div class="container hero-content" style="position:relative; min-height:420px;">
+      <div class="hero-bg" style="position:absolute; inset:0; z-index:0; width:100%; height:100%; background: url('../palit/Rectangle 3.png') center center/cover no-repeat;"></div>
+     
+      <div class="hero-text" style="position:relative; z-index:1;">
+        <h2>GeForce RTX™ 50 Series</h2>
+        <p>Được trang bị kiến trúc NVIDIA Blackwell, GeForce RTX™ 50 Series mang đến hiệu năng AI vượt trội, nâng tầm trải nghiệm đồ họa và sáng tạo nội dung. Công nghệ DLSS 4 tăng tốc dựng hình với tốc độ vượt trội, trong khi NVIDIA Studio tối ưu quy trình sáng tạo giúp bạn làm được nhiều hơn, nhanh hơn.</p>
+        <button class="btn">MUA NGAY</button>
+      </div>
+      <div class="hero-image" style="position:relative; z-index:1; display:flex; gap:32px; align-items:center; justify-content:center; margin-top:24px;">
+        <img src="../palit/sp.png" alt="PC Image" />
+      </div>
     </div>
-    <div class="rtx-image">
-      <img src="../palit/tele.png" alt="GeForce RTX 5080">
-    </div>
-  </div>
-</section>
+</div>
+      <div class="container logo-partners">
+        <img src="../palit/logo2.png" alt="GeForce Logo">
+        <img src="../palit/logo1.png" alt="Palit Logo">
+      </div>
+  </section>
 
 
 
