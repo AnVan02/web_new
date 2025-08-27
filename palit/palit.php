@@ -24,24 +24,31 @@
       </nav>
     </div>
   </header>
-  <section class="hero">
-    <div class="container hero-content" style="position:relative; min-height:420px;">
-      <div class="hero-bg" style="position:absolute; inset:0; z-index:0; width:100%; height:100%; background: url('../palit/Rectangle 3.png') center center/cover no-repeat;"></div>
-     
-      <div class="hero-text" style="position:relative; z-index:1;">
-        <h2>GeForce RTX™ 50 Series</h2>
-        <p>Được trang bị kiến trúc NVIDIA Blackwell, GeForce RTX™ 50 Series mang đến hiệu năng AI vượt trội, nâng tầm trải nghiệm đồ họa và sáng tạo nội dung. Công nghệ DLSS 4 tăng tốc dựng hình với tốc độ vượt trội, trong khi NVIDIA Studio tối ưu quy trình sáng tạo giúp bạn làm được nhiều hơn, nhanh hơn.</p>
-        <button class="btn">MUA NGAY</button>
-      </div>
-      <div class="hero-image" style="position:relative; z-index:1; display:flex; gap:32px; align-items:center; justify-content:center; margin-top:24px;">
-        <img src="../palit/image 16.png" alt="PC Image" />
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h2>GeForce RTX 50 Series</h2>
+      <p class="subtitle">Người Thay Đổi Cuộc Chơi</p>
+      <p class="description">
+        GPU GeForce RTX 50 Series được hỗ trợ bởi kiến trúc NVIDIA Blackwell,
+        mang đến hiệu năng AI vượt trội, nâng tầm trải nghiệm đồ họa và sáng
+        tạo nội dung. Công nghệ DLSS 4 tăng tốc dựng hình với tốc độ vượt trội,
+        trong khi NVIDIA Studio tối ưu quy trình sáng tạo giúp bạn làm được
+        nhiều hơn, nhanh hơn.
+      </p>
+      <button class="btn">MUA HÀNG</button>
+      <div class="logo-partners">
+        <img src="../palit/logo1.png" alt="Palit Logo">
+        <img src="../palit/logo2.png" alt="GeForce Logo">
       </div>
     </div>
-      <div class="container logo-partners">
-        <img src="../palit/logo2.png" alt="GeForce Logo">
-        <img src="../palit/logo1.png" alt="Palit Logo">
-      </div>
-  </section>
+
+    <div class="hero-image">
+      <img src="../palit/nen.png" alt="RTX 5080">
+    </div>
+  </div>
+</section>
+
 
   <div class="container product-section">
     <h2>GeForce RTX</h2>

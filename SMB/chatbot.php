@@ -1,274 +1,278 @@
-<?php
-    require "../web/header.php";
-?>
 
+<title>Chatbot AI</title>
 
-    <!-- Banner Carousel -->
-    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-        </div>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://via.placeholder.com/1200x400/4a90e2/ffffff?text=ROSA+AI+Banner" class="d-block w-100" alt="Banner 1">
-            </div>
+<div class="banner">
+    <div class="row">
+        <div class="hero-section">
+            <img src="../image/banner_chatbotai.png" alt="Banner" class="hero-image">
         </div>
     </div>
+</div>
 
-    <!-- Section: Tương tác thông minh -->
-    <section class="why-choose-section">
-        <div class="container">
-            <h2>TƯƠNG TÁC THÔNG MINH</h2>
-            <p class="description">
-                ROSA - AI Ready là thương hiệu tiên phong giải pháp chấm công truyền thống bằng IP Camera AI, 
-                mang đến sự tiết kiệm, nhanh chóng, chính xác cho doanh nghiệp        
-            </p>
-        </div>
-    </section>
-
-    <div class="nextcloud-circles">
+<!-- Section: Tại sao chọn -->
+<section class="why-choose-section">
+    <div class="container">
+        <h2>TƯƠNG TÁC THÔNG MINH </h2>
+        <p class="description">
+            ROSA - AI Ready là thương hiệu tiên phong giải pháp chấm công truyền thống bằng IP Camera AI, 
+            mang đến sự tiết kiệm, nhanh chóng, chính xác cho doanh nghiệp        
+        </p>
+       
+    </div>
+</section>
+     <div class="nextcloud-circles">
         <div class="feature-image">
-            <img src="https://via.placeholder.com/800x400/e9ecef/333333?text=ROSA+AI+Features" alt="Nextcloud">
+            <img src="../image/banner_sp_2.png" alt="Nextcloud">
         </div>
     </div>
 
-    <!-- Tính năng nổi bật -->
-    <section class="features-section">
-        <h2>Tính năng nổi bật</h2>
-        <div class="container">
+<!-- Tính năng nổi bật -->
+<section class="features-section">
+     <h2>Tính năng nổi bật</h2>
+    <div class="container">
+        <div class="feature-image">
+            <img src="../image/nen_ai2.png" alt="Nextcloud Features">
+        </div>
+    </div>
+</section>
+
+<!-- Đối tượng -->
+<section class="target-section">
+    <div class="container">
+        <div class="target-image">
             <div class="feature-image">
-                <img src="https://via.placeholder.com/1000x500/f8f9fa/333333?text=Outstanding+Features" alt="Nextcloud Features">
+                <img src="../image/nen_ai3.png" alt="chatai">
+            </div> 
+                <h2>LỢI ÍCH VƯỢT TRỘI</h2>
+                <p>
+                    Tiết kiệm thời gian, tăng năng suất mọi loại báo thao tác thủ công và tìm kiếm suốt dữ. 
+                    Giao diện tùy chỉnh thân thiện, không cần đào tạo. Thông tin truy xuất tức thì 
+                    giúp lãnh đạo quyết định nhanh, an toàn và minh bạch.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Đối tượng -->
-    <section class="target-section">
-        <div class="container">
-            <div class="target-image">
-                <img src="https://via.placeholder.com/1200x600/4a90e2/ffffff?text=Target+Users+Background" alt="Target Users">
-                <div class="target-text">
-                    <h2>LỢI ÍCH VƯỢT TRỘI</h2>
-                    <p>
-                        Tiết kiệm thời gian, tăng năng suất mọi loại báo cáo thao tác thủ công và tìm kiếm dữ liệu. 
-                        Giao diện tùy chỉnh thân thiện, không cần đào tạo. Thông tin truy xuất tức thì 
-                        giúp lãnh đạo quyết định nhanh, an toàn và minh bạch.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Install Section -->
-    <section class="install-section">
-        <div class="container">
-            <div class="install-steps">
-                <!-- Step 1 -->
-                <div class="install-step">
-                    <div class="step-content">
+<!-- ROSA AI SMB -->
+<section class="install-section">
+    <div class="container" >
+        <div class="install-steps">
+            <!-- Step 1 -->
+            <div class="install-step">
+                <div class="step-content">
                         <div class="step-text">
-                            <h3>Đa dạng đối tượng</h3>
-                            <p>Phù hợp với doanh nghiệp vừa và nhỏ muốn tối ưu vận hành, công ty công nghệ và startup cần hệ sinh thái chuyên nghiệp, tổ chức giáo dục yêu cầu bảo mật chính xác, cùng các doanh nghiệp lo ngại rủi ro lưu trữ không đồng bộ.</p>
+                        <h3>Đa dạng đối tượng </h3>
+                        <p>Phù hợp với doanh nghiệp vừa và nhỏ muốn tối ưu vận hành, công ty công nghệ và startup cần hệ sinh thái chuyên nghiệp, tổ chức giáo dục yêu cầu bảo mật chính xác, cùng các doanh nghiệp lo ngại rủi ro lưu trữ không đồng bộ.</p>
                         </div>
                         <div class="step-image">
-                            <img src="https://via.placeholder.com/400x300/e9ecef/333333?text=Step+1" alt="Step 1">
+                        <img src="../image/chat_ai1.png" alt="Step 1">
                         </div>
-                    </div>
                 </div>
+            </div>
 
-                <!-- Step 2 -->
-                <div class="install-step reverse">
-                    <div class="step-content">
+            <!-- Step 2 -->
+            <div class="install-step reverse">
+                <div class="step-content">
                         <div class="step-text">
                             <h3>Giải pháp toàn diện</h3>
-                            <p>Doanh nghiệp nhận gói phần mềm toàn diện gồm Nextcloud Enterprise, chatbot AI, phần mềm chấm công và trợ lý ảo AI khi mua ROSA AI SMB. Tất cả được triển khai bởi đội ngũ chuyên nghiệp với bảo trì và nâng cấp định kỳ.</p>
+                            <p>Doanh nghiệp nhận gói phần mềm toàn diện  gồm Nextcloud Enterprise, chatbot AI, phần mềm chấm công và trợ lý ảo AI khi mua ROSA AI SMB. Tất cả được triển khai bởi đội ngũ chuyên nghiệp với bảo trì và nâng cấp định kỳ. </p>
                         </div>
                         <div class="step-image">
-                            <img src="https://via.placeholder.com/400x300/e9ecef/333333?text=Step+2" alt="Step 2">
+                            <img src="../image/chat_ai2.png" alt="Step 2">
                         </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Chatbot AI ROSA -->
-    <section class="features-section">
-        <h2>Chatbot AI ROSA</h2>
-        <p class="description">Giải pháp toàn diện cho doanh nghiệp phát triển</p>
-        <div class="container">
-            <div class="feature-image">
-                <img src="https://via.placeholder.com/1000x400/4a90e2/ffffff?text=Chatbot+AI+ROSA" alt="Chatbot Features">
+            <div class="btn-group">
+                <a href="https://server1.rosachatbot.com/Rosa" class="btn-learn">Thử ngay</a>
             </div>
-        </div>
-    </section>
+     </section>
+    <div class="step-image">
+        <img src="../image/nen_ai4.png" alt="chatai">
+    </div> 
 <style>
-  .pricing-container {
-    display: flex;
-    gap: 40px;
-    font-family: Arial, sans-serif;
-    margin: 30px;
-  }
+    .pricing-container {
+        display: flex;
+        gap: 40px;
+        font-family:'Montserrat';
+        margin: 30px;
+    }
 
-  .pricing-left, .pricing-right {
-    flex: 1;
-    border-right: 1px solid #ccc;
-    padding-right: 40px;
-  }
+    .pricing-left, .pricing-right {
+        flex: 1;
+        border-right: 1px solid #ccc;
+        padding-right: 40px;
+    }
 
-  .pricing-right {
-    border-right: none;
-    padding-right: 0;
-  }
+    .pricing-right {
+        border-right: none;
+        padding-right: 0;
+    }
 
-  .pricing-left h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
+    .pricing-left h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
 
-  .pricing-left ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px 0;
-  }
+    .pricing-left ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
 
-  .pricing-left li {
-    line-height: 1.8;
-  }
+    .pricing-left li {
+        line-height: 1.8;
+    }
 
-  .total-text {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
+    .total-text {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
 
-  .price {
-    font-size: 40px;
-    font-weight: bold;
-    color: #007bff;
-    margin: 0;
-  }
+    .price {
+        font-size: 40px;
+        font-weight: bold;
+        color: #007bff;
+        margin: 0;
+    }
 
-  .save-text {
-    color: #28a745;
-    font-size: 14px;
-    margin-top: 5px;
-  }
+    .save-text {
+        color: #28a745;
+        font-size: 14px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between; /* đẩy 2 bên */
+        align-items: center; /* căn giữa theo chiều dọc */
 
-  .duration-tabs {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
+    }
 
-  .duration-tabs button {
-    padding: 8px 16px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background: #f0f0f0;
-    cursor: pointer;
-    font-size: 14px;
-  }
+    .duration-tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 
-  .duration-tabs button.active {
-    background: #007bff;
-    color: #fff;
-    border-color: #007bff;
-  }
+    .duration-tabs button {
+        padding: 8px 22px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        background: #f0f0f0;
+        cursor: pointer;
+        font-size: 14px;
+    }
 
-  .pricing-right h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
+    .duration-tabs button.active {
+        background: #007bff;
+        color: #fff;
+        border-color: #007bff;
+    }
 
-  .pricing-right p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-  }
+    .pricing-right h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
 
-  .option-item {
-    margin-bottom: 20px;
-  }
+    .pricing-right p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px;
+    }
 
-  .option-item label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    font-size: 16px;
-  }
+    .option-item {
+        margin-bottom: 20px;
+    }
 
-  .option-item input[type="radio"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 16px;
-    height: 16px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    position: relative;
-  }
+    .option-item label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
 
-  .option-item input[type="radio"]:checked {
-    border-color: #007bff;
-  }
+    .option-item input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+        position: relative;
+    }
 
-  .option-item input[type="radio"]:checked::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    background-color: #007bff;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+    .option-item input[type="radio"]:checked {
+        border-color: #007bff;
+    }
 
-  .addon-text {
-    color: #007bff;
-    font-weight: bold;
-  }
+    .option-item input[type="radio"]:checked::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background-color: #007bff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-  .option-title {
-    font-weight: bold;
-  }
+    .addon-text {
+        color: #007bff;
+        font-weight: bold;
+    }
 
-  .option-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
+    .option-title {
+        font-weight: bold;
+    }
 
-  .addon-price {
-    color: #007bff;
-    font-weight: bold;
-  }
+    .option-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
 
-  .option-item select, .option-item input[type="text"] {
-    display: block;
-    margin-top: 10px;
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-  }
+    .addon-price {
+        color: #007bff;
+        font-weight: bold;
+    }
 
-</style>
+    .option-item select, .option-item input[type="text"] {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    .price-row {
+        display: flex;
+        justify-content: space-between; /* đẩy 2 bên */
+        align-items: center; /* căn giữa theo chiều dọc */
+    }
+
+    </style>
+
+<div class="pricing-left">
+    <div class="duration-tabs">
+        <button class="duration-btn" data-month="12" data-discount="0.25">1 năm</button>
+        <button class="duration-btn" data-month="6" data-discount="0.2">6 tháng</button>
+        <button class="duration-btn" data-month="3" data-discount="0.1">3 tháng</button>
+        <button class="duration-btn active" data-month="1" data-discount="0">1 tháng</button>
+    </div>
+<div>
+
 
 <div class="pricing-container">
   <div class="pricing-left">
-    <div class="duration-tabs">
-      <button class="duration-btn active" data-month="1" data-discount="0">1 tháng</button>
-      <button class="duration-btn" data-month="6" data-discount="0.1">6 tháng</button>
-      <button class="duration-btn" data-month="12" data-discount="0.2">1 năm</button>
-      <button class="duration-btn" data-month="13" data-discount="0.25">13 tháng</button>
-    </div>
-
     <h3>Tính năng sẵn có</h3>
     <ul>
       <li>- Thiết kế sẵn website riêng cho Chatbot</li>
@@ -282,117 +286,186 @@
     <p class="price" id="totalPrice">400.000</p>
     <p class="save-text" id="saveText"></p>
   </div>
+<!-- live chat -->
+    <div class="pricing-right">
+        <h3>Tính năng tùy chọn:</h3>
+        <p>(Các tùy chọn mới sẽ tự động thêm vào tổng cộng chi phí)</p>
 
-  <div class="pricing-right">
-    <h3>Tính năng tùy chọn:</h3>
-    <p>(Các tùy chọn mới sẽ tự động thêm vào tổng cộng chi phí)</p>
+        <!-- live chat -->
+        <div class="option-item">
+        <label>
+            <input type="checkbox" id="addon-livechat" class="addon">
+            Tích hợp live chat
+        </label>
 
-    <div class="option-item">
-      <label>
-        <input type="radio" name="addon-livechat" class="addon" value="100000">
-        Tích hợp live chat (Nextcloud Talk)
-        <span class="addon-price">+100.000đ/tháng</span>
-      </label>
+        <!-- nhóm lựa chọn, mặc định ẩn -->
+        <div id="livechat-options" style="display:none; margin-top:10px;">
+            <label>
+            <input type="radio" name="livechat-plan" value="0" checked>
+            3 người trực
+            </label><br>
+            <label>
+            <input type="radio" name="livechat-plan" value="100000">
+            5 người trực
+            </label><br>
+            <label>
+            <input type="radio" name="livechat-plan" value="200000">
+            10 người trực
+            </label>
+        </div>
     </div>
-
+    
+    <!-- Sô lượng câu -->
     <div class="option-item">
-      <div class="option-content">
-        <span class="option-title">Tăng tài khoản trực</span>
-      </div>
-      <select class="addon" id="account-select">
-        <option value="0">Mặc định</option>
-        <option value="50000">Tăng thêm 1 tài khoản (+50.000đ/tháng)</option>
-        <option value="100000">Tăng thêm 2 tài khoản (+100.000đ/tháng)</option>
-      </select>
-    </div>
+        <label>
+            <input type="checkbox" id="addon-message" class="addon">
+            Tăng số lượng câu trả lời 
+        </label>
 
-    <div class="option-item">
-      <div class="option-content">
-        <span class="option-title">Tăng dung lượng</span>
-      </div>
-      <input type="text" class="addon" id="capacity-input" placeholder="Nhập dung lượng bạn cần">
-      <small>+20.000đ/MB</small>
+        <!-- nhóm lựa chọn, mặc định ẩn -->
+        <div id="message-options" style="display:none; margin-top:10px;">
+            <label>
+            <input type="radio" name="message-plan" value="0" checked>
+                + 1000 tin nhắn 
+            </label><br>
+            <label>
+            <input type="radio" name="message-plan" value="300000">
+                + 3000 tin nhắn 
+            </label><br>
+            <label>
+            <input type="radio" name="message-plan" value="200000">
+                + 5000 tin nhắn
+            </label>
+        </div>
     </div>
+    
 
+
+    <!-- Thêm dung lương-->
     <div class="option-item">
-      <div class="option-content">
-        <span class="option-title">Tăng số lượng câu trả lời</span>
-      </div>
-      <select class="addon" id="message-select">
-        <option value="0">3000 tin nhắn (Mặc định)</option>
-        <option value="100000">1000 tin nhắn (+100.000đ/tháng)</option>
-        <option value="200000">2000 tin nhắn (+200.000đ/tháng)</option>
-        <option value="500000">5000 tin nhắn (+500.000đ/tháng)</option>
-      </select>
+        <label>
+            <input type="checkbox" id="addon-dungluong" class="addon">
+                Thêm dung lượng
+        </label>
+
+        <!-- nhóm lựa chọn, mặc định ẩn -->
+        <div id="dungluong-options" style="display:none; margin-top:10px;">
+            <label>
+            <input type="radio" name="dungluong-plan" value="0" checked>
+                + 100MB 
+            </label><br>
+            <label>
+            <input type="radio" name="dungluong-plan" value="300000">
+                + 500MB
+            </label><br>
+            <label>
+            <input type="radio" name="dungluong-plan" value="200000">
+                + 1GB
+            </label>
+        </div>
     </div>
+    
   </div>
 </div>
 
 <script>
-  const basePrice = 400000;
-  const totalPriceElement = document.getElementById("totalPrice");
-  const saveText = document.getElementById("saveText");
-  const durationBtns = document.querySelectorAll(".duration-btn");
-  const liveChatRadio = document.querySelector('input[name="addon-livechat"]');
-  const accountSelect = document.getElementById('account-select');
-  const capacityInput = document.getElementById('capacity-input');
-  const messageSelect = document.getElementById('message-select');
+const basePrice = 300000; // đúng với giá bạn hiển thị bên trái
+const totalPriceElement = document.getElementById("totalPrice");
+const saveText = document.getElementById("saveText");
+const durationBtns = document.querySelectorAll(".duration-btn");
 
-  let selectedMonths = 1;
-  let selectedDiscount = 0;
+let selectedMonths = 1;
+let selectedDiscount = 0;
 
-  function calculatePrice() {
-    let upgradePrice = 0;
-    
-    // Tích hợp live chat
-    if (liveChatRadio.checked) {
-      upgradePrice += parseInt(liveChatRadio.value);
-    }
-    
-    // Tăng tài khoản trực
-    upgradePrice += parseInt(accountSelect.value);
+// Ẩn/hiện box tùy chọn
+document.addEventListener("DOMContentLoaded", function () {
+  const options = [
+    { checkbox: "addon-livechat", box: "livechat-options" },
+    { checkbox: "addon-message", box: "message-options" },
+    { checkbox: "addon-dungluong", box: "dungluong-options" },
+  ];
 
-    // Tăng dung lượng
-    const capacityValue = parseInt(capacityInput.value) || 0;
-    upgradePrice += capacityValue * 20000;
+  options.forEach((opt) => {
+    const cb = document.getElementById(opt.checkbox);
+    const box = document.getElementById(opt.box);
+    box.style.display = cb.checked ? "block" : "none";
 
-    // Tăng số lượng câu trả lời
-    upgradePrice += parseInt(messageSelect.value);
-
-    let giaGoc = basePrice + upgradePrice;
-    let total = giaGoc * selectedMonths;
-    let discountAmount = total * selectedDiscount;
-    total = total - discountAmount;
-
-    totalPriceElement.textContent = total.toLocaleString("vi-VN");
-    saveText.textContent = selectedDiscount > 0 ?
-      `Tiết kiệm được ${(selectedDiscount * 100).toFixed(0)}%` : "";
-  }
-
-  // Event Listeners for all addons
-  liveChatRadio.addEventListener("change", calculatePrice);
-  accountSelect.addEventListener("change", calculatePrice);
-  capacityInput.addEventListener("input", calculatePrice);
-  messageSelect.addEventListener("change", calculatePrice);
-
-  durationBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-      durationBtns.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      selectedMonths = parseInt(btn.dataset.month);
-      selectedDiscount = parseFloat(btn.dataset.discount);
+    cb.addEventListener("change", function () {
+      box.style.display = this.checked ? "block" : "none";
       calculatePrice();
     });
   });
+});
 
-  // Initial calculation
-  calculatePrice();
+function calculatePrice() {
+  let upgradePrice = 0;
+
+  // Live chat
+  if (document.getElementById("addon-livechat").checked) {
+    const liveValue = document.querySelector(
+      'input[name="livechat-plan"]:checked'
+    ).value;
+    upgradePrice += parseInt(liveValue);
+  }
+
+  // Tin nhắn
+  if (document.getElementById("addon-message").checked) {
+    const msgValue = document.querySelector(
+      'input[name="message-plan"]:checked'
+    ).value;
+    upgradePrice += parseInt(msgValue);
+  }
+
+  // Dung lượng
+  if (document.getElementById("addon-dungluong").checked) {
+    const dungValue = document.querySelector(
+      'input[name="dungluong-plan"]:checked'
+    ).value;
+    upgradePrice += parseInt(dungValue);
+  }
+
+  let giaGoc = basePrice + upgradePrice;
+  let total = giaGoc * selectedMonths;
+  let discountAmount = total * selectedDiscount;
+  total = total - discountAmount;
+
+  totalPriceElement.textContent = total.toLocaleString("vi-VN");
+  saveText.textContent =
+    selectedDiscount > 0
+      ? `Tiết kiệm được ${(selectedDiscount * 100).toFixed(0)}%`
+      : "";
+}
+
+// Event khi đổi radio trong từng option
+document.querySelectorAll('input[name="livechat-plan"]').forEach((el) =>
+  el.addEventListener("change", calculatePrice)
+);
+document.querySelectorAll('input[name="message-plan"]').forEach((el) =>
+  el.addEventListener("change", calculatePrice)
+);
+document.querySelectorAll('input[name="dungluong-plan"]').forEach((el) =>
+  el.addEventListener("change", calculatePrice)
+);
+
+// Event khi chọn gói theo thời gian
+durationBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    durationBtns.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    selectedMonths = parseInt(btn.dataset.month);
+    selectedDiscount = parseFloat(btn.dataset.discount);
+    calculatePrice();
+  });
+});
+// Initial calculation
+calculatePrice();
 </script>
 
 
-    <!-- Nút đặt hàng ngay -->
+
+    <!-- Nút liên hệ zalo -->
     <div class="text-center">
-        <button class="btn-order" onclick="openPopup()">TRIỂN KHAI NGAY</button>
+        <button class="btn-order" onclick="window.location='https://zalo.me/909749126673606301'">Liên hệ ngay</button>
     </div>
 
     <!-- Popup form -->
@@ -409,42 +482,46 @@
             </form>
         </div>
     </div>
+    
+   <!-- Custom Alert Container -->
+<div id="customAlert" class="custom-alert-container"></div>
 
-    <!-- Changelog Section -->
-    <div class="pricing-container" style="border:2px solid #4a90e2; margin-top: 40px;">
-        <!-- Bên trái -->
-        <div class="pricing-left">
-            <h2 class="title-with-icon">
-                <span imag =""style=""></span>
-                Nhật ký cập nhật
-            </h2>
-        </div>
-        
-        <!-- Bên phải -->
-        <div class="pricing-right">
-            <h2>Changelog v2 - chatbot CSKH</h2>
-            <div class="addon">Tính năng mới</div>
-            <ul class="addon">
-                <li>Ghi nhớ ngữ cảnh nhiều lượt</li>
-                <li>Gợi ý sản phẩm/dịch vụ thông minh</li>
-                <li>Tự động đa ngôn ngữ</li>
-                <li>Chuyển tiếp mượt sang nhân viên</li>
-            </ul>
-            <div class="addon">Cải tiến</div>
-            <ul class="addon">
-                <li>Phản hồi nhanh hơn 30%</li>
-                <li>Giảm lỗi hiểu sai</li>
-                <li>Dashboard quản trị tối ưu</li>
-            </ul>
+<!-- Changelog Section -->
+<div class="pricing-container" style="border:2px solid #4a90e2; margin-top: 40px;">
+    <!-- Bên trái -->
+    <div class="pricing-left">
+         <p class="feature-link"style="font-weight:600;color:#205AB1;margin-bottom:8px;font-size:1.08rem;">
+        <span><img class="arrow-icon" src="../image/nhatkydh.png" ></span>
+            Nhật ký cập nhập:
+        </p>
+        <div class="step-image">
+            <img src="../image/nhatky.png" alt="Step 2">
         </div>
     </div>
+    
+    <!-- Bên phải -->
+    <div class="pricing-right" style="border:none" >
+        <h2>Changelog v2 - Chatbot CSKH</h2>
+        <div class="addon">Tính năng mới</div>
+        <ul class="addon">
+            <li>Ghi nhớ ngữ cảnh nhiều lượt</li>
+            <li>Gợi ý sản phẩm/dịch vụ thông minh</li>
+            <li>Tự động đa ngôn ngữ</li>
+            <li>Chuyển tiếp mượt sang nhân viên</li>
+        </ul>
+        <div class="addon">Cải tiến</div>
+        <ul class="addon">
+            <li>Phản hồi nhanh hơn 30%</li>
+            <li>Giảm lỗi hiểu sai</li>
+            <li>Dashboard quản trị tối ưu</li>
+        </ul>
+    </div>
+</div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-    
 
-      <style>
-   
+<style>
     
     .h2, h2 {
         font-size: 1.5rem;
@@ -675,7 +752,7 @@
 
     /* Pricing Container */
     .pricing-container {
-        max-width: 1200px;
+        max-width: 1300px;
         margin: 40px auto;
         background: white;
         border-radius: 20px;
@@ -688,7 +765,7 @@
     .pricing-left {
         flex: 1;
         padding: 40px;
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        background: #FFF;
     }
     
     .pricing-left h2 {
@@ -706,7 +783,7 @@
     }
     
     .price {
-        font-size: 48px;
+        font-size: 25px;
         font-weight: bold;
         color: #4a90e2;
         margin-bottom: 30px;
