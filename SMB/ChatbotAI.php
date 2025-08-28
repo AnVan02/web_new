@@ -1,6 +1,4 @@
-<?php
-    require "../header.php";
-?>
+
 <title>Chatbot AI</title>
 <?php require "../header.php" ?>
 <div class="banner">
@@ -56,7 +54,6 @@
     </div>
 </section>
 
-
 <!-- ROSA AI SMB -->
 <section class="install-section">
     <div class="container" >
@@ -86,14 +83,24 @@
                         </div>
                 </div>
             </div>
-            <div class="btn-group">
-                <a href="https://server1.rosachatbot.com/Rosa" class="btn-learn">Thử ngay</a>
-            </div>
+        </div>
      </section>
+
+     <section class="why-choose-section">
+        <div class="container">
+            <h2>CHATBOT AI ROSA</h2>
+            <p class="description">
+                Giải pháp toàn diện cho doanh nghiệp phát triển           
+            </p>
+        </div>
+    </section>
     <div class="step-image">
         <img src="../image/nen_ai4.png" alt="chatai">
     </div> 
 <style>
+   body {
+  overflow-x: hidden;
+}
     .pricing-container {
         display: flex;
         gap: 40px;
@@ -142,7 +149,7 @@
 
     .save-text {
         color: #28a745;
-        font-size: 14px;
+        font-size: 17px;
         margin-top: 5px;
         display: flex;
         justify-content: space-between; /* đẩy 2 bên */
@@ -181,49 +188,71 @@
 
     .pricing-right p {
         font-size: 14px;
-        color: #666;
+        color: #21B0DB;
         margin-bottom: 20px;
+        font-weight: bold;
     }
 
     .option-item {
         margin-bottom: 20px;
     }
 
-    .option-item label {
-        display: flex;
+   .option-item label {
+        align-items: baseline; /* căn theo dòng chữ */
+        /* display: flex; */
         align-items: center;
         gap: 10px;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 17px;
+    }
+
+    .option-item input[type="checkbox"],
+    .option-item input[type="radio"] {
+        width: 18px;
+        height: 18px;
     }
     
 
-    .option-item input[type="radio"] {
+
+   .option-item input[type="radio"] {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        width: 16px;
-        height: 16px;
-        border: 2px solid #ccc;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #007bff; /* viền xanh */
         border-radius: 50%;
         position: relative;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
     }
 
-    .option-item input[type="radio"]:checked {
+    /* hiệu ứng hover */
+    .option-item input[type="radio"]:hover {
         border-color: #007bff;
     }
 
-    .option-item input[type="radio"]:checked::before {
-        content: '';
-        width: 8px;
-        height: 8px;
+    /* khi checked: nền xanh */
+    .option-item input[type="radio"]:checked {
         background-color: #007bff;
-        border-radius: 50%;
+        border-color: #007bff;
+    }
+
+    /* thêm dấu tích */
+    .option-item input[type="radio"]:checked::after {
+        content: "✓";
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
 
     .addon-text {
         color: #007bff;
@@ -255,40 +284,38 @@
         border-radius: 5px;
         font-size: 14px;
     }
-    .price-row {
-        display: flex;
-        justify-content: space-between; /* đẩy 2 bên */
-        align-items: center; /* căn giữa theo chiều dọc */
-    }
+   
 
     </style>
 
 <div class="pricing-left">
     <div class="duration-tabs">
-        <button class="duration-btn" data-month="12" data-discount="0.25">1 năm</button>
-        <button class="duration-btn" data-month="6" data-discount="0.2">6 tháng</button>
-        <button class="duration-btn" data-month="3" data-discount="0.1">3 tháng</button>
-        <button class="duration-btn active" data-month="1" data-discount="0">1 tháng</button>
+        <button class="duration-btn" data-month="12" data-discount="0.01">1 năm</button>
+        <button class="duration-btn" data-month="6" data-discount="0.02">6 tháng</button>
+        <button class="duration-btn" data-month="3" data-discount="0.03">3 tháng</button>
+        <button class="duration-btn active" data-month="1" data-discount="0.04">1 tháng</button>
     </div>
 <div>
 
 
 <div class="pricing-container">
-  <div class="pricing-left">
-    <h3>Tính năng sẵn có</h3>
-    <ul>
-      <li>- Thiết kế sẵn website riêng cho Chatbot</li>
-      <li>- Quản lý cơ sở tri thức trực tuyến (Nextcloud)</li>
-      <li>- Tra cứu lịch sử trò chuyện</li>
-      <li>- Dung lượng: 3 MB</li>
-      <li>- Số câu trả lời: 3000 tin/tháng</li>
-    </ul>
+    <div class="pricing-left">
+        <h3>Tính năng sẵn có</h3>
+        <ul>
+        <li>- Thiết kế sẵn website riêng cho Chatbot</li>
+        <li>- Quản lý cơ sở tri thức trực tuyến (Nextcloud)</li>
+        <li>- Tra cứu lịch sử trò chuyện</li>
+        <li>- Dung lượng: 3 MB</li>
+        <li>- Số câu trả lời: 3000 tin/tháng</li>
+        </ul>
 
-    <p class="total-text">Tổng cộng chi phí:</p>
-    <p class="price" id="totalPrice">400.000</p>
-    <p class="save-text" id="saveText"></p>
-  </div>
-<!-- live chat -->
+        <p class="total-text">Tổng cộng chi phí:</p>
+        <p class="price" id="totalPrice">300.000</p>
+        <p class="save-text" id="saveText"></p>
+    </div>
+
+    <!-- livechat -->
+
     <div class="pricing-right">
         <h3>Tính năng tùy chọn:</h3>
         <p>(Các tùy chọn mới sẽ tự động thêm vào tổng cộng chi phí)</p>
@@ -303,15 +330,15 @@
         <!-- nhóm lựa chọn, mặc định ẩn -->
         <div id="livechat-options" style="display:none; margin-top:10px;">
             <label>
-            <input type="radio" name="livechat-plan" value="0" checked>
+            <input type="radio" name="livechat-plan" value="100000" checked>
             3 người trực
             </label><br>
             <label>
-            <input type="radio" name="livechat-plan" value="100000">
+            <input type="radio" name="livechat-plan" value="200000">
             5 người trực
             </label><br>
             <label>
-            <input type="radio" name="livechat-plan" value="200000">
+            <input type="radio" name="livechat-plan" value="300000">
             10 người trực
             </label>
         </div>
@@ -327,16 +354,16 @@
         <!-- nhóm lựa chọn, mặc định ẩn -->
         <div id="message-options" style="display:none; margin-top:10px;">
             <label>
-            <input type="radio" name="message-plan" value="0" checked>
-                + 1000 tin nhắn 
-            </label><br>
-            <label>
-            <input type="radio" name="message-plan" value="300000">
-                + 3000 tin nhắn 
+            <input type="radio" name="message-plan" value="100000" checked>
+                + 1000 tin nhắn/tháng
             </label><br>
             <label>
             <input type="radio" name="message-plan" value="200000">
-                + 5000 tin nhắn
+                + 3000 tin nhắn/tháng
+            </label><br>
+            <label>
+            <input type="radio" name="message-plan" value="300000">
+                + 5000 tin nhắn/tháng
             </label>
         </div>
     </div>
@@ -353,50 +380,48 @@
         <!-- nhóm lựa chọn, mặc định ẩn -->
         <div id="dungluong-options" style="display:none; margin-top:10px;">
             <label>
-            <input type="radio" name="dungluong-plan" value="0" checked>
+            <input type="radio" name="dungluong-plan" value="100000" checked>
                 + 100MB 
             </label><br>
             <label>
-            <input type="radio" name="dungluong-plan" value="300000">
+            <input type="radio" name="dungluong-plan" value="200000">
                 + 500MB
             </label><br>
             <label>
-            <input type="radio" name="dungluong-plan" value="200000">
+            <input type="radio" name="dungluong-plan" value="300000">
                 + 1GB
             </label>
         </div>
     </div>
-    
   </div>
 </div>
 
 <script>
-const basePrice = 300000; // đúng với giá bạn hiển thị bên trái
-const totalPriceElement = document.getElementById("totalPrice");
-const saveText = document.getElementById("saveText");
-const durationBtns = document.querySelectorAll(".duration-btn");
+    const basePrice = 300000; // đúng với giá bạn hiển thị bên trái
+    const totalPriceElement = document.getElementById("totalPrice");
+    const saveText = document.getElementById("saveText");
+    const durationBtns = document.querySelectorAll(".duration-btn");
 
-let selectedMonths = 1;
-let selectedDiscount = 0;
+    let selectedMonths = 1;
+    let selectedDiscount = 0;
 
-// Ẩn/hiện box tùy chọn
-document.addEventListener("DOMContentLoaded", function () {
-  const options = [
-    { checkbox: "addon-livechat", box: "livechat-options" },
-    { checkbox: "addon-message", box: "message-options" },
-    { checkbox: "addon-dungluong", box: "dungluong-options" },
-  ];
+    // Ẩn/hiện box tùy chọn
+    document.addEventListener("DOMContentLoaded", function () {
+    const options = [
+        { checkbox: "addon-livechat", box: "livechat-options" },
+        { checkbox: "addon-message", box: "message-options" },
+        { checkbox: "addon-dungluong", box: "dungluong-options"},
+    ];
+    options.forEach((opt) => {
+        const cb = document.getElementById(opt.checkbox);
+        const box = document.getElementById(opt.box);
+        box.style.display = cb.checked ? "block" : "none";
 
-  options.forEach((opt) => {
-    const cb = document.getElementById(opt.checkbox);
-    const box = document.getElementById(opt.box);
-    box.style.display = cb.checked ? "block" : "none";
-
-    cb.addEventListener("change", function () {
-      box.style.display = this.checked ? "block" : "none";
-      calculatePrice();
+        cb.addEventListener("change", function () {
+        box.style.display = this.checked ? "block" : "none";
+        calculatePrice();
+        });
     });
-  });
 });
 
 function calculatePrice() {
@@ -426,25 +451,37 @@ function calculatePrice() {
     upgradePrice += parseInt(dungValue);
   }
 
+// === Cộng giá gốc + addon ===
   let giaGoc = basePrice + upgradePrice;
-  let total = giaGoc * selectedMonths;
-  let discountAmount = total * selectedDiscount;
-  total = total - discountAmount;
 
-  totalPriceElement.textContent = total.toLocaleString("vi-VN");
+// === Tổng tiền khi nâng cấp ===
+  let total = giaGoc * selectedMonths;
+
+// ==== Trừ giảm giá (nếu có) ===
+//   let discountAmount = total * selectedDiscount;
+//   total = total - discountAmount;
+
+// Phần tổng cộng 
+
+// === hiện thị tháng ===
+  totalPriceElement.textContent = `${total.toLocaleString("vi-VN")} /tháng`;
+
   saveText.textContent =
     selectedDiscount > 0
       ? `Tiết kiệm được ${(selectedDiscount * 100).toFixed(0)}%`
       : "";
 }
 
+
 // Event khi đổi radio trong từng option
 document.querySelectorAll('input[name="livechat-plan"]').forEach((el) =>
   el.addEventListener("change", calculatePrice)
 );
+
 document.querySelectorAll('input[name="message-plan"]').forEach((el) =>
   el.addEventListener("change", calculatePrice)
 );
+
 document.querySelectorAll('input[name="dungluong-plan"]').forEach((el) =>
   el.addEventListener("change", calculatePrice)
 );
@@ -461,9 +498,8 @@ durationBtns.forEach((btn) => {
 });
 // Initial calculation
 calculatePrice();
+
 </script>
-
-
 
     <!-- Nút liên hệ zalo -->
     <div class="text-center">
@@ -501,6 +537,7 @@ calculatePrice();
         </div>
     </div>
     
+    
     <!-- Bên phải -->
     <div class="pricing-right" style="border:none" >
         <h2>Changelog v2 - Chatbot CSKH</h2>
@@ -519,6 +556,7 @@ calculatePrice();
         </ul>
     </div>
 </div>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
@@ -629,7 +667,7 @@ calculatePrice();
 
     /* Common Section Styles */
     section {
-        padding: 60px 0;
+        padding: 50px 0;
         background: #FFF;
     }
 
@@ -689,6 +727,7 @@ calculatePrice();
     .target-text p {
         font-size: 16px;
         line-height: 1.6;
+        
     }
 
     /* Install Steps */
@@ -785,10 +824,10 @@ calculatePrice();
     }
     
     .price {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
         color: #4a90e2;
-        margin-bottom: 30px;
+        margin-bottom: 18px;
     }
     
     .features {

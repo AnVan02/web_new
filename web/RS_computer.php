@@ -35,7 +35,9 @@
 
             <p>Hành trình học tập và làm việc đưa anh đến nhiều quốc gia, từ Canada đến Mỹ, nơi anh nghiên cứu và triển khai các giải pháp robot, trí tuệ nhân tạo và điều khiển thông minh. Mỗi dự án, mỗi sản phẩm mà anh tham gia đều củng cố niềm tin: doanh nghiệp Việt hoàn toàn có thể làm chủ những giải pháp công nghệ tiên tiến ngang tầm quốc tế, nếu có chiến lược đúng đắn và sự kiên định theo đuổi.</p>
             
-                <h2 >TỪ GIẤT MƠ ĐẾN SỨ MỆNH</h2>
+                <h2 >TỪ GIẤC MƠ ĐẾN SỨ MỆNH</h2>
+
+                <img src="../image/CEO_AnhTuân.jpg" class="d-block w-100" alt="Banner 1"><br>
 
             <p>Trở về Việt Nam, <a style="font-weight: bold; color:#cf0000ff">Nguyễn Minh Tuấn </a>cùng cha khởi xướng một hành trình mới với việc thành lập  <p><a style="font-weight: bold; color:#cf0000ff"> ROSA Computer </a>. Trên cương vị Giám đốc, anh không chỉ định vị ROSA như một thương hiệu máy tính bền bỉ và mạnh mẽ, mà còn phát triển thành một hệ sinh thái công nghệ toàn diện. Từ phần cứng tối ưu cho doanh nghiệp, phần mềm quản trị, chatbot AI hỗ trợ bán hàng 24/7 đến hệ thống lưu trữ đám mây Nextcloud Server, mỗi giải pháp đều được thiết kế nhằm nâng cao hiệu quả vận hành và thúc đẩy doanh nghiệp Việt bứt phá trong kỷ nguyên số.</p>
 
@@ -142,4 +144,4 @@ section h2 {
     
     
 
-<?php require "footer.php"?>
+<?php require "../footer.php"?>

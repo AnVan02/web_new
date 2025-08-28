@@ -3,7 +3,7 @@
 require "../data/common.php"; // file chứa class Entry và $list_sp
 
 // Lấy từ khóa người dùng nhập
-$keyword = isset($_GET['rosa']) ? trim($_GET['rosa']) : "";
+$keyword = isset($_GET['sp']) ? trim($_GET['sp']) : "";
 
 // Kết quả tìm kiếm
 $results = [];
@@ -17,13 +17,14 @@ if ($keyword !== "") {
     }
 }
 ?>
-<?php require "header.php" ?>
+<?php require "../header.php" ?>
   
     <div class="container mt-4">
         <!-- tim kiêm sản phẩm  -->
         <form class="search-box" action="search.php" method="get">
             <i class="fas fa-search"></i>
-            <input type="text" name="rosa" id="searchInput" placeholder="Tìm kiếm..." autocomplete="off">
+       <input type="text" name="sp" id="searchInput" placeholder="Tìm kiếm..." autocomplete="off" value="<?= htmlspecialchars($keyword) ?>">
+
         </form>
         <hr>
         <?php if (empty($results)): ?>
@@ -106,4 +107,4 @@ if ($keyword !== "") {
             color: #999;
         }
     </style>
-<?php require "footer.php" ?>
+<?php require "../footer.php" ?>

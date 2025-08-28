@@ -73,41 +73,42 @@
             </div>
             <nav class="nav_container d-none d-md-block">
                 <ul class="d-flex">
-                    <li><a href="../web/product.php">Sản phầm </a></li>
-                    <li><a href="../web/gioithieu.php">Giới thiệu </a></li>
+                    <li><a href="/product.php">Sản phầm </a></li>
+                    <!-- <li><a href="/gioithieu.php">Giới thiệu</a><li> -->
                     <li><a href="#">Giải pháp AI <i class="fas fa-chevron-down"></i></a>
                         <ul class="submenu">
                             <li class="has-submenu">
                                 <a href="#">KHOÁ HỌC AI <i class="fas fa-chevron-right"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="../SMB/ROSA-SW.php">ỨNG DỤNG ROSA</a></li>
-                                    <li><a href="../SMB/courses/python-course.php">PYTHON CƠ BẢN</a></li>
-                                    <li><a href="../SMB/courses/yolo-course.php">THỊ GIÁC MÁY TÍNH</a></li>
+                                    <li><a href="/ROSA-SW.php">ỨNG DỤNG ROSA</a></li>
+                                    <li><a href="/courses/python-course.php">PYTHON CƠ BẢN</a></li>
+                                    <li><a href="/courses/yolo-course.php">THỊ GIÁC MÁY TÍNH</a></li>
                                 </ul>
                             </li>
                             <li class="has-submenu">
                                 <a href="#">SMB <i class="fas fa-chevron-right"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="../SMB/courses/ChatbotAI.php">CHATBOT AI</a></li>
-                                    <li><a href="../SMB/courses/AIchamcong.php">CHẤM CÔNG CAMERA AI</a></li>
-                                    <li><a href="../SMB/courses/Nextcloud.php">NEXCLOUND</a></li>
+                                    <li><a href="/courses/ChatbotAI.php">CHATBOT AI</a></li>
+                                    <li><a href="/courses/AIchamcong.php">CHẤM CÔNG CAMERA AI</a></li>
+                                    <li><a href="/courses/Nextcloud.php">NEXCLOUND</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="../palit.php">Chương trình</a></li>
+                    <li><a href="/courses/palit.php">Chương trình</a></li>
                     <li><a href="/tintuc_test/template.php">Tin tức </a></li>
                     <li><a href="/baohanh.php">Bảo hành </a></li>
                     <li><a href="/check.php">Đơn hàng</a></li>
                 </ul>
             </nav>
+            
             <!-- TÌM KIẾM  -->
             <form class="search-box d-none d-md-flex" action="search.php" method="get">
                 <i class="fas fa-search"></i>
-                <input type="text" name="rosa" placeholder="Tìm kiếm">
+            <input type="text" name="sp" placeholder="Tìm kiếm" autocomplete="off" value="<?= htmlspecialchars($keyword) ?>">
             </form>
 
-                       <!-- 3 GẠCH TRÊN PHONE -->
+        <!-- 3 GẠCH TRÊN PHONE -->
             <div class="hamburger_container d-md-none">
                 <i class="fa fa-bars"></i>
             </div>
@@ -126,6 +127,7 @@
         <div class="hamburger_menu_content">
             <ul class="menu_top_nav">
                 <li><a href="product.php">Sản phẩm</a></li>
+                <li><a href="gioithieu.php">Giới thiệu</a></li>
                 <li class="has-submenu">
                     <a href="javascript:void(0)" class="submenu-toggle">Giải pháp AI <i class="fas fa-chevron-down"></i></a>
                     <ul class="submenu">

@@ -1,0 +1,11 @@
+// bỏ thanh cuộn trên trình duyệt
+
+Cách 1
+    body {
+        overflow-x: hidden;
+    }
+Cách 2
+    .container {
+        overflow-x: hidden; /* Ẩn cuộn ngang */
+    }
+
