@@ -28,7 +28,7 @@
  <!-- Banner Desktop -->
   <section class="hero">
     <div class="container hero-content" style="position:relative; min-height:420px;">
-      <div class="hero-bg" style="position:absolute; inset:0; z-index:0; width:100%; height:100%; background: url('../palit/Rectangle 3.png') center center/cover no-repeat;"></div>
+      <div class="hero-bg" style="position:absolute; inset:0; z-index:0; width:100%; height:100%; background: url('../palit/Rectangle 3.png') center center/30% no-repeat;"></div>
      
       <div class="hero-text" style="position:relative; z-index:1;">
         <h2>GeForce RTX™ 50 Series</h2>
@@ -45,8 +45,6 @@
         <img src="../palit/logo1.png" alt="Palit Logo">
       </div>
   </section>
-
-
 
 <!-- nội dung trang  -->
     <div class="container blackwell-section" style="max-width: 1326px">
@@ -70,6 +68,8 @@
             <img class="main-content-image" src="https://w.ladicdn.com/s1650x900/5d142f1f620fa47f5c176213/reflex-20250617042738-tscbd.png" alt="NVIDIA AI Platform"/>
         </div>
 
+        
+        
         <div class="image-container">
             <img class="main-content-image" src="https://w.ladicdn.com/s1550x850/5d142f1f620fa47f5c176213/rtx-ai-pcs-20250617042809-aogjb.png"/>
         </div>

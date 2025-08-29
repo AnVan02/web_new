@@ -243,16 +243,7 @@
     $conn->close();
     ?>
 </div>
-<!-- Tin công nghệ -->
-<section class="ai-section" style="margin-top: 40px;">
-    <h2 class="ds-title">TIN THUỘC CÔNG NGHỆ</h2>
-    <p class="ds-subtitle">Cập nhật tin tức công nghệ và khuyến mãi</p>
-</section>
 
-<!-- Tin công nghệ -->
-<section class="ai-section" style="margin-top: 40px;">
-    <h2 class="ds-title">Tiêu điểm <strong>Công nghệ</strong></h2>
-</section>
 
 <?php 
 $servername = "localhost";
@@ -268,11 +259,15 @@ if ($conn->connect_error) {
     die("Kết nối thất bại: " . $conn->connect_error);
 }
 ?>
-Tabs
+<!-- Tin công nghệ -->
+<section class="ai-section" style="margin-top: 40px;">
+    <h2 class="ds-title">Tiêu điểm <strong>Công nghệ</strong></h2>
+</section>
+
+
 <div class="tabs">
   <button class="tab-btn active" onclick="showTab('rosa', this)">Giải pháp hội họp thông minh</button>
   <button class="tab-btn" onclick="showTab('mayborosa', this)">Giải pháp giáo dục thông minh</button>
-  <button class="tab-btn" onclick="showTab('congnghe', this)">Giải pháp công nghệ</button>
 </div>
 
 <!-- Tab 1 -->
@@ -281,70 +276,219 @@ Tabs
   $sql = "SELECT * FROM article WHERE article_tag = 'rosa' ORDER BY article_date DESC LIMIT 3";
   $result = $conn->query($sql);
   if ($result->num_rows > 0) {
-      echo '<div class="news-grid">';
+      echo '<div class="news-container">';
+      $count = 0;
       while ($row = $result->fetch_assoc()) {
-          echo '<div class="news-card">';
-          echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
-          echo '<img src="/tintuc_test/admin/modules/blog/uploads/' . htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8') . '" alt="">';
-          echo '<h3>' . htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8') . '</h3>';
-          echo '</a>';
-          echo '<p>' . strip_tags(mb_substr($row['article_content'], 0, 250, 'UTF-8')) . '...</p>';
-          echo '</div>';
+          $count++;
+          if ($count == 1) {
+              // Bài viết đầu tiên - cột trái lớn
+              echo '<div class="news-main">';
+              echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
+              echo '<img src="/tintuc_test/admin/modules/blog/uploads/' . htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8') . '" alt="">';
+              echo '<h3>' . htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8') . '</h3>';
+              echo '</a>';
+              echo '<p>'. strip_tags(mb_substr($row ['article_content'],0,150,'UTF-8')).'..</p>';
+              echo '</div>';
+          } else if ($count == 2) {
+              // Bài viết thứ 2 - bắt đầu cột phải
+              echo '<div class="news-sidebar">';
+              echo '<div class="news-small">';
+              echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
+              echo '<img src="/tintuc_test/admin/modules/blog/uploads/' . htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8') . '" alt="">';
+              echo '<h4>' . htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8') . '</h4>';
+              echo '</a>';
+              echo '<p>' . strip_tags(mb_substr($row['article_content'], 0, 150, 'UTF-8')) . '...</p>';
+              echo '</div>';
+          } else {
+              // Bài viết thứ 3 - tiếp tục cột phải
+              echo '<div class="news-small">';
+              echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
+              echo '<img src="/tintuc_test/admin/modules/blog/uploads/' . htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8') . '" alt="">';
+              echo '<h4>' . htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8') . '</h4>';
+              echo '</a>';
+              echo '<p>' . strip_tags(mb_substr($row['article_content'], 0, 150, 'UTF-8')) . '...</p>';
+              echo '</div>';
+              echo '</div>'; // Đóng news-sidebar
+          }
       }
-      echo '</div>';
+      echo '</div>'; // Đóng news-container
   } else {
       echo "<p>Không có bài viết trong tab này.</p>";
   }
   ?>
 </div>
-
-
-<!-- Tab 2 -->
-<div id="mayborosa" class="tab-content" style="display:none;">
-  <?php
-    $sql = "SELECT * FROM article WHERE article_tag = 'mayborosa' ORDER BY article_date DESC LIMIT 3";
-    $result = $conn->query($sql);
-    if ($result->num_rows > 0) {
-        echo '<div class="news-grid">';
-        while ($row = $result->fetch_assoc()) {
-            echo '<div class="news-card">';
-            echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
-            echo '<img src="/tintuc_test/admin/modules/blog/uploads/' . htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8') . '" alt="">';
-            echo '<h3>' . htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8') . '</h3>';
-            echo '</a>';
-            echo '<p>' . strip_tags(mb_substr($row['article_content'], 0, 250, 'UTF-8')) . '...</p>';
-            echo '</div>';
-        }
-        echo '</div>';
-    } else {
-        echo "<p>Không có bài viết trong tab này.</p>";
-    }
-  ?>
-</div>
-
-<!-- tab 3 -->
-<div id="congnghe" class="tab-content" style="display: none;">
-    <?php
-        $sql = "SELECT * FROM article where article_tag = 'congnghe' ORDER BY article_date DESC LiMIT 3";
-        $result = $conn-> query ($sql);
-        if ($result -> num_rows > 0) {
-            while ($row = $result -> fetch_assoc()) {
-                echo '<div class="news-card">';
-                echo '<a href="/tintuc/'.htmlspecialchars($row ['article_link'], ENT_QUOTES, 'UTF-8').'">';
-                echo '<img src="/tintuc_test/admin/modules/blog/uploads/' . htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8') . '" alt="">';
-                echo '<h3>' . htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8') . '</h3>';
-                echo '</a>';
-                echo '<p>'.strip_tags(mb_substr($row['aricle_content'],0,250,'UTF-8')).'..</p>';
-                echo '</div>';
+<!-- tab 2 -->
+<div id="mayborosa" class="tab-content">
+    <?php 
+    $sql = "SELECT * FROM article WHERE article_tag = 'mayborosa' ORDER by article_date DESC LIMIT 3";
+    $result = $conn -> query ($sql);
+    if($_REQUEST->num_rows > 0) {
+        $count= 0; 
+        while ($row= $result -> fetch_assoc()) {
+            $count = 0; 
+            if ($connt == 1) {
+                
             }
-            echo '</div>';
-
-        }else{
-            echo "<p>Không có bài viết trong tab nay. </p>";
-
+            # code...
         }
-    ?>
+    }
+
+?>
+
 </div>
+
+
+<!-- CSS -->
+<style>
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    gap: 0;
+}
+
+.tab-btn {
+    padding: 15px 0;
+    margin-right: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #888;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tab-btn.active {
+    color: #1e90ff;
+    border-bottom: 3px solid #1e90ff;
+    font-weight: 600;
+}
+
+.tab-btn:hover {
+    color: #1e90ff;
+}
+
+.news-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.news-main {
+    flex: 2;
+}
+
+.news-main img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.news-main h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.news-main a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.news-main a:hover h3 {
+    color: #1e90ff;
+}
+
+.news-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-small {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.news-small:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.news-small img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.news-small h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+}
+
+.news-small p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.news-small a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.news-small a:hover h4 {
+    color: #1e90ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .news-container {
+        flex-direction: column;
+    }
+    
+    .news-small {
+        flex-direction: column;
+    }
+    
+    .news-small img {
+        width: 100%;
+        height: 150px;
+    }
+    
+    .tabs {
+        flex-direction: column;
+    }
+    
+    .tab-btn {
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        border-right: none;
+    }
+    
+    .tab-btn.active {
+        border-bottom-color: #e0e0e0;
+        border-left: 3px solid #1e90ff;
+        color: #1e90ff;
+    }
+}
+</style>
 
 <!-- JS -->
 <script>
@@ -355,7 +499,6 @@ function showTab(tabId, el) {
     el.classList.add('active');
 }
 </script>
-
 
 
 <section class="ai-section" style="margin-top: 40px;">

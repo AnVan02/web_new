@@ -98,202 +98,267 @@
         <img src="../image/nen_ai4.png" alt="chatai">
     </div> 
 <style>
-   body {
-  overflow-x: hidden;
+  body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background: #f9fbfd; /* nền sáng nhẹ */
+    margin: 0;
+    padding: 0;
 }
-    .pricing-container {
-        display: flex;
-        gap: 40px;
-        font-family:'Montserrat';
-        margin: 30px;
-    }
 
-    .pricing-left, .pricing-right {
-        flex: 1;
-        border-right: 1px solid #ccc;
-        padding-right: 40px;
-    }
+.pricing-container {
+    display: flex;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1100px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
 
-    .pricing-right {
-        border-right: none;
-        padding-right: 0;
-    }
+.pricing-left, .pricing-right {
+    flex: 1;
+    border-right: 1px solid #eee;
+    padding-right: 30px;
+}
 
-    .pricing-left h3 {
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
+.pricing-right {
+    border-right: none;
+    padding-left: 30px;
+}
 
-    .pricing-left ul {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 20px 0;
-    }
+.pricing-left h3, .pricing-right h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+}
 
-    .pricing-left li {
-        line-height: 1.8;
-    }
+.pricing-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
 
-    .total-text {
-        font-weight: bold;
-        font-size: 18px;
-        margin-bottom: 5px;
-    }
+.pricing-left li {
+    line-height: 1.8;
+    font-size: 15px;
+    color: #444;
+}
 
-    .price {
-        font-size: 40px;
-        font-weight: bold;
-        color: #007bff;
-        margin: 0;
-    }
+.total-text {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #222;
+}
 
-    .save-text {
-        color: #28a745;
-        font-size: 17px;
-        margin-top: 5px;
-        display: flex;
-        justify-content: space-between; /* đẩy 2 bên */
-        align-items: center; /* căn giữa theo chiều dọc */
+.price {
+    font-size: 42px;
+    font-weight: 700;
+    color: #007bff;
+    margin: 0;
+}
 
-    }
+.save-text {
+    color: #28a745;
+    font-size: 16px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .duration-tabs {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 20px;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
+/* Tabs chọn gói */
+.duration-tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
 
-    .duration-tabs button {
-        padding: 8px 22px;
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        background: #f0f0f0;
-        cursor: pointer;
-        font-size: 14px;
-    }
+.duration-tabs button {
+    padding: 10px 26px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background: #f8f9fa;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
 
-    .duration-tabs button.active {
-        background: #007bff;
-        color: #fff;
-        border-color: #007bff;
-    }
+.duration-tabs button:hover {
+    background: #e6f0ff;
+    border-color: #007bff;
+    color: #007bff;
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
 
-    .pricing-right h3 {
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
+.duration-tabs button.active {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
 
-    .pricing-right p {
-        font-size: 14px;
-        color: #21B0DB;
-        margin-bottom: 20px;
-        font-weight: bold;
-    }
+/* Mô tả bên phải */
+.pricing-right p {
+    font-size: 14px;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
 
-    .option-item {
-        margin-bottom: 20px;
-    }
+/* Option Items */
+.option-item {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: #fafafa;
+    transition: all 0.2s ease;
+}
 
-   .option-item label {
-        align-items: baseline; /* căn theo dòng chữ */
-        /* display: flex; */
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-        font-size: 17px;
-    }
+.option-item:hover {
+    background: #f1f8ff;
+    border-color: #007bff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
 
-    .option-item input[type="checkbox"],
-    .option-item input[type="radio"] {
-        width: 18px;
-        height: 18px;
-    }
-    
+.option-item label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+}
+/* Hover chữ trong các option */
+.option-item label:hover {
+    color: #007bff;
+    transition: color 0.25s ease;
+}
 
+/* Hover chữ trong danh sách tính năng */
+.pricing-left li:hover {
+    color: #007bff;
+    cursor: default;
+    transition: color 0.25s ease;
+}
 
-   .option-item input[type="radio"] {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        width: 15px;
-        height: 15px;
-        border: 2px solid #007bff; /* viền xanh */
-        border-radius: 50%;
-        position: relative;
-        cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.2s ease-in-out;
-    }
+/* Hover nút chọn gói (đã có nhưng thêm chữ nổi bật hơn) */
+.duration-tabs button:hover {
+    background: #e6f0ff;
+    border-color: #007bff;
+    color: #007bff;   /* chữ đổi xanh */
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
 
-    /* hiệu ứng hover */
-    .option-item input[type="radio"]:hover {
-        border-color: #007bff;
-    }
+/* Custom Radio */
+.option-item input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-right: 8px;
+}
 
-    /* khi checked: nền xanh */
-    .option-item input[type="radio"]:checked {
-        background-color: #007bff;
-        border-color: #007bff;
-    }
+.option-item input[type="radio"]:hover {
+    border-color: #0056b3;
+}
 
-    /* thêm dấu tích */
-    .option-item input[type="radio"]:checked::after {
-        content: "✓";
-        color: #fff;
-        font-size: 14px;
-        font-weight: bold;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+.option-item input[type="radio"]:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
 
+.option-item input[type="radio"]:checked::after {
+    content: "✓";
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-    .addon-text {
-        color: #007bff;
-        font-weight: bold;
-    }
+/* Input & Select */
+.option-item select, 
+.option-item input[type="text"] {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.2s;
+}
 
-    .option-title {
-        font-weight: bold;
-    }
+.option-item select:focus, 
+.option-item input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+/* Responsive cho điện thoại */
+@media screen and (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+  }
 
-    .option-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
+  .duration-tabs {
+    flex-direction: column;
+  }
 
-    .addon-price {
-        color: #007bff;
-        font-weight: bold;
-    }
+  .duration-btn {
+    width: 100%;
+    text-align: center;
+  }
 
-    .option-item select, .option-item input[type="text"] {
-        display: block;
-        margin-top: 10px;
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 14px;
-    }
-   
+  .pricing-left, .pricing-right {
+    margin-bottom: 15px;
+  }
+  
+  .price {
+    font-size: 20px;
+    color: #d9534f;
+    font-weight: bold;
+  }
+
+  .addon {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 16px;
+  }
+  .price {
+    font-size: 18px;
+  }
+  .duration-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
 
     </style>
 
 <div class="pricing-left">
     <div class="duration-tabs">
-        <button class="duration-btn" data-month="12" data-discount="0.01">1 năm</button>
-        <button class="duration-btn" data-month="6" data-discount="0.02">6 tháng</button>
-        <button class="duration-btn" data-month="3" data-discount="0.03">3 tháng</button>
-        <button class="duration-btn active" data-month="1" data-discount="0.04">1 tháng</button>
+        <button class="duration-btn active" data-month="12" data-discount="0.20">1 năm</button>
+        <button class="duration-btn" data-month="6" data-discount="0.10">6 tháng</button>
+        <button class="duration-btn" data-month="3" data-discount="0.05">3 tháng</button>
+        <button class="duration-btn" data-month="1" data-discount="0">1 tháng</button>
     </div>
 <div>
 
@@ -301,27 +366,74 @@
 <div class="pricing-container">
     <div class="pricing-left">
         <h3>Tính năng sẵn có</h3>
-        <ul>
-        <li>- Thiết kế sẵn website riêng cho Chatbot</li>
-        <li>- Quản lý cơ sở tri thức trực tuyến (Nextcloud)</li>
-        <li>- Tra cứu lịch sử trò chuyện</li>
-        <li>- Dung lượng: 3 MB</li>
-        <li>- Số câu trả lời: 3000 tin/tháng</li>
+        <ul class="addon">
+            <li> Thiết kế sẵn website riêng cho Chatbot</li>
+            <li> Quản lý cơ sở tri thức trực tuyến (Nextcloud)</li>
+            <li> Tra cứu lịch sử trò chuyện</li>
+            <li> Dung lượng: 3 MB</li>
+            <li> Số câu trả lời: 3000 tin/tháng</li>
         </ul>
-
         <p class="total-text">Tổng cộng chi phí:</p>
         <p class="price" id="totalPrice">300.000</p>
         <p class="save-text" id="saveText"></p>
     </div>
 
     <!-- livechat -->
-
     <div class="pricing-right">
         <h3>Tính năng tùy chọn:</h3>
         <p>(Các tùy chọn mới sẽ tự động thêm vào tổng cộng chi phí)</p>
-
-        <!-- live chat -->
         <div class="option-item">
+            <label>
+                <input type="checkbox" id="addon-dungluong" class="addon">
+                    Thêm dung lượng
+            </label>
+            <!-- nhóm lựa chọn, mặc định ẩn -->
+                <div id="dungluong-options" style="display:none; margin-top:10px;"><hr>
+                <!-- <label> -->
+                <input type="radio" name="dungluong-plan" value="100000" checked>
+                    + 100MB 
+                <!-- </label> -->
+                <br>
+                <!-- <label> -->
+                <input type="radio" name="dungluong-plan" value="500000">
+                    + 500MB
+                <!-- </label> -->
+                <br>
+                <!-- <label> -->
+                <input type="radio" name="dungluong-plan" value="1000000">
+                    + 1GB
+                <!-- </label> -->
+            </div>
+        </div>
+
+    <!-- Sô lượng câu -->
+    <div class="option-item">
+        <label>
+            <input type="checkbox" id="addon-message" class="addon">
+            Thêm số lượng câu trả lời 
+        </label>
+
+        <!-- nhóm lựa chọn, mặc định ẩn -->
+        <div id="message-options" style="display:none; margin-top:10px;">
+            <!-- <label> -->
+            <input type="radio" name="message-plan" value="100000" checked>
+                + 1000 tin nhắn/tháng
+            <!-- </label> -->
+            <br>
+            <!-- <label> -->
+            <input type="radio" name="message-plan" value="300000">
+                + 3000 tin nhắn/tháng
+            <!-- </label> -->
+            <br>
+            <!-- <label> -->
+            <input type="radio" name="message-plan" value="500000">
+                + 5000 tin nhắn/tháng
+            <!-- </label> -->
+        </div>
+    </div>
+
+    <!-- live chat -->
+    <div class="option-item">
         <label>
             <input type="checkbox" id="addon-livechat" class="addon">
             Tích hợp live chat
@@ -329,70 +441,23 @@
 
         <!-- nhóm lựa chọn, mặc định ẩn -->
         <div id="livechat-options" style="display:none; margin-top:10px;">
-            <label>
+            <!-- <label> -->
             <input type="radio" name="livechat-plan" value="100000" checked>
-            3 người trực
-            </label><br>
-            <label>
-            <input type="radio" name="livechat-plan" value="200000">
-            5 người trực
-            </label><br>
-            <label>
+                2 người trực 
+            <!-- </label> -->
+            <br>
+            <!-- <label> -->
             <input type="radio" name="livechat-plan" value="300000">
-            10 người trực
-            </label>
+                3 người trực
+            <!-- </label> -->
+            <br>
+            <!-- <label> -->
+            <input type="radio" name="livechat-plan" value="500000">
+                5 người trực
+            <!-- </label> -->
         </div>
     </div>
     
-    <!-- Sô lượng câu -->
-    <div class="option-item">
-        <label>
-            <input type="checkbox" id="addon-message" class="addon">
-            Tăng số lượng câu trả lời 
-        </label>
-
-        <!-- nhóm lựa chọn, mặc định ẩn -->
-        <div id="message-options" style="display:none; margin-top:10px;">
-            <label>
-            <input type="radio" name="message-plan" value="100000" checked>
-                + 1000 tin nhắn/tháng
-            </label><br>
-            <label>
-            <input type="radio" name="message-plan" value="200000">
-                + 3000 tin nhắn/tháng
-            </label><br>
-            <label>
-            <input type="radio" name="message-plan" value="300000">
-                + 5000 tin nhắn/tháng
-            </label>
-        </div>
-    </div>
-    
-
-
-    <!-- Thêm dung lương-->
-    <div class="option-item">
-        <label>
-            <input type="checkbox" id="addon-dungluong" class="addon">
-                Thêm dung lượng
-        </label>
-
-        <!-- nhóm lựa chọn, mặc định ẩn -->
-        <div id="dungluong-options" style="display:none; margin-top:10px;">
-            <label>
-            <input type="radio" name="dungluong-plan" value="100000" checked>
-                + 100MB 
-            </label><br>
-            <label>
-            <input type="radio" name="dungluong-plan" value="200000">
-                + 500MB
-            </label><br>
-            <label>
-            <input type="radio" name="dungluong-plan" value="300000">
-                + 1GB
-            </label>
-        </div>
-    </div>
   </div>
 </div>
 
@@ -402,7 +467,8 @@
     const saveText = document.getElementById("saveText");
     const durationBtns = document.querySelectorAll(".duration-btn");
 
-    let selectedMonths = 1;
+    let selectedMonths = 12;
+    let scale = 1;
     let selectedDiscount = 0;
 
     // Ẩn/hiện box tùy chọn
@@ -451,27 +517,33 @@ function calculatePrice() {
     upgradePrice += parseInt(dungValue);
   }
 
-// === Cộng giá gốc + addon ===
+  // === Cộng giá gốc + addon ===
   let giaGoc = basePrice + upgradePrice;
 
-// === Tổng tiền khi nâng cấp ===
-  let total = giaGoc * selectedMonths;
+  // === Tổng tiền khi nâng cấp ===
+  let total = giaGoc * scale;
 
-// ==== Trừ giảm giá (nếu có) ===
-//   let discountAmount = total * selectedDiscount;
-//   total = total - discountAmount;
+// === Làm chẵn số tiền lên đến nghìn đồng ===
+total = Math.ceil(total / 1000) * 1000;
 
-// Phần tổng cộng 
 
-// === hiện thị tháng ===
-  totalPriceElement.textContent = `${total.toLocaleString("vi-VN")} /tháng`;
+// === Format VNĐ chuẩn ===
+const formattedTotal = total.toLocaleString("vi-VN", {
+  style: "currency",
+  currency: "VND",
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0
+});
+
+// === Hiển thị ===
+totalPriceElement.textContent = `${formattedTotal} /tháng`;
+
 
   saveText.textContent =
     selectedDiscount > 0
       ? `Tiết kiệm được ${(selectedDiscount * 100).toFixed(0)}%`
       : "";
 }
-
 
 // Event khi đổi radio trong từng option
 document.querySelectorAll('input[name="livechat-plan"]').forEach((el) =>
@@ -486,17 +558,60 @@ document.querySelectorAll('input[name="dungluong-plan"]').forEach((el) =>
   el.addEventListener("change", calculatePrice)
 );
 
+// // Event khi chọn gói theo thời gian
+// durationBtns.forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     durationBtns.forEach((b) => b.classList.remove("active"));
+//     btn.classList.add("active");
+
+//     selectedMonths = parseInt(btn.dataset.month);
+//     if selectedMonths == 12
+//         scale = 1
+//     else if selectedMonths == 6
+//         scale = (1-0.1)/(1-0.2)
+//     else if selectedMonths == 3
+//         scale = (1-0.05)/(1-0.2)
+//     else if selectedMonths == 1
+//         scale = 1/(1-0.2)
+
+
+//     selectedDiscount = parseFloat(btn.dataset.discount);
+//     calculatePrice();
+//   });
+// });
+// // Initial calculation
+// calculatePrice();
+
 // Event khi chọn gói theo thời gian
 durationBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
+    // Bỏ active cũ, thêm active cho button đang chọn
     durationBtns.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
+
     selectedMonths = parseInt(btn.dataset.month);
+
+    if (selectedMonths === 12) {
+      scale = 1;
+    } else if (selectedMonths === 6) {
+      scale = (1 - 0.1) / (1 - 0.2);
+    } else if (selectedMonths === 3) {
+      scale = (1 - 0.05) / (1 - 0.2);
+    } else if (selectedMonths === 1) {
+      scale = 1 / (1 - 0.2);
+    }
+
     selectedDiscount = parseFloat(btn.dataset.discount);
     calculatePrice();
   });
 });
-// Initial calculation
+
+// ✅ Khởi tạo khi load trang
+const activeBtn = document.querySelector(".duration-btn.active");
+if (activeBtn) {
+  selectedMonths = parseInt(activeBtn.dataset.month);
+  selectedDiscount = parseFloat(activeBtn.dataset.discount);
+}
 calculatePrice();
 
 </script>
@@ -555,11 +670,13 @@ calculatePrice();
             <li>Dashboard quản trị tối ưu</li>
         </ul>
     </div>
+
+    
 </div>
 
 
     <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
 <style>
     
@@ -975,9 +1092,32 @@ calculatePrice();
         color: #4a90e2;
         font-weight: bold;
     }
+    
 
     /* Responsive */
     @media (max-width: 768px) {
+        /* Mặc định trên màn hình lớn */
+        .pricing-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .pricing-left, .pricing-right {
+            flex: 1;
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .pricing-container {
+            flex-direction: column; /* xếp dọc */
+        }
+
+        .pricing-left, .pricing-right {
+            width: 100%;
+            margin-bottom: 15px; /* tạo khoảng cách giữa 2 khối */
+        }
         .pricing-container {
             flex-direction: column;
             margin: 20px;
