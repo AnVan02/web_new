@@ -57,6 +57,8 @@ document.querySelectorAll('.faq-button').forEach(button => {
     });
 });
 
+
+
 // ==== Xử lý click các câu hỏi để hiển thị/ẩn câu trả lời ===
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
@@ -94,3 +96,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+function showCategory(category) {
+    // Ẩn tất cả nhóm
+    document.getElementById("vanphong").style.display = "none";
+    document.getElementById("gaming").style.display = "none";
+    document.getElementById("mini").style.display = "none";
+    document.getElementById("ai").style.display = "none";
+
+    // Hiện nhóm được chọn
+    document.getElementById(category).style.display = "block";
+
+    // Cuộn xuống phần sản phẩm để user thấy ngay
+    document.getElementById(category).scrollIntoView({ behavior: "smooth" });
+}

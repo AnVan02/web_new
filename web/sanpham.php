@@ -29,7 +29,6 @@
 </div>
 
 
-
 <!-- Title -->
 
 <div class="computer-section">
@@ -38,19 +37,19 @@
         <p href="#" class="computer-view-all view-all-link">Đa dạng, bền bỉ</p>
     </div>
     
-<div class="product-container-custom">
-    <!-- Thanh chọn loại sản phẩm -->
-   <div class="category-tabs-wrapper">
-        <div class="category-tabs">
-            <!-- <button id="btn-vanphong" onclick="showCategory('vanphong')" class="active">Văn phòng</button> -->
-            <button id="btn-vanphong" onclick="showCategory('vanphong')">Văn phòng</button>
-            <button id="btn-gaming" onclick="showCategory('gaming')">Gaming</button>
-            <button id="btn-mini" onclick="showCategory('mini')">MiniPC</button>
-            <button id="btn-ai" onclick="showCategory('ai')">AI</button>
-        </div>
+<!-- Tabs -->
+<div class="category-tabs-wrapper">
+    <div class="category-tabs">
+        <button id="btn-vanphong" onclick="showCategory('vanphong')" class="active">Văn phòng</button>
+        <button id="btn-gaming" onclick="showCategory('gaming')">Gaming</button>
+        <button id="btn-mini" onclick="showCategory('mini')">MiniPC</button>
+        <button id="btn-ai" onclick="showCategory('ai')">AI</button>
     </div>
-<div id="vanphong"><br>
-    <!-- Văn phòng -->
+</div>
+
+
+<!-- Văn phòng -->
+<div id="vanphong">
     <div class="product-group vanphong">
         <?php 
         $vp_list = [$rosa_office_n100, $rosa_office_1, $rosa_office_2];
@@ -63,22 +62,20 @@
                 </div>
                 <div class="details">
                     <h3><?= htmlspecialchars($product->title) ?></h3><hr>
-                    <!-- <p><?= htmlspecialchars($product->subtitle) ?></p> -->
                     <div class="key-specs"><?= $product->content ?></div><hr>
-                    
                     <div class="price"><?= htmlspecialchars($product->price) ?></div>
                     <a href="<?= htmlspecialchars($product->page) ?>" class="shop-button">Mua ngay</a>
                 </div>
             </div>
         <?php } ?>
     </div>
-    
-    <!-- Gaming -->
-    <div id="gaming"><br>
+</div>
+
+<!-- Gaming -->
+<div id="gaming" style="display:none">
     <div class="product-group gaming">
         <?php 
         $gaming_list = [$rosa_gamer_x3d, $rosa_gamer_1, $rosa_gamer_2,$rosa_gamer_palit1,$rosa_gamer_palit2,$rosa_gamer_palit3];
-
         foreach ($gaming_list as $product) { ?>
             <div class="why-card">
                 <div class="image-container">
@@ -88,7 +85,6 @@
                 </div>
                 <div class="details">
                     <h3><?= htmlspecialchars($product->title) ?></h3><hr>
-                    <!-- <p><?= htmlspecialchars($product->subtitle) ?></p> -->
                     <div class="key-specs"><?= $product->content ?></div><hr>
                     <div class="price"><?= htmlspecialchars($product->price) ?></div>
                     <a href="<?= htmlspecialchars($product->page) ?>" class="shop-button">Mua ngay</a>
@@ -96,9 +92,10 @@
             </div>
         <?php } ?>
     </div>
+</div>
 
-    <div id="mini">
-    <!-- Mini PC -->
+<!-- Mini PC -->
+<div id="mini" style="display:none">
     <div class="product-group mini">
         <?php 
         $mini_list = [$rosa_mini_1 , $rosa_mini_2];
@@ -111,7 +108,6 @@
                 </div>
                 <div class="details">
                     <h3><?= htmlspecialchars($product->title) ?></h3><hr>
-                    <!-- <p><?= htmlspecialchars($product->subtitle) ?></p> -->
                     <div class="key-specs"><?= $product->content ?></div><hr>
                     <div class="price"><?= htmlspecialchars($product->price) ?></div>
                     <a href="<?= htmlspecialchars($product->page) ?>" class="shop-button">Mua ngay</a>
@@ -119,8 +115,10 @@
             </div>
         <?php } ?>
     </div>
+</div>
 
-    <!-- AI -->
+<!-- AI -->
+<div id="ai" style="display:none">
     <div class="product-group ai">
         <?php 
         $ai_list = [$rosa_ai,$rosa_server_1,$rosa_server_2];
@@ -133,7 +131,6 @@
                 </div>
                 <div class="details">
                     <h3><?= htmlspecialchars($product->title) ?></h3><hr>
-                    <!-- <p><?= htmlspecialchars($product->subtitle) ?></p> -->
                     <div class="key-specs"><?= $product->content ?></div><hr>
                     <div class="price"><?= htmlspecialchars($product->price) ?></div>
                     <a href="<?= htmlspecialchars($product->page) ?>" class="shop-button">Mua ngay</a>
@@ -141,9 +138,9 @@
             </div>
         <?php } ?>
     </div>
-    </div>
 </div>
-  
+</div>
+ 
 <div class="banner" style="margin-bottom: 20px;">
     <div class="row">
         <div class="hero-section">
@@ -151,16 +148,17 @@
         </div>
     </div>
 </div>
+</div>
 
 <div class="banner" style="margin-bottom: 20px;">
     <div class="row">
-        <div class=".hero-section" style="width: 30%; height: auto; margin: 0 auto;">
-            <img src="../image/Frame 1000005520 (1).png" alt="Banner" class="why-hero-image">
+        <div class="hero-section" style="width: 80%; margin: 0 auto;">
+            <img src="../image/Frame 1000005520 (1).png" alt="Banner" class="why-hero-image" style="width: 100%; height: auto;">
         </div>
     </div>
 </div>
-
-
+</div>
+ 
 <div class="banner" style="margin-bottom: 20px;">
     <div class="row">
         <div class="hero-section">
@@ -168,5 +166,12 @@
         </div>
     </div>
 </div>
-</div
+</div>
+
+</div>
+
+<!-- Footer -->
+<?php require "../footer.php" ?>
+
+
 

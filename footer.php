@@ -129,7 +129,7 @@
             <!-- Nhận thông tin từ ROSA -->
             <div style="background-color: #1d2c4b; padding: 20px; display: flex; justify-content: center; align-items: center; gap: 90px;">
                 <span style="color: white; font-weight: bold; white-space: nowrap;">NHẬN THÔNG TIN TỪ ROSA</span>
-                <form style="display: flex; background-color: white; border-radius: 8px; overflow: hidden; max-width: 500px; width: 100%;">
+                <form class="newsletter-form" style="display: flex; background-color: white; border-radius: 8px; overflow: hidden; max-width: 500px; width: 100%;">
                     <input type="email" placeholder="Nhập địa chỉ Email của bạn"
                         style="flex: 1; padding: 10px 15px; border: none; outline: none; font-size: 14px; color: #555;">
                     <button type="submit" 
@@ -158,7 +158,6 @@
             <div class="wrapper">
                 <p>© 2024 | Bản quyền thuộc về CÔNG TY TNHH ĐIỆN TỬ VÀ TIN HỌC TOÀN VIỆT <a href="https://rosacomputer.vn/">ROSA AI Computer</a></p>
             </div>
-            <
         </div>
     </footer>
     

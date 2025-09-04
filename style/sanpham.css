@@ -2,18 +2,19 @@ body {
     font-family: 'Montserrat';
     font-size: 16px;
     line-height: 1.6;
-    color: #1C1D1D;
+    color: #FFF;
     margin: 0;
     padding: 0;
+    background: #FFF;
 }
 
 /* ==== Banner Section ==== */
 
 /* Tùy chỉnh dấu chấm indicator */
 .carousel-indicators [data-bs-target] {
-    width: 5px;
+    width: 7px;
     /* 👈 tăng kích thước */
-    height: 5px;
+    height: 7px;
     /* 👈 tăng kích thước */
     border-radius: 50%;
     /* tròn */
@@ -28,21 +29,31 @@ body {
     /* màu chấm active */
 }
 
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #FFF;
+}
+
 .banner {
     width: 100%;
     margin-bottom: 20px;
+    background: #FFF;
 }
 
 */ */ .hero-section {
     position: relative;
     width: 100%;
     overflow: hidden;
+    background: #FFF;
 }
 
 .hero-image {
     width: 100%;
     height: auto;
     display: block;
+    background: #FFF;
 }
 
 .hero-text {
@@ -55,6 +66,21 @@ body {
     text-align: center;
 }
 
+ol,
+ul {
+    padding-left: 0;
+}
+
+.computer-section ol,
+.computer-section ul,
+.why-section ol,
+.why-section ul,
+.details ol,
+.details ul,
+.why-rosa-wrapper ol,
+.why-rosa-wrapper ul {
+    padding-left: 2rem;
+}
 
 /* ==== ảnh nên ==== */
 .why-section {
@@ -68,6 +94,23 @@ body {
     height: auto;
     display: block;
 }
+
+ol,
+ul {
+    padding-left: 0;
+}
+
+.computer-section ol,
+.computer-section ul,
+.why-section ol,
+.why-section ul,
+.details ol,
+.details ul,
+.why-rosa-wrapper ol,
+.why-rosa-wrapper ul {
+    padding-left: 2rem;
+}
+
 
 /* ==== Computer Section ==== */
 .computer-section {
@@ -137,6 +180,44 @@ body {
     font-weight: 500;
 }
 
+/*san pham*/
+
+.product-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    align-items: stretch;
+    /* ép các card cao bằng nhau */
+}
+
+.why-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    height: 100%;
+    /* cho card full chiều cao trong grid */
+}
+
+.image-container img {
+    width: 100%;
+    height: 220px;
+    /* ép ảnh cao bằng nhau */
+    object-fit: cover;
+    /* cắt cho đẹp */
+    border-radius: 8px;
+}
+
+.details {
+    flex-grow: 1;
+    /* nội dung co giãn */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* ==== Product Grid ==== */
 .product-container-custom {
     width: 100%;
@@ -153,13 +234,14 @@ body {
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
     transition: transform 0.3s ease;
 }
 
+/* 
 .why-card:hover {
     transform: translateY(-2px);
-}
+} */
 
 .image-container {
     width: 100%;
@@ -174,15 +256,46 @@ body {
     border-radius: 8px;
 }
 
+/* lấy đúng sản phẩm */
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.category-tabs button {
+    padding: 10px 20px;
+    border: none;
+    /* background: #eee; */
+    cursor: pointer;
+    /* border-radius: 6px; */
+    font-weight: 600;
+}
+
+
+/* Căn giữa giá sản phẩm */
+.why-card .price {
+    text-align: center;
+    width: 75%;
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 8px 0;
+}
+
 /* ==== Product Details ==== */
 .details {
     padding: 15px;
-    text-align: center;
     background-color: #FFFFFF;
+    text-align: center;
+    /* mặc định căn giữa */
 }
 
 .details h3 {
-    font-size: 18px;
+    font-size: 22px;
+    width: 80%;
     font-weight: 600;
     color: #000;
     margin: 10px 0;
@@ -197,19 +310,26 @@ body {
 }
 
 .key-specs {
-    font-size: 13px;
-    color: #555;
-    line-height: 1.4;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.8;
+    margin: 13px 0;
     text-align: left;
-    margin: 10px 0;
+    /* chỉ đoạn specs căn trái */
 }
 
 .price {
     font-size: 16px;
     font-weight: bold;
     color: #c62828;
-    margin: 15px 0;
+    margin: 15px auto;
+    display: block;
+    width: 100%;
+    /* chiếm hết chiều ngang */
+    text-align: center;
+    /* chữ giá ở giữa */
 }
+
 
 .shop-button {
     display: inline-block;
@@ -218,16 +338,23 @@ body {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 8px;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 14px;
     margin-bottom: 10px;
     transition: background 0.3s ease;
     width: 80%;
     text-align: center;
+    border: none;
+    box-shadow: none;
 }
 
-.shop-button:hover {
-    background: #a00000;
+.shop-button:hover,
+.shop-button:focus,
+.shop-button:active {
+    background: #C10000;
+    color: #fff;
+    text-decoration: none !important;
+    outline: none;
 }
 
 
@@ -295,6 +422,7 @@ body {
     .computer-section {
         padding: 0 10px;
         margin: 15px auto;
+        background: #FFF;
     }
 
     .section-header {
@@ -358,6 +486,7 @@ body {
     .computer-section {
         margin: 10px auto;
         padding: 0 8px;
+        background: #FFF;
     }
 
     .section-title {
@@ -399,6 +528,7 @@ body {
     .why-card {
         margin: 0 auto;
         max-width: 350px;
+        background: #FFF;
     }
 
     .details {
@@ -457,6 +587,7 @@ body {
 @media (max-width: 360px) {
     .computer-section {
         padding: 0 5px;
+        background: #FFF;
     }
 
     .section-title {
@@ -529,6 +660,7 @@ body {
 html,
 body {
     overflow-x: hidden;
+    background: #FFF;
 }
 
 /* Improve text readability on mobile */
@@ -536,6 +668,7 @@ body {
     body {
         font-size: 14px;
         line-height: 1.5;
+        background: #FFF;
     }
 }
 
@@ -545,19 +678,19 @@ body {
 }
 
 /* Dark mode support (optional) */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1a1a1a;
-        color: #ffffff;
-    }
+/*@media (prefers-color-scheme: dark) {*/
+/*    body {*/
+/*        background-color: #fff;*/
+/*        color: #ffffff;*/
+/*    }*/
 
-    .why-card {
-        background: #2d2d2d;
-        border: 1px solid #444;
-    }
+/*    .why-card {*/
+/*        background: #FFF;*/
+/*        border: 1px solid #FFF;*/
+/*    }*/
 
-    .why-rosa-card {
-        background: #2d2d2d;
-        border: 1px solid #444;
-    }
-}
+/*    .why-rosa-card {*/
+/*        background: #2d2d2d;*/
+/*        border: 1px solid #444;*/
+/*    }*/
+/*}*/

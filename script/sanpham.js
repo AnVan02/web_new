@@ -1,20 +1,13 @@
-// phân tưng id cho từng phân tư sản phẩm 
 
-document.getElementById('btn-vanphong').addEventListener('click', function () {
-    alert("ok");
-});
-
-
-function showCategory(category) {
-    document.querySelectorAll(".product-group").forEach(g => g.style.display = "none");
-    document.querySelector("." + category).style.display = "grid";
-
-    document.querySelectorAll(".category-tabs button").forEach(btn => btn.classList.remove("active"));
-    document.querySelector(`.category-tabs button[onclick="showCategory('${category}')"]`).classList.add("active");
-}
 
 document.addEventListener("DOMContentLoaded", () => {
-    showCategory('vanphong');
+    // Nếu có anchor trên URL thì show đúng tab
+    const hash = window.location.hash.replace('#', '');
+    if (['vanphong', 'gaming', 'mini', 'ai'].includes(hash)) {
+        showCategory(hash);
+    } else {
+        showCategory('vanphong');
+    }
 });
 
 // banner
@@ -27,10 +20,32 @@ function showNextImage() {
     images[currentIndex].classList.add('active');
 
     // tạo delay ngẫu nhiên từ 1 đến 5 giây
-    const randomDelay = Math.floor(Math.random() * 2000) + 1000;
+    const randomDelay = Math.floor(Math.random() * 4000) + 1000;
+
     setTimeout(showNextImage, randomDelay);
 }
 
 // chạy lần đầu
 setTimeout(showNextImage, 1000);
+
+
+function showCategory(category) {
+    // Ẩn tất cả nhóm
+    document.getElementById("vanphong").style.display = "none";
+    document.getElementById("gaming").style.display = "none";
+    document.getElementById("mini").style.display = "none";
+    document.getElementById("ai").style.display = "none";
+
+    // Bỏ active ở tất cả nút
+    document.querySelectorAll(".category-tabs button").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    // Hiện nhóm được chọn
+    document.getElementById(category).style.display = "block";
+
+    // Thêm active cho nút được chọn
+    document.getElementById("btn-" + category).classList.add("active");
+}
+
 

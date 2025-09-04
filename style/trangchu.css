@@ -94,6 +94,24 @@ body {
 
 /* ====== cấu trúc sản phẩm ===== */
 
+/* Chặn link và .ds-cta không gạch chân, không màu xanh */
+a,
+.ds-cta {
+    color: inherit !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus,
+a:active,
+.ds-cta:hover,
+.ds-cta:focus,
+.ds-cta:active {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
 .ds-title {
     font-size: 28px;
     font-weight: bold;
@@ -110,6 +128,8 @@ body {
     position: relative;
     display: inline-block;
     overflow: hidden;
+    text-decoration: none !important;
+    outline: none;
 }
 
 .ds-item img {
@@ -140,7 +160,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 .btn-discover {
     position: absolute;

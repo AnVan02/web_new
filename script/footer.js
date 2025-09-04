@@ -145,3 +145,101 @@ function toggleChatbotSize() {
     }
 })();
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const newsletterForm = document.querySelector(".newsletter-form");
+    const rosaPopupForm = document.getElementById("rosaPopupForm");
+    const rosaOverlay = document.getElementById("rosaOverlay");
+    const rosaClosePopup = document.getElementById("rosaClosePopup");
+    const rosaClosePopupBtn = document.getElementById("rosaClosePopupBtn");
+
+    // Khi submit form thì hiện popup
+    newsletterForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // không reload trang
+        rosaPopupForm.style.display = "block";
+        rosaOverlay.style.display = "block";
+    });
+
+    // Đóng popup bằng nút X
+    rosaClosePopup.addEventListener("click", function () {
+        rosaPopupForm.style.display = "none";
+        rosaOverlay.style.display = "none";
+    });
+
+    // Đóng popup bằng nút Đóng
+    rosaClosePopupBtn.addEventListener("click", function () {
+        rosaPopupForm.style.display = "none";
+        rosaOverlay.style.display = "none";
+    });
+
+    // Đóng popup khi bấm ra ngoài overlay
+    rosaOverlay.addEventListener("click", function () {
+        rosaPopupForm.style.display = "none";
+        rosaOverlay.style.display = "none";
+    });
+});
+
+// gửi email đăng ký nhận tin tức
+document.addEventListener("DOMContentLoaded", function () {
+    const emailInput = document.getElementById("rosaEmailInput");
+    const openPopupBtn = document.getElementById("rosaOpenPopup");
+    const popup = document.getElementById("rosaPopupForm");
+    const overlay = document.getElementById("rosaOverlay");
+    const closePopupBtn = document.getElementById("rosaClosePopup");
+    const closePopupBtnAlt = document.getElementById("rosaClosePopupBtn");
+    const submitBtn = document.getElementById("rosaSubmitForm");
+    const messageBox = document.getElementById("rosaMessageBox");
+
+    function openPopup() {
+        popup.style.display = "block";
+        overlay.style.display = "block";
+    }
+    function closePopup() {
+        popup.style.display = "none";
+        overlay.style.display = "none";
+    }
+
+    openPopupBtn.addEventListener("click", function () {
+        if (emailInput.value.trim() === "") {
+            alert("⚠ Vui lòng nhập email trước!");
+            return;
+        }
+        openPopup();
+    });
+
+    closePopupBtn.addEventListener("click", closePopup);
+    closePopupBtnAlt.addEventListener("click", closePopup);
+    overlay.addEventListener("click", closePopup);
+
+    submitBtn.addEventListener("click", function () {
+        const email = emailInput.value.trim();
+        const name = document.getElementById("rosaNameInput").value.trim();
+        const phone = document.getElementById("rosaPhoneInput").value.trim();
+
+        if (name === "" || phone === "") {
+            alert("⚠ Vui lòng nhập đầy đủ thông tin!");
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append("email", email);
+        formData.append("name", name);
+        formData.append("phone", phone);
+
+        fetch("send_email.php", { // ⚠ Đường dẫn đến file PHP xử lý gửi mail
+            method: "POST",
+            body: formData
+        })
+            .then(res => res.text())
+            .then(data => {
+                messageBox.innerHTML = data;
+                if (data.includes("✅")) {
+                    document.getElementById("rosaSubscribeForm").reset();
+                    closePopup();
+                }
+            })
+            .catch(err => {
+                messageBox.innerHTML = "❌ Lỗi: " + err.message;
+            });
+    });
+});

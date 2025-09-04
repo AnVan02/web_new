@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Arial';
     background-color: #000;
@@ -91,6 +85,9 @@ header .container {
     letter-spacing: 1px;
 }
 
+/* hình  */
+
+
 
 
 nav a {
@@ -106,6 +103,7 @@ nav a {
 
 .hero {
     padding: 40px 0;
+
 }
 
 .hero-content {
@@ -133,7 +131,7 @@ nav a {
 }
 
 .hero-text h2 {
-    color: #FFFF;
+    color: #FFF;
     font-size: 28px;
     margin-bottom: 15px;
 }
@@ -151,7 +149,7 @@ nav a {
     border: none;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 6px;
+
     text-transform: uppercase;
 }
 
@@ -168,7 +166,7 @@ nav a {
 }
 
 .hero-image img {
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -187,7 +185,6 @@ nav a {
     background: #76b900;
     color: #fff;
     font-weight: 700;
-    border-radius: 8px;
     padding: 12px 32px;
     font-size: 1.1rem;
     text-decoration: none;
@@ -208,13 +205,13 @@ nav a {
 /* hedder tổng */
 
 /* Desktop Banner */
-.rtx-section {
+/* .rtx-section {
     background: #000 url("../palit/Rectangle 3.png") no-repeat center center;
     background-size: cover;
     color: #fff;
     padding: 60px 80px;
     font-family: Arial, sans-serif;
-}
+} */
 
 
 .rtx-container {
@@ -250,7 +247,6 @@ nav a {
     color: #000;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 4px;
     margin-bottom: 20px;
 }
 
@@ -266,6 +262,7 @@ nav a {
     object-fit: contain;
 }
 
+
 .rtx-image {
     flex: 1;
     text-align: right;
@@ -276,12 +273,133 @@ nav a {
     height: auto;
 }
 
+/* MOBILE CARD RTX 50 SERIES */
+.palit-mobile-card {
+    display: none;
+}
 
+
+@media (min-width: 769px) {
+    .palit-mobile-card {
+        display: none !important;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .palit-mobile-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #181818;
+        padding: 24px 0 32px 0;
+        width: 100vw;
+        min-height: 100vh;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+
+}
+
+.palit-mobile-card-inner {
+    background: #181818;
+
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.25);
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.palit-mobile-card-img {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin-bottom: 0;
+}
+
+.palit-mobile-card-content {
+    padding: 20px 18px 0 18px;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.palit-mobile-card-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    line-height: 1.1;
+}
+
+.palit-mobile-card-sub {
+    font-size: 1.1rem;
+    color: #bdbdbd;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.palit-mobile-card-desc {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.palit-mobile-card-btn {
+    padding: 12px 24px;
+    /* display: block; */
+    width: 100%;
+    background: #76b900;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 0;
+
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    transition: background 0.2s;
+}
+
+
+
+.palit-mobile-card-logos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.palit-mobile-card-logos img {
+    height: 55px;
+    /* background: #fff; */
+    padding: 2px 6px;
+}
 
 @media (max-width: 768px) {
     .hero-content {
         flex-direction: column;
     }
+
+    /* Ẩn các phần desktop khi ở mobile */
+    .hero,
+    .logo-partners {
+        display: none ! important;
+
+    }
+
 
     .hero-image {
         order: -1;
@@ -320,7 +438,25 @@ nav a {
         order: 1;
         /* hình ở trên */
     }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* ban đầu ẩn ngoài màn hình */
+        width: 80%;
+        height: 100%;
+        background: white;
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+
+    .mobile-menu.active {
+        right: 0;
+        /* khi có class active thì hiện ra */
+    }
 }
+
 
 
 
@@ -373,7 +509,24 @@ nav a {
     margin: 0 8px;
 }
 
+/* Responsive */
+/*@media (max-width: 768px) {*/
+/*    .hero {*/
+/*        display: none;*/
+/*    }*/
 
+/*    .footer {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .hero-mobile {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .footer-mobile {*/
+/*        display: block;*/
+/*    }*/
+/*}*/
 
 /* ===== PRODUCT SECTION ===== */
 .product-section {
@@ -397,7 +550,6 @@ nav a {
 
 .product {
     background: #000;
-    border-radius: 15px;
     padding: 30px;
     width: 350px;
     transition: all 0.3s;
@@ -412,7 +564,6 @@ nav a {
     width: 115%;
     height: auto;
     margin-bottom: 25px;
-    border-radius: 10px;
 }
 
 .product h3 {
@@ -437,9 +588,9 @@ nav a {
 
 /* ==== ảnh thêm nên đen ==== */
 
-/* .image-container {
-    background: url(../palit/nenden.png) center center / cover no-repeat;
-} */
+.image-container {
+    background: url(palit_img/banner.png) center center / cover no-repeat;
+}
 
 /* ===== sản phẩm ====  */
 .grid {
@@ -451,7 +602,6 @@ nav a {
 
 .feature-card {
     background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
-    border-radius: 16px;
     padding: 30px 25px;
     text-align: center;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -487,7 +637,6 @@ nav a {
     height: 60px;
     margin: 0 auto 20px;
     background: linear-gradient(135deg, #76b900, #5a9200);
-    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -546,6 +695,202 @@ nav a {
 .header p {
     font-size: 1.2rem;
     color: #888;
+}
+
+/* hiện thị tren mobi */
+desktop-header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.desktop-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.desktop-nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger Menu Button */
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+    border: none;
+}
+
+.hamburger-btn span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+    transition: 0.3s;
+
+}
+
+.hamburger-btn.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+}
+
+.mobile-menu.active .mobile-menu-content {
+    transform: translateX(0);
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.mobile-nav {
+    padding: 20px;
+}
+
+.mobile-nav a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.mobile-nav a:hover {
+    color: #007bff;
+}
+
+.mobile-nav a:last-child {
+    border-bottom: none;
+}
+
+/* Demo Content */
+.demo-content {
+    padding: 50px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 100vh;
+}
+
+.demo-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.demo-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .demo-content h1 {
+        font-size: 2rem;
+    }
+
+    .demo-content p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-menu-content {
+        width: 100%;
+    }
 }
 
 /* Responsive design */
@@ -681,7 +1026,6 @@ nav a {
     width: 100%;
     max-width: 1300px;
     height: auto;
-    /* border-radius: 10px; */
     margin: 0 auto 60px;
     display: block;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
@@ -711,7 +1055,7 @@ nav a {
 
 .features-grid .feature-item {
     /* background: #222; */
-    border-radius: 12px;
+
     padding: 28px 24px 18px 24px;
     display: flex;
     flex-direction: column;
@@ -723,7 +1067,7 @@ nav a {
     max-width: 600px;
     height: 280px;
     object-fit: cover;
-    border-radius: 12px;
+
     /* box-shadow: 0 2px 16px #222; */
 }
 
@@ -748,7 +1092,7 @@ nav a {
     width: 188px;
     height: 188px;
     object-fit: cover;
-    border-radius: 12px;
+
     box-shadow: 0 2px 16px #222;
 }
 
@@ -816,6 +1160,7 @@ footer {
     /* chỉnh chiều cao logo */
     object-fit: contain;
 }
+
 
 /* Responsive cho mobile */
 @media (max-width: 768px) {
@@ -946,7 +1291,7 @@ footer {
         width: 100%;
         max-width: 100%;
         height: auto;
-        border-radius: 12px;
+
     }
 
     /* Features grid */

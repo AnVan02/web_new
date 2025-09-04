@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="rosacomputer">
   <meta name="google-site-verification" content="4USrUmb19Z0YVYJqkaUI3pgEwwi8Ma9yXo-9gqbx9Q0" />
-  
+  <meta name="color-scheme" content="light only">
+
   <title>ROSA</title>
   <link rel="icon" href="/assets/images/rosa-icon.png" type="image/png">
 
@@ -73,38 +74,38 @@
             </div>
             <nav class="nav_container d-none d-md-block">
                 <ul class="d-flex">
-                    <li><a href="../product.php">Sản phầm </a></li>
-                    <li><a href="../gioithieu.php">Giới thiệu </a></li>
+                    <li><a href="/gioithieu.php">Giới thiệu</a></li>
+                    <li><a href="/product.php">Sản phầm</a></li>
                     <li><a href="#">Giải pháp AI <i class="fas fa-chevron-down"></i></a>
                         <ul class="submenu">
                             <li class="has-submenu">
                                 <a href="#">KHOÁ HỌC AI <i class="fas fa-chevron-right"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="../couse/ROSA-SW.php">ỨNG DỤNG ROSA</a></li>
-                                    <li><a href="../SMB/courses/python-course.php">PYTHON CƠ BẢN</a></li>
-                                    <li><a href="../SMB/courses/yolo-course.php">THỊ GIÁC MÁY TÍNH</a></li>
+                                    <li><a href="/ROSA-SW.php">ỨNG DỤNG ROSA</a></li>
+                                    <li><a href="/courses/python-course.php">PYTHON CƠ BẢN</a></li>
+                                    <li><a href="/courses/yolo-course.php">THỊ GIÁC MÁY TÍNH</a></li>
                                 </ul>
                             </li>
                             <li class="has-submenu">
                                 <a href="#">SMB <i class="fas fa-chevron-right"></i></a>
                                 <ul class="submenu">
-                                    <li><a href="../SMB/courses/ChatbotAI.php">CHATBOT AI</a></li>
-                                    <li><a href="../SMB/courses/AIchamcong.php">CHẤM CÔNG CAMERA AI</a></li>
-                                    <li><a href="../SMB/courses/Nextcloud.php">NEXCLOUND</a></li>
+                                    <li><a href="/courses/ChatbotAI.php">CHATBOT AI</a></li>
+                                    <li><a href="/courses/AIchamcong.php">CHẤM CÔNG CAMERA AI</a></li>
+                                    <li><a href="/courses/Nextcloud.php">NEXCLOUND</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="../palit.php">Chương trình</a></li>
+                    <li><a href="/courses/palit.php">Chương trình</a></li>
                     <li><a href="/tintuc_test/template.php">Tin tức </a></li>
                     <li><a href="/baohanh.php">Bảo hành </a></li>
                     <li><a href="/check.php">Đơn hàng</a></li>
                 </ul>
             </nav>
             <!-- TÌM KIẾM  -->
-            <form class="search-box d-none d-md-flex" action="search.php" method="get">
+            <form class="search-box d-none d-md-flex" action="" method="get">
                 <i class="fas fa-search"></i>
-                <input type="text" name="rosa" placeholder="Tìm kiếm">
+                <input type="text" name="q" placeholder="Tìm kiếm">
             </form>
 
                        <!-- 3 GẠCH TRÊN PHONE -->
@@ -125,7 +126,8 @@
         
         <div class="hamburger_menu_content">
             <ul class="menu_top_nav">
-                <li><a href="product.php">Sản phẩm</a></li>
+                <li><a href="https://rosacomputer.vn/gioithieu.php">Giới thiệu</a></li>
+                <li><a href="https://rosacomputer.vn/product.php">Sản phẩm</a></li>
                 <li class="has-submenu">
                     <a href="javascript:void(0)" class="submenu-toggle">Giải pháp AI <i class="fas fa-chevron-down"></i></a>
                     <ul class="submenu">
@@ -156,13 +158,13 @@
     </div>
     <!--css-->
     <style>
-    body {
-        font-family: 'Montserrat';
-        font-size: 16px;
-        line-height: 1.6;
-        /* background-color: #fff; */
-        color: #1C1D1D;
-    }
+body {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.6;
+    /* background-color: #fff; */
+    color: #1C1D1D;
+}
 
 .header {
     position: sticky;
@@ -225,19 +227,19 @@
 
 
 /* ======= CSS CHO SUBMENU ======= */
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 200px;
-    z-index: 999;
-}
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        min-width: 200px;
+        z-index: 999;
+    }
 
 .submenu li {
     position: relative;
@@ -572,7 +574,7 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
     .hamburger_container {
         display: flex !important;
         align-items: center;
@@ -734,14 +736,19 @@
     }
 
     .submenu {
-        position: relative;
-        width: 100%;
-        box-shadow: none;
+        position: static !important;
+        width: 100% !important;
+        box-shadow: none !important;
+        min-width: 0 !important;
+        z-index: 10001 !important;
+        background: #f8f9fa !important;
     }
-
     .has-submenu .submenu {
-        left: 0;
-        margin-left: 0;
+        left: 0 !important;
+        margin-left: 0 !important;
+    }
+    .submenu li a {
+        white-space: normal !important;
     }
 
     .header-top {
@@ -831,7 +838,7 @@
     }
 
     .container {
-        max-width: 1050px;
+        max-width: 1300px;
     }
 }
 

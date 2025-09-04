@@ -52,7 +52,7 @@ $rosa_office_1->content = "<strong>Thông số kỹ thuật chính</strong><br>
                             SSD LEXAR 256G SATA<br>
                             WINDOWS 11 PRO<br><br>
                             🎁 <strong><big>Tặng phím + chuột ROSA V100 </big></strong> <br>";
-$rosa_office_1->price = " 5,514,000";
+$rosa_office_1->price = " 5,514,000đ";
 $rosa_office_1->image = "../image/sp_office2.png";
 $rosa_office_1->page = "sanpham/ROSA-OFFICE.php";
 

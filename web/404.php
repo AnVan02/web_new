@@ -1,4 +1,4 @@
-<?php require "header.php" ?>
+<?php require "../header.php" ?>
     <style>
         * {
             margin: 0;
