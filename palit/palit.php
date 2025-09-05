@@ -3,169 +3,1687 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="rosa-icon.png" type="image/png">
+
   <title>ROSA AI READY</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="palit.css" rel="stylesheet">
+  <!-- <link href="palit2.css" rel="stylesheet"> -->
 </head>
 <body>
+<!-- Header -->
+<header class="desktop-header">
+  <div class="container">
+    <div class="logo">
+      <a href="https://rosacomputer.vn/">
+        <img src="https://rosacomputer.vn/assets/images/rosa.png" alt="ROSA Logo">
+      </a>
+    </div>
 
-  <header>
-    <div class="container">
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <a href="https://rosacomputer.vn/product.php">SẢN PHẨM</a>
+      <a href="https://rosacomputer.vn/ROSA-SW.php">AI SOLUTIONS</a>
+      <a href="https://rosacomputer.vn/baohanh.php">BẢO HÀNH</a>
+      <a href="https://rosacomputer.vn/tintuc_test/template.php">TIN TỨC</a>
+      <a href="https://rosacomputer.vn/gioithieu.php">GIỚI THIỆU</a>
+    </nav>
+
+    <!-- Hamburger Button (mobile) -->
+    <button class="hamburger-btn" id="mobileOpenBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-content">
+    <div class="mobile-menu-header">
       <div class="logo">
-        <img src="../palit/RS.png" alt="ROSA Logo">
-        <span></span>
+        <img src="https://rosacomputer.vn/assets/images/rosa.png" alt="ROSA Logo">
       </div>
-      <nav>
-        <a href="#">SẢN PHẨM</a>
-        <a href="#">AI SOLUTIONS</a>
-        <a href="#">BẢO HÀNH</a>
-        <a href="#">TIN TỨC</a>
-        <a href="#">GIỚI THIỆU</a>
-      </nav>
+      <button class="mobile-close-btn" id="mobileCloseBtn">✖</button>
     </div>
-  </header>
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-      <h2>GeForce RTX 50 Series</h2>
-      <p class="subtitle">Người Thay Đổi Cuộc Chơi</p>
-      <p class="description">
-        GPU GeForce RTX 50 Series được hỗ trợ bởi kiến trúc NVIDIA Blackwell,
-        mang đến hiệu năng AI vượt trội, nâng tầm trải nghiệm đồ họa và sáng
-        tạo nội dung. Công nghệ DLSS 4 tăng tốc dựng hình với tốc độ vượt trội,
-        trong khi NVIDIA Studio tối ưu quy trình sáng tạo giúp bạn làm được
-        nhiều hơn, nhanh hơn.
-      </p>
-      <button class="btn">MUA HÀNG</button>
-      <div class="logo-partners">
-        <img src="../palit/logo1.png" alt="Palit Logo">
-        <img src="../palit/logo2.png" alt="GeForce Logo">
-      </div>
-    </div>
+    <nav class="mobile-nav">
+      <a href="https://rosacomputer.vn/product.php">SẢN PHẨM</a>
+      <a href="https://rosacomputer.vn/ROSA-SW.php">AI SOLUTIONS</a>
+      <a href="https://rosacomputer.vn/baohanh.php">BẢO HÀNH</a>
+      <a href="https://rosacomputer.vn/tintuc_test/template.php">TIN TỨC</a>
+      <a href="https://rosacomputer.vn/gioithieu.php">GIỚI THIỆU</a>
+    </nav>
+  </div>
+</div>
 
-    <div class="hero-image">
-      <img src="../palit/nen.png" alt="RTX 5080">
+<!-- JS -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const mobileMenu = document.getElementById("mobileMenu");
+  const mobileOpenBtn = document.getElementById("mobileOpenBtn");
+  const mobileCloseBtn = document.getElementById("mobileCloseBtn");
+
+  mobileOpenBtn.addEventListener("click", function() {
+    mobileMenu.classList.add("active");
+  });
+
+  mobileCloseBtn.addEventListener("click", function() {
+    mobileMenu.classList.remove("active");
+  });
+});
+</script>
+
+
+  <div class="rtx-section">
+<!-- code hiện thị trên deptop -->
+</header>
+  <!-- code hiện thị trên deptop -->
+ <!-- Banner Desktop -->
+<section class="hero">
+  <img src="First Desktop.png" alt="GeForce RTX 50 Series" style="width:100%; height:auto;" />
+</section>
+
+<section class="palit-mobile-card">
+  <div class="palit-mobile-card-inner">
+    <img class="palit-mobile-card-img" src="Rectangle 26.png" alt="GeForce RTX 50 Series" style="width:100%; height:auto;" />
+    <div class="palit-mobile-card-content">
+      <h3>GeForce<br>RTX 50 Series</h3>
+      <p class="palit-mobile-card-sub">Người Thay đổi cuộc chơi</p>
+      <p class="palit-mobile-card-desc">
+        GPU GeForce RTX 50, được hỗ trợ bởi NVIDIA Blackwell, mang đến những khả năng thay đổi cuộc chơi cho game thủ và nhà sáng tạo.
+        Được trang bị sức mạnh AI khủng, dòng RTX 50 mang đến trải nghiệm mới và đồ họa trung thực đỉnh cao. Hiệu suất tăng lên nhiều lần với NVIDIA DLSS 4, tạo dựng hình ảnh với tốc độ chưa từng có, và giải phóng sự sáng tạo của bạn với NVIDIA Studio.
+      </p>
+      <a href="https://rosacomputer.vn/product.php" target="_blank" class="palit-mobile-card-btn">MUA HÀNG</a>
+      <div class="palit-mobile-card-logos">
+        <img src="logo1.png" alt="Palit Logo" />
+        <img src="logo2.png" alt="GeForce Logo" />
+      </div>
     </div>
   </div>
 </section>
 
 
-  <div class="container product-section">
-    <h2>GeForce RTX</h2>
-    <div class="product-list">
-      <div class="product">
-        <a href="product1.html"><img src="../palit/pc gaming (1) 1.png" alt="RTX 5060"></a>
-        <h3><a href="product1.html">ROSA PALIT GEFORCE RTX 5060</a></h3>
-        <a href="product1.html" class="btn">MUA NGAY</a>
-      </div>
-      <div class="product">
-        <a href="product2.html"><img src="../palit/pc gaming (1) 1.png" alt="RTX 5070"></a>
-        <h3><a href="product2.html">ROSA PALIT GEFORCE RTX 5070</a></h3>
-        <a href="product2.html" class="btn">MUA NGAY</a>
-      </div>
-      <div class="product">
-        <a href="product3.html"><img src="../palit/pc gaming (1) 1.png" alt="RTX 5080"></a>
-        <h3><a href="product3.html">ROSA PALIT GEFORCE RTX 5080</a></h3>
-        <a href="product3.html" class="btn">MUA NGAY</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="container blackwell-section">
-    <h2>Kiến trúc NVIDIA Blackwell</h2>
-    <h3>Nền tảng tối ưu cho game và sáng tạo</h3>
 
-    <div class="blackwell-features">
-      <div class="feature-text">
-        <h4>Nhân Tensor thế hệ thứ 5</h4>
-        <p>Tối ưu hiệu suất AI với DLSS 4 và định dạng FP4 mới, tăng tốc xử lý thông minh vượt trội.</p>
-      </div>
-      <img src="../palit/image2.png" alt="Blackwell chip" class="blackwell-chip-image" />
-      <div class="feature-text">
-        <h4>Bộ xử lý đa luồng mới</h4>
-        <p>Thiết kế dành riêng cho các tác vụ tính toán mang tính hình, giúp xử lý nhanh và hiệu quả hơn.</p>
-      </div>
-    </div>
+<div class="image-container">
+  <img class="main-content-image" src="desktop palit crop@4x 1.png" alt="NVIDIA AI Platform" />
+</div>
 
-    <div class="section-description">
-      <h4>Nhân Ray Tracing thế hệ thứ tư</h4>
-      <p>Mang đến khả năng dựng hình khối lớn, tạo nên môi trường 3D chân thực và sống động.</p>
-    </div>
-    <div class="image-container">
-      <img class="main-content-image" src="../palit/image3.png" alt="Ray Tracing Image 1"/>
-    </div>
 
-    <div class="section-description">
-      <h4>Công nghệ dựng hình tiên tiến</h4>
-      <p>Mang đến khả năng dựng hình khối lớn, tạo nên môi trường 3D chân thực và sống động hơn bao giờ hết.</p>
-    </div>
-    <div class="image-container">
-      <img class="main-content-image" src="../palit/image4.png" alt="Ray Tracing Image 2"/>
-    </div>
+<!-- nội dung trang  -->
+    <!-- <div class="container blackwell-section" style="max-width: 1326px">
+        <div class="image-container">
+            <img class="main-content-image" src="image5 (1).png" alt="NVIDIA AI Platform" style="width:100%; height:auto;" />
+        </div>
+        
+        <div class="image-container">
+            <img class="main-content-image" src="palit_img/image4.png" alt="NVIDIA AI Platform" style="width:100%; height:auto;" />
+        </div>
 
-    <div class="section-description">
-      <h4>NVIDIA DLSS 4 Tốc độ tối thượng hình ảnh vượt trội được hỗ trợ bởi AI.</h4>
-      <p>DLSS là một bộ công nghệ kết xuất thần kinh mang tính cách mạng, sử dụng AI để tăng FPS, giảm độ trễ và cải thiện chất lượng hình ảnh. Đột phá mới nhất, DLSS 4, mang đến khả năng Tạo khung hình đa khung mới và Kỹ thuật dựng hình tái tạo tia sáng và Độ phân giải siêu cao được năng cao, được hỗ trợ bởi GPU GeForce RTX™ 50 Series và Nhân Tensor thế hệ thứ năm. DLSS trên GeForce RTX là cách tốt nhất để chơi, được hỗ trợ bởi siêu máy tính AI của NVIDIA trên đám mây, liên tục cải thiện khả năng chơi game của PC của bạn.</p>
-    </div>
-    <div class="image-container">
-      <img class="main-content-image" src="../palit/image6.png" alt="DLSS 4 Technology"/>
-    </div>
+        <div class="image-container">
+            <img class="main-content-image" src="https://w.ladicdn.com/s1550x850/5d142f1f620fa47f5c176213/dlss-4-20250617042619-ojo6u.png" alt="NVIDIA AI Platform" style="width:100%; height:auto;" />
+        </div>
 
-    <div class="section-description large">
-      <h4>Hiệu suất thi đấu cao với Warp Speed</h4>
-      <p>Công nghệ Reflex tối ưu hóa đường dẫn đồ họa để đạt được độ phản hồi tối đa, cung cấp khả năng nhắm mục tiêu nhanh hơn, thời gian phản ứng nhanh hơn và độ chính xác cao hơn trong các trò chơi cạnh tranh. Reflex 2 giới thiệu Frame Warp, giúp giảm độ trễ hơn nữa dựa trên đầu vào chuột mới nhất của trò chơi.</p>
-    </div>
-    <div class="image-container">
-      <img class="main-content-image" src="../palit/image7.png" alt="Reflex 2 Technology"/>
-    </div>
+        <div class="image-container">
+            <img class="main-content-image" src="palit_img/hienthuchoathaydoicuocchoi.png" alt="NVIDIA AI Platform" style="width:100%; height:auto;" />
+        </div>
 
-    <div class="section-description large">
-      <h4>NVIDIA cung cấp sức mạnh cho Thế giới AI và cho bạn</h4>
-      <p>Nâng cấp lên AI tiên tiến với GPU NVIDIA GeForce RTX™ và tăng tốc độ chơi game, sáng tạo, năng suất và phát triển của bạn. Nhờ các bộ xử lý AI tích hợp, bạn sẽ có công nghệ AI hàng đầu thế giới hỗ trợ cho máy tính Windows của mình.</p>
-    </div>
-    <div class="image-container">
-      <img class="main-content-image" src="../palit/image8.png" alt="AI Technology"/>
+        <div class="image-container">
+            <img class="main-content-image" src="https://w.ladicdn.com/s1650x900/5d142f1f620fa47f5c176213/reflex-20250617042738-tscbd.png" alt="NVIDIA AI Platform" style="width:100%; height:auto;" />
+        </div>
+
+        <div class="image-container">
+            <img class="main-content-image" src="https://w.ladicdn.com/s1550x850/5d142f1f620fa47f5c176213/rtx-ai-pcs-20250617042809-aogjb.png"style="width:100%; height:auto;" />
+        </div>
     </div>
 
     <div class="image-container">
-      <img class="main-content-image" src="../palit/image10.png" alt="NVIDIA AI Platform"/>
+        <img class="main-content-image" src="https://w.ladicdn.com/s1550x1150/5d142f1f620fa47f5c176213/creators-20250617042830-g7eaj.png" alt="NVIDIA AI Platform"style="width:100%; height:auto;" />
+    </div> -->
+    <!-- hình nền  -->
+<!-- 
+    <div class="image-container">
+        <img class="main-content-image" src="https://w.ladicdn.com/s1150x1350/5d142f1f620fa47f5c176213/additional-features-and-benefits-20250617042856-eslsy.png" alt="NVIDIA AI Platform"style="width:100%; height:auto;" />
+    </div>
+    
+    <div class="image-container">
+        <img class="main-content-image" src="hinhpalit.png" alt="NVIDIA AI Platform" style="width:100%; height:auto;" />
+    </div> -->
+
+    <div class="container product-section">
+      <h2>Bộ sưu tập hình ảnh</h2>
+       <div class="product-list">
+        <div class="product" >
+            <a href="https://rosacomputer.vn/sanpham/ROSA-GAMER-PALIT1.php"><img src="anh1.png" alt="RTX 5060"></a>
+        </div>
+        <div class="product">
+            <a href="https://rosacomputer.vn/sanpham/ROSA-GAMER-PALIT2.php"><img src="anh2.png" alt="RTX 5070"></a>
+        </div>
+        <div class="product">
+            <a href="https://rosacomputer.vn/sanpham/ROSA-GAMER-PALIT3.php"><img src="anh3.png" alt="RTX 5080"></a>
+        </div>
+        </div>
+    </div>
+   
+    <div class="container product-section">
+        <h2>Mua Dòng GeForce RTX</h2>
+        <div class="product-list">
+        <div class="product" >
+            <a href="https://rosacomputer.vn/sanpham/ROSA-GAMER-PALIT1.php"><img src="palit_img/Group 18.png" alt="RTX 5060"></a>
+            <a href="https://rosacomputer.vn/sanpham/ROSA-GAMER-PALIT1.php" class="btn" style="background:#76b900; color:#fff; font-weight:700; text-decoration:none; display:inline-block; text-align:center; padding:12px 32px; font-size:1rem; margin-top:12px;">Tìm hiểu thêm</a>
+        </div>
+        <div class="product">
+            <a href="https://rosacomputer.vn/sanpham/ROSA-GAMER-PALIT2.php"><img src="palit_img/Group 19.png" alt="RTX 5070"></a>
+            <a href="https://rosacomputer.vn/sanpham/ROSA-GAMER-PALIT2.php" class="btn" style="background:#76b900; color:#fff; font-weight:700; text-decoration:none; display:inline-block; text-align:center; padding:12px 32px; font-size:1rem; margin-top:12px;">Tìm hiểu thêm</a>
+        </div>
+        <div class="product">
+            <a href="https://rosacomputer.vn/sanpham/ROSA-GAMER-PALIT3.php"><img src="palit_img/Group 21.png" alt="RTX 5080"></a>
+            <a href="https://rosacomputer.vn/sanpham/ROSA-GAMER-PALIT3.php" class="btn" style="background:#76b900; color:#fff; font-weight:700; text-decoration:none;  display:inline-block; text-align:center; padding:12px 32px; font-size:1rem; margin-top:12px;">Tìm hiểu thêm</a>
+        </div>
+        </div>
     </div>
 
-    <div class="features-section-title">
-      <h4>Các tính năng và tiện ích bổ sung</h4>
-    </div>
 
-    <div class="features-grid">
-      <div class="feature-item">
-        <img src="../palit/image 11.png" alt="Trình điều khiển Game Ready và Studio" />
-        <div class="feature-title">Trình điều khiển<br>Game Ready và Studio</div>
-        <div class="feature-description">Trình điều khiển GeForce Game Ready và Studio được tối ưu cùng các phát triển mới nhất để mang đến trải nghiệm chơi game và sáng tạo tốt nhất. Mỗi bản phát hành đều cung cấp khả năng tối ưu hóa hiệu năng, các tính năng nâng cao, đảm bảo hiệu suất ổn định và an toàn cho các thiết bị.</div>
-      </div>
-      <div class="feature-item">
-        <img src="../palit/image 12.png" alt="NVIDIA APP" />
-        <div class="feature-title">NVIDIA APP</div>
-        <div class="feature-description">Người bạn đồng hành thiết yếu cho game thủ PC và nhà sáng tạo. Cho phép các bạn luôn cập nhật các tính năng và công nghệ NVIDIA mới nhất. Tối ưu hoá cho hiệu năng và ứng dụng trong từng trải nghiệm. Dễ sử dụng, hợp nhất và nhanh, khả năng phát các dịch vụ dùng NVIDIA mới nhất.</div>
-      </div>
-      <div class="feature-item">
-        <img src="../palit/image 13.png" alt="NVIDIA G-SYNC" />
-        <div class="feature-title">NVIDIA G-SYNC</div>
-        <div class="feature-description">NVIDIA G-SYNC là một bộ công nghệ màn hình tiên tiến. Chúng mang lại tỉ lệ làm mới thích ứng, tốc độ, độ sáng, không bị xé hình và mượt mà hơn, ít bị nhòe, độ trễ, khung hình và hiệu suất mượt mà hơn.</div>
-      </div>
-      <div class="feature-item">
-        <img src="../palit/image 14.png" alt="Thực tế ảo VR" />
-        <div class="feature-title">Thực tế ảo VR</div>
-        <div class="feature-description">Đồ họa hiệu suất cao nhất mang lại trải nghiệm VR mượt mà và sống động nhất.</div>
-      </div>
-    </div>
-  </div>
-  
+    
   <!-- Partner Logos Footer -->
-  <footer>
-    <div class="footer-logos">
-      <img src="../palit/Group 9.png" alt="ESRB" />
-      <img src="../palit/logo1.png" alt="Palit Logo" />
-      <img src="../palit/logo2.png" alt="GeForce RTX" />
-    </div>
-  </footer>
+<hr style="width:50%; margin:20px auto; border:1px solid #444;">
+
+<footer>
+  <div class="footer-logos">
+    <img src="Group 9.png" alt="ESRB" />
+    <img src="logo2.png" alt="GeForce RTX" />
+    <img src="logo1.png" alt="Palit Logo" />
+  </div>
+  <p>
+    ©2025 NVIDIA Corporation. NVIDIA, logo NVIDIA, GeForce, GeForce RTX và G-SYNC là các nhãn hiệu đã đăng ký 
+    và/hoặc nhãn hiệu của NVIDIA Corporation tại </p>
+  <p>
+     Hoa Kỳ và các quốc gia khác. 
+    Tất cả các nhãn hiệu và bản quyền khác là tài sản của các chủ sở hữu tương ứng.
+  </p>
+</footer>
+
+    <!-- Footer Mobile -->
 </body>
 </html>
+
+<style>
+  body {
+    font-family: 'Arial';
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: center;
+    margin-inline: 20px;
+}
+
+h2 {
+    justify-content: center;
+    font-size: 20px;
+
+}
+
+header {
+    background-color: #fff;
+    padding: 12px 0;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hero-banner {
+  width: 100%;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+
+.logo img {
+    height: 48px;
+}
+
+.image-container {
+  width: 100vw;       /* rộng bằng toàn bộ viewport */
+  margin: 0;          /* bỏ margin */
+  padding: 0;         /* bỏ padding */
+}
+
+.main-content-image {
+  width: 100%;
+  height: auto;
+  display: block;     /* bỏ khoảng trống dưới ảnh */
+}
+
+
+/* thah 3  */
+/* Mobile nav */
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    /* Xếp theo chiều dọc */
+    gap: 20px;
+    /* Khoảng cách giữa các mục */
+    margin-top: 30px;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+header {
+    background-color: #111;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 65px;
+}
+
+.logo span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* hình  */
+
+
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    margin: 0;
+}
+
+.hero {
+    padding: 40px 0;
+
+}
+
+.hero-content {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a1a1a 0%, #000 50%, #1a1a1a 100%);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-text h2 {
+    color: #FFF;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    background-color: #7fff00;
+    color: #000;
+    padding: 12px 24px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    text-transform: uppercase;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-image img {
+    max-width: 80%;
+    height: auto;
+}
+
+.logo-partners {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.logo-partners img {
+    max-height: 75px;
+}
+
+.btn-buy {
+    background: #76b900;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 32px;
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-wrap img {
+    height: 80px;
+}
+
+/* hedder tổng */
+
+/* Desktop Banner */
+/* .rtx-section {
+    background: #000 url("../palit/Rectangle 3.png") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 60px 80px;
+    font-family: Arial, sans-serif;
+} */
+
+
+.rtx-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.rtx-text {
+    flex: 1;
+}
+
+.rtx-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rtx-text p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.btn-buy {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #76b900;
+    /* xanh NVIDIA */
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.logo-wrap img {
+    height: 40px;
+    object-fit: contain;
+}
+
+
+.rtx-image {
+    flex: 1;
+    text-align: right;
+}
+
+.rtx-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.palit-mobile-card {
+  background: #000; /* nền đen */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.palit-mobile-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.palit-mobile-card-content {
+  padding: 16px;
+  text-align: left;
+}
+
+.palit-mobile-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.palit-mobile-card-sub {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.palit-mobile-card-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.palit-mobile-card-btn {
+  display: inline-block;
+  background: #9c0; /* xanh NVIDIA */
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.palit-mobile-card-logos {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.palit-mobile-card-logos img {
+  height: 28px;
+  width: auto;
+}
+
+
+@media (min-width: 769px) {
+    .palit-mobile-card {
+        display: none !important;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .palit-mobile-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        padding: 24px 0 32px 0;
+        width: 100vw;
+        /* min-height: 100vh; */
+        box-sizing: border-box;
+        z-index: 100;
+    }
+
+}
+
+.palit-mobile-card-inner {
+    background: #000;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.25);
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.palit-mobile-card {
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.palit-mobile-card {
+  margin: 0;
+  padding: 0;
+}
+
+.palit-mobile-card-inner {
+  margin: 0;
+  padding: 0;
+}
+
+.palit-mobile-card {
+  margin: 0;
+  padding: 0;
+}
+
+.palit-mobile-card-inner {
+  margin: 0;
+  padding: 0;
+}
+
+.palit-mobile-card-img {
+  display: block;
+  width: 100%;        /* full theo chiều ngang màn hình */
+  height: auto;       /* giữ tỉ lệ */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.palit-mobile-card-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    line-height: 1.1;
+}
+
+.palit-mobile-card-sub {
+    font-size: 1.1rem;
+    color: #bdbdbd;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.palit-mobile-card-desc {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 33px;
+    line-height: 1.5;
+}
+
+.palit-mobile-card-btn {
+    padding: 12px 24px;
+    /* display: block; */
+    width: 100%;
+    background: #76b900;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 0;
+
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    transition: background 0.2s;
+}
+
+
+
+.palit-mobile-card-logos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.palit-mobile-card-logos img {
+    height: 55px;
+    /* background: #fff; */
+    padding: 2px 6px;
+}
+.palit-mobile-card {
+  background: #000; /* đen hẳn */
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+
+    /* Ẩn các phần desktop khi ở mobile */
+    .hero,
+    .logo-partners {
+        display: none ! important;
+
+    }
+
+
+    .hero-image {
+        order: -1;
+        /* ép ảnh lên trên text */
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-image img {
+        max-width: 95%;
+        height: auto;
+    }
+
+    .hero-text {
+        text-align: left;
+        /* chữ căn trái */
+        padding: 0 15px;
+        /* chừa khoảng cách hai bên cho dễ đọc */
+    }
+
+    .hero-text h2 {
+        font-size: 22px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .hero-text {
+        order: 2;
+        /* chữ xuống dưới */
+    }
+
+    .hero-image {
+        order: 1;
+        /* hình ở trên */
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* ban đầu ẩn ngoài màn hình */
+        width: 80%;
+        height: 100%;
+        background: white;
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+
+    .mobile-menu.active {
+        right: 0;
+        /* khi có class active thì hiện ra */
+    }
+}
+
+
+/* Mobile Banner */
+.hero-mobile {
+    display: none;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+}
+
+.hero-mobile h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.hero-mobile .sub-title {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.hero-mobile p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Footer Desktop */
+.footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer img {
+    height: 50px;
+    margin: 0 10px;
+}
+
+/* Footer Mobile */
+.footer-mobile {
+    display: none;
+    background: #000;
+    padding: 16px;
+    text-align: center;
+}
+
+.footer-mobile img {
+    height: 40px;
+    margin: 0 8px;
+}
+
+/* Responsive */
+/*@media (max-width: 768px) {*/
+/*    .hero {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .footer {*/
+/*        display: none;*/
+/*    }*/
+
+/*    .hero-mobile {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .footer-mobile {*/
+/*        display: block;*/
+/*    }*/
+/*}*/
+
+/* ===== PRODUCT SECTION ===== */
+.product-section {
+    text-align: center;
+}
+
+.product-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: #000;
+    padding: 30px;
+    width: 350px;
+    transition: all 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+    width: 115%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.product h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.product h3 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.product h3 a:hover {
+    color: #76b900;
+}
+
+.product .btn {
+    font-size: 16px;
+    padding: 12px 30px;
+}
+
+/* ==== ảnh thêm nên đen ==== */
+
+.image-container {
+    background: url(palit_img/banner.png) center center / cover no-repeat;
+}
+
+/* ===== sản phẩm ====  */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+    padding: 30px 25px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(118, 185, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(118, 185, 0, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.feature-card:hover::before {
+    left: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(118, 185, 0, 0.2);
+    border-color: rgba(118, 185, 0, 0.4);
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #76b900, #5a9200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-card:hover .icon {
+    animation: pulse 0.6s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    color: #ffffff;
+}
+
+.description {
+    font-size: 14px;
+    color: #b0b0b0;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.nvidia-brand {
+    color: #76b900;
+    font-weight: 700;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    background: linear-gradient(135deg, #76b900, #a8d900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+/* hiện thị tren mobi */
+desktop-header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.desktop-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.desktop-nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger Menu Button */
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+    border: none;
+}
+
+.hamburger-btn span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+    transition: 0.3s;
+
+}
+
+.hamburger-btn.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+}
+
+.mobile-menu.active .mobile-menu-content {
+    transform: translateX(0);
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.mobile-nav {
+    padding: 20px;
+}
+
+.mobile-nav a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.mobile-nav a:hover {
+    color: #007bff;
+}
+
+.mobile-nav a:last-child {
+    border-bottom: none;
+}
+
+/* Demo Content */
+.demo-content {
+    padding: 50px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 100vh;
+}
+
+.demo-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.demo-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .demo-content h1 {
+        font-size: 2rem;
+    }
+
+    .demo-content p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-menu-content {
+        width: 100%;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .feature-card {
+        padding: 25px 20px;
+    }
+}
+
+/* Animation on load */
+.feature-card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideInUp 0.6s ease-out forwards;
+}
+
+.feature-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.feature-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.feature-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.feature-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.feature-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.feature-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.feature-card:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.feature-card:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== BLACKWELL SECTION ===== */
+.blackwell-section {
+    /* padding: 100px 0; */
+    text-align: center;
+}
+
+.blackwell-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.blackwell-section h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 60px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.blackwell-features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.feature-text {
+    max-width: 350px;
+    text-align: center;
+}
+
+.feature-text h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f6f6f6;
+}
+
+.feature-text p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.blackwell-chip-image {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+}
+
+.section-description {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.section-description h4 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.section-description p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main-content-image {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin: 0 auto 60px;
+    display: block;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Đồng bộ kích thước ảnh trong features grid */
+
+.features-section-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.features-section-title h4 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 48px auto;
+}
+
+.features-grid .feature-item {
+    /* background: #222; */
+
+    padding: 28px 24px 18px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-grid img {
+    width: 100%;
+    max-width: 600px;
+    height: 280px;
+    object-fit: cover;
+
+    /* box-shadow: 0 2px 16px #222; */
+}
+
+.features-grid .feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+    text-align: left;
+    width: 100%;
+}
+
+.features-grid .feature-description {
+    color: #ccc;
+    font-size: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Đồng bộ kích thước ảnh chip Blackwell */
+.blackwell-chip-image {
+    width: 188px;
+    height: 188px;
+    object-fit: cover;
+
+    box-shadow: 0 2px 16px #222;
+}
+
+hr {
+    border-bottom: 1px solid #ddd;
+
+
+}
+
+
+/* ===== FOOTER ===== */
+footer {
+    /* background: #111; */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 30px;
+}
+
+.footer-logos img {
+    height: 70px;
+    object-fit: contain;
+}
+
+/* Dòng kẻ trên footer */
+.footer-line {
+    border: none;
+    border-top: 1px solid #444;
+    /* màu xám đậm */
+    margin: 0 auto 20px auto;
+    /* căn giữa + cách logo 20px */
+    width: 70%;
+    /* độ rộng 90% màn hình */
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #000;
+    /* nền đen */
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* khoảng cách giữa logo */
+    margin-bottom: 15px;
+}
+
+.footer-logos img {
+    max-height: 40px;
+    /* chỉnh chiều cao logo */
+    object-fit: contain;
+}
+
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    .footer-logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 450px) {
+    .dlss-text {
+        font-size: 15px;
+        flex-direction: 20px;
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 12px;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+
+    /* Container padding and layout */
+    .container {
+        padding: 0 16px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Header */
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    /* Hero section */
+    .hero-content {
+        flex-direction: column !important;
+        text-align: center;
+        padding: 16px;
+    }
+
+    .hero-left {
+        padding: 16px !important;
+    }
+
+    .hero-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-left p {
+        font-size: 0.95rem;
+    }
+
+    .hero-image img {
+        width: 60%;
+        max-width: 90vw;
+        height: auto;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        display: inline-block;
+    }
+
+    /* Product section */
+    .product-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .product img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Blackwell sections */
+    .blackwell-features {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .blackwell-features img {
+        width: 90%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .section-description h3,
+    .section-description h4 {
+        font-size: 1.4rem !important;
+    }
+
+    .section-description p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* Image containers */
+    .image-container img.main-content-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    /* Features grid */
+    .features-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 12px;
+    }
+
+    .feature-item {
+        text-align: center;
+    }
+
+    .feature-title {
+        font-size: 1.1rem;
+        margin: 8px 0;
+    }
+
+    .feature-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* Footer logos */
+    .footer-logos {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    .footer-logos img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .footer-logos {
+        flex-direction: column;
+        /* xếp dọc */
+        gap: 15px;
+        /* khoảng cách ngắn hơn */
+    }
+
+    .footer-logos img {
+        max-height: 50px;
+        /* logo to hơn chút cho dễ nhìn */
+    }
+
+    footer p {
+        font-size: 11px;
+        /* chữ nhỏ gọn hơn */
+        padding: 0 10px;
+        /* chừa khoảng cách hai bên */
+    }
+
+}
+</style>
