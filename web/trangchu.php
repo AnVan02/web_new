@@ -1,47 +1,20 @@
-<?php require "header.php" ?>
+<?php require "../header.php" ?>
 <link rel="stylesheet" href="../style/trangchu.css">
 
 <!-- Banner -->
-<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
-
-  <!-- Các dấu chấm -->
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
-        <!--<button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3"></button>-->
-        <!--<button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="4"></button>-->
-        <!--<button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="5"></button>-->
-    </div>
-
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="../image/ROSA Palit 5080 size 1920 X 640.png" class="d-block w-100" alt="Banner 1" onclick="window.location.href='https://rosacomputer.vn/courses/palit.php'">
+<div class="banner">
+    <div class="row">
+        <div class="hero-section">
+            <img src="../image/banner.png" alt="Banner" class="hero-image">
+            <div class="hero-text">
+                <h2>MÁY TÍNH THƯƠNG HIỆU VIỆT NAM</h2>
+                <p>Tiên phong giải pháp AI và chuyển đổi số</p>
+            </div>
         </div>
-        <!--<div class="carousel-item">-->
-        <!--    <img src="../image/banner_sp_1.png" class="img-fluid" alt="palit Banner" onclick="window.location.href='https://rosacomputer.vn/courses/palit.php'">-->
-        <!--</div>-->
-        <div class="carousel-item">
-            <img src="https://rosacomputer.vn/assets/images/Backtoschool.jpg" class="d-block w-100" alt="Banner 2">
-        </div>
-        <!--<div class="carousel-item">-->
-        <!--    <img src="assets/images/Banner web 2.png" class="img-fluid" alt="Palit Banner" onclick="window.location.href='product.php'">-->
-        <!--</div>-->
-        
-        <!--<div class="carousel-item">-->
-        <!--    <img src="assets/images/Banner web 3.png" class="img-fluid" alt="New Year Banner" onclick="window.location.href='product.php#gaming'">-->
-        <!--</div>-->
-
-         <div class="carousel-item">
-            <img src="assets/images/Banner web 1.png" class="img-fluid" alt="New Year Banner" onclick="window.location.href='product.php#vanphong'">
-        </div> 
     </div>
 </div>
-</div>
-
 
 <!-- Title -->
-<br>
 <section class="ai-section" style="margin-top: 40px;">
   <h2 class="ds-title">DÒNG SẢN PHẨM</h2>
   <p class="ds-subtitle">Đáp ứng đa dạng nhu cầu, mạnh mẽ, bền bỉ</p>
@@ -73,7 +46,7 @@
   </div>
 </div>
 
-<!--=== LOGO thương hiệu ===-->
+
 <!-- Owl Carousel CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -82,108 +55,95 @@
 <section class="logo-section">
     <div class="container">
         <div class="section-title text-center">
-            <h3 style="font-size: 28px;font-weight: bold;">ĐỐI TÁC THƯƠNG HIỆU</h3>
-            <p class="ds-subtitle">Tự hào đồng hành cùng các khách hàng chiến lược trên toàn cầu</p>
-
+            <h3>ĐỐI TÁC THƯƠNG HIỆU</h3>
+            <span class="section-title-border"></span>
         </div>
         <div class="logo-container">
             <div id="owl-brands-slider" class="owl-carousel owl-theme">
                 <div class="item">
-                    <a class="text-center">
-                        <img src="../image/logo/AMD.png" alt="AMD">
+                    <a href="index.php?page=products&brand_id=7" class="text-center">
+                        <img src="../assets/images/logo/14.png" alt="Lexar">
                     </a>
                 </div>
                 <div class="item">
-                    <a class="text-center">
-                        <img src="../image/logo/INTEl.png" alt="INTEL ">
-                    </a>
-                </div>
-               
-                <div class="item">
-                    <a class="text-center">
-                        <img src="../image/logo/ASUS.png" alt="ASUS">
+                    <a href="index.php?page=products&brand_id=3" class="text-center">
+                        <img src="../assets/images/logo/13.png" alt="KINGSTON">
                     </a>
                 </div>
                 <div class="item">
-                    <a class="text-center">
-                        <img src="../image/logo/KINGSTON.png" alt="KINGSTON">
+                    <a href="index.php?page=products&brand_id=11" class="text-center">
+                        <img src="../assets/images/logo/2.png" alt="AOC">
                     </a>
                 </div>
                 <div class="item">
-                    <a class="text-center">
-                        <img src="../image/logo/LEXAR.png" alt="LEXAR">
+                    <a href="index.php?page=products&brand_id=15" class="text-center">
+                        <img src="../assets/images/logo/11.png" alt="Asus">
                     </a>
                 </div>
                 <div class="item">
-                    <a class="text-center">
-                        <img src="../image/logo/ASROCK.png" alt="ASROCK">
+                    <a href="index.php?page=products&brand_id=13" class="text-center">
+                        <img src="../assets/images/logo/4.png" alt="ASROCK">
                     </a>
                 </div>
                 <div class="item">
-                    <a class="text-center">
-                        <img src="../image/logo/AOC.png" alt="AOC">
+                    <a href="index.php?page=products&brand_id=14" class="text-center">
+                        <img src="../assets/images/logo/6.png" alt="AMD">
                     </a>
                 </div>
                 <div class="item">
-                    <a class="text-center">
-                        <img src="../image/logo/PALIT.png" alt="PALIT">
+                    <a href="index.php?page=products&brand_id=8" class="text-center">
+                        <img src="../assets/images/logo/7.png" alt="G.SKILL">
                     </a>
                 </div>
                 <div class="item">
-                    <a class="text-center">
-                        <img src="../image/logo/GSKILL.png" alt="GSKILL">
+                    <a href="index.php?page=products&brand_id=5" class="text-center">
+                        <img src="../assets/images/logo/9.png" alt="PALIT">
                     </a>
                 </div>
                 <div class="item">
-                    <a class="text-center">
-                        <img src="../image/logo/POWERCOLOR.png" alt="POWERCOLOR">
+                    <a href="index.php?page=products&brand_id=1" class="text-center">
+                        <img src="../assets/images/logo/10.jpg" alt="Power color">
                     </a>
                 </div>
-                
                 <div class="item">
-                    <a class="text-center">
-                        <img src="../image/logo/NVIDIA.png" alt="NVIDIA">
+                    <a href="index.php?page=products&brand_id=10" class="text-center">
+                        <img src="../assets/images/logo/3.png" alt="Intel">
                     </a>
                 </div>
-
-                <div class="item">
-                    <a class="text-center">
-                        <img src="../image/logo/MICROSOFT.png" alt="MICROSOFT">
-                    </a>
-                </div>
-           
             </div>
         </div>
     </div>
 </section>
 
-<!-- ==== Giai pháp AI ==== -->
-<section class="ai-section">
-    <h2 class="ds-title">GIẢI PHÁP AI</h2>
-    <p class="ds-subtitle">Giải pháp toàn diện cho công việc và cuộc sống</p>
+
+<!-- AI Solutions Section -->
+<section class="product-section">
+    <h2>GIẢI PHÁP AI</h2>
+    <p>Giải pháp toàn diện cho công việc và cuộc sống</p>
 </section>
 
 <div class="ai_solution">
     <div class="card">
-        <a href="https://rosacomputer.vn/courses/ChatbotAI.php">
-            <img src="../image/botai.png" alt="Chat bot ai">
+        <a href="https://example.com/cham-cong-ip-camera">
+            <img src="../image/botai.png" alt="Chatbot AI">
         </a>
     </div>
 
     <div class="card">
-        <a href="https://rosacomputer.vn/courses/AIchamcong.php">
+        <a href="https://example.com/cham-cong-ip-camera">
             <img src="../image/chamcong.png" alt="Chấm công IP Camera">
         </a>
     </div>
 
     <div class="card">
-        <a href="https://rosacomputer.vn/courses/Nextcloud.php">
-            <img src="../image/nextcloud.png" alt="Chương trình nextclaud">
+        <a href="https://example.com/cham-cong-ip-camera">
+            <img src="../image/nextcloud.png" alt="Chương trình Nextcloud">
         </a>
     </div>
 </div>
 
-<div class="banner"style="margin-top: 40px;">
+<!-- Course Banner -->
+<div class="banner">
     <div class="row">
         <div class="col-lg-12 mb-3">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -192,74 +152,146 @@
                         <img src="../image/background python.png" class="img-fluid" alt="python" onclick="window.location.href='product.php#gaming'">
                     </div>
                     <div class="hero-text">
-                        <button class="button-style" onclick="window.location.href='https://rosacomputer.vn/ROSA-SW.php'">ỨNG DỤNG</button>
-                        <h2 style="color:#FFF" >KHÓA HỌC ROSA</h2>
-                        <p style="color:#FFF">Chương trình đào tạo bài bản, được chứng nhận bởi tổ chức uy tín</p>
+                        <button class="button-style">ỨNG DỤNG</button>
+                        <h2>KHÓA HỌC ROSA</h2>
+                        <p>Khai mở máy tính thành bệ phóng sự nghiệp của bạn</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<br>
-<section class="ai-section" style="margin-top: 40px;">
-    <h2 class="ds-title">TIN TỨC</h2>
-    <p class="ds-subtitle">Cập nhật tin tức công nghệ và khuyến mãi</p>
+<!-- News Section -->
+<section class="product-section">
+    <h2>CÔNG NGHỆ</h2>
+    <p>THÔNG TIN CÔNG NGHỆ MỚI NHẤT</p>
 </section>
+    <div class="news-technology">
+        <button class="news-tab-btn active" data-tab="rosa">Giải pháp hội họp thông minh</button> 
+        <button class="news-tab-btn" data-tab="congnghe">Giải pháp giáo dục thông minh</button>
+    </div>
 
-<div class="news-container">
+    <div class="news-container">
+    
     <?php
     $servername = "localhost";
-    $username = "nvpbgqcv_banhang";
-    $password = "Vietson@123";
-    $dbname = "nvpbgqcv_banhang";
-
+    $username = "root";
+    $password = "";
+    $dbname = "database";
     $conn = new mysqli($servername, $username, $password, $dbname);
     $conn->set_charset("utf8");
-
+    
     if ($conn->connect_error) {
         die("Kết nối thất bại: " . $conn->connect_error);
     }
+    
+    // lấy tab "rosa" từ bài viết  (Giải pháp hội họp thông minh)
+    $sql_rosa = "SELECT article_tag, article_title, article_date, article_image, article_link, article_content
+                FROM article
+                WHERE article_tag = 'rosa' OR article_tag = 'hoi-hop-thong-minh'
+                ORDER BY article_date DESC
+                LIMIT 3";
+    $result_rosa = $conn->query($sql_rosa);
 
-    $sql = "SELECT article_tag, article_title, article_date, article_image, article_link, article_content
-            FROM article 
-            ORDER BY article_date DESC 
-            LIMIT 3";
-
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            echo '<div class="news-card">';
-            echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
-            echo '<img src="/tintuc_test/admin/modules/blog/uploads/' . htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8') . '" alt="News Image">';
-            echo '</a>';
-            echo '<div class="news-content">';
-            echo '<div class="news-title">';
-            echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
-            echo htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8');
-            echo '</a>';
-            echo '</div>';
-            echo '<p class="news-meta">Ngày đăng: ' . htmlspecialchars(date('d/m/Y', strtotime($row['article_date'])), ENT_QUOTES, 'UTF-8');
-            if (isset($row['article_author'])) {
-                echo ' - Tác giả: ' . htmlspecialchars($row['article_author'], ENT_QUOTES, 'UTF-8');
-            }
-            echo '</p>';
-            echo '<p class="desc">' . strip_tags(substr($row['article_content'], 0, 300)) . '</p>';
-            echo '</div>';
-            echo '</div>';
-        }
-    } else {
-        echo '<p>Không có tin tức để hiển thị.</p>';
-    }
-
-    $conn->close();
+    // lấy tab "congnghe" từ bài viết  (Giải pháp giáo dục thông minh)
+    $sql_congnghe = "SELECT article_tag, article_title, article_date, article_image, article_link, article_content
+                     FROM article
+                     WHERE article_tag = 'congnghe' OR article_tag = 'giao-duc-thong-minh'
+                     ORDER BY article_date DESC
+                     LIMIT 3";
+    $result_congnghe = $conn->query($sql_congnghe);
     ?>
-</div>
-<br>
-<section class="ai-section" style="margin-top: 40px;">
-    <h2 class="ds-title">CÂU HỎI THƯỜNG GẶP</h2>
-    <p class="ds-subtitle">Xem giải đáp nhanh thắc mắc phổ biến</p>
+    
+    <!-- lấy nội dung từ tab ROSA -->
+    <div class="news-tab-content active" data-tab="rosa">
+        <?php
+        if ($result_rosa->num_rows > 0) {
+            while ($row = $result_rosa->fetch_assoc()) {
+                echo '<div class="news-card">';
+                echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
+                echo '</a>';
+                echo '<div class="news-content">';
+                echo '<div class="news-title">';
+                echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
+                echo htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8');
+                echo '</a>';
+                echo '</div>';
+                echo '<p class="news-meta">Ngày đăng: ' . htmlspecialchars(date('d/m/Y', strtotime($row['article_date'])), ENT_QUOTES, 'UTF-8');
+                if (isset($row['article_author'])) {
+                    echo ' - Tác giả: ' . htmlspecialchars($row['article_author'], ENT_QUOTES, 'UTF-8');
+                }
+                echo '</p>';
+                echo '<img src="../tintuc_test/admin/modules/blog/uploads/' .htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8').'" alt="News Image">';
+                echo '<p class="desc">' . strip_tags(substr($row['article_content'], 0, 200)) . '...</p>';
+                echo '</div>';
+                echo '</div>';
+            }
+        } else {
+            echo '<p>Không có tin tức về giải pháp hội họp thông minh để hiển thị.</p>';
+        }
+        ?>
+        
+    </div>
+    <!-- lấy nội dung từ tab "congnghe" -->
+    <div class="news-tab-content" data-tab="congnghe">
+        <?php
+        if ($result_congnghe->num_rows > 0) {
+            while ($row = $result_congnghe->fetch_assoc()) {
+                echo '<div class="news-card">';
+                echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
+                echo '</a>';
+                echo '<div class="news-content">';
+                echo '<div class="news-title">';
+                echo '<a href="/tintuc/' . htmlspecialchars($row['article_link'], ENT_QUOTES, 'UTF-8') . '">';
+                echo htmlspecialchars($row['article_title'], ENT_QUOTES, 'UTF-8');
+                echo '</a>';
+                echo '</div>';
+                echo '<p class="news-meta">Ngày đăng: ' . htmlspecialchars(date('d/m/Y', strtotime($row['article_date'])), ENT_QUOTES, 'UTF-8');
+                if (isset($row['article_author'])) {
+                    echo ' - Tác giả: ' . htmlspecialchars($row['article_author'], ENT_QUOTES, 'UTF-8');
+                }
+                echo '</p>';
+                echo '<img src="../tintuc_test/admin/modules/blog/uploads/'.htmlspecialchars($row['article_image'], ENT_QUOTES, 'UTF-8').'" alt="News Image">';
+                echo '<p class="desc">' . strip_tags(substr($row['article_content'], 0, 200)) . '...</p>';
+                echo '</div>';
+                echo '</div>';
+            }
+        } else {
+            echo '<p>Không có tin tức về giải pháp giáo dục thông minh để hiển thị.</p>';
+        }
+        ?>
+    <!-- lấy dữ liệu nội dung từ tab  -->
+    </div>
+        <?php $conn->close(); ?>
+    </div>
+<div>
+<!-- JavaScript for tab functionality -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.news-tab-btn');
+    const tabContents = document.querySelectorAll('.news-tab-content');
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+            
+            // Remove active class from all buttons and contents
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked button and corresponding content
+            this.classList.add('active');
+            document.querySelector(`.news-tab-content[data-tab="${targetTab}"]`).classList.add('active');
+        });
+    });
+});
+</script>
+
+
+<!-- FAQ Section -->
+<section class="product-section">
+    <h2>CÂU HỎI THƯỜNG GẶP</h2>
+    <p>Xem giải đáp nhanh thắc mắc phổ biến</p>
 </section>
 
 <div class="faq-container">
@@ -274,14 +306,12 @@
     <hr>
     
     <div class="faq-content">
-        
         <!-- Tư vấn -->
-
         <div class="faq-item active" data-category="tuvan">
             <div class="faq-question">ROSA hiện tại có chi nhánh không?</div>
             <div class="faq-answer">
-                Hiện tại ROSA tự hào có mặt trên 34 tỉnh thành trên toàn quốc: <br>
-                Văn phòng đại diện tại:150 Ter, đường Bùi Thị Xuân, phường Bến Thành, TP. Hồ Chí Minh.<br>
+                Hiện tại Rosa chỉ có một địa chỉ giao dịch chính thức tại:<br>
+                150 Tô, đường Bùi Thị Xuân, phường Bến Thành, TP. Hồ Chí Minh.<br>
                 Quý khách vui lòng đến trực tiếp địa chỉ này để được tư vấn và trải nghiệm sản phẩm với đầy đủ dịch vụ hỗ trợ.
             </div>
         </div>
@@ -289,7 +319,7 @@
         <div class="faq-item" data-category="tuvan">
             <div class="faq-question">Giờ làm việc của ROSA</div>
             <div class="faq-answer">
-                ROSA hoạt động từ Thứ 2 đến Thứ 7 trong khung giờ hành chính.<br>
+                Rosa hoạt động từ Thứ 2 đến Thứ 7 trong khung giờ hành chính.<br>
                 Để đảm bảo phục vụ tốt nhất và kịp thời hỗ trợ đầy đủ, quý khách có thể kiểm tra thông tin giờ làm việc chi tiết tại website chính thức: <a href="https://rosacomputer.vn/" class="website-link">https://rosacomputer.vn/</a>
             </div>
         </div>
@@ -297,14 +327,13 @@
         <div class="faq-item" data-category="tuvan">
             <div class="faq-question">ROSA có bán hàng trên các sàn thương mại điện tử không?</div>
             <div class="faq-answer">
-                Hiện tại ROSA phân phối sản phẩm thông qua nhiều kênh như cửa hàng online, hệ thống đại lý và một số sàn thương mại điện tử. Tuy nhiên, để đảm bảo quyền lợi, chất lượng sản phẩm và hỗ trợ đầy đủ, chúng tôi khuyến khích quý khách:<br>
-                - Mua trực tiếp tại showroom chính thức của ROSA.<br>
-                - Hoặc đặt hàng qua website: <a href="https://rosacomputer.vn/" class="website-link" >https://rosacomputer.vn/</a>
+                Hiện tại Rosa phân phối sản phẩm thông qua nhiều kênh như cửa hàng online, hệ thống đại lý và một số sàn thương mại điện tử. Tuy nhiên, để đảm bảo quyền lợi, chất lượng sản phẩm và hỗ trợ đầy đủ, chúng tôi khuyến khích quý khách:<br>
+                - Mua trực tiếp tại showroom chính thức của Rosa.<br>
+                - Hoặc đặt hàng qua website: <a href="https://rosacomputer.vn/" class="website-link">https://rosacomputer.vn/</a>
             </div>
         </div>
 
         <!-- Bảo hành -->
-
         <div class="faq-item" data-category="baohanh">
             <div class="faq-question">Thời gian bảo hành của sản phẩm là bao lâu?</div>
             <div class="faq-answer">
@@ -312,38 +341,35 @@
             </div>
         </div>
         <div class="faq-item" data-category="baohanh">
-            <div class="faq-question">Máy bộ ROSA bảo hành bao lâu?</div>
+            <div class="faq-question">Máy bộ Rosa bảo hành bao lâu?</div>
             <div class="faq-answer">
-                Tất cả máy bộ ROSA được bảo hành 3 năm theo quy định từ nhà sản xuất         
+                Tất cả máy bộ Rosa được bảo hành 3 năm theo quy định từ nhà sản xuất.
             </div>
         </div>
         <div class="faq-item" data-category="baohanh">
-            <div class="faq-question">Số điện thoại trung tâm bảo hành ROSA là gì?</div>
+            <div class="faq-question">Số điện thoại trung tâm bảo hành Rosa là gì?</div>
             <div class="faq-answer">
-                (028) 3926 0996       
+                (028) 3926 0996
             </div>
         </div>
 
         <!-- Giao hàng -->
-
         <div class="faq-item" data-category="giaohang">
             <div class="faq-question">Thời gian giao hàng mất bao lâu?</div>
             <div class="faq-answer">
-                Thời gian giao hàng tùy thuộc vào vị trí và khu vực nhận hàng ROSA luôn cố gắng giao nhanh nhất có thể 
+                Thời gian giao hàng tùy thuộc vào vị trí và khu vực nhận hàng. Rosa luôn cố gắng giao nhanh nhất có thể.
             </div>
         </div>
 
         <!-- Thanh toán -->
-
         <div class="faq-item" data-category="thanhtoan">
-            <div class="faq-question">ROSA hổ trợ những phương thức thanh toán nào?</div>
+            <div class="faq-question">ROSA hỗ trợ những phương thức thanh toán nào?</div>
             <div class="faq-answer">
-                Rosa hỗ trợ hai hình thức thanh toán: chuyển khoản qua ngân hàng và thanh toán tiền mặt
+                Rosa hỗ trợ hai hình thức thanh toán: chuyển khoản qua ngân hàng và thanh toán tiền mặt.
             </div>
         </div>
 
         <!-- Sản phẩm -->
-
         <div class="faq-item" data-category="sanpham">
             <div class="faq-question">Sản phẩm có sẵn hàng không?</div>
             <div class="faq-answer">
@@ -351,37 +377,34 @@
             </div>
         </div>
         <div class="faq-item" data-category="sanpham">
-            <div class="faq-question">ROSA hiện đang cung cấp những sản phẩm gì?</div>
+            <div class="faq-question">Rosa hiện đang cung cấp những sản phẩm gì?</div>
             <div class="faq-answer">
-                Rosa tập trung vào dòng máy bộ PC với nhiều cấu hình phù hợp nhu cầu học tập, văn phòng, gaming, lập trình
+                Rosa tập trung vào dòng máy bộ PC với nhiều cấu hình phù hợp nhu cầu học tập, văn phòng, gaming, lập trình.
             </div>
         </div>
         <div class="faq-item" data-category="sanpham">
-            <div class="faq-question">Các dòng máy bộ chính của ROSA gồm những gì?</div>
+            <div class="faq-question">Các dòng máy bộ chính của Rosa gồm những gì?</div>
             <div class="faq-answer">
-                ROSA AI, ROSA VĂN PHÒNG, ROSA GAMER           
+                ROSA AI, ROSA VĂN PHÒNG, ROSA GAMER
             </div>
         </div>
         
         <div class="faq-item" data-category="sanpham">
             <div class="faq-question">ROSA AI là gì?</div>
             <div class="faq-answer">
-                Dòng máy ROSA AI được thiết kế dành riêng cho lập trình và phát triển trí tuệ nhân tạo. Tích hợp cấu hình mạnh, cài sẵn công cụ AI, sẵn sàng cho hành trình sáng tạo của bạn
+                Dòng máy ROSA AI được thiết kế dành riêng cho lập trình và phát triển trí tuệ nhân tạo. Tích hợp cấu hình mạnh, cài sẵn công cụ AI, sẵn sàng cho hành trình sáng tạo của bạn.
             </div>
         </div>
-
         <!-- Câu hỏi -->
-
         <div class="faq-item" data-category="cauhoi">
             <div class="faq-question">Làm thế nào để đặt hàng qua website?</div>
             <div class="faq-answer">
-                Để đặt hàng qua website, hãy truy cập <a href="https://rosacomputer.vn/product.php" class="website-link" >https://rosacomputer.vn/sanpham</a>, chọn sản phẩm bạn muốn, thêm vào giỏ hàng và thanh toán theo hướng dẫn.
+                Để đặt hàng qua website, hãy truy cập <a href="https://rosacomputer.vn/" class="website-link">https://rosacomputer.vn/</a>, chọn sản phẩm bạn muốn, thêm vào giỏ hàng và thanh toán theo hướng dẫn.
             </div>
         </div>
     </div>
 </div>
 
-<!-- ==== loggoo ==== -->
 <!-- jQuery và Owl Carousel JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -396,7 +419,7 @@ $(document).ready(function(){
         nav: false,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 3000,
         autoplayHoverPause: true,
         responsive: {
             0: {
@@ -412,7 +435,6 @@ $(document).ready(function(){
     });
 });
 </script>
-
 <script src="../script/trangchu.js"></script>
 
-<?php require "footer.php" ?>
+<?php require "../footer.php" ?>

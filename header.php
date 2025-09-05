@@ -13,8 +13,6 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap 4.6.2 CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
 
   <!-- Font Awesome (Chỉ chọn phiên bản cao nhất bạn cần dùng, ở đây dùng 6.5.1) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -172,7 +170,8 @@
         }
 
         .header {
-            position: sticky;
+            font-family: Montserrat;
+            position: fixed;
             top: 0;
             width: 100%;
             z-index: 1300;
@@ -180,7 +179,6 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             padding: 15px 0;
             font-size: 20px;
-            font-family: Montserrat;
         }
 
         .nav_container {
@@ -199,6 +197,12 @@
 
         .nav_container ul li a:hover {
             color: #007bff;
+        }
+        .nav_container ul li a {
+            font-size: 15px;
+            /* padding: 5px 10px; */
+            color: #000000;
+
         }
 
         /* ====== THANH TÌM KIẾM ======== */

@@ -8,4 +8,11 @@ Cách 2
     .container {
         overflow-x: hidden; /* Ẩn cuộn ngang */
     }
-
+khi keo xuong header keo theo
+    header {
+        position: fixed;
+    }
+khi keo xuong header không kéo theo
+    header {
+        position: sticky;
+    }

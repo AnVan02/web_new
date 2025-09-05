@@ -46,8 +46,6 @@
         <button id="btn-ai" onclick="showCategory('ai')">AI</button>
     </div>
 </div>
-
-
 <!-- Văn phòng -->
 <div id="vanphong">
     <div class="product-group vanphong">
@@ -150,14 +148,48 @@
 </div>
 </div>
 
-<div class="banner" style="margin-bottom: 20px;">
+<!-- <div class="banner" style="margin-bottom: 20px;">
     <div class="row">
         <div class="hero-section" style="width: 80%; margin: 0 auto;">
             <img src="../image/Frame 1000005520 (1).png" alt="Banner" class="why-hero-image" style="width: 100%; height: auto;">
         </div>
     </div>
 </div>
+</div> -->
+
+
+<!-- Title -->
+<section class="ai-section" style="margin-top: 40px;">
+  <h2 class="ds-title">DÒNG SẢN PHẨM</h2>
+  <p class="ds-subtitle">Đáp ứng đa dạng nhu cầu, mạnh mẽ, bền bỉ</p>
+
+  <!-- Section: Dòng sản phẩm -->
+<div class="ds-grid">
+  <!-- Office -->
+  <div class="ds-item">
+    <img src="Group 191.png" alt="Office PC">
+    <a href="https://rosacomputer.vn/product.php#vanphong" class="btn-discover">Khám phá ngay</a>
+  </div>
+
+  <!-- AI -->
+  <div class="ds-item">
+    <img src="Group 191.png" alt="AI PC">
+    <a href="https://rosacomputer.vn/product.php#ai" class="btn-discover">Khám phá ngay</a>
+  </div>
+
+  <!-- Gaming -->
+  <div class="ds-item">
+    <img src="Group 192.png" alt="Gaming PC">
+    <a href="https://rosacomputer.vn/product.php#gaming" class="btn-discover">Khám phá ngay</a>
+  </div>
+
+  <!-- Mini PC -->
+  <div class="ds-item">
+    <img src="Group 192.png" alt="Mini PC">
+    <a href="https://rosacomputer.vn/product.php#mini" class="btn-discover">Khám phá ngay</a>
+  </div>
 </div>
+
  
 <div class="banner" style="margin-bottom: 20px;">
     <div class="row">

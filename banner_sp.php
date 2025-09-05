@@ -100,6 +100,7 @@ if (isset($_GET['pricefrom']) && isset($_GET['priceto'])) {
     transform: scale(1.05);
 }
 
+
 /* Banner ngang giữa trang */
 .banner-horizontal {
     margin: 30px 0;
@@ -210,6 +211,11 @@ if (isset($_GET['pricefrom']) && isset($_GET['priceto'])) {
         <img src="assets/images/kkk.jpg" alt="Banner Khuyến Mãi Phải">
     </a>
 </div>
+
+
+
+
+
 <div class="product-list">
     <div class="container pd-bottom">
         
