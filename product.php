@@ -90,7 +90,7 @@
                         ?>
                     </div>
                     
-                      <!--Mini PC-->
+                <!--Mini PC-->
                 <div id="mini">
                 <div class="main-banner" style=" background: linear-gradient(to right,#000000,#000000);">
                     <div class="banner-content">

@@ -78,6 +78,7 @@
                             <li class="has-submenu">
                                 <a href="#">KHOÁ HỌC AI <i class="fas fa-chevron-right"></i></a>
                                 <ul class="submenu">
+                                    
                                     <li><a href="/ROSA-SW.php">ỨNG DỤNG ROSA</a></li>
                                     <li><a href="/courses/python-course.php">PYTHON CƠ BẢN</a></li>
                                     <li><a href="/courses/yolo-course.php">THỊ GIÁC MÁY TÍNH</a></li>
@@ -94,6 +95,19 @@
                         </ul>
                     </li>
                     <li><a href="/courses/palit.php">Chương trình</a></li>
+                    <li><a href="#">Bảo hành<i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Về công ty <i class="fas fa-chevron-right"></i></a></a>
+                                <ul class="submenu">
+                                    <li><a href="">Bảo hành</a></li>
+                                    <li><a href="">Sản phẩm</a></li>
+                                    <li><a href="">Đại lý</a></li>
+                                    <li><a href="">Bảo mật</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="/tintuc_test/template.php">Tin tức </a></li>
                     <li><a href="/baohanh.php">Bảo hành </a></li>
                     <li><a href="/check.php">Đơn hàng</a></li>
